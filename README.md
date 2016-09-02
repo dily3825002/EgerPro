@@ -11,7 +11,7 @@ http://eger.sinaapp.com/code/egerpro/
 
 ###近期版本更新内容，请查看发布文档
 
-基于Egret 2.5搭建的HTML5重度游戏开发解决方案。 
+基于 Egret 3.0 搭建的 HTML5 重度游戏开发解决方案。 
 
 ### 一、引入PureMVC，界面逻辑分离 
 
@@ -57,11 +57,6 @@ http://eger.sinaapp.com/code/egerpro/
     2、修改GameProxy GameVO在GameProxy初始化的时候初始化
 
 #### 0.0.3 待续
-
-###  项目成员：
-    dily xsstomy fany stone 天幻
-    
-    有想加入把EGER-PRO做的更强大的小窗联系我吧！
   
 ### 链接
 
@@ -70,7 +65,7 @@ EGER极速开发交流群：70843223
 
 ### 觉得不错就支持我一下！
 
-右上角收藏和关注！
+`您的star就是对我的支持！！！`
 
 ### 或者加我好友，互相学习
 
