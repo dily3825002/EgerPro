@@ -9,6 +9,9 @@
 演示地址：
 http://eger.sinaapp.com/code/egerpro/
 
+教程地址：
+http://bbs.egret.com/forum.php?mod=viewthread&tid=13947&highlight=eger
+
 ###近期版本更新内容，请查看发布文档
 
 基于 Egret 3.0 搭建的 HTML5 重度游戏开发解决方案。 
