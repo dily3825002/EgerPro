@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Egret</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #888888;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+
+    <!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件-->
+    <!--modules_files_start-->
+	<script egret="lib" src="libs/modules/egret/egret.js" src-release="libs/modules/egret/egret.min.js"></script>
+	<script egret="lib" src="libs/modules/egret/egret.web.js" src-release="libs/modules/egret/egret.web.min.js"></script>
+	<script egret="lib" src="libs/modules/eui/eui.js" src-release="libs/modules/eui/eui.min.js"></script>
+	<script egret="lib" src="libs/modules/res/res.js" src-release="libs/modules/res/res.min.js"></script>
+	<script egret="lib" src="libs/modules/game/game.js" src-release="libs/modules/game/game.min.js"></script>
+	<script egret="lib" src="libs/modules/game/game.web.js" src-release="libs/modules/game/game.web.min.js"></script>
+	<script egret="lib" src="libs/modules/tween/tween.js" src-release="libs/modules/tween/tween.min.js"></script>
+	<script egret="lib" src="libs/modules/socket/socket.js" src-release="libs/modules/socket/socket.min.js"></script>
+	<script egret="lib" src="libs/modules/puremvc/puremvc.js" src-release="libs/modules/puremvc/puremvc.min.js"></script>
+	<script egret="lib" src="libs/modules/protobuf/protobuf.js" src-release="libs/modules/protobuf/protobuf.min.js"></script>
+	<!--modules_files_end-->
+
+    <!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+    <!--other_libs_files_start-->
+    <!--other_libs_files_end-->
+
+    <!--这个标签会被替换为项目中所有的 javascript 文件-->
+    <!--game_files_start-->
+	<script egret="game" src="bin-debug/AssetAdapter.js"></script>
+	<script egret="game" src="bin-debug/LoadingUI.js"></script>
+	<script egret="game" src="bin-debug/Main.js"></script>
+	<script egret="game" src="bin-debug/WaitPanel.js"></script>
+	<script egret="game" src="bin-debug/component/EButton.js"></script>
+	<script egret="game" src="bin-debug/component/EImage.js"></script>
+	<script egret="game" src="bin-debug/component/ETextField.js"></script>
+	<script egret="game" src="bin-debug/config/GameConfig.js"></script>
+	<script egret="game" src="bin-debug/config/GlobalData.js"></script>
+	<script egret="game" src="bin-debug/constants/MainNotify.js"></script>
+	<script egret="game" src="bin-debug/constants/PanelNotify.js"></script>
+	<script egret="game" src="bin-debug/constants/SceneNotify.js"></script>
+	<script egret="game" src="bin-debug/constants/SysNotify.js"></script>
+	<script egret="game" src="bin-debug/constants/panel/UserInfoNotify.js"></script>
+	<script egret="game" src="bin-debug/core/AppFacade.js"></script>
+	<script egret="game" src="bin-debug/core/controller/ControllerPrepCommand.js"></script>
+	<script egret="game" src="bin-debug/core/controller/ModelPrepCommand.js"></script>
+	<script egret="game" src="bin-debug/core/controller/Processor/Processor_100_1.js"></script>
+	<script egret="game" src="bin-debug/core/controller/StartupCommand.js"></script>
+	<script egret="game" src="bin-debug/core/controller/ViewPrepCommand.js"></script>
+	<script egret="game" src="bin-debug/core/controller/request/UserInfoRequest.js"></script>
+	<script egret="game" src="bin-debug/core/model/P.js"></script>
+	<script egret="game" src="bin-debug/core/model/ResourceProxyBase.js"></script>
+	<script egret="game" src="bin-debug/core/model/proxy/GameProxy.js"></script>
+	<script egret="game" src="bin-debug/core/model/proxy/TemplateProxy.js"></script>
+	<script egret="game" src="bin-debug/core/model/vo/GameVO.js"></script>
+	<script egret="game" src="bin-debug/core/view/GameLayerManager.js"></script>
+	<script egret="game" src="bin-debug/core/view/MainManager.js"></script>
+	<script egret="game" src="bin-debug/core/view/SceneManager.js"></script>
+	<script egret="game" src="bin-debug/core/view/main/ActivityBar.js"></script>
+	<script egret="game" src="bin-debug/core/view/main/FunctionBar.js"></script>
+	<script egret="game" src="bin-debug/core/view/main/MainUI.js"></script>
+	<script egret="game" src="bin-debug/core/view/main/RoleInfo.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/BaseMediator.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/PopUpManager.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/mediator/BackpackMediator.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/mediator/ChuangDangMediator.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/mediator/MapMediator.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/mediator/QianghuaMediator.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/mediator/RoleMediator.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/mediator/ShopMediator.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/mediator/ZhaoXianMediator.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/panel/BackpackPanel.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/panel/ChuangDangPanel.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/panel/MapPanel.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/panel/QianghuaPanel.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/panel/RolePanel.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/panel/ShopPanel.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/panel/ZhaoXianPanel.js"></script>
+	<script egret="game" src="bin-debug/core/view/scene/HomeCity.js"></script>
+	<script egret="game" src="bin-debug/net/SocketManager.js"></script>
+	<script egret="game" src="bin-debug/utils/EffectUtils.js"></script>
+	<script egret="game" src="bin-debug/utils/Global.js"></script>
+	<script egret="game" src="bin-debug/utils/NativeApi.js"></script>
+	<script egret="game" src="bin-debug/utils/RegUtils.js"></script>
+	<script egret="game" src="bin-debug/utils/TipsManager.js"></script>
+	<script egret="game" src="bin-debug/utils/TipsPanel.js"></script>
+	<script egret="game" src="bin-debug/utils/UtilsClass/BitmapBlink.js"></script>
+	<script egret="game" src="bin-debug/utils/UtilsClass/TipsUtils.js"></script>
+	<!--game_files_end-->
+</head>
+<body>
+
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+         data-entry-class="Main"
+         data-orientation="auto"
+         data-scale-mode="showAll"
+         data-resolution-mode="retina"
+         data-frame-rate="30"
+         data-content-width="1280"
+         data-content-height="960"
+         data-show-paint-rect="false"
+         data-multi-fingered="2"
+         data-show-fps="false" data-show-log="false"
+         data-log-filter="" data-show-fps-style="x:0,y:0,size:30,textColor:0x00c200,bgAlpha:0.9">
+    </div>
+    <script>
+        egret.runEgret();
+    </script>
+</body>
+</html>

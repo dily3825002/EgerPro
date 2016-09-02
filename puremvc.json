@@ -1,0 +1,8 @@
+{
+  "name": "puremvc",
+  "source":"src/puremvc/",
+  "file_list": [
+    "puremvc-typescript-standard-1.0.js",
+    "puremvc-typescript-standard-1.0.d.ts"
+  ]
+}

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ShopSkin" width="1280" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="homeBg3_jpg"/>
+	<e:Button id="closeBtn" label="按钮" x="1154" y="14" skinName="main.CloseBtnSkin"/>
+	<e:Image id="img1" source="activityBtn_png" x="138" y="59"/>
+	<e:Image id="img2" y="180" source="activityBtn_png" x="138"/>
+	<e:Image id="img3" y="301" source="activityBtn_png" x="138"/>
+	<e:Image id="img4" y="422" source="activityBtn_png" x="138"/>
+	<e:Image id="img5" y="543" source="activityBtn_png" x="138"/>
+	<e:Image id="img6" y="664" source="activityBtn_png" x="138"/>
+	<e:Image id="img7" y="785" source="activityBtn_png" x="138"/>
+	<e:Image id="img8" y="61" source="activityBtn_png" x="670"/>
+	<e:Image y="183" id="img9" source="activityBtn_png" x="670"/>
+	<e:Image y="303" id="img10" source="activityBtn_png" x="670"/>
+	<e:Button id="btn1" label="图片特效1" x="336" y="85"/>
+	<e:Button id="btn2" y="208" label="图片特效2" x="336"/>
+	<e:Button id="btn3" y="330" label="图片特效3" x="336"/>
+	<e:Button id="btn4" y="453" label="图片特效4" x="336"/>
+	<e:Button id="btn5" y="576" label="图片特效5" x="336"/>
+	<e:Button id="btn6" y="698" label="图片特效6" x="336"/>
+	<e:Button id="btn7" y="821" label="图片特效7" x="336"/>
+	<e:Button id="btn8" y="75" label="图片特效8" x="897"/>
+	<e:Button id="btn9" y="200" label="图片特效9" x="897"/>
+	<e:Button id="btn10" y="320" label="图片特效10" x="897"/>
+</e:Skin>
+
+

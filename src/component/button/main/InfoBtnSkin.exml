@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="main.InfoBtnSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui" width.up="112" width.down="112" height.down="112" width.disabled="112" height.disabled="112" height.up="112">
+	<e:Image height="100%"
+	         
+	         width.down="90%" height.down="90%" width.disabled="90%" height.disabled="90%" width.up="100%" x.disabled="6" y.disabled="6" width="100%" x.down="6" y.down="6" source="infoBtn_png" source.up="infoBtn_png" source.down="infoBtn_png" source.disabled="infoBtn_png"/>
+	<e:Label italic="true" textColor="0x2EFF00" text="标签" verticalCenter="0" size="24" width="110" x="40" id="labelDisplay" textAlign="center" y="40" horizontalCenter="0" bold="true"/>
+</e:Skin>
