@@ -58,7 +58,7 @@ module NativeApi {
     } 	
 
 	//当前游戏角度
-	export var curAngle:number = window["orientation"];	
+	export var curAngle:number = <number>window["orientation"];	
 
 
 }

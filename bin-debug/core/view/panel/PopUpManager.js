@@ -7,7 +7,6 @@
   */
 var PopUpManager;
 (function (PopUpManager) {
-    PopUpManager.darkSprite;
     /**
     * 添加面板方法
     * panel       		面板
@@ -137,6 +136,7 @@ var PopUpManager;
         if (this.darkSprite) {
             egret.Tween.get(this.darkSprite).to({ alpha: 0 }, 100).call(onComplete, this);
         }
+        //以下是弹窗动画
         switch (effectType) {
             case 0:
                 break;
@@ -172,3 +172,4 @@ var PopUpManager;
     }
     PopUpManager.removePopUp = removePopUp;
 })(PopUpManager || (PopUpManager = {}));
+//# sourceMappingURL=PopUpManager.js.map

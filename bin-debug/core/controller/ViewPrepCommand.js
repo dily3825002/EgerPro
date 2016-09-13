@@ -11,7 +11,7 @@ var game;
         function ViewPrepCommand() {
             _super.call(this);
         }
-        var d = __define,c=ViewPrepCommand;p=c.prototype;
+        var d = __define,c=ViewPrepCommand,p=c.prototype;
         p.execute = function (notification) {
             var main = GameLayerManager.gameLayer().panelLayer;
             this.facade.registerMediator(new game.RoleMediator());
@@ -23,7 +23,8 @@ var game;
             this.facade.registerMediator(new game.MapMediator());
         };
         return ViewPrepCommand;
-    })(puremvc.SimpleCommand);
+    }(puremvc.SimpleCommand));
     game.ViewPrepCommand = ViewPrepCommand;
-    egret.registerClass(ViewPrepCommand,"game.ViewPrepCommand",["puremvc.ICommand","puremvc.INotifier"]);
+    egret.registerClass(ViewPrepCommand,'game.ViewPrepCommand',["puremvc.ICommand","puremvc.INotifier"]);
 })(game || (game = {}));
+//# sourceMappingURL=ViewPrepCommand.js.map

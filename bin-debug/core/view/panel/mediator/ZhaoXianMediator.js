@@ -13,7 +13,7 @@ var game;
             _super.call(this, ZhaoXianMediator.NAME, viewComponent);
             this.zhaoXianPanel = new game.ZhaoXianPanel();
         }
-        var d = __define,c=ZhaoXianMediator;p=c.prototype;
+        var d = __define,c=ZhaoXianMediator,p=c.prototype;
         p.listNotificationInterests = function () {
             return [
                 PanelNotify.OPEN_ZHAOXIAN,
@@ -80,7 +80,8 @@ var game;
         };
         ZhaoXianMediator.NAME = "ZhaoXianMediator";
         return ZhaoXianMediator;
-    })(BaseMediator);
+    }(BaseMediator));
     game.ZhaoXianMediator = ZhaoXianMediator;
-    egret.registerClass(ZhaoXianMediator,"game.ZhaoXianMediator");
+    egret.registerClass(ZhaoXianMediator,'game.ZhaoXianMediator');
 })(game || (game = {}));
+//# sourceMappingURL=ZhaoXianMediator.js.map

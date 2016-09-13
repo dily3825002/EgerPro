@@ -10,7 +10,7 @@ var game;
             this.skinName = "src/core/view/panel/ui/QianghuaSkin.exml";
             this.addEventListener(eui.UIEvent.COMPLETE, this.createCompleteEvent, this);
         }
-        var d = __define,c=QianghuaPanel;p=c.prototype;
+        var d = __define,c=QianghuaPanel,p=c.prototype;
         p.createCompleteEvent = function (event) {
             this.removeEventListener(eui.UIEvent.COMPLETE, this.createCompleteEvent, this);
             // game.AppFacade.getInstance().registerMediator( new RoleMediator(this) );
@@ -19,7 +19,8 @@ var game;
             _super.prototype.partAdded.call(this, partName, instance);
         };
         return QianghuaPanel;
-    })(eui.Component);
+    }(eui.Component));
     game.QianghuaPanel = QianghuaPanel;
-    egret.registerClass(QianghuaPanel,"game.QianghuaPanel");
+    egret.registerClass(QianghuaPanel,'game.QianghuaPanel');
 })(game || (game = {}));
+//# sourceMappingURL=QianghuaPanel.js.map

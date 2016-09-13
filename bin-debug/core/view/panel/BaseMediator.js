@@ -19,7 +19,7 @@ var BaseMediator = (function (_super) {
         this.w = GameConfig.curWidth();
         this.h = GameConfig.curHeight();
     }
-    var d = __define,c=BaseMediator;p=c.prototype;
+    var d = __define,c=BaseMediator,p=c.prototype;
     /**
     * 添加面板方法
     * panel       		面板
@@ -91,5 +91,6 @@ var BaseMediator = (function (_super) {
         return this.ui.height;
     };
     return BaseMediator;
-})(puremvc.Mediator);
-egret.registerClass(BaseMediator,"BaseMediator",["puremvc.IMediator","puremvc.INotifier"]);
+}(puremvc.Mediator));
+egret.registerClass(BaseMediator,'BaseMediator',["puremvc.IMediator","puremvc.INotifier"]);
+//# sourceMappingURL=BaseMediator.js.map

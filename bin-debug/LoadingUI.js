@@ -32,7 +32,7 @@ var LoadingUI = (function (_super) {
         this.h = 0;
         this.createGameScene();
     }
-    var d = __define,c=LoadingUI;p=c.prototype;
+    var d = __define,c=LoadingUI,p=c.prototype;
     /**
      * 创建游戏场景
      */
@@ -81,5 +81,6 @@ var LoadingUI = (function (_super) {
         this.pgBar.width = 641 * (current / total);
     };
     return LoadingUI;
-})(eui.UILayer);
-egret.registerClass(LoadingUI,"LoadingUI");
+}(eui.UILayer));
+egret.registerClass(LoadingUI,'LoadingUI');
+//# sourceMappingURL=LoadingUI.js.map

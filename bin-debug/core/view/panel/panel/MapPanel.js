@@ -10,7 +10,7 @@ var game;
             this.skinName = "src/core/view/panel/ui/MapSkin.exml";
             this.addEventListener(eui.UIEvent.COMPLETE, this.createCompleteEvent, this);
         }
-        var d = __define,c=MapPanel;p=c.prototype;
+        var d = __define,c=MapPanel,p=c.prototype;
         p.createCompleteEvent = function (event) {
             this.removeEventListener(eui.UIEvent.COMPLETE, this.createCompleteEvent, this);
             // game.AppFacade.getInstance().registerMediator( new RoleMediator(this) );
@@ -19,7 +19,8 @@ var game;
             _super.prototype.partAdded.call(this, partName, instance);
         };
         return MapPanel;
-    })(eui.Component);
+    }(eui.Component));
     game.MapPanel = MapPanel;
-    egret.registerClass(MapPanel,"game.MapPanel");
+    egret.registerClass(MapPanel,'game.MapPanel');
 })(game || (game = {}));
+//# sourceMappingURL=MapPanel.js.map

@@ -5,7 +5,7 @@ var game;
         function AppFacade() {
             _super.call(this);
         }
-        var d = __define,c=AppFacade;p=c.prototype;
+        var d = __define,c=AppFacade,p=c.prototype;
         AppFacade.getInstance = function () {
             if (this.instance == null)
                 this.instance = new AppFacade();
@@ -25,7 +25,8 @@ var game;
         };
         AppFacade.STARTUP = "startup";
         return AppFacade;
-    })(puremvc.Facade);
+    }(puremvc.Facade));
     game.AppFacade = AppFacade;
-    egret.registerClass(AppFacade,"game.AppFacade",["puremvc.IFacade","puremvc.INotifier"]);
+    egret.registerClass(AppFacade,'game.AppFacade',["puremvc.IFacade","puremvc.INotifier"]);
 })(game || (game = {}));
+//# sourceMappingURL=AppFacade.js.map

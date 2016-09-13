@@ -9,9 +9,10 @@ var game;
             _super.call(this);
             this.skinName = "src/core/view/main/RoleInfoSkin.exml";
         }
-        var d = __define,c=RoleInfo;p=c.prototype;
+        var d = __define,c=RoleInfo,p=c.prototype;
         return RoleInfo;
-    })(eui.Component);
+    }(eui.Component));
     game.RoleInfo = RoleInfo;
-    egret.registerClass(RoleInfo,"game.RoleInfo");
+    egret.registerClass(RoleInfo,'game.RoleInfo');
 })(game || (game = {}));
+//# sourceMappingURL=RoleInfo.js.map

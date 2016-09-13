@@ -13,7 +13,7 @@ var game;
         function SceneManager() {
             _super.call(this);
         }
-        var d = __define,c=SceneManager;p=c.prototype;
+        var d = __define,c=SceneManager,p=c.prototype;
         /**
          * 注册消息
          */
@@ -43,7 +43,8 @@ var game;
         };
         SceneManager.NAME = "SceneManager";
         return SceneManager;
-    })(puremvc.SimpleCommand);
+    }(puremvc.SimpleCommand));
     game.SceneManager = SceneManager;
-    egret.registerClass(SceneManager,"game.SceneManager",["puremvc.ICommand","puremvc.INotifier"]);
+    egret.registerClass(SceneManager,'game.SceneManager',["puremvc.ICommand","puremvc.INotifier"]);
 })(game || (game = {}));
+//# sourceMappingURL=SceneManager.js.map

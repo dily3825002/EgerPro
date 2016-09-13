@@ -11,7 +11,7 @@ var game;
         function Processor_100_1() {
             _super.call(this);
         }
-        var d = __define,c=Processor_100_1;p=c.prototype;
+        var d = __define,c=Processor_100_1,p=c.prototype;
         /**
          * 注册消息
          */
@@ -29,7 +29,8 @@ var game;
         };
         Processor_100_1.NAME = "Processor_100_1";
         return Processor_100_1;
-    })(puremvc.SimpleCommand);
+    }(puremvc.SimpleCommand));
     game.Processor_100_1 = Processor_100_1;
-    egret.registerClass(Processor_100_1,"game.Processor_100_1",["puremvc.ICommand","puremvc.INotifier"]);
+    egret.registerClass(Processor_100_1,'game.Processor_100_1',["puremvc.ICommand","puremvc.INotifier"]);
 })(game || (game = {}));
+//# sourceMappingURL=Processor_100_1.js.map

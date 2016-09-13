@@ -17,7 +17,6 @@ var game_file_list = [
 	"bin-debug/Main.js",
 	"bin-debug/WaitPanel.js",
 	"bin-debug/component/EButton.js",
-	"bin-debug/component/EImage.js",
 	"bin-debug/component/ETextField.js",
 	"bin-debug/config/GameConfig.js",
 	"bin-debug/config/GlobalData.js",

@@ -10,7 +10,7 @@ var game;
             this.skinName = "src/core/view/panel/ui/RoleSkin.exml";
             this.addEventListener(eui.UIEvent.COMPLETE, this.createCompleteEvent, this);
         }
-        var d = __define,c=RolePanel;p=c.prototype;
+        var d = __define,c=RolePanel,p=c.prototype;
         p.createCompleteEvent = function (event) {
             this.removeEventListener(eui.UIEvent.COMPLETE, this.createCompleteEvent, this);
             // game.AppFacade.getInstance().registerMediator( new RoleMediator(this) );
@@ -19,7 +19,8 @@ var game;
             _super.prototype.partAdded.call(this, partName, instance);
         };
         return RolePanel;
-    })(eui.Component);
+    }(eui.Component));
     game.RolePanel = RolePanel;
-    egret.registerClass(RolePanel,"game.RolePanel");
+    egret.registerClass(RolePanel,'game.RolePanel');
 })(game || (game = {}));
+//# sourceMappingURL=RolePanel.js.map

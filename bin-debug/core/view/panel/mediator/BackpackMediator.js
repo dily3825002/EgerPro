@@ -13,7 +13,7 @@ var game;
             _super.call(this, BackpackMediator.NAME, viewComponent);
             this.backpackPanel = new game.BackpackPanel();
         }
-        var d = __define,c=BackpackMediator;p=c.prototype;
+        var d = __define,c=BackpackMediator,p=c.prototype;
         p.listNotificationInterests = function () {
             return [
                 PanelNotify.OPEN_BACKPACK,
@@ -59,7 +59,8 @@ var game;
         };
         BackpackMediator.NAME = "BackpackMediator";
         return BackpackMediator;
-    })(BaseMediator);
+    }(BaseMediator));
     game.BackpackMediator = BackpackMediator;
-    egret.registerClass(BackpackMediator,"game.BackpackMediator");
+    egret.registerClass(BackpackMediator,'game.BackpackMediator');
 })(game || (game = {}));
+//# sourceMappingURL=BackpackMediator.js.map

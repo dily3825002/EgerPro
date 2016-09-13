@@ -10,7 +10,7 @@ var game;
             this.skinName = "src/core/view/panel/ui/ChuangDangSkin.exml";
             this.addEventListener(eui.UIEvent.COMPLETE, this.createCompleteEvent, this);
         }
-        var d = __define,c=ChuangDangPanel;p=c.prototype;
+        var d = __define,c=ChuangDangPanel,p=c.prototype;
         p.createCompleteEvent = function (event) {
             this.removeEventListener(eui.UIEvent.COMPLETE, this.createCompleteEvent, this);
             // game.AppFacade.getInstance().registerMediator( new RoleMediator(this) );
@@ -19,7 +19,8 @@ var game;
             _super.prototype.partAdded.call(this, partName, instance);
         };
         return ChuangDangPanel;
-    })(eui.Component);
+    }(eui.Component));
     game.ChuangDangPanel = ChuangDangPanel;
-    egret.registerClass(ChuangDangPanel,"game.ChuangDangPanel");
+    egret.registerClass(ChuangDangPanel,'game.ChuangDangPanel');
 })(game || (game = {}));
+//# sourceMappingURL=ChuangDangPanel.js.map

@@ -16,7 +16,7 @@ var BitmapBlink = (function (_super) {
             this.start();
         }
     }
-    var d = __define,c=BitmapBlink;p=c.prototype;
+    var d = __define,c=BitmapBlink,p=c.prototype;
     p.start = function () {
         this._currTime = egret.getTimer();
         this._target.addEventListener(egret.Event.ENTER_FRAME, this.runDown, this);
@@ -57,5 +57,6 @@ var BitmapBlink = (function (_super) {
         this._target = null;
     };
     return BitmapBlink;
-})(egret.EventDispatcher);
-egret.registerClass(BitmapBlink,"BitmapBlink");
+}(egret.EventDispatcher));
+egret.registerClass(BitmapBlink,'BitmapBlink');
+//# sourceMappingURL=BitmapBlink.js.map

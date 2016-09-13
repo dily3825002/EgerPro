@@ -11,14 +11,15 @@ var game;
         function StartupCommand() {
             _super.call(this);
         }
-        var d = __define,c=StartupCommand;p=c.prototype;
+        var d = __define,c=StartupCommand,p=c.prototype;
         p.initializeMacroCommand = function () {
             this.addSubCommand(game.ControllerPrepCommand);
             this.addSubCommand(game.ModelPrepCommand);
             this.addSubCommand(game.ViewPrepCommand);
         };
         return StartupCommand;
-    })(puremvc.MacroCommand);
+    }(puremvc.MacroCommand));
     game.StartupCommand = StartupCommand;
-    egret.registerClass(StartupCommand,"game.StartupCommand");
+    egret.registerClass(StartupCommand,'game.StartupCommand');
 })(game || (game = {}));
+//# sourceMappingURL=StartupCommand.js.map

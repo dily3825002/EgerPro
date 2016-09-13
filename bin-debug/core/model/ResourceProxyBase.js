@@ -13,7 +13,7 @@ var ResourceProxyBase = (function (_super) {
         this._proxyName = ""; //excel名称
         this._proxyName = proxyName;
     }
-    var d = __define,c=ResourceProxyBase;p=c.prototype;
+    var d = __define,c=ResourceProxyBase,p=c.prototype;
     /**
      * 开发状态：json可读
      * TODO
@@ -25,5 +25,6 @@ var ResourceProxyBase = (function (_super) {
         return jsonData;
     };
     return ResourceProxyBase;
-})(puremvc.Proxy);
-egret.registerClass(ResourceProxyBase,"ResourceProxyBase",["puremvc.IProxy","puremvc.INotifier"]);
+}(puremvc.Proxy));
+egret.registerClass(ResourceProxyBase,'ResourceProxyBase',["puremvc.IProxy","puremvc.INotifier"]);
+//# sourceMappingURL=ResourceProxyBase.js.map

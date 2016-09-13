@@ -15,7 +15,7 @@ var WaitPanel = (function (_super) {
         this.h = 0;
         this.createView();
     }
-    var d = __define,c=WaitPanel;p=c.prototype;
+    var d = __define,c=WaitPanel,p=c.prototype;
     p.createView = function () {
         this.w = egret.MainContext.instance.stage.stageWidth;
         this.h = egret.MainContext.instance.stage.stageHeight;
@@ -36,5 +36,6 @@ var WaitPanel = (function (_super) {
         EffectUtils.rotationEffect(this.waitImg, 1000);
     };
     return WaitPanel;
-})(egret.Sprite);
-egret.registerClass(WaitPanel,"WaitPanel");
+}(egret.Sprite));
+egret.registerClass(WaitPanel,'WaitPanel');
+//# sourceMappingURL=WaitPanel.js.map

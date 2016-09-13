@@ -11,7 +11,8 @@ var GameVO = (function () {
         */
         this.gameName = "Eger pro";
     }
-    var d = __define,c=GameVO;p=c.prototype;
+    var d = __define,c=GameVO,p=c.prototype;
     return GameVO;
-})();
-egret.registerClass(GameVO,"GameVO");
+}());
+egret.registerClass(GameVO,'GameVO');
+//# sourceMappingURL=GameVO.js.map

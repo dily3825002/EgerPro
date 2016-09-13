@@ -10,7 +10,7 @@ var game;
             this.skinName = "src/core/view/panel/ui/BackpackSkin.exml";
             this.addEventListener(eui.UIEvent.COMPLETE, this.createCompleteEvent, this);
         }
-        var d = __define,c=BackpackPanel;p=c.prototype;
+        var d = __define,c=BackpackPanel,p=c.prototype;
         p.createCompleteEvent = function (event) {
             this.removeEventListener(eui.UIEvent.COMPLETE, this.createCompleteEvent, this);
             // game.AppFacade.getInstance().registerMediator( new RoleMediator(this) );
@@ -19,7 +19,8 @@ var game;
             _super.prototype.partAdded.call(this, partName, instance);
         };
         return BackpackPanel;
-    })(eui.Component);
+    }(eui.Component));
     game.BackpackPanel = BackpackPanel;
-    egret.registerClass(BackpackPanel,"game.BackpackPanel");
+    egret.registerClass(BackpackPanel,'game.BackpackPanel');
 })(game || (game = {}));
+//# sourceMappingURL=BackpackPanel.js.map

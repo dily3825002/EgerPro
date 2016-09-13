@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////////////
 //
-//  Copyright (c) 2014-2015, Egret Technology Inc.
+//  Copyright (c) 2014-present, Egret Technology.
 //  All rights reserved.
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -28,21 +28,10 @@
 //////////////////////////////////////////////////////////////////////////////////////
 var egret;
 (function (egret) {
-    /**
-     * @language en_US
-     * @version Egret 2.4
-     * @platform Web,Native
-     */
-    /**
-     * @language zh_CN
-     * @version Egret 2.4
-     * @platform Web,Native
-     */
-    egret.ISocket;
 })(egret || (egret = {}));
 //////////////////////////////////////////////////////////////////////////////////////
 //
-//  Copyright (c) 2014-2015, Egret Technology Inc.
+//  Copyright (c) 2014-present, Egret Technology.
 //  All rights reserved.
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -79,7 +68,7 @@ var egret;
      * @event egret.ProgressEvent.SOCKET_DATA Receiving server data。
      * @event egret.Event.CLOSE Dispatched when the server closes the connection.
      * @event egret.ProgressEvent Dispatched when an IO error causes a send or load operation to fail.
-     * @see http://edn.egret.com/cn/index.php/article/index/id/164 WebSocket
+     * @see http://edn.egret.com/cn/docs/page/602 WebSocket
      * @version Egret 2.4
      * @platform Web,Native
      * @includeExample extension/socket/WebSocket.ts
@@ -93,7 +82,7 @@ var egret;
      * @event egret.ProgressEvent.SOCKET_DATA 接收服务器数据。
      * @event egret.Event.CLOSE 在服务器关闭连接时调度。
      * @event egret.IOErrorEvent.IO_ERROR 在出现输入/输出错误并导致发送或加载操作失败时调度。。
-     * @see http://edn.egret.com/cn/index.php/article/index/id/164 WebSocket
+     * @see http://edn.egret.com/cn/docs/page/602 WebSocket
      * @version Egret 2.4
      * @platform Web,Native
      * @includeExample extension/socket/WebSocket.ts
@@ -133,6 +122,10 @@ var egret;
             /**
              * @private
              */
+            this._connecting = false;
+            /**
+             * @private
+             */
             this._isReadySend = false;
             /**
              * @private
@@ -148,7 +141,7 @@ var egret;
             this.socket = new egret.ISocket();
             this.socket.addCallBacks(this.onConnect, this.onClose, this.onSocketData, this.onError, this);
         }
-        var d = __define,c=WebSocket;p=c.prototype;
+        var d = __define,c=WebSocket,p=c.prototype;
         /**
          * @language en_US
          * Connect the socket to the specified host and port number
@@ -166,14 +159,20 @@ var egret;
          * @platform Web,Native
          */
         p.connect = function (host, port) {
-            this.socket.connect(host, port);
+            if (!this._connecting && !this._connected) {
+                this._connecting = true;
+                this.socket.connect(host, port);
+            }
         };
         /**
          * 根据提供的url连接
          * @param url 全地址。如ws://echo.websocket.org:80
          */
         p.connectByUrl = function (url) {
-            this.socket.connectByUrl(url);
+            if (!this._connecting && !this._connected) {
+                this._connecting = true;
+                this.socket.connectByUrl(url);
+            }
         };
         /**
          * @language en_US
@@ -188,7 +187,9 @@ var egret;
          * @platform Web,Native
          */
         p.close = function () {
-            this.socket.close();
+            if (this._connected) {
+                this.socket.close();
+            }
         };
         /**
          * @private
@@ -196,6 +197,7 @@ var egret;
          */
         p.onConnect = function () {
             this._connected = true;
+            this._connecting = false;
             this.dispatchEventWith(egret.Event.CONNECT);
         };
         /**
@@ -211,6 +213,9 @@ var egret;
          *
          */
         p.onError = function () {
+            if (this._connecting) {
+                this._connecting = false;
+            }
             this.dispatchEventWith(egret.IOErrorEvent.IO_ERROR);
         };
         /**
@@ -282,12 +287,12 @@ var egret;
                 this._writeMessage += message;
             }
             this.flush();
-            return;
-            if (this._isReadySend) {
-                return;
-            }
-            this._isReadySend = true;
-            egret.callLater(this.flush, this);
+            // return;
+            // if (this._isReadySend) {
+            //     return;
+            // }
+            // this._isReadySend = true;
+            // egret.callLater(this.flush, this);
         };
         /**
          * @language en_US
@@ -450,13 +455,13 @@ var egret;
          */
         WebSocket.TYPE_BINARY = "webSocketTypeBinary";
         return WebSocket;
-    })(egret.EventDispatcher);
+    }(egret.EventDispatcher));
     egret.WebSocket = WebSocket;
-    egret.registerClass(WebSocket,"egret.WebSocket");
+    egret.registerClass(WebSocket,'egret.WebSocket');
 })(egret || (egret = {}));
 //////////////////////////////////////////////////////////////////////////////////////
 //
-//  Copyright (c) 2014-2015, Egret Technology Inc.
+//  Copyright (c) 2014-present, Egret Technology.
 //  All rights reserved.
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -494,7 +499,7 @@ var egret;
                 this.host = "";
                 this.port = 0;
             }
-            var d = __define,c=NativeSocket;p=c.prototype;
+            var d = __define,c=NativeSocket,p=c.prototype;
             p.addCallBacks = function (onConnect, onClose, onSocketData, onError, thisObject) {
                 this.onConnect = onConnect;
                 this.onClose = onClose;
@@ -544,9 +549,9 @@ var egret;
                 this.socket.close();
             };
             return NativeSocket;
-        })();
+        }());
         native.NativeSocket = NativeSocket;
-        egret.registerClass(NativeSocket,"egret.native.NativeSocket",["egret.ISocket"]);
+        egret.registerClass(NativeSocket,'egret.native.NativeSocket',["egret.ISocket"]);
         if (egret.Capabilities.runtimeType == egret.RuntimeType.NATIVE) {
             egret.ISocket = NativeSocket;
         }
@@ -554,7 +559,7 @@ var egret;
 })(egret || (egret = {}));
 //////////////////////////////////////////////////////////////////////////////////////
 //
-//  Copyright (c) 2014-2015, Egret Technology Inc.
+//  Copyright (c) 2014-present, Egret Technology.
 //  All rights reserved.
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -595,7 +600,7 @@ var egret;
                     egret.$error(3100);
                 }
             }
-            var d = __define,c=HTML5WebSocket;p=c.prototype;
+            var d = __define,c=HTML5WebSocket,p=c.prototype;
             p.addCallBacks = function (onConnect, onClose, onSocketData, onError, thisObject) {
                 this.onConnect = onConnect;
                 this.onClose = onClose;
@@ -647,9 +652,9 @@ var egret;
                 this.socket.close();
             };
             return HTML5WebSocket;
-        })();
+        }());
         web.HTML5WebSocket = HTML5WebSocket;
-        egret.registerClass(HTML5WebSocket,"egret.web.HTML5WebSocket",["egret.ISocket"]);
+        egret.registerClass(HTML5WebSocket,'egret.web.HTML5WebSocket',["egret.ISocket"]);
         if (egret.Capabilities.runtimeType == egret.RuntimeType.WEB) {
             egret.ISocket = HTML5WebSocket;
         }

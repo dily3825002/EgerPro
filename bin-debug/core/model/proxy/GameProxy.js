@@ -12,7 +12,7 @@ var GameProxy = (function (_super) {
         _super.call(this, GameProxy.NAME);
         this.vo = new GameVO();
     }
-    var d = __define,c=GameProxy;p=c.prototype;
+    var d = __define,c=GameProxy,p=c.prototype;
     /**
      * 获取游戏名称
      */
@@ -33,5 +33,6 @@ var GameProxy = (function (_super) {
     };
     GameProxy.NAME = "GameProxy"; //必须和excel导出文件一致
     return GameProxy;
-})(ResourceProxyBase);
-egret.registerClass(GameProxy,"GameProxy");
+}(ResourceProxyBase));
+egret.registerClass(GameProxy,'GameProxy');
+//# sourceMappingURL=GameProxy.js.map

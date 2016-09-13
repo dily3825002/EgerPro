@@ -3,7 +3,7 @@ var Main = (function (_super) {
     function Main() {
         _super.apply(this, arguments);
     }
-    var d = __define,c=Main;p=c.prototype;
+    var d = __define,c=Main,p=c.prototype;
     p.createChildren = function () {
         _super.prototype.createChildren.call(this);
         //inject the custom material parser
@@ -62,5 +62,6 @@ var Main = (function (_super) {
         game.AppFacade.getInstance().sendNotification(MainNotify.OPEN_MAIN);
     };
     return Main;
-})(eui.UILayer);
-egret.registerClass(Main,"Main");
+}(eui.UILayer));
+egret.registerClass(Main,'Main');
+//# sourceMappingURL=Main.js.map

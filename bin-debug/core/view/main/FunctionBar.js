@@ -9,9 +9,10 @@ var game;
             _super.call(this);
             this.skinName = "src/core/view/main/FunctionBarSkin.exml";
         }
-        var d = __define,c=FunctionBar;p=c.prototype;
+        var d = __define,c=FunctionBar,p=c.prototype;
         return FunctionBar;
-    })(eui.Component);
+    }(eui.Component));
     game.FunctionBar = FunctionBar;
-    egret.registerClass(FunctionBar,"game.FunctionBar");
+    egret.registerClass(FunctionBar,'game.FunctionBar');
 })(game || (game = {}));
+//# sourceMappingURL=FunctionBar.js.map

@@ -13,7 +13,7 @@ var game;
             _super.call(this, RoleMediator.NAME, viewComponent);
             this.rolePanel = new game.RolePanel();
         }
-        var d = __define,c=RoleMediator;p=c.prototype;
+        var d = __define,c=RoleMediator,p=c.prototype;
         p.listNotificationInterests = function () {
             return [
                 PanelNotify.OPEN_ROLE,
@@ -49,14 +49,16 @@ var game;
         p.readExcelButtonClick = function (event) {
             //下面是测试excel读取
             var dataProxy = P.getTemplateDataProxy().getGameData();
-            this.rolePanel.showText.text += dataProxy[this.rolePanel.input1.text][this.rolePanel.input2.text] + "\n";
+            this.rolePanel.showText.text +=
+                dataProxy[this.rolePanel.input1.text][this.rolePanel.input2.text] + "\n";
         };
         p.closeButtonClick = function (event) {
             this.closePanel(1);
         };
         RoleMediator.NAME = "RoleMediator";
         return RoleMediator;
-    })(BaseMediator);
+    }(BaseMediator));
     game.RoleMediator = RoleMediator;
-    egret.registerClass(RoleMediator,"game.RoleMediator");
+    egret.registerClass(RoleMediator,'game.RoleMediator');
 })(game || (game = {}));
+//# sourceMappingURL=RoleMediator.js.map

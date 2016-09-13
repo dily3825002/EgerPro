@@ -27,7 +27,7 @@
 var AssetAdapter = (function () {
     function AssetAdapter() {
     }
-    var d = __define,c=AssetAdapter;p=c.prototype;
+    var d = __define,c=AssetAdapter,p=c.prototype;
     p.getAsset = function (source, callBack, thisObject) {
         function onGetRes(data) {
             callBack.call(thisObject, data, source);
@@ -48,5 +48,6 @@ var AssetAdapter = (function () {
         }
     };
     return AssetAdapter;
-})();
-egret.registerClass(AssetAdapter,"AssetAdapter",["eui.IAssetAdapter"]);
+}());
+egret.registerClass(AssetAdapter,'AssetAdapter',["eui.IAssetAdapter"]);
+//# sourceMappingURL=AssetAdapter.js.map

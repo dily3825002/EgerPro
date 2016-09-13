@@ -7,9 +7,10 @@
 var UserInfoNotify = (function () {
     function UserInfoNotify() {
     }
-    var d = __define,c=UserInfoNotify;p=c.prototype;
+    var d = __define,c=UserInfoNotify,p=c.prototype;
     //打开角色
     UserInfoNotify.UPDATE_DATA = "UPDATE_DATA";
     return UserInfoNotify;
-})();
-egret.registerClass(UserInfoNotify,"UserInfoNotify");
+}());
+egret.registerClass(UserInfoNotify,'UserInfoNotify');
+//# sourceMappingURL=UserInfoNotify.js.map

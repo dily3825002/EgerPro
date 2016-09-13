@@ -7,7 +7,7 @@
 var PanelNotify = (function () {
     function PanelNotify() {
     }
-    var d = __define,c=PanelNotify;p=c.prototype;
+    var d = __define,c=PanelNotify,p=c.prototype;
     //打开角色
     PanelNotify.OPEN_ROLE = "PANELNOTIFY_OPEN_ROLE";
     //关闭角色
@@ -41,5 +41,6 @@ var PanelNotify = (function () {
     //关闭地图
     PanelNotify.CLOSE_MAP = "PANELNOTIFY_CLOSE_MAP";
     return PanelNotify;
-})();
-egret.registerClass(PanelNotify,"PanelNotify");
+}());
+egret.registerClass(PanelNotify,'PanelNotify');
+//# sourceMappingURL=PanelNotify.js.map

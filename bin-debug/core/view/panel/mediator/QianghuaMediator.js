@@ -13,7 +13,7 @@ var game;
             _super.call(this, QianghuaMediator.NAME, viewComponent);
             this.qinghuaPanel = new game.QianghuaPanel();
         }
-        var d = __define,c=QianghuaMediator;p=c.prototype;
+        var d = __define,c=QianghuaMediator,p=c.prototype;
         p.listNotificationInterests = function () {
             return [
                 PanelNotify.OPEN_QIANGHUA,
@@ -68,7 +68,8 @@ var game;
         };
         QianghuaMediator.NAME = "QianghuaMediator";
         return QianghuaMediator;
-    })(BaseMediator);
+    }(BaseMediator));
     game.QianghuaMediator = QianghuaMediator;
-    egret.registerClass(QianghuaMediator,"game.QianghuaMediator");
+    egret.registerClass(QianghuaMediator,'game.QianghuaMediator');
 })(game || (game = {}));
+//# sourceMappingURL=QianghuaMediator.js.map

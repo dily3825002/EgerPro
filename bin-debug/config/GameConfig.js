@@ -115,8 +115,6 @@ var GameConfig;
         return egret.MainContext.instance.stage;
     }
     GameConfig.curStage = curStage;
-    //当前面板
-    GameConfig.curPanel;
     //当前游戏宽度
     function curWidth() {
         return egret.MainContext.instance.stage.stageWidth;
@@ -128,3 +126,4 @@ var GameConfig;
     }
     GameConfig.curHeight = curHeight;
 })(GameConfig || (GameConfig = {}));
+//# sourceMappingURL=GameConfig.js.map

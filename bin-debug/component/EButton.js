@@ -30,7 +30,7 @@ var EButton = (function (_super) {
         this.param.context = context;
         this.init(imgName, backFun, descStr, fontSize, cartoonType, assetsName);
     }
-    var d = __define,c=EButton;p=c.prototype;
+    var d = __define,c=EButton,p=c.prototype;
     p.init = function (imgName, backFun, descStr, fontSize, cartoonType, assetsName) {
         if (backFun === void 0) { backFun = null; }
         if (descStr === void 0) { descStr = ""; }
@@ -103,5 +103,6 @@ var EButton = (function (_super) {
         return this.btnImg;
     };
     return EButton;
-})(egret.DisplayObjectContainer);
-egret.registerClass(EButton,"EButton");
+}(egret.DisplayObjectContainer));
+egret.registerClass(EButton,'EButton');
+//# sourceMappingURL=EButton.js.map

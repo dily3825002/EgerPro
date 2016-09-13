@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////////////
 //
-//  Copyright (c) 2014-2015, Egret Technology Inc.
+//  Copyright (c) 2014-present, Egret Technology.
 //  All rights reserved.
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -44,7 +44,7 @@ var egret;
             function HTML5NetContext() {
                 _super.call(this);
             }
-            var d = __define,c=HTML5NetContext;p=c.prototype;
+            var d = __define,c=HTML5NetContext,p=c.prototype;
             /**
              * @private
              *
@@ -108,6 +108,12 @@ var egret;
                         case egret.URLLoaderDataFormat.VARIABLES:
                             loader.data = new egret.URLVariables(httpLoader.response);
                             break;
+                        //case URLLoaderDataFormat.TEXT:
+                        //    loader.data = httpLoader.response;
+                        //    break;
+                        //case URLLoaderDataFormat.BINARY:
+                        //    loader.data = httpLoader.response;
+                        //    break;
                         default:
                             loader.data = httpLoader.response;
                             break;
@@ -194,7 +200,7 @@ var egret;
                 function onLoadComplete(e) {
                     removeListeners();
                     var bitmapData = imageLoader.data;
-                    bitmapData.setAttribute("bitmapSrc", virtualUrl);
+                    bitmapData.source.setAttribute("bitmapSrc", virtualUrl);
                     var texture = new egret.Texture();
                     texture._setBitmapData(bitmapData);
                     loader.data = texture;
@@ -232,9 +238,9 @@ var egret;
                 return HTML5NetContext._instance;
             };
             return HTML5NetContext;
-        })(egret.HashObject);
+        }(egret.HashObject));
         web.HTML5NetContext = HTML5NetContext;
-        egret.registerClass(HTML5NetContext,"egret.web.HTML5NetContext",["egret.NetContext"]);
+        egret.registerClass(HTML5NetContext,'egret.web.HTML5NetContext',["egret.NetContext"]);
         egret.NetContext = HTML5NetContext;
     })(web = egret.web || (egret.web = {}));
 })(egret || (egret = {}));

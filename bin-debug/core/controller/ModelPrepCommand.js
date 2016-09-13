@@ -11,7 +11,7 @@ var game;
         function ModelPrepCommand() {
             _super.call(this);
         }
-        var d = __define,c=ModelPrepCommand;p=c.prototype;
+        var d = __define,c=ModelPrepCommand,p=c.prototype;
         p.execute = function (notification) {
             //excel数据
             this.facade.registerProxy(new TemplateProxy());
@@ -19,7 +19,8 @@ var game;
             this.facade.registerProxy(new GameProxy());
         };
         return ModelPrepCommand;
-    })(puremvc.SimpleCommand);
+    }(puremvc.SimpleCommand));
     game.ModelPrepCommand = ModelPrepCommand;
-    egret.registerClass(ModelPrepCommand,"game.ModelPrepCommand",["puremvc.ICommand","puremvc.INotifier"]);
+    egret.registerClass(ModelPrepCommand,'game.ModelPrepCommand',["puremvc.ICommand","puremvc.INotifier"]);
 })(game || (game = {}));
+//# sourceMappingURL=ModelPrepCommand.js.map

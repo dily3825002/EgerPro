@@ -26,7 +26,7 @@ var GameLayerManager = (function (_super) {
         this.loadLayer = new eui.UILayer();
         this.init();
     }
-    var d = __define,c=GameLayerManager;p=c.prototype;
+    var d = __define,c=GameLayerManager,p=c.prototype;
     //游戏容器管理器单例
     GameLayerManager.gameLayer = function () {
         if (!this._instance)
@@ -50,5 +50,6 @@ var GameLayerManager = (function (_super) {
         this.addChild(this.loadLayer);
     };
     return GameLayerManager;
-})(eui.UILayer);
-egret.registerClass(GameLayerManager,"GameLayerManager");
+}(eui.UILayer));
+egret.registerClass(GameLayerManager,'GameLayerManager');
+//# sourceMappingURL=GameLayerManager.js.map

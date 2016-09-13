@@ -13,7 +13,7 @@ var game;
             _super.call(this, MapMediator.NAME, viewComponent);
             this.mapPanel = new game.MapPanel();
         }
-        var d = __define,c=MapMediator;p=c.prototype;
+        var d = __define,c=MapMediator,p=c.prototype;
         p.listNotificationInterests = function () {
             return [
                 PanelNotify.OPEN_MAP,
@@ -81,7 +81,8 @@ var game;
         };
         MapMediator.NAME = "MapMediator";
         return MapMediator;
-    })(BaseMediator);
+    }(BaseMediator));
     game.MapMediator = MapMediator;
-    egret.registerClass(MapMediator,"game.MapMediator");
+    egret.registerClass(MapMediator,'game.MapMediator');
 })(game || (game = {}));
+//# sourceMappingURL=MapMediator.js.map

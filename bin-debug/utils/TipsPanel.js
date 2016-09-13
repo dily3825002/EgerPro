@@ -18,7 +18,7 @@ var TipsPanel = (function (_super) {
         this.descStr = descStr;
         this.initUI();
     }
-    var d = __define,c=TipsPanel;p=c.prototype;
+    var d = __define,c=TipsPanel,p=c.prototype;
     // 初始化面板
     p.initUI = function () {
         this.bg = new egret.Bitmap();
@@ -50,5 +50,6 @@ var TipsPanel = (function (_super) {
         return this.bg.width;
     };
     return TipsPanel;
-})(eui.Component);
-egret.registerClass(TipsPanel,"TipsPanel");
+}(eui.Component));
+egret.registerClass(TipsPanel,'TipsPanel');
+//# sourceMappingURL=TipsPanel.js.map

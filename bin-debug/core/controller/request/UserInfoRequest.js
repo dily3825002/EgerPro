@@ -20,3 +20,4 @@ var UserInfoRequest;
     }
     UserInfoRequest.sendUserInfo = sendUserInfo;
 })(UserInfoRequest || (UserInfoRequest = {}));
+//# sourceMappingURL=UserInfoRequest.js.map

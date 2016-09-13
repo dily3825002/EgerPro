@@ -10,7 +10,7 @@ var ETextField = (function (_super) {
     function ETextField() {
         _super.call(this);
     }
-    var d = __define,c=ETextField;p=c.prototype;
+    var d = __define,c=ETextField,p=c.prototype;
     //demo
     //"haa<font size='60' color='0x2bff00' i='true' b='false'>aaaa</font>aaaaaa<i>aaaa</i>aaaaaaaa"
     p.setText = function (str) {
@@ -19,5 +19,6 @@ var ETextField = (function (_super) {
         this.textFlow = styleParser.parser(str);
     };
     return ETextField;
-})(egret.TextField);
-egret.registerClass(ETextField,"ETextField");
+}(egret.TextField));
+egret.registerClass(ETextField,'ETextField');
+//# sourceMappingURL=ETextField.js.map

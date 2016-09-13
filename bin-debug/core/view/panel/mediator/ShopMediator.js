@@ -23,7 +23,7 @@ var game;
             this.isPlay9 = false;
             this.isPlay10 = false;
         }
-        var d = __define,c=ShopMediator;p=c.prototype;
+        var d = __define,c=ShopMediator,p=c.prototype;
         p.listNotificationInterests = function () {
             return [
                 PanelNotify.OPEN_SHOP,
@@ -144,7 +144,8 @@ var game;
         };
         ShopMediator.NAME = "ShopMediator";
         return ShopMediator;
-    })(BaseMediator);
+    }(BaseMediator));
     game.ShopMediator = ShopMediator;
-    egret.registerClass(ShopMediator,"game.ShopMediator");
+    egret.registerClass(ShopMediator,'game.ShopMediator');
 })(game || (game = {}));
+//# sourceMappingURL=ShopMediator.js.map

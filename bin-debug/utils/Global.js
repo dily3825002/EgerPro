@@ -7,8 +7,6 @@
   */
 var Global;
 (function (Global) {
-    //等待界面，主要用在通讯等待展示
-    Global.waitPanel;
     //显示等待界面
     function showWaritPanel() {
         Global.waitPanel = new WaitPanel(1);
@@ -29,7 +27,6 @@ var Global;
         return styleParser.parser(str);
     }
     Global.getTextFlow = getTextFlow;
-    Global.message;
     function getMessage(str) {
         if (Global.message == null) {
             //初始化template_proto
@@ -89,3 +86,4 @@ var Global;
     }
     Global.getNumber = getNumber;
 })(Global || (Global = {}));
+//# sourceMappingURL=Global.js.map

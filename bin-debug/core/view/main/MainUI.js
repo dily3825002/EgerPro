@@ -36,7 +36,7 @@ var game;
             this.functionBar.shopBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onShopBtnClick, this);
             this.functionBar.mapBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onMapBtnClick, this);
         }
-        var d = __define,c=MainUI;p=c.prototype;
+        var d = __define,c=MainUI,p=c.prototype;
         p.onMainBtnClick = function (e) {
             if (this.isHide) {
                 this.isHide = !this.isHide;
@@ -74,7 +74,8 @@ var game;
             _super.prototype.partAdded.call(this, partName, instance);
         };
         return MainUI;
-    })(eui.Component);
+    }(eui.Component));
     game.MainUI = MainUI;
-    egret.registerClass(MainUI,"game.MainUI");
+    egret.registerClass(MainUI,'game.MainUI');
 })(game || (game = {}));
+//# sourceMappingURL=MainUI.js.map

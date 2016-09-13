@@ -14,7 +14,7 @@ var EImage = (function (_super) {
             this.load(url);
         }
     }
-    var d = __define,c=EImage;p=c.prototype;
+    var d = __define,c=EImage,p=c.prototype;
     d(p, "src"
         ,function () {
             return this._src;
@@ -114,5 +114,6 @@ var EImage = (function (_super) {
         return bmp;
     };
     return EImage;
-})(egret.Bitmap);
-egret.registerClass(EImage,"EImage");
+}(egret.Bitmap));
+egret.registerClass(EImage,'EImage');
+//# sourceMappingURL=EImage.js.map

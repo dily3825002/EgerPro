@@ -11,7 +11,7 @@ var game;
         function ControllerPrepCommand() {
             _super.call(this);
         }
-        var d = __define,c=ControllerPrepCommand;p=c.prototype;
+        var d = __define,c=ControllerPrepCommand,p=c.prototype;
         p.execute = function (notification) {
             (new game.SceneManager()).register();
             (new game.MainManager()).register();
@@ -19,7 +19,8 @@ var game;
             (new game.Processor_100_1()).register();
         };
         return ControllerPrepCommand;
-    })(puremvc.SimpleCommand);
+    }(puremvc.SimpleCommand));
     game.ControllerPrepCommand = ControllerPrepCommand;
-    egret.registerClass(ControllerPrepCommand,"game.ControllerPrepCommand",["puremvc.ICommand","puremvc.INotifier"]);
+    egret.registerClass(ControllerPrepCommand,'game.ControllerPrepCommand',["puremvc.ICommand","puremvc.INotifier"]);
 })(game || (game = {}));
+//# sourceMappingURL=ControllerPrepCommand.js.map

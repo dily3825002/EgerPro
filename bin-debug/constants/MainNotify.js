@@ -8,7 +8,7 @@
 var MainNotify = (function () {
     function MainNotify() {
     }
-    var d = __define,c=MainNotify;p=c.prototype;
+    var d = __define,c=MainNotify,p=c.prototype;
     //打开主界面UI
     MainNotify.OPEN_MAIN = "MainNotify_OPEN_MAIN";
     //关闭主界面UI
@@ -26,5 +26,6 @@ var MainNotify = (function () {
     //关闭活动UI
     MainNotify.CLOSE_ACTIVITY = "MainNotify_CLOSE_ACTIVITY";
     return MainNotify;
-})();
-egret.registerClass(MainNotify,"MainNotify");
+}());
+egret.registerClass(MainNotify,'MainNotify');
+//# sourceMappingURL=MainNotify.js.map

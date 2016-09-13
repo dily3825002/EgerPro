@@ -13,7 +13,7 @@ var game;
             _super.call(this, ChuangDangMediator.NAME, viewComponent);
             this.chuangDangPanel = new game.ChuangDangPanel();
         }
-        var d = __define,c=ChuangDangMediator;p=c.prototype;
+        var d = __define,c=ChuangDangMediator,p=c.prototype;
         p.listNotificationInterests = function () {
             return [
                 PanelNotify.OPEN_CHUANGDANG,
@@ -57,7 +57,8 @@ var game;
         };
         ChuangDangMediator.NAME = "ChuangDangMediator";
         return ChuangDangMediator;
-    })(BaseMediator);
+    }(BaseMediator));
     game.ChuangDangMediator = ChuangDangMediator;
-    egret.registerClass(ChuangDangMediator,"game.ChuangDangMediator");
+    egret.registerClass(ChuangDangMediator,'game.ChuangDangMediator');
 })(game || (game = {}));
+//# sourceMappingURL=ChuangDangMediator.js.map
