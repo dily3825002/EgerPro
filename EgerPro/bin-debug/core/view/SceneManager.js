@@ -21,8 +21,11 @@ var game;
         function SceneManager() {
             return _super.call(this) || this;
         }
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/SceneManager.js
 <<<<<<< HEAD:bin-debug/core/view/SceneManager.js
         var d = __define,c=SceneManager,p=c.prototype;
+=======
+>>>>>>> dev:EgerPro/bin-debug/core/view/SceneManager.js
 =======
 >>>>>>> dev:EgerPro/bin-debug/core/view/SceneManager.js
         /**
@@ -54,9 +57,15 @@ var game;
         };
         return SceneManager;
     }(puremvc.SimpleCommand));
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/SceneManager.js
 <<<<<<< HEAD:bin-debug/core/view/SceneManager.js
     game.SceneManager = SceneManager;
     egret.registerClass(SceneManager,'game.SceneManager',["puremvc.ICommand","puremvc.INotifier"]);
+=======
+    SceneManager.NAME = "SceneManager";
+    game.SceneManager = SceneManager;
+    __reflect(SceneManager.prototype, "game.SceneManager", ["puremvc.ICommand", "puremvc.INotifier"]);
+>>>>>>> dev:EgerPro/bin-debug/core/view/SceneManager.js
 =======
     SceneManager.NAME = "SceneManager";
     game.SceneManager = SceneManager;

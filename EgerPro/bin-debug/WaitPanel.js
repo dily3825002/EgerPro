@@ -24,9 +24,13 @@ var WaitPanel = (function (_super) {
         _this.createView();
         return _this;
     }
+<<<<<<< HEAD:EgerPro/bin-debug/WaitPanel.js
 <<<<<<< HEAD:bin-debug/WaitPanel.js
     var d = __define,c=WaitPanel,p=c.prototype;
     p.createView = function () {
+=======
+    WaitPanel.prototype.createView = function () {
+>>>>>>> dev:EgerPro/bin-debug/WaitPanel.js
 =======
     WaitPanel.prototype.createView = function () {
 >>>>>>> dev:EgerPro/bin-debug/WaitPanel.js
@@ -50,8 +54,12 @@ var WaitPanel = (function (_super) {
     };
     return WaitPanel;
 }(egret.Sprite));
+<<<<<<< HEAD:EgerPro/bin-debug/WaitPanel.js
 <<<<<<< HEAD:bin-debug/WaitPanel.js
 egret.registerClass(WaitPanel,'WaitPanel');
+=======
+__reflect(WaitPanel.prototype, "WaitPanel");
+>>>>>>> dev:EgerPro/bin-debug/WaitPanel.js
 =======
 __reflect(WaitPanel.prototype, "WaitPanel");
 >>>>>>> dev:EgerPro/bin-debug/WaitPanel.js

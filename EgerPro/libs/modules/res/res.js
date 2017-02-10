@@ -9,8 +9,11 @@ var __extends = (this && this.__extends) || function (d, b) {
 //////////////////////////////////////////////////////////////////////////////////////
 //
 //  Copyright (c) 2014-present, Egret Technology.
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 //  All rights reserved.
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -254,6 +257,9 @@ var RES;
 //////////////////////////////////////////////////////////////////////////////////////
 //
 //  Copyright (c) 2014-present, Egret Technology.
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
 //  All rights reserved.
 //  Redistribution and use in source and binary forms, with or without
@@ -302,7 +308,11 @@ var RES;
          * @param type Type of resource term.
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
+=======
+         * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
          * @language en_US
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -314,7 +324,11 @@ var RES;
          * @param type 加载项文件类型。
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
+=======
+         * @language zh_CN
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
          * @language zh_CN
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -324,7 +338,11 @@ var RES;
              * Name of the resource term group.
              * @version Egret 2.4
              * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
+=======
+             * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
              * @language en_US
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -333,7 +351,11 @@ var RES;
              * 资源所属的组名。
              * @version Egret 2.4
              * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
+=======
+             * @language zh_CN
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
              * @language zh_CN
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -343,7 +365,11 @@ var RES;
              * The raw data object to be referenced.
              * @version Egret 2.4
              * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
+=======
+             * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
              * @language en_US
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -352,7 +378,11 @@ var RES;
              * 被引用的原始数据对象。
              * @version Egret 2.4
              * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
+=======
+             * @language zh_CN
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
              * @language zh_CN
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -363,9 +393,13 @@ var RES;
             this.url = url;
             this.type = type;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         var d = __define,c=ResourceItem,p=c.prototype;
         d(p, "loaded"
+=======
+        Object.defineProperty(ResourceItem.prototype, "loaded", {
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
         Object.defineProperty(ResourceItem.prototype, "loaded", {
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -373,7 +407,11 @@ var RES;
              * Load complete flag.
              * @version Egret 2.4
              * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
+=======
+             * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
              * @language en_US
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -382,7 +420,11 @@ var RES;
              * 加载完成的标志。
              * @version Egret 2.4
              * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
+=======
+             * @language zh_CN
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
              * @language zh_CN
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -402,7 +444,11 @@ var RES;
          * Turn into a string.
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
+=======
+         * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
          * @language en_US
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -411,7 +457,11 @@ var RES;
          * 转成字符串。
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
+=======
+         * @language zh_CN
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
          * @language zh_CN
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -419,6 +469,7 @@ var RES;
         ResourceItem.prototype.toString = function () {
             return "[ResourceItem name=\"" + this.name + "\" url=\"" + this.url + "\" type=\"" + this.type + "\"]";
         };
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         /**
          * @language en_US
@@ -1078,6 +1129,10 @@ var RES;
         return ResourceItem;
     }());
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
+        return ResourceItem;
+    }());
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
     /**
      * XML file.
      * @version Egret 2.4
@@ -1093,6 +1148,7 @@ var RES;
     ResourceItem.TYPE_XML = "xml";
     /**
      * Picture file.
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
      * @version Egret 2.4
      * @platform Web,Native
      * @language en_US
@@ -1140,6 +1196,55 @@ var RES;
      * JSON 文件。
      * @version Egret 2.4
      * @platform Web,Native
+=======
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language en_US
+     */
+    /**
+     * 图片文件。
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language zh_CN
+     */
+    ResourceItem.TYPE_IMAGE = "image";
+    /**
+     * Binary file.
+     * @version Egret 2.4
+     * @platform Web
+     * @language en_US
+     */
+    /**
+     * 二进制文件。
+     * @version Egret 2.4
+     * @platform Web
+     * @language zh_CN
+     */
+    ResourceItem.TYPE_BIN = "bin";
+    /**
+     * Text file.
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language en_US
+     */
+    /**
+     * 文本文件。
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language zh_CN
+     */
+    ResourceItem.TYPE_TEXT = "text";
+    /**
+     * JSON file.
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language en_US
+     */
+    /**
+     * JSON 文件。
+     * @version Egret 2.4
+     * @platform Web,Native
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
      * @language zh_CN
      */
     ResourceItem.TYPE_JSON = "json";
@@ -1149,6 +1254,7 @@ var RES;
      * @platform Web,Native
      * @language en_US
      */
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
     var ResourceEvent = (function (_super) {
         __extends(ResourceEvent, _super);
@@ -1370,12 +1476,15 @@ var RES;
 (function (RES) {
 =======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
     /**
      * SpriteSheet 文件。
      * @version Egret 2.4
      * @platform Web,Native
      * @language zh_CN
      */
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
     var AnalyzerBase = (function (_super) {
         __extends(AnalyzerBase, _super);
@@ -1507,6 +1616,38 @@ var RES;
     RES.ResourceItem = ResourceItem;
     __reflect(ResourceItem.prototype, "RES.ResourceItem");
 })(RES || (RES = {}));
+=======
+    ResourceItem.TYPE_SHEET = "sheet";
+    /**
+     * BitmapTextSpriteSheet file.
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language en_US
+     */
+    /**
+     * BitmapTextSpriteSheet 文件。
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language zh_CN
+     */
+    ResourceItem.TYPE_FONT = "font";
+    /**
+     * Sound file.
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language en_US
+     */
+    /**
+     * 声音文件。
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language zh_CN
+     */
+    ResourceItem.TYPE_SOUND = "sound";
+    RES.ResourceItem = ResourceItem;
+    __reflect(ResourceItem.prototype, "RES.ResourceItem");
+})(RES || (RES = {}));
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 ////////////////////////////////////////////////////////////////////////////////////////
 ////
 ////  Copyright (c) 2014-present, Egret Technology.
@@ -1535,6 +1676,9 @@ var RES;
 ////  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ////
 ////////////////////////////////////////////////////////////////////////////////////////
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
 var RES;
 (function (RES) {
@@ -1555,6 +1699,7 @@ var RES;
             _this._dataFormat = egret.HttpResponseType.TEXT;
             return _this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         var d = __define,c=BinAnalyzer,p=c.prototype;
         /**
@@ -1565,10 +1710,15 @@ var RES;
                 compFunc.call(thisObject, resItem);
                 return;
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
         SheetAnalyzer.prototype.getRes = function (name) {
             var res = this.fileDic[name];
             if (!res) {
                 res = this.textureMap[name];
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
             }
             if (!res) {
@@ -1620,14 +1770,18 @@ var RES;
          */
         SheetAnalyzer.prototype.analyzeConfig = function (resItem, data) {
             var name = resItem.name;
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
             if (this.fileDic[name] || (data != "" && !data)) {
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
             var config;
             var imageUrl = "";
             try {
                 var str = data;
                 config = JSON.parse(str);
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
             }
             catch (e) {
                 egret.$warn(1017, resItem.url, data);
@@ -1696,6 +1850,75 @@ var RES;
             }
             return spriteSheet;
         };
+=======
+            }
+            catch (e) {
+                egret.$warn(1017, resItem.url, data);
+            }
+            if (config) {
+                this.sheetMap[name] = config;
+                imageUrl = this.getRelativePath(resItem.url, config["file"]);
+            }
+            return imageUrl;
+        };
+        /**
+         * 解析并缓存加载成功的位图数据
+         */
+        SheetAnalyzer.prototype.analyzeBitmap = function (resItem, texture) {
+            var name = resItem.name;
+            if (this.fileDic[name] || !texture) {
+                return;
+            }
+            var config = this.sheetMap[name];
+            delete this.sheetMap[name];
+            var targetName = resItem.data && resItem.data.subkeys ? "" : name;
+            var spriteSheet = this.parseSpriteSheet(texture, config, targetName);
+            this.fileDic[name] = spriteSheet;
+        };
+        /**
+         * 获取相对位置
+         */
+        SheetAnalyzer.prototype.getRelativePath = function (url, file) {
+            url = url.split("\\").join("/");
+            var params = url.match(/#.*|\?.*/);
+            var paramUrl = "";
+            if (params) {
+                paramUrl = params[0];
+            }
+            var index = url.lastIndexOf("/");
+            if (index != -1) {
+                url = url.substring(0, index + 1) + file;
+            }
+            else {
+                url = file;
+            }
+            return url + paramUrl;
+        };
+        SheetAnalyzer.prototype.parseSpriteSheet = function (texture, data, name) {
+            var frames = data.frames;
+            if (!frames) {
+                return null;
+            }
+            var spriteSheet = new egret.SpriteSheet(texture);
+            var textureMap = this.textureMap;
+            for (var subkey in frames) {
+                var config = frames[subkey];
+                var texture_1 = spriteSheet.createTexture(subkey, config.x, config.y, config.w, config.h, config.offX, config.offY, config.sourceW, config.sourceH);
+                if (config["scale9grid"]) {
+                    var str = config["scale9grid"];
+                    var list = str.split(",");
+                    texture_1["scale9Grid"] = new egret.Rectangle(parseInt(list[0]), parseInt(list[1]), parseInt(list[2]), parseInt(list[3]));
+                }
+                if (textureMap[subkey] == null) {
+                    textureMap[subkey] = texture_1;
+                    if (name) {
+                        this.addSubkey(subkey, name);
+                    }
+                }
+            }
+            return spriteSheet;
+        };
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
         SheetAnalyzer.prototype.destroyRes = function (name) {
             var sheet = this.fileDic[name];
             if (sheet) {
@@ -1721,12 +1944,15 @@ var RES;
             this.resItemDic[loader.hashCode] = data;
             loader.load(RES.$getVirtualUrl(url));
         };
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         return BinAnalyzer;
     }(RES.AnalyzerBase));
     RES.BinAnalyzer = BinAnalyzer;
     egret.registerClass(BinAnalyzer,'RES.BinAnalyzer');
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
         SheetAnalyzer.prototype.getImageLoader = function () {
             var loader = this.recyclerIamge.pop();
             if (!loader) {
@@ -1776,6 +2002,9 @@ var RES;
 //////////////////////////////////////////////////////////////////////////////////////
 var RES;
 (function (RES) {
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
 })(RES || (RES = {}));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -1832,8 +2061,11 @@ var RES;
             _this.recycler = [];
             return _this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         var d = __define,c=ImageAnalyzer,p=c.prototype;
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
         /**
@@ -1924,8 +2156,12 @@ var RES;
         return ImageAnalyzer;
     }(RES.AnalyzerBase));
     RES.ImageAnalyzer = ImageAnalyzer;
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
     egret.registerClass(ImageAnalyzer,'RES.ImageAnalyzer');
+=======
+    __reflect(ImageAnalyzer.prototype, "RES.ImageAnalyzer");
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
     __reflect(ImageAnalyzer.prototype, "RES.ImageAnalyzer");
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -1970,6 +2206,7 @@ var RES;
             _this._dataFormat = egret.HttpResponseType.TEXT;
             return _this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         var d = __define,c=TextAnalyzer,p=c.prototype;
         return TextAnalyzer;
@@ -1977,10 +2214,15 @@ var RES;
     RES.TextAnalyzer = TextAnalyzer;
     egret.registerClass(TextAnalyzer,'RES.TextAnalyzer');
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
         return TextAnalyzer;
     }(RES.BinAnalyzer));
     RES.TextAnalyzer = TextAnalyzer;
     __reflect(TextAnalyzer.prototype, "RES.TextAnalyzer");
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
 })(RES || (RES = {}));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -2023,8 +2265,11 @@ var RES;
             _this._dataFormat = egret.HttpResponseType.TEXT;
             return _this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         var d = __define,c=JsonAnalyzer,p=c.prototype;
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
         /**
@@ -2046,6 +2291,7 @@ var RES;
         return JsonAnalyzer;
     }(RES.BinAnalyzer));
     RES.JsonAnalyzer = JsonAnalyzer;
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
     egret.registerClass(JsonAnalyzer,'RES.JsonAnalyzer');
 })(RES || (RES = {}));
@@ -2080,6 +2326,10 @@ var RES;
 =======
     __reflect(JsonAnalyzer.prototype, "RES.JsonAnalyzer");
 })(RES || (RES = {}));
+=======
+    __reflect(JsonAnalyzer.prototype, "RES.JsonAnalyzer");
+})(RES || (RES = {}));
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 //////////////////////////////////////////////////////////////////////////////////////
 //
 //  Copyright (c) 2014-present, Egret Technology.
@@ -2108,6 +2358,9 @@ var RES;
 //  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 //////////////////////////////////////////////////////////////////////////////////////
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
 var RES;
 (function (RES) {
@@ -2172,6 +2425,7 @@ var RES;
             _this.lazyLoadList = new Array();
             /**
              * 资源解析库字典类
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
              */
             _this.analyzerDic = {};
             /**
@@ -2197,6 +2451,16 @@ var RES;
             }
             return res;
 =======
+=======
+             */
+            _this.analyzerDic = {};
+            /**
+             * 当前应该加载同优先级队列的第几列
+             */
+            _this.queueIndex = 0;
+            return _this;
+        }
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
         /**
          * 检查指定的组是否正在加载中
          * @method RES.ResourceLoader#isGroupInLoading
@@ -2205,6 +2469,9 @@ var RES;
          */
         ResourceLoader.prototype.isGroupInLoading = function (groupName) {
             return this.itemListDic[groupName] !== undefined;
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
         };
         /**
@@ -2270,6 +2537,7 @@ var RES;
         /**
          * 获取下一个待加载项
          */
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         p.getRelativePath = function (url, file) {
             url = url.split("\\").join("/");
@@ -2282,12 +2550,17 @@ var RES;
             if (index != -1) {
                 url = url.substring(0, index + 1) + file;
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
         ResourceLoader.prototype.getOneResourceItem = function () {
             if (this.failedList.length > 0)
                 return this.failedList.shift();
             var maxPriority = Number.NEGATIVE_INFINITY;
             for (var p in this.priorityQueue) {
                 maxPriority = Math.max(maxPriority, p);
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
             }
             var queue = this.priorityQueue[maxPriority];
@@ -2297,6 +2570,7 @@ var RES;
                 //后请求的先加载，以便更快获取当前需要的资源
                 return this.lazyLoadList.pop();
             }
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
             return url + paramUrl;
         };
@@ -2305,6 +2579,8 @@ var RES;
             if (!frames) {
                 return null;
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
             var length = queue.length;
             var list;
             for (var i = 0; i < length; i++) {
@@ -2314,6 +2590,9 @@ var RES;
                 if (list.length > 0)
                     break;
                 this.queueIndex++;
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
             }
             if (list.length == 0)
@@ -2356,6 +2635,7 @@ var RES;
                     delete this.groupErrorDic[groupName];
                     if (groupError) {
                         RES.ResourceEvent.dispatchResourceEvent(this, RES.ResourceEvent.GROUP_LOAD_ERROR, groupName);
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
                     }
                     else {
                         RES.ResourceEvent.dispatchResourceEvent(this, RES.ResourceEvent.GROUP_COMPLETE, groupName);
@@ -2367,6 +2647,13 @@ var RES;
                 }
                 return true;
 =======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
+                    }
+                    else {
+                        RES.ResourceEvent.dispatchResourceEvent(this, RES.ResourceEvent.GROUP_COMPLETE, groupName);
+                    }
+                }
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
             }
             else {
@@ -2400,16 +2687,22 @@ var RES;
                 }
             }
         };
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         return SheetAnalyzer;
     }(RES.BinAnalyzer));
     RES.SheetAnalyzer = SheetAnalyzer;
     egret.registerClass(SheetAnalyzer,'RES.SheetAnalyzer');
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
         return ResourceLoader;
     }(egret.EventDispatcher));
     RES.ResourceLoader = ResourceLoader;
     __reflect(ResourceLoader.prototype, "RES.ResourceLoader");
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
 })(RES || (RES = {}));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -2450,9 +2743,13 @@ var RES;
         function FontAnalyzer() {
             return _super.call(this) || this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         var d = __define,c=FontAnalyzer,p=c.prototype;
         p.analyzeConfig = function (resItem, data) {
+=======
+        FontAnalyzer.prototype.analyzeConfig = function (resItem, data) {
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
         FontAnalyzer.prototype.analyzeConfig = function (resItem, data) {
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -2513,8 +2810,12 @@ var RES;
         return FontAnalyzer;
     }(RES.SheetAnalyzer));
     RES.FontAnalyzer = FontAnalyzer;
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
     egret.registerClass(FontAnalyzer,'RES.FontAnalyzer');
+=======
+    __reflect(FontAnalyzer.prototype, "RES.FontAnalyzer");
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
     __reflect(FontAnalyzer.prototype, "RES.FontAnalyzer");
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -2566,8 +2867,11 @@ var RES;
             this.groupDic = {};
             RES["configInstance"] = this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         var d = __define,c=SoundAnalyzer,p=c.prototype;
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
         /**
@@ -2575,6 +2879,7 @@ var RES;
          * @method RES.ResourceConfig#getGroupByName
          * @param name {string} 组名
          * @returns {Array<egret.ResourceItem>}
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
          */
         ResourceConfig.prototype.getGroupByName = function (name) {
             var group = new Array();
@@ -2648,6 +2953,81 @@ var RES;
          * @param data {any} 配置文件数据
          * @param folder {string} 加载项的路径前缀。
          */
+=======
+         */
+        ResourceConfig.prototype.getGroupByName = function (name) {
+            var group = new Array();
+            if (!this.groupDic[name])
+                return group;
+            var list = this.groupDic[name];
+            var length = list.length;
+            for (var i = 0; i < length; i++) {
+                var obj = list[i];
+                group.push(this.parseResourceItem(obj));
+            }
+            return group;
+        };
+        /**
+         * 根据组名获取原始的组加载项列表
+         * @method RES.ResourceConfig#getRawGroupByName
+         * @param name {string} 组名
+         * @returns {any[]}
+         */
+        ResourceConfig.prototype.getRawGroupByName = function (name) {
+            if (this.groupDic[name])
+                return this.groupDic[name];
+            return [];
+        };
+        /**
+         * 创建自定义的加载资源组,注意：此方法仅在资源配置文件加载完成后执行才有效。
+         * 可以监听ResourceEvent.CONFIG_COMPLETE事件来确认配置加载完成。
+         * @method RES.ResourceConfig#createGroup
+         * @param name {string} 要创建的加载资源组的组名
+         * @param keys {egret.string[]} 要包含的键名列表，key对应配置文件里的name属性或sbuKeys属性的一项或一个资源组名。
+         * @param override {boolean} 是否覆盖已经存在的同名资源组,默认false。
+         * @returns {boolean}
+         */
+        ResourceConfig.prototype.createGroup = function (name, keys, override) {
+            if (override === void 0) { override = false; }
+            if ((!override && this.groupDic[name]) || !keys || keys.length == 0)
+                return false;
+            var groupDic = this.groupDic;
+            var group = [];
+            var length = keys.length;
+            for (var i = 0; i < length; i++) {
+                var key = keys[i];
+                var g = groupDic[key];
+                if (g) {
+                    var len = g.length;
+                    for (var j = 0; j < len; j++) {
+                        var item = g[j];
+                        if (group.indexOf(item) == -1)
+                            group.push(item);
+                    }
+                }
+                else {
+                    var item = this.keyMap[key];
+                    if (item) {
+                        if (group.indexOf(item) == -1)
+                            group.push(item);
+                    }
+                    else {
+                        egret.$warn(3200, key);
+                    }
+                }
+            }
+            if (group.length == 0)
+                return false;
+            this.groupDic[name] = group;
+            return true;
+        };
+        /**
+         * 解析一个配置文件
+         * @method RES.ResourceConfig#parseConfig
+         * @param data {any} 配置文件数据
+         * @param folder {string} 加载项的路径前缀。
+         */
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
         ResourceConfig.prototype.parseConfig = function (data, folder) {
             if (!data)
                 return;
@@ -2746,12 +3126,15 @@ var RES;
                 return this.parseResourceItem(data);
             return null;
         };
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         return SoundAnalyzer;
     }(RES.AnalyzerBase));
     RES.SoundAnalyzer = SoundAnalyzer;
     egret.registerClass(SoundAnalyzer,'RES.SoundAnalyzer');
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
         /**
          * 转换Object数据为ResourceItem对象
          */
@@ -2764,6 +3147,9 @@ var RES;
     }());
     RES.ResourceConfig = ResourceConfig;
     __reflect(ResourceConfig.prototype, "RES.ResourceConfig");
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
 })(RES || (RES = {}));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -2806,8 +3192,11 @@ var RES;
             _this._dataFormat = egret.HttpResponseType.TEXT;
             return _this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         var d = __define,c=XMLAnalyzer,p=c.prototype;
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
         /**
@@ -2829,8 +3218,12 @@ var RES;
         return XMLAnalyzer;
     }(RES.BinAnalyzer));
     RES.XMLAnalyzer = XMLAnalyzer;
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
     egret.registerClass(XMLAnalyzer,'RES.XMLAnalyzer');
+=======
+    __reflect(XMLAnalyzer.prototype, "RES.XMLAnalyzer");
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
     __reflect(XMLAnalyzer.prototype, "RES.XMLAnalyzer");
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -3058,14 +3451,214 @@ var RES;
      * @language en_US
      */
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
      * 延迟加载组资源加载失败事件。
      * @version Egret 2.4
      * @platform Web,Native
      * @language zh_CN
+=======
+     * The events of resource loading.
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language en_US
+     */
+    /**
+     * 资源加载事件。
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language zh_CN
+     */
+    var ResourceEvent = (function (_super) {
+        __extends(ResourceEvent, _super);
+        /**
+         * Creates an Event object to pass as a parameter to event listeners.
+         * @param type  The type of the event, accessible as Event.type.
+         * @param bubbles  Determines whether the Event object participates in the bubbling stage of the event flow. The default value is false.
+         * @param cancelable Determines whether the Event object can be canceled. The default values is false.
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @private
+         * @language en_US
+         */
+        /**
+         * 创建一个作为参数传递给事件侦听器的 Event 对象。
+         * @param type  事件的类型，可以作为 Event.type 访问。
+         * @param bubbles  确定 Event 对象是否参与事件流的冒泡阶段。默认值为 false。
+         * @param cancelable 确定是否可以取消 Event 对象。默认值为 false。
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @private
+         * @language zh_CN
+         */
+        function ResourceEvent(type, bubbles, cancelable) {
+            if (bubbles === void 0) { bubbles = false; }
+            if (cancelable === void 0) { cancelable = false; }
+            var _this = _super.call(this, type, bubbles, cancelable) || this;
+            /**
+             * File number that has been loaded.
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @language en_US
+             */
+            /**
+             * 已经加载的文件数。
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @language zh_CN
+             */
+            _this.itemsLoaded = 0;
+            /**
+             * Total file number to load.
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @language en_US
+             */
+            /**
+             * 要加载的总文件数。
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @language zh_CN
+             */
+            _this.itemsTotal = 0;
+            /**
+             * Resource group name.
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @language en_US
+             */
+            /**
+             * 资源组名。
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @language zh_CN
+             */
+            _this.groupName = "";
+            /**
+             * An item of information that is finished by the end of a load.
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @language en_US
+             */
+            /**
+             * 一次加载项加载结束的项信息对象。
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @language zh_CN
+             */
+            _this.resItem = null;
+            return _this;
+        }
+        /**
+         * 使用指定的EventDispatcher对象来抛出事件对象。抛出的对象将会缓存在对象池上，供下次循环复用。
+         * @method RES.ResourceEvent.dispatchResourceEvent
+         * @param target {egret.IEventDispatcher}
+         * @param type {string}
+         * @param groupName {string}
+         * @param resItem {egret.ResourceItem}
+         * @param itemsLoaded {number}
+         * @param itemsTotal {number}
+         * @private
+         */
+        ResourceEvent.dispatchResourceEvent = function (target, type, groupName, resItem, itemsLoaded, itemsTotal) {
+            if (groupName === void 0) { groupName = ""; }
+            if (resItem === void 0) { resItem = null; }
+            if (itemsLoaded === void 0) { itemsLoaded = 0; }
+            if (itemsTotal === void 0) { itemsTotal = 0; }
+            var event = egret.Event.create(ResourceEvent, type);
+            event.groupName = groupName;
+            event.resItem = resItem;
+            event.itemsLoaded = itemsLoaded;
+            event.itemsTotal = itemsTotal;
+            var result = target.dispatchEvent(event);
+            egret.Event.release(event);
+            return result;
+        };
+        return ResourceEvent;
+    }(egret.Event));
+    /**
+     * Failure event for a load item.
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language en_US
+     */
+    /**
+     * 一个加载项加载失败事件。
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language zh_CN
+     */
+    ResourceEvent.ITEM_LOAD_ERROR = "itemLoadError";
+    /**
+     * Configure file to load and parse the completion event. Note: if a configuration file is loaded, it will not be thrown out, and if you want to handle the configuration loading failure, monitor the CONFIG_LOAD_ERROR event.
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language en_US
+     */
+    /**
+     * 配置文件加载并解析完成事件。注意：若有配置文件加载失败，将不会抛出此事件，若要处理配置加载失败，请同时监听 CONFIG_LOAD_ERROR 事件。
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language zh_CN
+     */
+    ResourceEvent.CONFIG_COMPLETE = "configComplete";
+    /**
+     * Configuration file failed to load.
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language en_US
+     */
+    /**
+     * 配置文件加载失败事件。
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language zh_CN
+     */
+    ResourceEvent.CONFIG_LOAD_ERROR = "configLoadError";
+    /**
+     * Delay load group resource loading progress event.
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language en_US
+     */
+    /**
+     * 延迟加载组资源加载进度事件。
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language zh_CN
+     */
+    ResourceEvent.GROUP_PROGRESS = "groupProgress";
+    /**
+     * Delay load group resource to complete event. Note: if you have a resource item loading failure, the event will not be thrown, if you want to handle the group load failure, please listen to the GROUP_LOAD_ERROR event.
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language en_US
+     */
+    /**
+     * 延迟加载组资源加载完成事件。注意：若组内有资源项加载失败，将不会抛出此事件，若要处理组加载失败，请同时监听 GROUP_LOAD_ERROR 事件。
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language zh_CN
+     */
+    ResourceEvent.GROUP_COMPLETE = "groupComplete";
+    /**
+     * Delayed load group resource failed event.
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language en_US
+     */
+    /**
+     * 延迟加载组资源加载失败事件。
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language zh_CN
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
      */
     ResourceEvent.GROUP_LOAD_ERROR = "groupLoadError";
     RES.ResourceEvent = ResourceEvent;
     __reflect(ResourceEvent.prototype, "RES.ResourceEvent");
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
 })(RES || (RES = {}));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -3110,9 +3703,13 @@ var RES;
                 _this._versionInfo = {};
                 return _this;
             }
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
             var d = __define,c=Html5VersionController,p=c.prototype;
             p.fetchVersion = function (callback) {
+=======
+            Html5VersionController.prototype.fetchVersion = function (callback) {
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
             Html5VersionController.prototype.fetchVersion = function (callback) {
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -3183,8 +3780,12 @@ var RES;
             return Html5VersionController;
         }(egret.EventDispatcher));
         web.Html5VersionController = Html5VersionController;
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         egret.registerClass(Html5VersionController,'RES.web.Html5VersionController',["RES.VersionController","RES.IVersionController"]);
+=======
+        __reflect(Html5VersionController.prototype, "RES.web.Html5VersionController", ["RES.VersionController", "RES.IVersionController"]);
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
         __reflect(Html5VersionController.prototype, "RES.web.Html5VersionController", ["RES.VersionController", "RES.IVersionController"]);
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -3234,10 +3835,15 @@ var RES;
                 this._versionPath = "";
                 this._localFileArr = [];
             }
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
             var d = __define,c=NativeVersionController,p=c.prototype;
             p.fetchVersion = function (callback) {
                 if (DEBUG) {
+=======
+            NativeVersionController.prototype.fetchVersion = function (callback) {
+                if (true) {
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
             NativeVersionController.prototype.fetchVersion = function (callback) {
                 if (true) {
@@ -3330,8 +3936,12 @@ var RES;
             return NativeVersionController;
         }());
         native.NativeVersionController = NativeVersionController;
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         egret.registerClass(NativeVersionController,'RES.native.NativeVersionController',["RES.VersionController","RES.IVersionController"]);
+=======
+        __reflect(NativeVersionController.prototype, "RES.native.NativeVersionController", ["RES.VersionController", "RES.IVersionController"]);
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
         __reflect(NativeVersionController.prototype, "RES.native.NativeVersionController", ["RES.VersionController", "RES.IVersionController"]);
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -3343,8 +3953,11 @@ var RES;
 //////////////////////////////////////////////////////////////////////////////////////
 //
 //  Copyright (c) 2014-present, Egret Technology.
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 //  All rights reserved.
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -3466,6 +4079,9 @@ var RES;
 //////////////////////////////////////////////////////////////////////////////////////
 //
 //  Copyright (c) 2014-present, Egret Technology.
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
 //  All rights reserved.
 //  Redistribution and use in source and binary forms, with or without
@@ -3532,9 +4148,12 @@ var RES;
     }
     RES.registerAnalyzer = registerAnalyzer;
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
      * @language en_US
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
      * Get mapping injection.
      * @param type Injection type.
      * @version Egret 3.2.6
@@ -3555,11 +4174,15 @@ var RES;
     }
     RES.getAnalyzer = getAnalyzer;
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
      * Register the VersionController
      * @param vcs The VersionController to register.
      * @version Egret 2.5
      * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
      */
     /**
@@ -3569,11 +4192,20 @@ var RES;
      */
     /**
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
+     * @language en_US
+     */
+    /**
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
      * 注册版本控制器,通过RES模块加载资源时会从版本控制器获取真实url
      * @param vcs 注入的版本控制器。
      * @version Egret 2.5
      * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
+=======
+     * @language zh_CN
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
      * @language zh_CN
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
@@ -3586,6 +4218,7 @@ var RES;
      * Returns the VersionController
      * @version Egret 2.5
      * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
      * @language en_US
 <<<<<<< HEAD:libs/modules/res/res.js
      * Returns the VersionController
@@ -3614,6 +4247,21 @@ var RES;
 <<<<<<< HEAD:libs/modules/res/res.js
      * @language en_US
 =======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
+     * @language en_US
+     */
+    /**
+     * 获得版本控制器.
+     * @version Egret 2.5
+     * @platform Web,Native
+     * @language zh_CN
+     */
+    function getVersionController() {
+        return instance.vcs;
+    }
+    RES.getVersionController = getVersionController;
+    /**
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
      * Load configuration file and parse.
      * @param url Configuration file path (path resource.json).
@@ -3761,8 +4409,11 @@ var RES;
     }
     RES.hasRes = hasRes;
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
      * @language en_US
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
      * parse a configuration file at run time，it will not clean the exist data.
@@ -3774,8 +4425,11 @@ var RES;
      * @language en_US
      */
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
      * @language zh_CN
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
      * 运行时动态解析一个配置文件,此操作不会清空之前已存在的配置。
@@ -4060,8 +4714,11 @@ var RES;
             _this.init();
             return _this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         var d = __define,c=Resource,p=c.prototype;
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
         /**
@@ -4542,14 +5199,20 @@ var RES;
         };
         return Resource;
     }(egret.EventDispatcher));
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
     egret.registerClass(Resource,'Resource');
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
     /**
      * 配置文件组组名
      */
     Resource.GROUP_CONFIG = "RES__CONFIG";
     __reflect(Resource.prototype, "Resource");
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
     /**
      * Resource单例
@@ -4602,8 +5265,11 @@ var RES;
             _this._dataFormat = egret.HttpResponseType.TEXT;
             return _this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
         var d = __define,c=AnimationAnalyzer,p=c.prototype;
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
 >>>>>>> dev:EgerPro/libs/modules/res/res.js
         /**
@@ -4738,8 +5404,12 @@ var RES;
         return AnimationAnalyzer;
     }(RES.BinAnalyzer));
     RES.AnimationAnalyzer = AnimationAnalyzer;
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.js
 <<<<<<< HEAD:libs/modules/res/res.js
     egret.registerClass(AnimationAnalyzer,'RES.AnimationAnalyzer');
+=======
+    __reflect(AnimationAnalyzer.prototype, "RES.AnimationAnalyzer");
+>>>>>>> dev:EgerPro/libs/modules/res/res.js
 =======
     __reflect(AnimationAnalyzer.prototype, "RES.AnimationAnalyzer");
 >>>>>>> dev:EgerPro/libs/modules/res/res.js

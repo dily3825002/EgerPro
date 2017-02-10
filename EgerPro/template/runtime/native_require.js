@@ -11,6 +11,7 @@ var game_file_list = [
 	"libs/modules/socket/socket.js",
 	"libs/modules/puremvc/puremvc.js",
 	"libs/modules/protobuf/protobuf.js",
+<<<<<<< HEAD:EgerPro/template/runtime/native_require.js
 <<<<<<< HEAD:template/runtime/native_require.js
 	"bin-debug/AssetAdapter.js",
 	"bin-debug/LoadingUI.js",
@@ -18,6 +19,11 @@ var game_file_list = [
 	"bin-debug/WaitPanel.js",
 	"bin-debug/component/EButton.js",
 	"bin-debug/component/ETextField.js",
+=======
+	"bin-debug/core/model/ResourceProxyBase.js",
+	"bin-debug/core/view/panel/BaseMediator.js",
+	"bin-debug/core/view/panel/mediator/BackpackMediator.js",
+>>>>>>> dev:EgerPro/template/runtime/native_require.js
 =======
 	"bin-debug/core/model/ResourceProxyBase.js",
 	"bin-debug/core/view/panel/BaseMediator.js",

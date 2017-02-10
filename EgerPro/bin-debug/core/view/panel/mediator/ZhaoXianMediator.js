@@ -22,9 +22,13 @@ var game;
             _this.zhaoXianPanel = new game.ZhaoXianPanel();
             return _this;
         }
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/panel/mediator/ZhaoXianMediator.js
 <<<<<<< HEAD:bin-debug/core/view/panel/mediator/ZhaoXianMediator.js
         var d = __define,c=ZhaoXianMediator,p=c.prototype;
         p.listNotificationInterests = function () {
+=======
+        ZhaoXianMediator.prototype.listNotificationInterests = function () {
+>>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/ZhaoXianMediator.js
 =======
         ZhaoXianMediator.prototype.listNotificationInterests = function () {
 >>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/ZhaoXianMediator.js
@@ -93,9 +97,15 @@ var game;
         };
         return ZhaoXianMediator;
     }(BaseMediator));
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/panel/mediator/ZhaoXianMediator.js
 <<<<<<< HEAD:bin-debug/core/view/panel/mediator/ZhaoXianMediator.js
     game.ZhaoXianMediator = ZhaoXianMediator;
     egret.registerClass(ZhaoXianMediator,'game.ZhaoXianMediator');
+=======
+    ZhaoXianMediator.NAME = "ZhaoXianMediator";
+    game.ZhaoXianMediator = ZhaoXianMediator;
+    __reflect(ZhaoXianMediator.prototype, "game.ZhaoXianMediator");
+>>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/ZhaoXianMediator.js
 =======
     ZhaoXianMediator.NAME = "ZhaoXianMediator";
     game.ZhaoXianMediator = ZhaoXianMediator;

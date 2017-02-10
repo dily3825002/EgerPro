@@ -11,9 +11,13 @@ var Main = (function (_super) {
     function Main() {
         return _super.apply(this, arguments) || this;
     }
+<<<<<<< HEAD:EgerPro/bin-debug/Main.js
 <<<<<<< HEAD:bin-debug/Main.js
     var d = __define,c=Main,p=c.prototype;
     p.createChildren = function () {
+=======
+    Main.prototype.createChildren = function () {
+>>>>>>> dev:EgerPro/bin-debug/Main.js
 =======
     Main.prototype.createChildren = function () {
 >>>>>>> dev:EgerPro/bin-debug/Main.js
@@ -75,8 +79,12 @@ var Main = (function (_super) {
     };
     return Main;
 }(eui.UILayer));
+<<<<<<< HEAD:EgerPro/bin-debug/Main.js
 <<<<<<< HEAD:bin-debug/Main.js
 egret.registerClass(Main,'Main');
+=======
+__reflect(Main.prototype, "Main");
+>>>>>>> dev:EgerPro/bin-debug/Main.js
 =======
 __reflect(Main.prototype, "Main");
 >>>>>>> dev:EgerPro/bin-debug/Main.js

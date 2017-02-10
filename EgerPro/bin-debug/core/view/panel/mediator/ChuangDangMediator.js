@@ -22,9 +22,13 @@ var game;
             _this.chuangDangPanel = new game.ChuangDangPanel();
             return _this;
         }
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/panel/mediator/ChuangDangMediator.js
 <<<<<<< HEAD:bin-debug/core/view/panel/mediator/ChuangDangMediator.js
         var d = __define,c=ChuangDangMediator,p=c.prototype;
         p.listNotificationInterests = function () {
+=======
+        ChuangDangMediator.prototype.listNotificationInterests = function () {
+>>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/ChuangDangMediator.js
 =======
         ChuangDangMediator.prototype.listNotificationInterests = function () {
 >>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/ChuangDangMediator.js
@@ -70,9 +74,15 @@ var game;
         };
         return ChuangDangMediator;
     }(BaseMediator));
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/panel/mediator/ChuangDangMediator.js
 <<<<<<< HEAD:bin-debug/core/view/panel/mediator/ChuangDangMediator.js
     game.ChuangDangMediator = ChuangDangMediator;
     egret.registerClass(ChuangDangMediator,'game.ChuangDangMediator');
+=======
+    ChuangDangMediator.NAME = "ChuangDangMediator";
+    game.ChuangDangMediator = ChuangDangMediator;
+    __reflect(ChuangDangMediator.prototype, "game.ChuangDangMediator");
+>>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/ChuangDangMediator.js
 =======
     ChuangDangMediator.NAME = "ChuangDangMediator";
     game.ChuangDangMediator = ChuangDangMediator;

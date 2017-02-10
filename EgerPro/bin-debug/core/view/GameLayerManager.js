@@ -35,8 +35,11 @@ var GameLayerManager = (function (_super) {
         _this.init();
         return _this;
     }
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/GameLayerManager.js
 <<<<<<< HEAD:bin-debug/core/view/GameLayerManager.js
     var d = __define,c=GameLayerManager,p=c.prototype;
+=======
+>>>>>>> dev:EgerPro/bin-debug/core/view/GameLayerManager.js
 =======
 >>>>>>> dev:EgerPro/bin-debug/core/view/GameLayerManager.js
     //游戏容器管理器单例
@@ -63,8 +66,12 @@ var GameLayerManager = (function (_super) {
     };
     return GameLayerManager;
 }(eui.UILayer));
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/GameLayerManager.js
 <<<<<<< HEAD:bin-debug/core/view/GameLayerManager.js
 egret.registerClass(GameLayerManager,'GameLayerManager');
+=======
+__reflect(GameLayerManager.prototype, "GameLayerManager");
+>>>>>>> dev:EgerPro/bin-debug/core/view/GameLayerManager.js
 =======
 __reflect(GameLayerManager.prototype, "GameLayerManager");
 >>>>>>> dev:EgerPro/bin-debug/core/view/GameLayerManager.js

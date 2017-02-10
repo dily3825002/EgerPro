@@ -127,6 +127,7 @@ var egret;
              * @private
              */
             _this._connected = false;
+<<<<<<< HEAD:EgerPro/libs/modules/socket/socket.js
             /**
              * @private
              */
@@ -137,6 +138,12 @@ var egret;
              */
             this._isReadySend = false;
 =======
+            _this._connecting = false;
+>>>>>>> dev:EgerPro/libs/modules/socket/socket.js
+=======
+            /**
+             * @private
+             */
             _this._connecting = false;
 >>>>>>> dev:EgerPro/libs/modules/socket/socket.js
             /**
@@ -158,8 +165,11 @@ var egret;
             _this.socket.addCallBacks(_this.onConnect, _this.onClose, _this.onSocketData, _this.onError, _this);
             return _this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/socket/socket.js
 <<<<<<< HEAD:libs/modules/socket/socket.js
         var d = __define,c=WebSocket,p=c.prototype;
+=======
+>>>>>>> dev:EgerPro/libs/modules/socket/socket.js
 =======
 >>>>>>> dev:EgerPro/libs/modules/socket/socket.js
         /**
@@ -178,8 +188,12 @@ var egret;
          * @platform Web,Native
          * @language zh_CN
          */
+<<<<<<< HEAD:EgerPro/libs/modules/socket/socket.js
 <<<<<<< HEAD:libs/modules/socket/socket.js
         p.connect = function (host, port) {
+=======
+        WebSocket.prototype.connect = function (host, port) {
+>>>>>>> dev:EgerPro/libs/modules/socket/socket.js
 =======
         WebSocket.prototype.connect = function (host, port) {
 >>>>>>> dev:EgerPro/libs/modules/socket/socket.js
@@ -192,8 +206,12 @@ var egret;
          * 根据提供的url连接
          * @param url 全地址。如ws://echo.websocket.org:80
          */
+<<<<<<< HEAD:EgerPro/libs/modules/socket/socket.js
 <<<<<<< HEAD:libs/modules/socket/socket.js
         p.connectByUrl = function (url) {
+=======
+        WebSocket.prototype.connectByUrl = function (url) {
+>>>>>>> dev:EgerPro/libs/modules/socket/socket.js
 =======
         WebSocket.prototype.connectByUrl = function (url) {
 >>>>>>> dev:EgerPro/libs/modules/socket/socket.js
@@ -214,8 +232,12 @@ var egret;
          * @platform Web,Native
          * @language zh_CN
          */
+<<<<<<< HEAD:EgerPro/libs/modules/socket/socket.js
 <<<<<<< HEAD:libs/modules/socket/socket.js
         p.close = function () {
+=======
+        WebSocket.prototype.close = function () {
+>>>>>>> dev:EgerPro/libs/modules/socket/socket.js
 =======
         WebSocket.prototype.close = function () {
 >>>>>>> dev:EgerPro/libs/modules/socket/socket.js
@@ -244,8 +266,12 @@ var egret;
          * @private
          *
          */
+<<<<<<< HEAD:EgerPro/libs/modules/socket/socket.js
 <<<<<<< HEAD:libs/modules/socket/socket.js
         p.onError = function () {
+=======
+        WebSocket.prototype.onError = function () {
+>>>>>>> dev:EgerPro/libs/modules/socket/socket.js
 =======
         WebSocket.prototype.onError = function () {
 >>>>>>> dev:EgerPro/libs/modules/socket/socket.js
@@ -470,10 +496,13 @@ var egret;
         });
         return WebSocket;
     }(egret.EventDispatcher));
+<<<<<<< HEAD:EgerPro/libs/modules/socket/socket.js
 <<<<<<< HEAD:libs/modules/socket/socket.js
     egret.WebSocket = WebSocket;
     egret.registerClass(WebSocket,'egret.WebSocket');
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/socket/socket.js
     /**
      * Send and receive data in character string format
      * @version Egret 2.4
@@ -502,6 +531,9 @@ var egret;
     WebSocket.TYPE_BINARY = "webSocketTypeBinary";
     egret.WebSocket = WebSocket;
     __reflect(WebSocket.prototype, "egret.WebSocket");
+<<<<<<< HEAD:EgerPro/libs/modules/socket/socket.js
+>>>>>>> dev:EgerPro/libs/modules/socket/socket.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/socket/socket.js
 })(egret || (egret = {}));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -544,9 +576,13 @@ var egret;
                 this.host = "";
                 this.port = 0;
             }
+<<<<<<< HEAD:EgerPro/libs/modules/socket/socket.js
 <<<<<<< HEAD:libs/modules/socket/socket.js
             var d = __define,c=NativeSocket,p=c.prototype;
             p.addCallBacks = function (onConnect, onClose, onSocketData, onError, thisObject) {
+=======
+            NativeSocket.prototype.addCallBacks = function (onConnect, onClose, onSocketData, onError, thisObject) {
+>>>>>>> dev:EgerPro/libs/modules/socket/socket.js
 =======
             NativeSocket.prototype.addCallBacks = function (onConnect, onClose, onSocketData, onError, thisObject) {
 >>>>>>> dev:EgerPro/libs/modules/socket/socket.js
@@ -600,8 +636,12 @@ var egret;
             return NativeSocket;
         }());
         native.NativeSocket = NativeSocket;
+<<<<<<< HEAD:EgerPro/libs/modules/socket/socket.js
 <<<<<<< HEAD:libs/modules/socket/socket.js
         egret.registerClass(NativeSocket,'egret.native.NativeSocket',["egret.ISocket"]);
+=======
+        __reflect(NativeSocket.prototype, "egret.native.NativeSocket", ["egret.ISocket"]);
+>>>>>>> dev:EgerPro/libs/modules/socket/socket.js
 =======
         __reflect(NativeSocket.prototype, "egret.native.NativeSocket", ["egret.ISocket"]);
 >>>>>>> dev:EgerPro/libs/modules/socket/socket.js
@@ -653,9 +693,13 @@ var egret;
                     egret.$error(3100);
                 }
             }
+<<<<<<< HEAD:EgerPro/libs/modules/socket/socket.js
 <<<<<<< HEAD:libs/modules/socket/socket.js
             var d = __define,c=HTML5WebSocket,p=c.prototype;
             p.addCallBacks = function (onConnect, onClose, onSocketData, onError, thisObject) {
+=======
+            HTML5WebSocket.prototype.addCallBacks = function (onConnect, onClose, onSocketData, onError, thisObject) {
+>>>>>>> dev:EgerPro/libs/modules/socket/socket.js
 =======
             HTML5WebSocket.prototype.addCallBacks = function (onConnect, onClose, onSocketData, onError, thisObject) {
 >>>>>>> dev:EgerPro/libs/modules/socket/socket.js
@@ -711,8 +755,12 @@ var egret;
             return HTML5WebSocket;
         }());
         web.HTML5WebSocket = HTML5WebSocket;
+<<<<<<< HEAD:EgerPro/libs/modules/socket/socket.js
 <<<<<<< HEAD:libs/modules/socket/socket.js
         egret.registerClass(HTML5WebSocket,'egret.web.HTML5WebSocket',["egret.ISocket"]);
+=======
+        __reflect(HTML5WebSocket.prototype, "egret.web.HTML5WebSocket", ["egret.ISocket"]);
+>>>>>>> dev:EgerPro/libs/modules/socket/socket.js
 =======
         __reflect(HTML5WebSocket.prototype, "egret.web.HTML5WebSocket", ["egret.ISocket"]);
 >>>>>>> dev:EgerPro/libs/modules/socket/socket.js

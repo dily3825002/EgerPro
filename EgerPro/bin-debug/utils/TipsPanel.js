@@ -27,8 +27,11 @@ var TipsPanel = (function (_super) {
         _this.initUI();
         return _this;
     }
+<<<<<<< HEAD:EgerPro/bin-debug/utils/TipsPanel.js
 <<<<<<< HEAD:bin-debug/utils/TipsPanel.js
     var d = __define,c=TipsPanel,p=c.prototype;
+=======
+>>>>>>> dev:EgerPro/bin-debug/utils/TipsPanel.js
 =======
 >>>>>>> dev:EgerPro/bin-debug/utils/TipsPanel.js
     // 初始化面板
@@ -63,8 +66,12 @@ var TipsPanel = (function (_super) {
     };
     return TipsPanel;
 }(eui.Component));
+<<<<<<< HEAD:EgerPro/bin-debug/utils/TipsPanel.js
 <<<<<<< HEAD:bin-debug/utils/TipsPanel.js
 egret.registerClass(TipsPanel,'TipsPanel');
+=======
+__reflect(TipsPanel.prototype, "TipsPanel");
+>>>>>>> dev:EgerPro/bin-debug/utils/TipsPanel.js
 =======
 __reflect(TipsPanel.prototype, "TipsPanel");
 >>>>>>> dev:EgerPro/bin-debug/utils/TipsPanel.js

@@ -19,10 +19,6 @@ var game;
         function Processor_100_1() {
             return _super.call(this) || this;
         }
-<<<<<<< HEAD:bin-debug/core/controller/Processor/Processor_100_1.js
-        var d = __define,c=Processor_100_1,p=c.prototype;
-=======
->>>>>>> dev:EgerPro/bin-debug/core/controller/Processor/Processor_100_1.js
         /**
          * 注册消息
          */
@@ -40,13 +36,8 @@ var game;
         };
         return Processor_100_1;
     }(puremvc.SimpleCommand));
-<<<<<<< HEAD:bin-debug/core/controller/Processor/Processor_100_1.js
-    game.Processor_100_1 = Processor_100_1;
-    egret.registerClass(Processor_100_1,'game.Processor_100_1',["puremvc.ICommand","puremvc.INotifier"]);
-=======
     Processor_100_1.NAME = "Processor_100_1";
     game.Processor_100_1 = Processor_100_1;
     __reflect(Processor_100_1.prototype, "game.Processor_100_1", ["puremvc.ICommand", "puremvc.INotifier"]);
->>>>>>> dev:EgerPro/bin-debug/core/controller/Processor/Processor_100_1.js
 })(game || (game = {}));
 //# sourceMappingURL=Processor_100_1.js.map

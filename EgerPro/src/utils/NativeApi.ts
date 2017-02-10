@@ -58,8 +58,12 @@ module NativeApi {
     } 	
 
 	//当前游戏角度
+<<<<<<< HEAD:EgerPro/src/utils/NativeApi.ts
 <<<<<<< HEAD:src/utils/NativeApi.ts
 	export var curAngle:number = <number>window["orientation"];	
+=======
+	export var curAngle:number = Number(window["orientation"]);	
+>>>>>>> dev:EgerPro/src/utils/NativeApi.ts
 =======
 	export var curAngle:number = Number(window["orientation"]);	
 >>>>>>> dev:EgerPro/src/utils/NativeApi.ts

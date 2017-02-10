@@ -110,8 +110,11 @@ declare namespace RES {
      */
     class ResourceItem {
         /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
          * @language en_US
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
          * XML file.
@@ -224,7 +227,11 @@ declare namespace RES {
          * @param type Type of resource term.
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+         * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
          * @language en_US
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -236,7 +243,11 @@ declare namespace RES {
          * @param type 加载项文件类型。
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+         * @language zh_CN
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
          * @language zh_CN
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -246,7 +257,11 @@ declare namespace RES {
          * Name of resource term.
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+         * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
          * @language en_US
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -255,7 +270,11 @@ declare namespace RES {
          * 加载项名称。
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+         * @language zh_CN
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
          * @language zh_CN
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -265,7 +284,11 @@ declare namespace RES {
          * URL of resource term.
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+         * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
          * @language en_US
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -274,7 +297,11 @@ declare namespace RES {
          * 要加载的文件地址。
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+         * @language zh_CN
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
          * @language zh_CN
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -284,7 +311,11 @@ declare namespace RES {
          * Type of resource term.
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+         * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
          * @language en_US
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -293,7 +324,11 @@ declare namespace RES {
          * 加载项文件类型。
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+         * @language zh_CN
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
          * @language zh_CN
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -303,7 +338,11 @@ declare namespace RES {
          * Name of the resource term group.
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+         * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
          * @language en_US
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -312,7 +351,11 @@ declare namespace RES {
          * 资源所属的组名。
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+         * @language zh_CN
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
          * @language zh_CN
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -322,7 +365,11 @@ declare namespace RES {
          * The raw data object to be referenced.
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+         * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
          * @language en_US
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -331,7 +378,11 @@ declare namespace RES {
          * 被引用的原始数据对象。
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+         * @language zh_CN
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
          * @language zh_CN
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -342,7 +393,11 @@ declare namespace RES {
          * Load complete flag.
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+         * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
          * @language en_US
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -351,7 +406,11 @@ declare namespace RES {
          * 加载完成的标志。
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+         * @language zh_CN
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
          * @language zh_CN
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -361,7 +420,11 @@ declare namespace RES {
          * Turn into a string.
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+         * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
          * @language en_US
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -370,7 +433,11 @@ declare namespace RES {
          * 转成字符串。
          * @version Egret 2.4
          * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+         * @language zh_CN
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
          * @language zh_CN
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -388,6 +455,7 @@ declare namespace RES {
         getRes(name: string): any;
         /**
          * 一项加载结束
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
          */
         onLoadFinish(event: egret.Event): void;
         sheetMap: any;
@@ -517,6 +585,137 @@ declare namespace RES {
          * Constructor initialization
          * @language en_US
          */
+=======
+         */
+        onLoadFinish(event: egret.Event): void;
+        sheetMap: any;
+        private textureMap;
+        /**
+         * 解析并缓存加载成功的配置文件
+         */
+        analyzeConfig(resItem: ResourceItem, data: string): string;
+        /**
+         * 解析并缓存加载成功的位图数据
+         */
+        analyzeBitmap(resItem: ResourceItem, texture: egret.Texture): void;
+        /**
+         * 获取相对位置
+         */
+        getRelativePath(url: string, file: string): string;
+        protected parseSpriteSheet(texture: egret.Texture, data: any, name: string): egret.SpriteSheet;
+        destroyRes(name: string): boolean;
+        /**
+         * ImageLoader对象池
+         */
+        private recyclerIamge;
+        private loadImage(url, data);
+        private getImageLoader();
+        protected onResourceDestroy(texture: any): void;
+    }
+}
+declare namespace RES {
+    /**
+     * Version control loading interface
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @includeExample extension/version/VersionControl.ts
+     * @language en_US
+     */
+    /**
+     * 版本控制加载的接口
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @includeExample extension/version/VersionControl.ts
+     * @language zh_CN
+     */
+    interface IVersionController {
+        /**
+         * Get the version information data.<br/>
+         * Before calling this method requires the application of any resource load, we recommend starting at the application entry class (Main) The first call processing. This method is only responsible for acquiring version information, is not responsible for downloaded resources.
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+        /**
+         * 获取版本信息数据。<br/>
+         * 这个方法的调用需要在应用程序进行任何资源加载之前，建议在应用程序的入口类（Main）的开始最先进行调用处理。此方法只负责获取版本信息，不负责资源的下载。
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+        fetchVersion(callback: egret.AsyncCallback): void;
+        /**
+         * Get all changed files.<br/>
+         * The main application in native scene. Changes here include new file, update file (the same file name, but changed files).<br/>
+         * @returns All changes in the file list. In the Web end this list is empty.
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+        /**
+         * 获取所有有变化的文件。<br/>
+         * 主要应用在native场景中。这里的变化包括新增文件、更新文件（文件名相同，但更改过的文件）。<br/>
+         * @returns 所有有变化的文件列表。在Web端此列表为空。
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+        getChangeList(): Array<{
+            url: string;
+            size: number;
+        }>;
+        /**
+         * Get the actual URL of the resource file.<br/>
+         * Because this method needs to be called to control the actual version of the URL have the original resource files were changed, so would like to get the specified resource file the actual URL.<br/>
+         * In the development and debugging phase, this method will directly return value passed.
+         * @param url Url used in the game
+         * @returns Actual loaded url
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+        /**
+         * 获取资源文件实际的URL地址。<br/>
+         * 由于版本控制实际已经对原来的资源文件的URL进行了改变，因此想获取指定资源文件实际的URL时需要调用此方法。<br/>
+         * 在开发调试阶段，这个方法会直接返回传入的参数值。
+         * @param url 游戏中使用的url
+         * @returns 实际加载的url
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+        getVirtualUrl(url: string): string;
+    }
+    /**
+     * Manage version control class
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @event egret.Event.COMPLETE Version control loading is complete when thrown
+     * @event egret.IOErrorEvent.IO_ERROR Version control failed to load when thrown
+     * @includeExample extension/version/VersionControl.ts
+     * @language en_US
+     */
+    /**
+     * 管理版本控制的类
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @event egret.Event.COMPLETE 版本控制加载完成时抛出
+     * @event egret.IOErrorEvent.IO_ERROR 版本控制加载失败时抛出
+     * @includeExample extension/version/VersionControl.ts
+     * @language zh_CN
+     */
+    interface VersionController extends IVersionController {
+    }
+    /**
+     * @version Egret 2.4
+     * @platform Web,Native
+     */
+    let VersionController: {
+        /**
+         * Constructor initialization
+         * @language en_US
+         */
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
         /**
          * 初始化构造函数
          * @language zh_CN
@@ -791,6 +990,8 @@ declare namespace RES {
          * @method RES.ResourceConfig#getResourceItem
          * @param key {string} 对应配置文件里的key属性或sbuKeys属性的一项。
          * @returns {egret.ResourceItem}
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
+=======
          */
         getResourceItem(key: string): ResourceItem;
         /**
@@ -830,8 +1031,25 @@ declare namespace RES {
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
          */
+        getResourceItem(key: string): ResourceItem;
         /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
+         * 转换Object数据为ResourceItem对象
+         */
+        private parseResourceItem(data);
+    }
+}
+declare namespace RES {
+    /**
+     * @private
+     */
+    class XMLAnalyzer extends BinAnalyzer {
+        constructor();
+        /**
+         * 解析并缓存加载成功的数据
+=======
          * 一个加载项加载失败事件。
          * @version Egret 2.4
          * @platform Web,Native
@@ -843,8 +1061,38 @@ declare namespace RES {
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
+         */
+        analyzeData(resItem: ResourceItem, data: any): void;
+    }
+}
+declare namespace RES {
+    /**
+     * The events of resource loading.
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language en_US
+     */
+    /**
+     * 资源加载事件。
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language zh_CN
+     */
+    class ResourceEvent extends egret.Event {
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
+         * Failure event for a load item.
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
          */
         /**
+         * 一个加载项加载失败事件。
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+=======
          * 配置文件加载并解析完成事件。注意：若有配置文件加载失败，将不会抛出此事件，若要处理配置加载失败，请同时监听 CONFIG_LOAD_ERROR 事件。
          * @version Egret 2.4
          * @platform Web,Native
@@ -856,8 +1104,22 @@ declare namespace RES {
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
+         */
+        static ITEM_LOAD_ERROR: string;
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
+         * Configure file to load and parse the completion event. Note: if a configuration file is loaded, it will not be thrown out, and if you want to handle the configuration loading failure, monitor the CONFIG_LOAD_ERROR event.
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
          */
         /**
+         * 配置文件加载并解析完成事件。注意：若有配置文件加载失败，将不会抛出此事件，若要处理配置加载失败，请同时监听 CONFIG_LOAD_ERROR 事件。
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+=======
          * 配置文件加载失败事件。
          * @version Egret 2.4
          * @platform Web,Native
@@ -869,8 +1131,22 @@ declare namespace RES {
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
+         */
+        static CONFIG_COMPLETE: string;
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
+         * Configuration file failed to load.
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
          */
         /**
+         * 配置文件加载失败事件。
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+=======
          * 延迟加载组资源加载进度事件。
          * @version Egret 2.4
          * @platform Web,Native
@@ -878,6 +1154,42 @@ declare namespace RES {
          */
         static GROUP_PROGRESS: string;
         /**
+         * Delay load group resource to complete event. Note: if you have a resource item loading failure, the event will not be thrown, if you want to handle the group load failure, please listen to the GROUP_LOAD_ERROR event.
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
+         */
+        static CONFIG_LOAD_ERROR: string;
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
+         * Delay load group resource loading progress event.
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+        /**
+         * 延迟加载组资源加载进度事件。
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+=======
+         * 延迟加载组资源加载完成事件。注意：若组内有资源项加载失败，将不会抛出此事件，若要处理组加载失败，请同时监听 GROUP_LOAD_ERROR 事件。
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+        static GROUP_COMPLETE: string;
+        /**
+         * Delayed load group resource failed event.
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
+         */
+        static GROUP_PROGRESS: string;
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
          * Delay load group resource to complete event. Note: if you have a resource item loading failure, the event will not be thrown, if you want to handle the group load failure, please listen to the GROUP_LOAD_ERROR event.
          * @version Egret 2.4
          * @platform Web,Native
@@ -926,6 +1238,36 @@ declare namespace RES {
         constructor(type: string, bubbles?: boolean, cancelable?: boolean);
         /**
          * File number that has been loaded.
+=======
+         * 延迟加载组资源加载失败事件。
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+        static GROUP_LOAD_ERROR: string;
+        /**
+         * Creates an Event object to pass as a parameter to event listeners.
+         * @param type  The type of the event, accessible as Event.type.
+         * @param bubbles  Determines whether the Event object participates in the bubbling stage of the event flow. The default value is false.
+         * @param cancelable Determines whether the Event object can be canceled. The default values is false.
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @private
+         * @language en_US
+         */
+        /**
+         * 创建一个作为参数传递给事件侦听器的 Event 对象。
+         * @param type  事件的类型，可以作为 Event.type 访问。
+         * @param bubbles  确定 Event 对象是否参与事件流的冒泡阶段。默认值为 false。
+         * @param cancelable 确定是否可以取消 Event 对象。默认值为 false。
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @private
+         * @language zh_CN
+         */
+        constructor(type: string, bubbles?: boolean, cancelable?: boolean);
+        /**
+         * File number that has been loaded.
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
@@ -939,11 +1281,36 @@ declare namespace RES {
         itemsLoaded: number;
         /**
          * Total file number to load.
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
          */
         /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
+         * 已经加载的文件数。
+=======
+         * 要加载的总文件数。
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
+        itemsLoaded: number;
+        /**
+         * Total file number to load.
+=======
+        itemsTotal: number;
+        /**
+         * Resource group name.
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
          * 要加载的总文件数。
          * @version Egret 2.4
          * @platform Web,Native
@@ -964,6 +1331,15 @@ declare namespace RES {
          */
         groupName: string;
         /**
+=======
+         * 资源组名。
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+        groupName: string;
+        /**
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
          * An item of information that is finished by the end of a load.
          * @version Egret 2.4
          * @platform Web,Native
@@ -1096,9 +1472,12 @@ declare namespace RES {
      */
     function registerAnalyzer(type: string, analyzerClass: any): void;
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
      * @language en_US
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
      * Get mapping injection.
      * @param type Injection type.
      * @version Egret 3.2.6
@@ -1116,15 +1495,24 @@ declare namespace RES {
      */
     function getAnalyzer(type: string): AnalyzerBase;
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
      * Register the VersionController
      * @param vcs The VersionController to register.
      * @version Egret 2.5
      * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
      */
     /**
      * @language zh_CN
+=======
+     * @language en_US
+     */
+    /**
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
      * @language en_US
      */
@@ -1134,7 +1522,11 @@ declare namespace RES {
      * @param vcs 注入的版本控制器。
      * @version Egret 2.5
      * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
+=======
+     * @language zh_CN
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
      * @language zh_CN
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
@@ -1144,6 +1536,7 @@ declare namespace RES {
      * Returns the VersionController
      * @version Egret 2.5
      * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
      * @language en_US
 <<<<<<< HEAD:libs/modules/res/res.d.ts
      * Returns the VersionController
@@ -1160,6 +1553,9 @@ declare namespace RES {
     /**
      * @language en_US
 =======
+=======
+     * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
      */
     /**
      * 获得版本控制器.
@@ -1169,6 +1565,9 @@ declare namespace RES {
      */
     function getVersionController(): VersionController;
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
+=======
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
      * Load configuration file and parse.
      * @param url Configuration file path (path resource.json).
@@ -1294,8 +1693,11 @@ declare namespace RES {
      */
     function hasRes(key: string): boolean;
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
      * @language en_US
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
      * parse a configuration file at run time，it will not clean the exist data.
@@ -1307,8 +1709,11 @@ declare namespace RES {
      * @language en_US
      */
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/res/res.d.ts
 <<<<<<< HEAD:libs/modules/res/res.d.ts
      * @language zh_CN
+=======
+>>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
 =======
 >>>>>>> dev:EgerPro/libs/modules/res/res.d.ts
      * 运行时动态解析一个配置文件,此操作不会清空之前已存在的配置。

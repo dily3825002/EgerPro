@@ -19,12 +19,7 @@ var game;
         function ViewPrepCommand() {
             return _super.call(this) || this;
         }
-<<<<<<< HEAD:bin-debug/core/controller/ViewPrepCommand.js
-        var d = __define,c=ViewPrepCommand,p=c.prototype;
-        p.execute = function (notification) {
-=======
         ViewPrepCommand.prototype.execute = function (notification) {
->>>>>>> dev:EgerPro/bin-debug/core/controller/ViewPrepCommand.js
             var main = GameLayerManager.gameLayer().panelLayer;
             this.facade.registerMediator(new game.RoleMediator());
             this.facade.registerMediator(new game.BackpackMediator());
@@ -37,10 +32,6 @@ var game;
         return ViewPrepCommand;
     }(puremvc.SimpleCommand));
     game.ViewPrepCommand = ViewPrepCommand;
-<<<<<<< HEAD:bin-debug/core/controller/ViewPrepCommand.js
-    egret.registerClass(ViewPrepCommand,'game.ViewPrepCommand',["puremvc.ICommand","puremvc.INotifier"]);
-=======
     __reflect(ViewPrepCommand.prototype, "game.ViewPrepCommand", ["puremvc.ICommand", "puremvc.INotifier"]);
->>>>>>> dev:EgerPro/bin-debug/core/controller/ViewPrepCommand.js
 })(game || (game = {}));
 //# sourceMappingURL=ViewPrepCommand.js.map

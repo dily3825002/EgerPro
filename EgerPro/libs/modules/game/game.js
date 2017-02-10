@@ -174,9 +174,13 @@ var egret;
                 _this._end = end | 0;
             return _this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         var d = __define,c=FrameLabel,p=c.prototype;
         d(p, "name"
+=======
+        Object.defineProperty(FrameLabel.prototype, "name", {
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
         Object.defineProperty(FrameLabel.prototype, "name", {
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
@@ -254,8 +258,12 @@ var egret;
         return FrameLabel;
     }(egret.EventDispatcher));
     egret.FrameLabel = FrameLabel;
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
     egret.registerClass(FrameLabel,'egret.FrameLabel');
+=======
+    __reflect(FrameLabel.prototype, "egret.FrameLabel");
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
     __reflect(FrameLabel.prototype, "egret.FrameLabel");
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
@@ -291,6 +299,7 @@ var egret;
 var egret;
 (function (egret) {
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
     * @language en_US
     * @version Egret 2.4
@@ -306,6 +315,9 @@ var egret;
 =======
      * @classdesc 使用 MovieClipData 类，您可以创建 MovieClip 对象和处理 MovieClip 对象的数据。MovieClipData 一般由MovieClipDataFactory生成
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
+     * @classdesc 使用 MovieClipData 类，您可以创建 MovieClip 对象和处理 MovieClip 对象的数据。MovieClipData 一般由MovieClipDataFactory生成
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
      * @see http://edn.egret.com/cn/docs/page/596 MovieClip序列帧动画
      * @version Egret 2.4
      * @platform Web,Native
@@ -317,6 +329,7 @@ var egret;
          * @version Egret 2.4
          * @platform Web,Native
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         function MovieClip(movieClipData) {
             _super.call(this);
@@ -330,6 +343,10 @@ var egret;
              * @private
              */
             this.frames = null;
+=======
+        function MovieClipData() {
+            var _this = _super.call(this) || this;
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
         function MovieClipData() {
             var _this = _super.call(this) || this;
@@ -349,6 +366,7 @@ var egret;
              * 帧数据列表
              * @version Egret 2.4
              * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
              */
             _this.frames = [];
             /**
@@ -417,6 +435,42 @@ var egret;
             return _this;
         }
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
+             */
+            _this.frames = [];
+            /**
+             * 帧标签列表
+             * @version Egret 2.4
+             * @platform Web,Native
+             */
+            _this.labels = null;
+            /**
+             * 帧事件列表
+             * @version Egret 2.4
+             * @platform Web,Native
+             */
+            _this.events = [];
+            /**
+             * 帧率
+             * @version Egret 2.4
+             * @platform Web,Native
+             */
+            _this.frameRate = 0;
+            /**
+             * 纹理数据
+             * @version Egret 2.4
+             * @platform Web,Native
+             */
+            _this.textureData = null;
+            /**
+             * 纹理集
+             * @version Egret 2.4
+             * @platform Web,Native
+             */
+            _this.spriteSheet = null;
+            return _this;
+        }
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
         /**
          * @private
          *
@@ -470,6 +524,7 @@ var egret;
          * @param resName
          * @returns
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         p.$render = function () {
             var texture = this.$bitmapData;
@@ -496,6 +551,17 @@ var egret;
                 texture = this.spriteSheet.createTexture(resName, textureData.x, textureData.y, textureData.w, textureData.h);
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
             }
+=======
+        MovieClipData.prototype.getTextureByResName = function (resName) {
+            if (this.spriteSheet == null) {
+                return null;
+            }
+            var texture = this.spriteSheet.getTexture(resName);
+            if (!texture) {
+                var textureData = this.textureData[resName];
+                texture = this.spriteSheet.createTexture(resName, textureData.x, textureData.y, textureData.w, textureData.h);
+            }
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
             return texture;
         };
         /**
@@ -503,6 +569,7 @@ var egret;
          *
          * @returns
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         p.$measureContentBounds = function (bounds) {
             var texture = this.$bitmapData;
@@ -516,6 +583,10 @@ var egret;
             else {
                 bounds.setEmpty();
             }
+=======
+        MovieClipData.prototype.$isDataValid = function () {
+            return this.frames.length > 0;
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
         MovieClipData.prototype.$isDataValid = function () {
             return this.frames.length > 0;
@@ -736,6 +807,7 @@ var egret;
          * @param cache
          * @returns
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         p.gotoAndStop = function (frame) {
             if (arguments.length != 1) {
@@ -848,11 +920,16 @@ var egret;
             this.$invalidateContentBounds();
             this.displayedKeyFrameNum = currentFrameNum;
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
         MovieClipDataFactory.prototype.findFromCache = function (movieClipName, cache) {
             if (this.enableCache && cache[movieClipName]) {
                 return cache[movieClipName];
             }
             return null;
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
         };
         /**
@@ -918,16 +995,22 @@ var egret;
         MovieClipDataFactory.prototype.setTexture = function (value) {
             this.$spriteSheet = value ? new egret.SpriteSheet(value) : null;
         };
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         return MovieClip;
     }(egret.DisplayObject));
     egret.MovieClip = MovieClip;
     egret.registerClass(MovieClip,'egret.MovieClip');
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
         return MovieClipDataFactory;
     }(egret.EventDispatcher));
     egret.MovieClipDataFactory = MovieClipDataFactory;
     __reflect(MovieClipDataFactory.prototype, "egret.MovieClipDataFactory");
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
 })(egret || (egret = {}));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -961,10 +1044,13 @@ var egret;
 var egret;
 (function (egret) {
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
      * @classdesc 使用 MovieClipData 类，您可以创建 MovieClip 对象和处理 MovieClip 对象的数据。MovieClipData 一般由MovieClipDataFactory生成
      * @see http://edn.egret.com/cn/docs/page/596 MovieClip序列帧动画
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
      * When the movieClip's current frame have a frameLabel, dispatches MovieClipEvent object. FrameLabel Event type: MovieClipEvent.FRAME_LABEL
      * @version Egret 2.4
      * @platform Web,Native
@@ -972,6 +1058,9 @@ var egret;
      */
     /**
      * 当动画的当前帧有事件，将调度 MovieClipEvent 对象。帧事件类型 MovieClipEvent.FRAME_LABEL.
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
      * @version Egret 2.4
      * @platform Web,Native
@@ -1020,6 +1109,7 @@ var egret;
             _this.frameLabel = frameLabel;
             return _this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         var d = __define,c=MovieClipData,p=c.prototype;
         /**
@@ -1034,6 +1124,8 @@ var egret;
             this.spriteSheet = spriteSheet;
             this.setMCData(mcData);
         };
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
         /**
@@ -1054,6 +1146,7 @@ var egret;
          * @platform Web,Native
          * @language zh_CN
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         p.getTextureByFrame = function (frame) {
             var frameData = this.getKeyFrameData(frame);
@@ -1210,6 +1303,16 @@ var egret;
             egret.Event.release(event);
             return result;
         };
+=======
+        MovieClipEvent.dispatchMovieClipEvent = function (target, type, frameLabel) {
+            if (frameLabel === void 0) { frameLabel = null; }
+            var event = egret.Event.create(MovieClipEvent, type);
+            event.frameLabel = frameLabel;
+            var result = target.dispatchEvent(event);
+            egret.Event.release(event);
+            return result;
+        };
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
         return MovieClipEvent;
     }(egret.Event));
     /**
@@ -1227,6 +1330,9 @@ var egret;
     MovieClipEvent.FRAME_LABEL = "frame_label";
     egret.MovieClipEvent = MovieClipEvent;
     __reflect(MovieClipEvent.prototype, "egret.MovieClipEvent");
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
 })(egret || (egret = {}));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -1260,11 +1366,15 @@ var egret;
 var egret;
 (function (egret) {
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
      * @classdesc 使用 MovieClipDataFactory 类，可以生成 MovieClipData 对象用于创建MovieClip
      * @see http://edn.egret.com/cn/docs/page/596 MovieClip序列帧动画
      * @version Egret 2.4
      * @platform Web,Native
+=======
+     * @private
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
      * @private
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
@@ -1277,10 +1387,15 @@ var egret;
         function ScrollEase() {
             egret.$error(1014);
         }
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         var d = __define,c=MovieClipDataFactory,p=c.prototype;
 =======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
+        /**
+         *
+         * @param amount
+=======
         /**
          *
          * @param amount
@@ -1308,15 +1423,44 @@ var egret;
         /**
          *
          * @param pow
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
          * @returns
          * @version Egret 2.4
          * @platform Web,Native
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+        ScrollEase.get = function (amount) {
+            if (amount < -1) {
+                amount = -1;
+            }
+            if (amount > 1) {
+                amount = 1;
+            }
+            return function (t) {
+                if (amount == 0) {
+                    return t;
+                }
+                if (amount < 0) {
+                    return t * (t * -amount + 1 + amount);
+                }
+                return t * ((2 - t) * amount + (1 - amount));
+            };
+        };
+        /**
+         *
+         * @param pow
+         * @returns
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
         ScrollEase.getPowOut = function (pow) {
             return function (t) {
                 return 1 - Math.pow(1 - t, pow);
             };
         };
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         return MovieClipDataFactory;
     }(egret.EventDispatcher));
@@ -1353,6 +1497,10 @@ var egret;
 //////////////////////////////////////////////////////////////////////////////////////
 var egret;
 (function (egret) {
+=======
+        return ScrollEase;
+    }());
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
         return ScrollEase;
     }());
@@ -1396,6 +1544,7 @@ var egret;
             _this.ignoreGlobalPause = false;
             /**
              * @private
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
              */
             _this.loop = false;
             /**
@@ -1437,12 +1586,58 @@ var egret;
             /**
              * @private
              */
+=======
+             */
+            _this.loop = false;
+            /**
+             * @private
+             */
+            _this.pluginData = null;
+            /**
+             * @private
+             */
+            _this._steps = null;
+            /**
+             * @private
+             */
+            _this._actions = null;
+            /**
+             * @private
+             */
+            _this.paused = false;
+            /**
+             * @private
+             */
+            _this.duration = 0;
+            /**
+             * @private
+             */
+            _this._prevPos = -1;
+            /**
+             * @private
+             */
+            _this.position = null;
+            /**
+             * @private
+             */
+            _this._prevPosition = 0;
+            /**
+             * @private
+             */
+            _this._stepPosition = 0;
+            /**
+             * @private
+             */
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
             _this.passive = false;
             _this.initialize(target, props, pluginData);
             return _this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         var d = __define,c=MovieClipEvent,p=c.prototype;
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
         /**
@@ -1482,6 +1677,7 @@ var egret;
          * @language en_US
          */
         /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
          * @language zh_CN
          * 动画的当前帧上有事件时调度
@@ -1698,6 +1894,8 @@ var egret;
          * @language zh_CN
 =======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
          * 删除一个对象上的全部 ScrollTween 动画
          * @param target  需要移除 ScrollTween 的对象
          * @version Egret 2.4
@@ -1810,8 +2008,12 @@ var egret;
          * @param actionsMode
          * @returns
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         p.setPosition = function (value, actionsMode) {
+=======
+        ScrollTween.prototype.setPosition = function (value, actionsMode) {
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
         ScrollTween.prototype.setPosition = function (value, actionsMode) {
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
@@ -1844,8 +2046,14 @@ var egret;
                 }
                 else if (this._steps.length > 0) {
                     // 找到新的tween
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
                     for (var i = 0, l = this._steps.length; i < l; i++) {
+=======
+                    var i = void 0;
+                    var l = this._steps.length;
+                    for (i = 0; i < l; i++) {
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
                     var i = void 0;
                     var l = this._steps.length;
@@ -2130,10 +2338,13 @@ var egret;
         };
         return ScrollTween;
     }(egret.EventDispatcher));
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
     egret.ScrollTween = ScrollTween;
     egret.registerClass(ScrollTween,'egret.ScrollTween');
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
     /**
      * @private
      */
@@ -2153,6 +2364,9 @@ var egret;
     ScrollTween._lastTime = 0;
     egret.ScrollTween = ScrollTween;
     __reflect(ScrollTween.prototype, "egret.ScrollTween");
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
 })(egret || (egret = {}));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -2265,9 +2479,13 @@ var egret;
             }
             return _this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         var d = __define,c=ScrollView,p=c.prototype;
         d(p, "bounces"
+=======
+        Object.defineProperty(ScrollView.prototype, "bounces", {
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
         Object.defineProperty(ScrollView.prototype, "bounces", {
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
@@ -3138,16 +3356,22 @@ var egret;
         };
         return ScrollView;
     }(egret.DisplayObjectContainer));
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
     egret.ScrollView = ScrollView;
     egret.registerClass(ScrollView,'egret.ScrollView');
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
     /**
      * @private
      */
     ScrollView.weight = [1, 1.33, 1.66, 2, 2.33];
     egret.ScrollView = ScrollView;
     __reflect(ScrollView.prototype, "egret.ScrollView");
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
 })(egret || (egret = {}));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -3256,6 +3480,7 @@ var egret;
              */
             this._bounces = true;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         var d = __define,c=ScrollViewProperties,p=c.prototype;
         return ScrollViewProperties;
@@ -3263,6 +3488,8 @@ var egret;
     egret.ScrollViewProperties = ScrollViewProperties;
     egret.registerClass(ScrollViewProperties,'egret.ScrollViewProperties');
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
         return ScrollViewProperties;
     }());
     egret.ScrollViewProperties = ScrollViewProperties;
@@ -3548,6 +3775,9 @@ var egret;
     }(egret.EventDispatcher));
     egret.URLLoader = URLLoader;
     __reflect(URLLoader.prototype, "egret.URLLoader");
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
 })(egret || (egret = {}));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -3581,6 +3811,7 @@ var egret;
 var egret;
 (function (egret) {
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
      * @private
      *
@@ -3654,6 +3885,8 @@ var egret;
     var URLLoader = (function (_super) {
         __extends(URLLoader, _super);
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
     * @version Egret 2.4
     * @platform Web,Native
     * @includeExample extension/game/display/MovieClip.ts
@@ -3673,6 +3906,31 @@ var egret;
     var MovieClip = (function (_super) {
         __extends(MovieClip, _super);
         //Construct Function
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+        /**
+         * 创建新的 MovieClip 实例。创建 MovieClip 之后，调用舞台上的显示对象容器的addElement方法。
+         * @param movieClipData {movieClipData} 被引用的 movieClipData 对象
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        function MovieClip(movieClipData) {
+            var _this = _super.call(this) || this;
+            //Render Property
+            _this.$bitmapData = null;
+            //Render Property
+            _this.offsetPoint = egret.Point.create(0, 0);
+            //Data Property
+            _this.$movieClipData = null;
+            /**
+             * @private
+             */
+            _this.frames = null;
+            /**
+             * @private
+             */
+            _this.$totalFrames = 0;
+            /**
+=======
         /**
          * 创建新的 MovieClip 实例。创建 MovieClip 之后，调用舞台上的显示对象容器的addElement方法。
          * @param movieClipData {movieClipData} 被引用的 movieClipData 对象
@@ -3825,6 +4083,616 @@ var egret;
          * @private
          *
          */
+        MovieClip.prototype._initFrame = function () {
+            if (this.$movieClipData.$isTextureValid()) {
+                this.advanceFrame();
+                this.constructFrame();
+            }
+        };
+        /**
+         * @private
+         */
+        MovieClip.prototype.$render = function () {
+            var texture = this.$bitmapData;
+            if (texture) {
+                var offsetX = Math.round(this.offsetPoint.x);
+                var offsetY = Math.round(this.offsetPoint.y);
+                var bitmapWidth = texture._bitmapWidth;
+                var bitmapHeight = texture._bitmapHeight;
+                var textureWidth = texture.$getTextureWidth();
+                var textureHeight = texture.$getTextureHeight();
+                var destW = Math.round(texture.$getScaleBitmapWidth());
+                var destH = Math.round(texture.$getScaleBitmapHeight());
+                var sourceWidth = texture._sourceWidth;
+                var sourceHeight = texture._sourceHeight;
+                egret.sys.BitmapNode.$updateTextureData(this.$renderNode, texture._bitmapData, texture._bitmapX, texture._bitmapY, bitmapWidth, bitmapHeight, offsetX, offsetY, textureWidth, textureHeight, destW, destH, sourceWidth, sourceHeight, null, egret.BitmapFillMode.SCALE, this.$smoothing);
+            }
+        };
+        /**
+         * @private
+         */
+        MovieClip.prototype.$measureContentBounds = function (bounds) {
+            var texture = this.$bitmapData;
+            if (texture) {
+                var x = this.offsetPoint.x;
+                var y = this.offsetPoint.y;
+                var w = texture.$getTextureWidth();
+                var h = texture.$getTextureHeight();
+                bounds.setTo(x, y, w, h);
+            }
+            else {
+                bounds.setEmpty();
+            }
+        };
+        /**
+         * @private
+         *
+         * @param stage
+         * @param nestLevel
+         */
+        MovieClip.prototype.$onAddToStage = function (stage, nestLevel) {
+            _super.prototype.$onAddToStage.call(this, stage, nestLevel);
+            if (this.$isPlaying && this.$totalFrames > 1) {
+                this.setIsStopped(false);
+            }
+        };
+        /**
+         * @private
+         *
+         */
+        MovieClip.prototype.$onRemoveFromStage = function () {
+            _super.prototype.$onRemoveFromStage.call(this);
+            this.setIsStopped(true);
+        };
+        //Data Function
+        /**
+         * @private
+         * 返回帧标签为指定字符串的FrameLabel对象
+         * @param labelName {string} 帧标签名
+         * @param ignoreCase {boolean} 是否忽略大小写，可选参数，默认false
+         * @returns {egret.FrameLabel} FrameLabel对象
+         */
+        MovieClip.prototype.getFrameLabelByName = function (labelName, ignoreCase) {
+            if (ignoreCase === void 0) { ignoreCase = false; }
+            if (ignoreCase) {
+                labelName = labelName.toLowerCase();
+            }
+            var frameLabels = this.frameLabels;
+            if (frameLabels) {
+                var outputFramelabel = null;
+                for (var i = 0; i < frameLabels.length; i++) {
+                    outputFramelabel = frameLabels[i];
+                    if (ignoreCase ? outputFramelabel.name.toLowerCase() == labelName : outputFramelabel.name == labelName) {
+                        return outputFramelabel;
+                    }
+                }
+            }
+            return null;
+        };
+        /**
+         * @private
+         * 根据帧标签，设置开始和结束的帧数
+         * @param labelName {string} 帧标签名
+         */
+        MovieClip.prototype.getFrameStartEnd = function (labelName) {
+            var frameLabels = this.frameLabels;
+            if (frameLabels) {
+                var outputFramelabel = null;
+                for (var i = 0; i < frameLabels.length; i++) {
+                    outputFramelabel = frameLabels[i];
+                    if (labelName == outputFramelabel.name) {
+                        this.$frameLabelStart = outputFramelabel.frame;
+                        this.$frameLabelEnd = outputFramelabel.end;
+                        break;
+                    }
+                }
+            }
+        };
+        /**
+         * @private
+         * 返回指定序号的帧的FrameLabel对象
+         * @param frame {number} 帧序号
+         * @returns {egret.FrameLabel} FrameLabel对象
+         */
+        MovieClip.prototype.getFrameLabelByFrame = function (frame) {
+            var frameLabels = this.frameLabels;
+            if (frameLabels) {
+                var outputFramelabel = null;
+                for (var i = 0; i < frameLabels.length; i++) {
+                    outputFramelabel = frameLabels[i];
+                    if (outputFramelabel.frame == frame) {
+                        return outputFramelabel;
+                    }
+                }
+            }
+            return null;
+        };
+        /**
+         * @private
+         * 返回指定序号的帧对应的FrameLabel对象，如果当前帧没有标签，则返回前面最近的有标签的帧的FrameLabel对象
+         * @method egret.MovieClip#getFrameLabelForFrame
+         * @param frame {number} 帧序号
+         * @returns {egret.FrameLabel} FrameLabel对象
+         */
+        MovieClip.prototype.getFrameLabelForFrame = function (frame) {
+            var outputFrameLabel = null;
+            var tempFrameLabel = null;
+            var frameLabels = this.frameLabels;
+            if (frameLabels) {
+                for (var i = 0; i < frameLabels.length; i++) {
+                    tempFrameLabel = frameLabels[i];
+                    if (tempFrameLabel.frame > frame) {
+                        return outputFrameLabel;
+                    }
+                    outputFrameLabel = tempFrameLabel;
+                }
+            }
+            return outputFrameLabel;
+        };
+        //Animation Function
+        /**
+         * 继续播放当前动画
+         * @param playTimes {number} 播放次数。 参数为整数，可选参数，>=1：设定播放次数，<0：循环播放，默认值 0：不改变播放次数(MovieClip初始播放次数设置为1)，
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        MovieClip.prototype.play = function (playTimes) {
+            if (playTimes === void 0) { playTimes = 0; }
+            this.$isPlaying = true;
+            this.setPlayTimes(playTimes);
+            if (this.$totalFrames > 1 && this.$stage) {
+                this.setIsStopped(false);
+            }
+        };
+        /**
+         * 暂停播放动画
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        MovieClip.prototype.stop = function () {
+            this.$isPlaying = false;
+            this.setIsStopped(true);
+        };
+        /**
+         * 将播放头移到前一帧并停止
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        MovieClip.prototype.prevFrame = function () {
+            this.gotoAndStop(this.$currentFrameNum - 1);
+        };
+        /**
+         * 跳到后一帧并停止
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        MovieClip.prototype.nextFrame = function () {
+            this.gotoAndStop(this.$currentFrameNum + 1);
+        };
+        /**
+         * 将播放头移到指定帧并播放
+         * @param frame {any} 指定帧的帧号或帧标签
+         * @param playTimes {number} 播放次数。 参数为整数，可选参数，>=1：设定播放次数，<0：循环播放，默认值 0：不改变播放次数，
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        MovieClip.prototype.gotoAndPlay = function (frame, playTimes) {
+            if (playTimes === void 0) { playTimes = 0; }
+            if (arguments.length == 0 || arguments.length > 2) {
+                egret.$error(1022, "MovieClip.gotoAndPlay()");
+            }
+            if (typeof frame === "string") {
+                this.getFrameStartEnd(frame);
+            }
+            else {
+                this.$frameLabelStart = 0;
+                this.$frameLabelEnd = 0;
+            }
+            this.play(playTimes);
+            this.gotoFrame(frame);
+        };
+        /**
+         * 将播放头移到指定帧并停止
+         * @param frame {any} 指定帧的帧号或帧标签
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        MovieClip.prototype.gotoAndStop = function (frame) {
+            if (arguments.length != 1) {
+                egret.$error(1022, "MovieClip.gotoAndStop()");
+            }
+            this.stop();
+            this.gotoFrame(frame);
+        };
+        /**
+         * @private
+         *
+         * @param frame
+         */
+        MovieClip.prototype.gotoFrame = function (frame) {
+            var frameNum;
+            if (typeof frame === "string") {
+                frameNum = this.getFrameLabelByName(frame).frame;
+            }
+            else {
+                frameNum = parseInt(frame + '', 10);
+                if (frameNum != frame) {
+                    egret.$error(1022, "Frame Label Not Found");
+                }
+            }
+            if (frameNum < 1) {
+                frameNum = 1;
+            }
+            else if (frameNum > this.$totalFrames) {
+                frameNum = this.$totalFrames;
+            }
+            if (frameNum == this.$nextFrameNum) {
+                return;
+            }
+            this.$nextFrameNum = frameNum;
+            this.advanceFrame();
+            this.constructFrame();
+            this.handlePendingEvent();
+        };
+        /**
+         * @private
+         *
+         * @param advancedTime
+         * @returns
+         */
+        MovieClip.prototype.advanceTime = function (timeStamp) {
+            var self = this;
+            var advancedTime = timeStamp - self.lastTime;
+            self.lastTime = timeStamp;
+            var frameIntervalTime = self.frameIntervalTime;
+            var currentTime = self.passedTime + advancedTime;
+            self.passedTime = currentTime % frameIntervalTime;
+            var num = currentTime / frameIntervalTime;
+            if (num < 1) {
+                return false;
+            }
+            while (num >= 1) {
+                num--;
+                self.$nextFrameNum++;
+                if (self.$nextFrameNum > self.$totalFrames || (self.$frameLabelStart > 0 && self.$nextFrameNum > self.$frameLabelEnd)) {
+                    if (self.playTimes == -1) {
+                        self.$eventPool.push(egret.Event.LOOP_COMPLETE);
+                        self.$nextFrameNum = 1;
+                    }
+                    else {
+                        self.playTimes--;
+                        if (self.playTimes > 0) {
+                            self.$eventPool.push(egret.Event.LOOP_COMPLETE);
+                            self.$nextFrameNum = 1;
+                        }
+                        else {
+                            self.$nextFrameNum = self.$totalFrames;
+                            self.$eventPool.push(egret.Event.COMPLETE);
+                            self.stop();
+                            break;
+                        }
+                    }
+                }
+                if (self.$currentFrameNum == self.$frameLabelEnd) {
+                    self.$nextFrameNum = self.$frameLabelStart;
+                }
+                self.advanceFrame();
+            }
+            self.constructFrame();
+            self.handlePendingEvent();
+            return false;
+        };
+        /**
+         * @private
+         *
+         */
+        MovieClip.prototype.advanceFrame = function () {
+            this.$currentFrameNum = this.$nextFrameNum;
+            var event = this.frameEvents[this.$nextFrameNum];
+            if (event && event != "") {
+                egret.MovieClipEvent.dispatchMovieClipEvent(this, egret.MovieClipEvent.FRAME_LABEL, event);
+            }
+        };
+        /**
+         * @private
+         *
+         */
+        MovieClip.prototype.constructFrame = function () {
+            var currentFrameNum = this.$currentFrameNum;
+            if (this.displayedKeyFrameNum == currentFrameNum) {
+                return;
+            }
+            this.$bitmapData = this.$movieClipData.getTextureByFrame(currentFrameNum);
+            this.$movieClipData.$getOffsetByFrame(currentFrameNum, this.offsetPoint);
+            this.$invalidateContentBounds();
+            this.displayedKeyFrameNum = currentFrameNum;
+        };
+        /**
+         * @private
+         *
+         */
+        MovieClip.prototype.$renderFrame = function () {
+            this.$bitmapData = this.$movieClipData.getTextureByFrame(this.$currentFrameNum);
+            this.$invalidateContentBounds();
+        };
+        /**
+         * @private
+         *
+         */
+        MovieClip.prototype.handlePendingEvent = function () {
+            if (this.$eventPool.length != 0) {
+                this.$eventPool.reverse();
+                var eventPool = this.$eventPool;
+                var length_3 = eventPool.length;
+                var isComplete = false;
+                var isLoopComplete = false;
+                for (var i = 0; i < length_3; i++) {
+                    var event_1 = eventPool.pop();
+                    if (event_1 == egret.Event.LOOP_COMPLETE) {
+                        isLoopComplete = true;
+                    }
+                    else if (event_1 == egret.Event.COMPLETE) {
+                        isComplete = true;
+                    }
+                    else {
+                        this.dispatchEventWith(event_1);
+                    }
+                }
+                if (isLoopComplete) {
+                    this.dispatchEventWith(egret.Event.LOOP_COMPLETE);
+                }
+                if (isComplete) {
+                    this.dispatchEventWith(egret.Event.COMPLETE);
+                }
+            }
+        };
+        Object.defineProperty(MovieClip.prototype, "totalFrames", {
+            //Properties
+            /**
+             * MovieClip 实例中帧的总数
+             * @version Egret 2.4
+             * @platform Web,Native
+             */
+            get: function () {
+                return this.$totalFrames;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(MovieClip.prototype, "currentFrame", {
+            /**
+             * MovieClip 实例当前播放的帧的序号
+             * @version Egret 2.4
+             * @platform Web,Native
+             */
+            get: function () {
+                return this.$currentFrameNum;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(MovieClip.prototype, "currentFrameLabel", {
+            /**
+             * MovieClip 实例当前播放的帧的标签。如果当前帧没有标签，则 currentFrameLabel返回null。
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @private
+             */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+            _this.frameLabels = null;
+            /**
+             * @private
+             */
+            _this.$frameLabelStart = 0;
+            /**
+             * @private
+             */
+            _this.$frameLabelEnd = 0;
+            /**
+=======
+            get: function () {
+                var label = this.getFrameLabelByFrame(this.$currentFrameNum);
+                return label && label.name;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(MovieClip.prototype, "currentLabel", {
+            /**
+             * 当前播放的帧对应的标签，如果当前帧没有标签，则currentLabel返回包含标签的先前帧的标签。如果当前帧和先前帧都不包含标签，currentLabel返回null。
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @private
+             */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+            _this.frameEvents = null;
+=======
+            get: function () {
+                var label = this.getFrameLabelForFrame(this.$currentFrameNum);
+                return label ? label.name : null;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(MovieClip.prototype, "frameRate", {
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+            /**
+             * MovieClip 实例的帧频
+             * @version Egret 2.4
+             * @platform Web,Native
+             */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+            _this.frameIntervalTime = 0;
+=======
+            get: function () {
+                return this.$frameRate;
+            },
+            set: function (value) {
+                if (value == this.$frameRate) {
+                    return;
+                }
+                this.$frameRate = value;
+                this.frameIntervalTime = 1000 / this.$frameRate;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(MovieClip.prototype, "isPlaying", {
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+            /**
+             * MovieClip 实例当前是否正在播放
+             * @version Egret 2.4
+             * @platform Web,Native
+             */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+            _this.$eventPool = null;
+            //Animation Property
+            _this.$isPlaying = false;
+            /**
+             * @private
+             */
+            _this.isStopped = true;
+            /**
+             * @private
+             */
+            _this.playTimes = 0;
+            /**
+             * @private
+             */
+            _this.$currentFrameNum = 0;
+            /**
+             * @private
+             */
+            _this.$nextFrameNum = 1;
+            /**
+             * @private
+             */
+            _this.displayedKeyFrameNum = 0;
+            /**
+             * @private
+             */
+            _this.passedTime = 0;
+            /**
+             * @private
+             */
+            _this.$frameRate = NaN;
+            /**
+             * @private
+             */
+            _this.lastTime = 0;
+            _this.$smoothing = egret.Bitmap.defaultSmoothing;
+            _this.$renderNode = new egret.sys.BitmapNode();
+            _this.setMovieClipData(movieClipData);
+            return _this;
+        }
+        Object.defineProperty(MovieClip.prototype, "smoothing", {
+            /**
+             * Whether or not is smoothed when scaled.
+             * @version Egret 3.0
+             * @platform Web
+             * @language en_US
+             */
+            /**
+             * 控制在缩放时是否进行平滑处理。
+             * @version Egret 3.0
+             * @platform Web
+             * @language zh_CN
+             */
+            get: function () {
+                return this.$smoothing;
+            },
+            set: function (value) {
+                value = !!value;
+                if (value == this.$smoothing) {
+                    return;
+                }
+                this.$smoothing = value;
+                this.$invalidate();
+=======
+            get: function () {
+                return this.$isPlaying;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(MovieClip.prototype, "movieClipData", {
+            /**
+             * @version Egret 2.4
+             * @platform Web,Native
+             */
+            get: function () {
+                return this.$movieClipData;
+            },
+            /**
+             * MovieClip数据源
+             */
+            set: function (value) {
+                this.setMovieClipData(value);
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+            },
+            enumerable: true,
+            configurable: true
+        });
+        /**
+         * @private
+         *
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+         */
+        MovieClip.prototype.$init = function () {
+            this.$reset();
+            var movieClipData = this.$movieClipData;
+            if (movieClipData && movieClipData.$isDataValid()) {
+                this.frames = movieClipData.frames;
+                this.$totalFrames = movieClipData.numFrames;
+                this.frameLabels = movieClipData.labels;
+                this.frameEvents = movieClipData.events;
+                this.$frameRate = movieClipData.frameRate;
+                this.frameIntervalTime = 1000 / this.$frameRate;
+                this._initFrame();
+            }
+=======
+         * @param value
+         */
+        MovieClip.prototype.setMovieClipData = function (value) {
+            if (this.$movieClipData == value) {
+                return;
+            }
+            this.$movieClipData = value;
+            this.$init();
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+        };
+        /**
+         * @private
+         *
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+         */
+        MovieClip.prototype.$reset = function () {
+            this.frames = null;
+            this.playTimes = 0;
+            this.$isPlaying = false;
+            this.setIsStopped(true);
+            this.$currentFrameNum = 0;
+            this.$nextFrameNum = 1;
+            this.displayedKeyFrameNum = 0;
+            this.passedTime = 0;
+            this.$eventPool = [];
+=======
+         * @param value
+         */
+        MovieClip.prototype.setPlayTimes = function (value) {
+            if (value < 0 || value >= 1) {
+                this.playTimes = value < 0 ? -1 : Math.floor(value);
+            }
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+        };
+        /**
+         * @private
+         *
+         * @param value
+         */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
         MovieClip.prototype._initFrame = function () {
             if (this.$movieClipData.$isTextureValid()) {
                 this.advanceFrame();
@@ -4344,10 +5212,29 @@ var egret;
     egret.URLLoader = URLLoader;
     egret.registerClass(URLLoader,'egret.URLLoader');
 =======
+=======
+        MovieClip.prototype.setIsStopped = function (value) {
+            if (this.isStopped == value) {
+                return;
+            }
+            this.isStopped = value;
+            if (value) {
+                egret.sys.$ticker.$stopTick(this.advanceTime, this);
+            }
+            else {
+                this.playTimes = this.playTimes == 0 ? 1 : this.playTimes;
+                this.lastTime = egret.getTimer();
+                egret.sys.$ticker.$startTick(this.advanceTime, this);
+            }
+        };
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
         return MovieClip;
     }(egret.DisplayObject));
     egret.MovieClip = MovieClip;
     __reflect(MovieClip.prototype, "egret.MovieClip");
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
 })(egret || (egret = {}));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -4381,10 +5268,15 @@ var egret;
 var egret;
 (function (egret) {
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
      * @language en_US
      * The URLLoaderDataFormat class provides values that specify how downloaded data is received.
      * @see http://edn.egret.com/cn/docs/page/600 Read different data format
+=======
+     * The URLRequest class captures all of the information in a single HTTP request.
+     * @see http://edn.egret.com/cn/index.php/article/index/id/601 Build communication request
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
      * The URLRequest class captures all of the information in a single HTTP request.
      * @see http://edn.egret.com/cn/index.php/article/index/id/601 Build communication request
@@ -4395,10 +5287,15 @@ var egret;
      * @language en_US
      */
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
      * @language zh_CN
      * URLLoaderDataFormat 类提供了一些用于指定如何接收已下载数据的值。
      * @see http://edn.egret.com/cn/docs/page/600 读取不同数据格式
+=======
+     * URLRequest 类可捕获单个 HTTP 请求中的所有信息。
+     * @see http://edn.egret.com/cn/index.php/article/index/id/601 构建通信请求
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
      * URLRequest 类可捕获单个 HTTP 请求中的所有信息。
      * @see http://edn.egret.com/cn/index.php/article/index/id/601 构建通信请求
@@ -4408,6 +5305,7 @@ var egret;
      * @includeExample extension/game/net/URLRequest.ts
      * @language zh_CN
      */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
     var URLLoaderDataFormat = (function () {
         function URLLoaderDataFormat() {
@@ -4462,6 +5360,10 @@ var egret;
     var URLRequest = (function (_super) {
         __extends(URLRequest, _super);
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
+    var URLRequest = (function (_super) {
+        __extends(URLRequest, _super);
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
         /**
          * Create an egret.URLRequest object
          * @param url {string} Addresses for URL requests
@@ -4476,6 +5378,7 @@ var egret;
          * @platform Web,Native
          * @language zh_CN
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         URLLoaderDataFormat.SOUND = "sound";
         return URLLoaderDataFormat;
@@ -4551,10 +5454,15 @@ var egret;
             /**
              * @language en_US
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
         function URLRequest(url) {
             if (url === void 0) { url = null; }
             var _this = _super.call(this) || this;
             /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
              * An object contains data to be transmitted with the URL request.
              * This property is used in conjunction with the method property.  When the value of method is GET, the value of data is appended to the value of URLRequest.url, using HTTP query-string syntax.
@@ -4567,10 +5475,16 @@ var egret;
              * Otherwise, the object is converted into a string, and the string is used as the POST or GET data.
              * @version Egret 2.4
              * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
              */
             /**
              * @language zh_CN
+=======
+             * @language en_US
+             */
+            /**
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
              * @language en_US
              */
@@ -4587,6 +5501,7 @@ var egret;
              * 否则，该对象会转换为字符串，并且该字符串会用作 POST 或 GET 数据。
              * @version Egret 2.4
              * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
              */
             this.data = null;
@@ -4619,6 +5534,8 @@ var egret;
             /**
              * @language en_US
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
              * @language zh_CN
              */
             _this.data = null;
@@ -4649,16 +5566,25 @@ var egret;
              */
             _this.url = "";
             /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
              * The array of HTTP request headers to be appended to the HTTP request. The array is composed of URLRequestHeader objects.
              * Each object in the array must be a URLRequestHeader object that contains a name string and a value string.
              * Because of browser compatibility, this property has not been achieved in html5
              * @version Egret 2.4
              * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
              */
             /**
              * @language zh_CN
+=======
+             * @language en_US
+             */
+            /**
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
              * @language en_US
              */
@@ -4669,6 +5595,7 @@ var egret;
              * 由于浏览器兼容性原因，该属性在 html5 中并未实现
              * @version Egret 2.4
              * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
              */
             this.requestHeaders = [];
@@ -4680,6 +5607,8 @@ var egret;
     egret.URLRequest = URLRequest;
     egret.registerClass(URLRequest,'egret.URLRequest');
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
              * @language zh_CN
              */
             _this.requestHeaders = [];
@@ -4690,6 +5619,9 @@ var egret;
     }(egret.HashObject));
     egret.URLRequest = URLRequest;
     __reflect(URLRequest.prototype, "egret.URLRequest");
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
 })(egret || (egret = {}));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -4781,12 +5713,19 @@ var egret;
             this.name = name;
             this.value = value;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         var d = __define,c=URLRequestHeader,p=c.prototype;
         return URLRequestHeader;
     }());
     egret.URLRequestHeader = URLRequestHeader;
     egret.registerClass(URLRequestHeader,'egret.URLRequestHeader');
+=======
+        return URLRequestHeader;
+    }());
+    egret.URLRequestHeader = URLRequestHeader;
+    __reflect(URLRequestHeader.prototype, "egret.URLRequestHeader");
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
         return URLRequestHeader;
     }());
@@ -4845,6 +5784,7 @@ var egret;
     var URLRequestMethod = (function () {
         function URLRequestMethod() {
         }
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         var d = __define,c=URLRequestMethod,p=c.prototype;
         /**
@@ -4880,6 +5820,10 @@ var egret;
 =======
         return URLRequestMethod;
     }());
+=======
+        return URLRequestMethod;
+    }());
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
     /**
      * Specify that the URLRequest object is a GET.
      * @version Egret 2.4
@@ -4908,6 +5852,9 @@ var egret;
     URLRequestMethod.POST = "post";
     egret.URLRequestMethod = URLRequestMethod;
     __reflect(URLRequestMethod.prototype, "egret.URLRequestMethod");
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
 })(egret || (egret = {}));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -4995,8 +5942,11 @@ var egret;
             }
             return _this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         var d = __define,c=URLVariables,p=c.prototype;
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
         /**
@@ -5090,8 +6040,12 @@ var egret;
         return URLVariables;
     }(egret.HashObject));
     egret.URLVariables = URLVariables;
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
     egret.registerClass(URLVariables,'egret.URLVariables');
+=======
+    __reflect(URLVariables.prototype, "egret.URLVariables");
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
     __reflect(URLVariables.prototype, "egret.URLVariables");
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
@@ -5161,9 +6115,13 @@ var egret;
             _this._lastTime = egret.getTimer();
             return _this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         var d = __define,c=Ticker,p=c.prototype;
         p.update = function (timeStamp) {
+=======
+        Ticker.prototype.update = function (timeStamp) {
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
         Ticker.prototype.update = function (timeStamp) {
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
@@ -5257,8 +6215,12 @@ var egret;
         return Ticker;
     }(egret.EventDispatcher));
     egret.Ticker = Ticker;
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
     egret.registerClass(Ticker,'egret.Ticker');
+=======
+    __reflect(Ticker.prototype, "egret.Ticker");
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
     __reflect(Ticker.prototype, "egret.Ticker");
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
@@ -5311,9 +6273,13 @@ var egret;
         function MainContext() {
             return _super.call(this) || this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         var d = __define,c=MainContext,p=c.prototype;
         d(p, "stage"
+=======
+        Object.defineProperty(MainContext.prototype, "stage", {
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
         Object.defineProperty(MainContext.prototype, "stage", {
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
@@ -5346,21 +6312,28 @@ var egret;
              */
             get: function () {
                 return egret.sys.$TempStage;
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
             }
         );
         d(MainContext, "runtimeType"
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(MainContext, "runtimeType", {
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
             /**
              * @version Egret 2.4
              * @platform Web,Native
              */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
             ,function () {
                 egret.$warn(1041);
@@ -5368,6 +6341,8 @@ var egret;
             }
         );
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
             get: function () {
                 egret.$warn(1041, "egret.MainContext.runtimeType", "egret.Capabilities.runtimeType");
                 return MainContext._runtimeType;
@@ -5375,6 +6350,9 @@ var egret;
             enumerable: true,
             configurable: true
         });
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
         /**
          * 游戏启动，开启主循环，参考Flash的滑动跑道模型
@@ -5402,10 +6380,13 @@ var egret;
         });
         return MainContext;
     }(egret.EventDispatcher));
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
     egret.MainContext = MainContext;
     egret.registerClass(MainContext,'egret.MainContext');
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
     /**
      * @version Egret 2.4
      * @platform Web,Native
@@ -5433,6 +6414,9 @@ var egret;
     MainContext.RUNTIME_NATIVE = "runtimeNative";
     egret.MainContext = MainContext;
     __reflect(MainContext.prototype, "egret.MainContext");
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
 })(egret || (egret = {}));
 /**
@@ -5537,8 +6521,11 @@ var egret;
             _this.frameCount = 0;
             return _this;
         }
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
         var d = __define,c=Recycler,p=c.prototype;
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
         Recycler.$init = function () {
@@ -5654,16 +6641,22 @@ var egret;
         };
         return Recycler;
     }(egret.HashObject));
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
     egret.Recycler = Recycler;
     egret.registerClass(Recycler,'egret.Recycler');
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
     /**
      * @private
      */
     Recycler._callBackList = [];
     egret.Recycler = Recycler;
     __reflect(Recycler.prototype, "egret.Recycler");
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
     Recycler.$init();
 })(egret || (egret = {}));
@@ -5674,8 +6667,11 @@ var egret;
     var setIntervalCount = 0;
     var lastTime = 0;
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
      * @language en_US
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
      * To specify a delay (in milliseconds) calls the function specified interval loop.
@@ -5690,8 +6686,11 @@ var egret;
      * @language en_US
      */
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.js
 <<<<<<< HEAD:libs/modules/game/game.js
      * @language zh_CN
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.js
 =======
 >>>>>>> dev:EgerPro/libs/modules/game/game.js
      * 以指定的延迟（以毫秒为单位）间隔循环调用指定的函数。

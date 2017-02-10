@@ -21,8 +21,11 @@ var game;
         function MainManager() {
             return _super.call(this) || this;
         }
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/MainManager.js
 <<<<<<< HEAD:bin-debug/core/view/MainManager.js
         var d = __define,c=MainManager,p=c.prototype;
+=======
+>>>>>>> dev:EgerPro/bin-debug/core/view/MainManager.js
 =======
 >>>>>>> dev:EgerPro/bin-debug/core/view/MainManager.js
         /**
@@ -54,9 +57,15 @@ var game;
         };
         return MainManager;
     }(puremvc.SimpleCommand));
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/MainManager.js
 <<<<<<< HEAD:bin-debug/core/view/MainManager.js
     game.MainManager = MainManager;
     egret.registerClass(MainManager,'game.MainManager',["puremvc.ICommand","puremvc.INotifier"]);
+=======
+    MainManager.NAME = "MainManager";
+    game.MainManager = MainManager;
+    __reflect(MainManager.prototype, "game.MainManager", ["puremvc.ICommand", "puremvc.INotifier"]);
+>>>>>>> dev:EgerPro/bin-debug/core/view/MainManager.js
 =======
     MainManager.NAME = "MainManager";
     game.MainManager = MainManager;

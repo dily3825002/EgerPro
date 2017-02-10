@@ -22,9 +22,13 @@ var game;
             _this.backpackPanel = new game.BackpackPanel();
             return _this;
         }
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/panel/mediator/BackpackMediator.js
 <<<<<<< HEAD:bin-debug/core/view/panel/mediator/BackpackMediator.js
         var d = __define,c=BackpackMediator,p=c.prototype;
         p.listNotificationInterests = function () {
+=======
+        BackpackMediator.prototype.listNotificationInterests = function () {
+>>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/BackpackMediator.js
 =======
         BackpackMediator.prototype.listNotificationInterests = function () {
 >>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/BackpackMediator.js
@@ -72,9 +76,15 @@ var game;
         };
         return BackpackMediator;
     }(BaseMediator));
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/panel/mediator/BackpackMediator.js
 <<<<<<< HEAD:bin-debug/core/view/panel/mediator/BackpackMediator.js
     game.BackpackMediator = BackpackMediator;
     egret.registerClass(BackpackMediator,'game.BackpackMediator');
+=======
+    BackpackMediator.NAME = "BackpackMediator";
+    game.BackpackMediator = BackpackMediator;
+    __reflect(BackpackMediator.prototype, "game.BackpackMediator");
+>>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/BackpackMediator.js
 =======
     BackpackMediator.NAME = "BackpackMediator";
     game.BackpackMediator = BackpackMediator;

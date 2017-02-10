@@ -22,9 +22,13 @@ var game;
             _this.mapPanel = new game.MapPanel();
             return _this;
         }
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/panel/mediator/MapMediator.js
 <<<<<<< HEAD:bin-debug/core/view/panel/mediator/MapMediator.js
         var d = __define,c=MapMediator,p=c.prototype;
         p.listNotificationInterests = function () {
+=======
+        MapMediator.prototype.listNotificationInterests = function () {
+>>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/MapMediator.js
 =======
         MapMediator.prototype.listNotificationInterests = function () {
 >>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/MapMediator.js
@@ -94,9 +98,15 @@ var game;
         };
         return MapMediator;
     }(BaseMediator));
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/panel/mediator/MapMediator.js
 <<<<<<< HEAD:bin-debug/core/view/panel/mediator/MapMediator.js
     game.MapMediator = MapMediator;
     egret.registerClass(MapMediator,'game.MapMediator');
+=======
+    MapMediator.NAME = "MapMediator";
+    game.MapMediator = MapMediator;
+    __reflect(MapMediator.prototype, "game.MapMediator");
+>>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/MapMediator.js
 =======
     MapMediator.NAME = "MapMediator";
     game.MapMediator = MapMediator;

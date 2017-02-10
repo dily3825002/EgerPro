@@ -163,6 +163,7 @@ declare namespace egret {
 }
 declare namespace egret {
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
 <<<<<<< HEAD:libs/modules/game/game.d.ts
      * @language zh_CN
      * 影片剪辑，可以通过影片剪辑播放序列帧动画。MovieClip 类从以下类继承而来：DisplayObject 和 EventDispatcher。不同于 DisplayObject 对象，MovieClip 对象拥有一个时间轴。
@@ -172,10 +173,14 @@ declare namespace egret {
 =======
      * @classdesc 使用 MovieClipData 类，您可以创建 MovieClip 对象和处理 MovieClip 对象的数据。MovieClipData 一般由MovieClipDataFactory生成
 >>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+=======
+     * @classdesc 使用 MovieClipData 类，您可以创建 MovieClip 对象和处理 MovieClip 对象的数据。MovieClipData 一般由MovieClipDataFactory生成
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
      * @see http://edn.egret.com/cn/docs/page/596 MovieClip序列帧动画
      * @version Egret 2.4
      * @platform Web,Native
      */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
 <<<<<<< HEAD:libs/modules/game/game.d.ts
     class MovieClip extends DisplayObject {
         $bitmapData: Texture;
@@ -184,11 +189,108 @@ declare namespace egret {
 =======
     class MovieClipData extends HashObject {
 >>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+=======
+    class MovieClipData extends HashObject {
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         /**
          * @private
          * MovieClip数据
          */
         $mcData: any;
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+        /**
+         * 总帧数
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        numFrames: number;
+        /**
+         * 帧数据列表
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        frames: any[];
+        /**
+         * 帧标签列表
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        labels: any[];
+        /**
+         * 帧事件列表
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        events: any[];
+        /**
+         * 帧率
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        frameRate: number;
+        /**
+         * 纹理数据
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        textureData: any;
+        /**
+         * 纹理集
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        spriteSheet: SpriteSheet;
+        /**
+         * 创建一个 egret.MovieClipData 对象
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        constructor();
+        /**
+         * @private
+         *
+         * @param mcData
+         * @param textureData
+         * @param spriteSheet
+         */
+        $init(mcData: any, textureData: any, spriteSheet: SpriteSheet): void;
+        /**
+         * 根据指定帧序号获取该帧对应的关键帧数据
+         * @param frame {number} 帧序号
+         * @returns {any} 帧数据对象
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        getKeyFrameData(frame: number): any;
+        /**
+         * 根据指定帧序号获取该帧对应的Texture对象
+         * @param frame {number} 帧序号
+         * @returns {egret.Texture} Texture对象
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        getTextureByFrame(frame: number): Texture;
+        $getOffsetByFrame(frame: number, point: Point): void;
+        /**
+         * @private
+         *
+         * @param resName
+         * @returns
+         */
+        private getTextureByResName(resName);
+        /**
+         * @private
+         *
+         * @returns
+         */
+        $isDataValid(): boolean;
+        /**
+         * @private
+         *
+         * @returns
+         */
+        $isTextureValid(): boolean;
+=======
         /**
          * 总帧数
          * @version Egret 2.4
@@ -283,7 +385,29 @@ declare namespace egret {
         $isTextureValid(): boolean;
         /**
          * @private
+         *
+         * @param mcData
          */
+        $fillMCData(mcData: any): void;
+        /**
+         * @private
+         *
+         * @param framesData
+         */
+        private fillFramesData(framesData);
+        /**
+         * @private
+         *
+         * @param frameLabelsData
+         */
+        private fillFrameLabelsData(frameLabelsData);
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+        /**
+         * @private
+         *
+         * @param frameEventsData
+         */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
         $smoothing: boolean;
         /**
          * @language en_US
@@ -326,6 +450,54 @@ declare namespace egret {
 =======
         private fillFrameEventsData(frameEventsData);
 >>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+        /**
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        /**
+         * MovieClip数据源
+         */
+        mcData: MovieClipData;
+        /**
+         * @private
+         *
+         * @param value
+         */
+        private setMCData(value);
+    }
+}
+declare namespace egret {
+    /**
+     * @classdesc 使用 MovieClipDataFactory 类，可以生成 MovieClipData 对象用于创建MovieClip
+     * @see http://edn.egret.com/cn/docs/page/596 MovieClip序列帧动画
+     * @version Egret 2.4
+     * @platform Web,Native
+     */
+    class MovieClipDataFactory extends EventDispatcher {
+        /**
+         * 是否开启缓存
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        enableCache: boolean;
+        /**
+         * @private
+         */
+        $mcDataSet: any;
+        /**
+         * @private
+         */
+        $spriteSheet: SpriteSheet;
+        /**
+         * @private
+         */
+        $mcDataCache: any;
+        /**
+         * 创建一个 egret.MovieClipDataFactory 对象
+         * @param movieClipDataSet {any} MovieClip数据集，该数据集必须由Egret官方工具生成
+         * @param texture {Texture} 纹理
+=======
+        private fillFrameEventsData(frameEventsData);
         /**
          * @version Egret 2.4
          * @platform Web,Native
@@ -460,23 +632,59 @@ declare namespace egret {
          * @param bubbles 确定 Event 对象是否参与事件流的冒泡阶段。默认值为 false。
          * @param cancelable 确定是否可以取消 Event 对象。默认值为 false。
          * @param frameLabel 动画上的帧事件。事件侦听器可以通过 frameLabel 属性访问此信息。
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          * @version Egret 2.4
          * @platform Web,Native
          * @language zh_CN
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+        constructor(movieClipDataSet?: any, texture?: Texture);
+        /**
+         * 清空缓存
+=======
         constructor(type: string, bubbles?: boolean, cancelable?: boolean, frameLabel?: string);
         /**
          * Dispatched whenever the current frame have a frameLabel.
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+        clearCache(): void;
+        /**
+         * 根据名字生成一个MovieClipData实例。可以用于创建MovieClip。
+         * @param movieClipName {string} MovieClip名字. 可选参数，默认为"", 相当于取第一个MovieClip数据
+         * @returns {MovieClipData} 生成的MovieClipData对象
+=======
         /**
          * 动画的当前帧上有事件时调度
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          * @version Egret 2.4
          * @platform Web,Native
          * @language zh_CN
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+        generateMovieClipData(movieClipName?: string): MovieClipData;
+        /**
+         * @private
+         *
+         * @param movieClipName
+         * @param cache
+         * @returns
+         */
+        private findFromCache(movieClipName, cache);
+        /**
+         * @private
+         *
+         * @param movieClipName
+         * @param movieClip
+         * @param cache
+         */
+        private fillData(movieClipName, movieClip, cache);
+        /**
+         * MovieClip数据集
+=======
         static FRAME_LABEL: string;
         /**
          * In MovieClipEvent.FRAME_LABEL event, event corresponding string.
@@ -490,6 +698,142 @@ declare namespace egret {
          * @platform Web,Native
          * @language zh_CN
          */
+        frameLabel: string;
+        /**
+         * EventDispatcher object using the specified event object thrown MovieClipEvent. The objects will be thrown in the object cache pool for the next round robin.
+         * @param type  The type of the event, accessible as Event.type.
+         * @param bubbles  Determines whether the Event object participates in the bubbling stage of the event flow. The default value is false.
+         * @param frameLabel  MovieClipEvent object frameLabel
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+        mcDataSet: any;
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         * MovieClip需要使用的纹理图
+         */
+        texture: Texture;
+        /**
+         * 由纹理图生成的精灵表
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        readonly spriteSheet: SpriteSheet;
+        /**
+         * @private
+         *
+         * @param value
+         */
+        private setTexture(value);
+=======
+         * 使用指定的EventDispatcher对象来抛出 MovieClipEvent 事件对象。抛出的对象将会缓存在对象池上，供下次循环复用。
+         * @param target 派发事件目标
+         * @param type  事件类型
+         * @param frameLabel  MovieClipEvent 对象的 frameLabel 赋值
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+        static dispatchMovieClipEvent(target: IEventDispatcher, type: string, frameLabel?: string): boolean;
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+    }
+}
+declare namespace egret {
+    /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+     * When the movieClip's current frame have a frameLabel, dispatches MovieClipEvent object. FrameLabel Event type: MovieClipEvent.FRAME_LABEL
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language en_US
+     */
+    /**
+     * 当动画的当前帧有事件，将调度 MovieClipEvent 对象。帧事件类型 MovieClipEvent.FRAME_LABEL.
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @language zh_CN
+     */
+    class MovieClipEvent extends Event {
+        /**
+         * TextEvent create an object that contains information about movieClip events.
+         * @param type Type of event, you can access the MovieClipEvent.type.
+         * @param bubbles Determines whether the Event object participates in the bubbling stage of the event flow. The default value is false.
+         * @param cancelable Determine whether the Event object can be canceled. The default value is false.
+         * @param frameLabel When the current frame have a frameLabel, the event listeners can access this information through the frameLabel property.
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+        /**
+         * 创建一个 MovieClipEvent 对象，其中包含有关帧事件的信息。
+         * @param type 事件的类型，可以作为 MovieClipEvent.type 访问。
+         * @param bubbles 确定 Event 对象是否参与事件流的冒泡阶段。默认值为 false。
+         * @param cancelable 确定是否可以取消 Event 对象。默认值为 false。
+         * @param frameLabel 动画上的帧事件。事件侦听器可以通过 frameLabel 属性访问此信息。
+=======
+     * @private
+     */
+    class ScrollEase {
+        /**
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+        constructor(type: string, bubbles?: boolean, cancelable?: boolean, frameLabel?: string);
+        /**
+         * Dispatched whenever the current frame have a frameLabel.
+=======
+        constructor();
+        /**
+         *
+         * @param amount
+         * @returns
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+        /**
+         * 动画的当前帧上有事件时调度
+=======
+        static get(amount: any): Function;
+        /**
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+        static FRAME_LABEL: string;
+        /**
+         * In MovieClipEvent.FRAME_LABEL event, event corresponding string.
+=======
+        static quintOut: Function;
+        /**
+         *
+         * @param pow
+         * @returns
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+        /**
+         * 在 MovieClipEvent.FRAME_LABEL 事件中，event对应的字符串。
+=======
+        static getPowOut(pow: any): Function;
+        /**
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
         frameLabel: string;
         /**
          * EventDispatcher object using the specified event object thrown MovieClipEvent. The objects will be thrown in the object cache pool for the next round robin.
@@ -527,9 +871,28 @@ declare namespace egret {
         /**
          * @version Egret 2.4
          * @platform Web,Native
-         */
-        constructor();
+=======
+        static quartOut: Function;
+    }
+    /**
+     * @private
+     */
+    class ScrollTween extends EventDispatcher {
         /**
+         * @private
+         */
+        private static _tweens;
+        /**
+         * @private
+         */
+        private static IGNORE;
+        /**
+         * @private
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         */
+        private static _plugins;
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
          *
          * @param amount
          * @returns
@@ -624,10 +987,59 @@ declare namespace egret {
         /**
          * @private
          */
+=======
+         * @private
+         */
+        private static _inited;
+        /**
+         * @private
+         */
+        private _target;
+        /**
+         * @private
+         */
+        private _useTicks;
+        /**
+         * @private
+         */
+        private ignoreGlobalPause;
+        /**
+         * @private
+         */
+        private loop;
+        /**
+         * @private
+         */
+        private pluginData;
+        /**
+         * @private
+         */
+        private _curQueueProps;
+        /**
+         * @private
+         */
+        private _initQueueProps;
+        /**
+         * @private
+         */
+        private _steps;
+        /**
+         * @private
+         */
+        private _actions;
+        /**
+         * @private
+         */
+        private paused;
+        /**
+         * @private
+         */
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         private duration;
         /**
          * @private
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
 <<<<<<< HEAD:libs/modules/game/game.d.ts
         private setMCData(value);
     }
@@ -640,6 +1052,9 @@ declare module egret {
      * @platform Web,Native
      */
     class MovieClipDataFactory extends EventDispatcher {
+=======
+        private _prevPos;
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
 =======
         private _prevPos;
 >>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
@@ -675,6 +1090,7 @@ declare module egret {
          * @param props {any} 参数，支持loop(循环播放) onChange(变化函数) onChangeObj(变化函数作用域)
          * @param pluginData {any} 暂未实现
          * @param override {boolean} 是否移除对象之前添加的tween，默认值false
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
          * @version Egret 2.4
          * @platform Web,Native
          * @language zh_CN
@@ -694,6 +1110,27 @@ declare module egret {
          * @platform Web,Native
          * @language zh_CN
          */
+=======
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+        static get(target: any, props?: any, pluginData?: any, override?: boolean): ScrollTween;
+        /**
+         * Delete all ScrollTween animations from an object
+         * @param target The object whose ScrollTween to be deleted
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+        /**
+         * 删除一个对象上的全部 ScrollTween 动画
+         * @param target  需要移除 ScrollTween 的对象
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         static removeTweens(target: any): void;
         /**
          * @private
@@ -717,6 +1154,7 @@ declare module egret {
          * @platform Web,Native
          */
         constructor(target: any, props: any, pluginData: any);
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
         /**
          * @private
          *
@@ -763,9 +1201,50 @@ declare module egret {
          * @version Egret 2.4
          * @platform Web,Native
          * @language zh_CN
+=======
+        /**
+         * @private
+         *
+         * @param target
+         * @param props
+         * @param pluginData
+         */
+        private initialize(target, props, pluginData);
+        /**
+         * @private
+         *
+         * @param value
+         * @param actionsMode
+         * @returns
+         */
+        private setPosition(value, actionsMode?);
+        /**
+         * @private
+         *
+         * @param startPos
+         * @param endPos
+         * @param includeStart
+         */
+        private _runActions(startPos, endPos, includeStart?);
+        /**
+         * @private
+         *
+         * @param step
+         * @param ratio
+         */
+        private _updateTargetProps(step, ratio);
+        /**
+         * Whether setting is paused
+         * @param value {boolean} Whether to pause
+         * @returns ScrollTween object itself
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          */
         setPaused(value: boolean): ScrollTween;
         /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
          * @private
          *
          * @param props
@@ -779,18 +1258,40 @@ declare module egret {
          * @returns
          */
         private _addStep(o);
+=======
+         * 设置是否暂停
+         * @param value {boolean} 是否暂停
+         * @returns Tween对象本身
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+        setPaused(value: boolean): ScrollTween;
+        /**
+         * @private
+         *
+         * @param props
+         * @returns
+         */
+        private _cloneProps(props);
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         /**
          * @private
          *
          * @param o
          * @returns
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
         private _appendQueueProps(o);
+=======
+        private _addStep(o);
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         /**
          * @private
          *
          * @param o
          * @returns
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
          */
         private _addAction(o);
         /**
@@ -802,8 +1303,12 @@ declare module egret {
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          */
+        private _appendQueueProps(o);
         /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
          * 将指定显示对象的属性修改为指定值
          * @param props {Object} 对象的属性集合
          * @param duration {number} 持续时间
@@ -819,11 +1324,62 @@ declare module egret {
          * @param callback {Function} Callback method
          * @param thisObj {any} this action scope of the callback method
          * @param params {any[]} Parameter of the callback method
+=======
+         * @private
+         *
+         * @param o
+         * @returns
+         */
+        private _addAction(o);
+        /**
+         * Modify the property of the specified display object to a specified value
+         * @param props {Object} Property set of an object
+         * @param duration {number} Duration
+         * @param ease {egret.ScrollEase} Easing algorithm
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          * @returns {egret.ScrollTween} ScrollTween object itself
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
          */
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         * 执行回调函数
+         * @param callback {Function} 回调方法
+         * @param thisObj {any} 回调方法this作用域
+         * @param params {any[]} 回调方法参数
+=======
+         * 将指定显示对象的属性修改为指定值
+         * @param props {Object} 对象的属性集合
+         * @param duration {number} 持续时间
+         * @param ease {egret.ScrollEase} 缓动算法
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * @returns {egret.ScrollTween} Tween对象本身
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+        call(callback: Function, thisObj?: any, params?: any[]): ScrollTween;
+        /**
+         * @method egret.ScrollTween#tick
+         * @param delta {number}
+         * @private
+=======
+        to(props: any, duration?: number, ease?: Function): ScrollTween;
+        /**
+         * Execute callback function
+         * @param callback {Function} Callback method
+         * @param thisObj {any} this action scope of the callback method
+         * @param params {any[]} Parameter of the callback method
+         * @returns {egret.ScrollTween} ScrollTween object itself
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+=======
         /**
          * 执行回调函数
          * @param callback {Function} 回调方法
@@ -842,14 +1398,18 @@ declare module egret {
          * @version Egret 2.4
          * @platform Web,Native
          */
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         tick(delta: number): void;
     }
 }
 declare namespace egret {
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
 <<<<<<< HEAD:libs/modules/game/game.d.ts
      * @private
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
      * ScrollView auxiliary classes for slides, you will pass a display object constructor. It can display more than the range display object within the specified size range. And can easily drag in this range.
      * @version Egret 2.4
      * @platform Web,Native
@@ -862,6 +1422,9 @@ declare namespace egret {
      * @platform Web,Native
      * @includeExample extension/game/display/ScrollView.ts
      * @language zh_CN
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
      */
     class ScrollView extends DisplayObjectContainer {
@@ -1059,8 +1622,12 @@ declare namespace egret {
          *
          * @returns
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
 <<<<<<< HEAD:libs/modules/game/game.d.ts
         private setPosition(value, actionsMode?);
+=======
+        _checkScrollPolicy(): boolean;
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
 =======
         _checkScrollPolicy(): boolean;
 >>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
@@ -1077,6 +1644,7 @@ declare namespace egret {
          * @private
          *
          * @returns
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
          */
         _addEvents(): void;
         /**
@@ -1124,6 +1692,121 @@ declare namespace egret {
          * @param event
          * @returns
          */
+        private dispatchPropagationEvent(event);
+=======
+         */
+        _addEvents(): void;
+        /**
+         * @private
+         *
+         * @returns
+         */
+        _removeEvents(): void;
+        private _tempStage;
+        /**
+         * @private
+         *
+         * @param e
+         */
+        _onTouchBegin(e: TouchEvent): void;
+        /**
+         * @private
+         */
+        private delayTouchBeginEvent;
+        /**
+         * @private
+         */
+        private touchBeginTimer;
+        /**
+         * @private
+         *
+         * @param event
+         */
+        _onTouchBeginCapture(event: TouchEvent): void;
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+        /**
+         * @private
+         *
+         * @param event
+         * @returns
+         */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+        _onTouchMove(event: TouchEvent): void;
+        /**
+         * @private
+         *
+         * @param event
+         * @returns
+         */
+        _onTouchEnd(event: TouchEvent): void;
+=======
+        private _onTouchEndCapture(event);
+        /**
+         * @private
+         *
+         */
+        private _onTouchBeginTimer();
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+        /**
+         * @private
+         *
+         * @param event
+         * @returns
+         */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+        _onEnterFrame(event: Event): void;
+        /**
+         * @private
+         *
+         * @param e
+         * @returns
+         */
+        private _logTouchEvent(e);
+        /**
+         * @private
+         *
+         * @param e
+         * @returns
+         */
+        private _getPointChange(e);
+        /**
+         * @private
+         *
+         * @param e
+         * @returns
+         */
+        private _calcVelocitys(e);
+        /**
+         * @private
+         *
+         * @returns
+         */
+        _getContentWidth(): number;
+        /**
+         * @private
+         *
+         * @returns
+         */
+        _getContentHeight(): number;
+        /**
+         * The left side of the maximum distance
+         * @returns The left side of the maximum distance
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+        /**
+         * 距离左侧的最大值
+         * @returns 距离左侧最大值
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+        getMaxScrollLeft(): number;
+        /**
+         * Above the maximum distance
+         * @returns Above the maximum distance
+=======
         private dispatchPropagationEvent(event);
         /**
          * @private
@@ -1182,17 +1865,28 @@ declare namespace egret {
         /**
          * The left side of the maximum distance
          * @returns The left side of the maximum distance
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
          */
         /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         * 距离上方最大值
+         * @returns 距离上方最大值
+=======
          * 距离左侧的最大值
          * @returns 距离左侧最大值
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          * @version Egret 2.4
          * @platform Web,Native
          * @language zh_CN
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+        getMaxScrollTop(): number;
+        /**
+         * @private
+=======
         getMaxScrollLeft(): number;
         /**
          * Above the maximum distance
@@ -1200,8 +1894,16 @@ declare namespace egret {
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          */
+        private static weight;
         /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         * @private
+         *
+         */
+        private _moveAfterTouchEnd();
+=======
          * 距离上方最大值
          * @returns 距离上方最大值
          * @version Egret 2.4
@@ -1209,20 +1911,13 @@ declare namespace egret {
          * @language zh_CN
          */
         getMaxScrollTop(): number;
-        /**
-         * @private
-         */
-        private static weight;
-        /**
-         * @private
-         *
-         */
-        private _moveAfterTouchEnd();
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         /**
          * @private
          *
          * @param tw
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
         private onTweenFinished(tw);
         /**
          * @private
@@ -1244,8 +1939,28 @@ declare namespace egret {
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
-         */
+=======
+        private static weight;
         /**
+         * @private
+         *
+         */
+        private _moveAfterTouchEnd();
+        /**
+         * @private
+         *
+         * @param tw
+         */
+        private onTweenFinished(tw);
+        /**
+         * @private
+         *
+         * @returns
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         */
+        _onScrollStarted(): void;
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
          * 设置滚动距离上方的位置
          * @param scrollTop 距离上方的位置
          * @param duration 缓动时间，毫秒单位
@@ -1260,11 +1975,97 @@ declare namespace egret {
          * @param scrollLeft From the position on the left side
          * @param duration Get tween vertical scrolling
          * @returns Gets the horizontal scroll tween
+=======
+         * @private
+         *
+         * @returns
+         */
+        _onScrollFinished(): void;
+        /**
+         * Set the scroll position above the distance
+         * @param scrollTop Position above distance
+         * @param duration Easing of time, in milliseconds
+         * @returns Get tween vertical scrolling
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
          */
         /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         * 设置滚动距离左侧的位置
+         * @param scrollLeft 距离左侧的位置
+         * @param duration 缓动时间，毫秒单位
+         * @returns 获取水平滚动的tween
+=======
+         * 设置滚动距离上方的位置
+         * @param scrollTop 距离上方的位置
+         * @param duration 缓动时间，毫秒单位
+         * @returns 获取垂直滚动的tween
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+        setScrollLeft(scrollLeft: number, duration?: number): void;
+        /**
+         * @private
+         *
+         * @param pixelsPerMS
+         * @param curPos
+         * @param maxPos
+         * @returns
+=======
+        setScrollTop(scrollTop: number, duration?: number): void;
+        /**
+         * Set the scroll position from the left side
+         * @param scrollLeft From the position on the left side
+         * @param duration Get tween vertical scrolling
+         * @returns Gets the horizontal scroll tween
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         */
+        private getAnimationDatas(pixelsPerMS, curPos, maxPos);
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         * @private
+         *
+         * @param event
+         * @returns
+         */
+        private cloneTouchEvent(event);
+        /**
+         * @private
+         *
+         * @returns
+         */
+        private throwNotSupportedError();
+        /**
+         * @deprecated
+         * @inheritDoc
+         * @inheritDoc
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        addChild(child: DisplayObject): DisplayObject;
+        /**
+         * @deprecated
+         * @inheritDoc
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        addChildAt(child: DisplayObject, index: number): DisplayObject;
+        /**
+         * @deprecated
+         * @inheritDoc
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        removeChild(child: DisplayObject): DisplayObject;
+=======
          * 设置滚动距离左侧的位置
          * @param scrollLeft 距离左侧的位置
          * @param duration 缓动时间，毫秒单位
@@ -1304,47 +2105,47 @@ declare namespace egret {
          * @platform Web,Native
          */
         addChild(child: DisplayObject): DisplayObject;
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         /**
          * @deprecated
          * @inheritDoc
          * @version Egret 2.4
          * @platform Web,Native
          */
-        addChildAt(child: DisplayObject, index: number): DisplayObject;
-        /**
-         * @deprecated
-         * @inheritDoc
-         * @version Egret 2.4
-         * @platform Web,Native
-         */
-        removeChild(child: DisplayObject): DisplayObject;
-        /**
-         * @deprecated
-         * @inheritDoc
-         * @version Egret 2.4
-         * @platform Web,Native
-         */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
         removeChildAt(index: number): DisplayObject;
+=======
+        addChildAt(child: DisplayObject, index: number): DisplayObject;
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         /**
          * @deprecated
          * @inheritDoc
          * @version Egret 2.4
          * @platform Web,Native
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
         setChildIndex(child: DisplayObject, index: number): void;
+=======
+        removeChild(child: DisplayObject): DisplayObject;
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         /**
          * @deprecated
          * @inheritDoc
          * @version Egret 2.4
          * @platform Web,Native
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
         swapChildren(child1: DisplayObject, child2: DisplayObject): void;
+=======
+        removeChildAt(index: number): DisplayObject;
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         /**
          * @deprecated
          * @inheritDoc
          * @version Egret 2.4
          * @platform Web,Native
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
         swapChildrenAt(index1: number, index2: number): void;
     }
 }
@@ -1493,6 +2294,235 @@ declare namespace egret {
          * @version Egret 2.4
          * @platform Web,Native
          * @language zh_CN
+=======
+        setChildIndex(child: DisplayObject, index: number): void;
+        /**
+         * @deprecated
+         * @inheritDoc
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        swapChildren(child1: DisplayObject, child2: DisplayObject): void;
+        /**
+         * @deprecated
+         * @inheritDoc
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+        swapChildrenAt(index1: number, index2: number): void;
+    }
+}
+declare namespace egret {
+    /**
+     * @private
+     * @version Egret 2.4
+     * @platform Web,Native
+     */
+    class ScrollViewProperties {
+        /**
+         * @private
+         */
+        _verticalScrollPolicy: string;
+        /**
+         * @private
+         */
+        _horizontalScrollPolicy: string;
+        /**
+         * @private
+         */
+        _scrollLeft: number;
+        /**
+         * @private
+         */
+        _scrollTop: number;
+        /**
+         * @private
+         */
+        _hCanScroll: boolean;
+        /**
+         * @private
+         */
+        _vCanScroll: boolean;
+        /**
+         * @private
+         */
+        _lastTouchPosition: egret.Point;
+        /**
+         * @private
+         */
+        _touchStartPosition: egret.Point;
+        /**
+         * @private
+         */
+        _scrollStarted: boolean;
+        /**
+         * @private
+         */
+        _lastTouchTime: number;
+        /**
+         * @private
+         */
+        _lastTouchEvent: TouchEvent;
+        /**
+         * @private
+         */
+        _velocitys: Array<{
+            x: number;
+            y: number;
+        }>;
+        /**
+         * @private
+         */
+        _isHTweenPlaying: boolean;
+        /**
+         * @private
+         */
+        _isVTweenPlaying: boolean;
+        /**
+         * @private
+         */
+        _hScrollTween: ScrollTween;
+        /**
+         * @private
+         */
+        _vScrollTween: ScrollTween;
+        /**
+         * @private
+         */
+        _bounces: boolean;
+    }
+}
+declare namespace egret {
+    /**
+     * UThe URLLoader class downloads data from a URL as text, binary data, or URL-encoded variables.  It is useful for downloading text files, XML, or other information to be used in a dynamic, data-driven application.
+     * A URLLoader object downloads all of the data from a URL before making it available to code in the applications. It sends out notifications about the progress of the download,
+     * which you can monitor through bytesLoaded and bytesTotal properties, as well as through dispatched events.
+     * @see http://edn.egret.com/cn/docs/page/601 Build communication request
+     * @event egret.Event.COMPLETE Dispatched when the net request is complete.
+     * @event egret.IOErrorEvent.IO_ERROR io error.
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @includeExample extension/game/net/URLLoader.ts
+     * @language en_US
+     */
+    /**
+     * URLLoader 类以文本、二进制数据或 URL 编码变量的形式从 URL 下载数据。在下载文本文件、XML 或其他用于动态数据驱动应用程序的信息时，它很有用。
+     * URLLoader 对象会先从 URL 中下载所有数据，然后才将数据用于应用程序中的代码。它会发出有关下载进度的通知，
+     * 通过 bytesLoaded 和 bytesTotal 属性以及已调度的事件，可以监视下载进度。
+     * @see http://edn.egret.com/cn/docs/page/601 构建通信请求
+     * @event egret.Event.COMPLETE 加载完成后调度。
+     * @event egret.IOErrorEvent.IO_ERROR 加载错误后调度。
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @includeExample extension/game/net/URLLoader.ts
+     * @language zh_CN
+     */
+    class URLLoader extends EventDispatcher {
+        /**
+         * Create an egret.URLLoader object
+         * @param request {URLRequest} A URLRequest object specifies the URL to be downloaded.
+         * If this parameter is omitted, no load operation begins. If a parameter is specified, the load operation begins immediately
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         */
+        dataFormat: string;
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         * The data received from the load operation. This property is populated only when the load operation is complete. The format of the data depends on the setting of the dataFormat property:
+         * If the dataFormat property is URLLoaderDataFormat.TEXT, the received data is a string containing the text of the loaded file.
+         * If the dataFormat property is URLLoaderDataFormat.BINARY, the received data is a ByteArray object containing the raw binary data.
+         * If the dataFormat property is URLLoaderDataFormat.TEXTURE, the received data is a Texture object containing the bitmap data.
+         * If the dataFormat property is URLLoaderDataFormat.VARIABLES, the received data is a URLVariables object containing the URL-encoded variables.
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+        /**
+         * 从加载操作接收的数据。只有完成加载操作时，才会填充该属性。该数据的格式取决于 dataFormat 属性的设置：
+         * 如果 dataFormat 属性是 URLLoaderDataFormat.TEXT，则所接收的数据是一个包含已加载文件文本的字符串。
+         * 如果 dataFormat 属性是 URLLoaderDataFormat.BINARY，则所接收的数据是一个包含原始二进制数据的 ByteArray 对象。
+         * 如果 dataFormat 属性是 URLLoaderDataFormat.TEXTURE，则所接收的数据是一个包含位图数据的Texture对象。
+         * 如果 dataFormat 属性是 URLLoaderDataFormat.VARIABLES，则所接收的数据是一个包含 URL 编码变量的 URLVariables 对象。
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+=======
+         * 创建 egret.URLLoader 对象
+         * @param request {URLRequest} 一个 URLRequest 对象，指定要下载的 URL。
+         * 如果省略该参数，则不开始加载操作。如果已指定参数，则立即开始加载操作
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+        constructor(request?: URLRequest);
+        /**
+         * Control whether the downloaded data is received as text (URLLoaderDataFormat.TEXT), raw binary data (URLLoaderDataFormat.BINARY), or URL-encoded variables (URLLoaderDataFormat.VARIABLES).
+         * If the value of the dataFormat property is URLLoaderDataFormat.TEXT, the received data is a string containing the text of the loaded file.
+         * If the value of the dataFormat property is URLLoaderDataFormat.BINARY, the received data is a ByteArray object containing the raw binary data.
+         * If the value of the dataFormat property is URLLoaderDataFormat.TEXTURE, the received data is a Texture object containing the bitmap data.
+         * If the value of the dataFormat property is URLLoaderDataFormat.VARIABLES, the received data is a URLVariables object containing the URL-encoded variables.
+         * The default value is URLLoaderDataFormat.TEXT.
+         * @default egret.URLLoaderDataFormat.TEXT
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         */
+        data: any;
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         * @private
+         */
+        _request: URLRequest;
+        /**
+         * Send and load data from the specified URL. The data can be received as text, raw binary data, or URL-encoded variables, depending on the value you set for the dataFormat property.
+         * Note that the default value of the dataFormat property is text. If you want to send data to the specified URL, you can set the data property in the URLRequest object.
+         * @param request {URLRequest}  A URLRequest object specifies the URL to be downloaded.
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+        /**
+         * 从指定的 URL 发送和加载数据。可以以文本、原始二进制数据或 URL 编码变量格式接收数据，这取决于为 dataFormat 属性所设置的值。
+         * 请注意 dataFormat 属性的默认值为文本。如果想将数据发送至指定的 URL，则可以在 URLRequest 对象中设置 data 属性。
+         * @param request {URLRequest}  一个 URLRequest 对象，指定要下载的 URL。
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+        load(request: URLRequest): void;
+        private getResponseType(dataFormat);
+        /**
+         * @private
+         *
+         * @param loader
+         */
+        private loadSound(loader);
+        /**
+         * @private
+         *
+         * @param loader
+         */
+        private loadTexture(loader);
+        /**
+         * @private
+         */
+        _status: number;
+        /**
+         * @private
+         *
+=======
+         * 控制是以文本 (URLLoaderDataFormat.TEXT)、原始二进制数据 (URLLoaderDataFormat.BINARY) 还是 URL 编码变量 (URLLoaderDataFormat.VARIABLES) 接收下载的数据。
+         * 如果 dataFormat 属性的值是 URLLoaderDataFormat.TEXT，则所接收的数据是一个包含已加载文件文本的字符串。
+         * 如果 dataFormat 属性的值是 URLLoaderDataFormat.BINARY，则所接收的数据是一个包含原始二进制数据的 ByteArray 对象。
+         * 如果 dataFormat 属性的值是 URLLoaderDataFormat.TEXTURE，则所接收的数据是一个包含位图数据的Texture对象。
+         * 如果 dataFormat 属性的值是 URLLoaderDataFormat.VARIABLES，则所接收的数据是一个包含 URL 编码变量的 URLVariables 对象。
+         * @default egret.URLLoaderDataFormat.TEXT
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
          */
         dataFormat: string;
         /**
@@ -1527,8 +2557,57 @@ declare namespace egret {
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          */
+        __recycle(): void;
+    }
+}
+declare namespace egret {
+    /**
+    * @version Egret 2.4
+    * @platform Web,Native
+    * @includeExample extension/game/display/MovieClip.ts
+    * @language en_US
+    */
+    /**
+     * 影片剪辑，可以通过影片剪辑播放序列帧动画。MovieClip 类从以下类继承而来：DisplayObject 和 EventDispatcher。不同于 DisplayObject 对象，MovieClip 对象拥有一个时间轴。
+     * @extends egret.DisplayObject
+     * @event egret.Event.COMPLETE 动画播放完成。
+     * @event egret.Event.LOOP_COMPLETE 动画循环播放完成。
+     * @see http://edn.egret.com/cn/docs/page/596 MovieClip序列帧动画
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @includeExample extension/game/display/MovieClip.ts
+     * @language zh_CN
+     */
+    class MovieClip extends DisplayObject {
+        $bitmapData: Texture;
+        private offsetPoint;
+        $movieClipData: MovieClipData;
         /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         * @private
+         */
+        private frames;
+        /**
+         * @private
+         */
+        $totalFrames: number;
+        /**
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @private
+         */
+        frameLabels: any[];
+        /**
+         * @private
+         */
+        $frameLabelStart: number;
+        /**
+         * @private
+         */
+        $frameLabelEnd: number;
+=======
          * 从指定的 URL 发送和加载数据。可以以文本、原始二进制数据或 URL 编码变量格式接收数据，这取决于为 dataFormat 属性所设置的值。
          * 请注意 dataFormat 属性的默认值为文本。如果想将数据发送至指定的 URL，则可以在 URLRequest 对象中设置 data 属性。
          * @param request {URLRequest}  一个 URLRequest 对象，指定要下载的 URL。
@@ -1591,11 +2670,52 @@ declare namespace egret {
          * @private
          */
         $totalFrames: number;
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         /**
          * @version Egret 2.4
          * @platform Web,Native
          * @private
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+        frameEvents: any[];
+        /**
+         * @private
+         */
+        private frameIntervalTime;
+        /**
+         * @private
+         */
+        $eventPool: string[];
+        $isPlaying: boolean;
+        /**
+         * @private
+         */
+        private isStopped;
+        /**
+         * @private
+         */
+        private playTimes;
+        /**
+         * @private
+         */
+        $currentFrameNum: number;
+        /**
+         * @private
+         */
+        $nextFrameNum: number;
+        /**
+         * @private
+         */
+        private displayedKeyFrameNum;
+        /**
+         * @private
+         */
+        private passedTime;
+        /**
+         * @private
+         */
+        private $frameRate;
+=======
         frameLabels: any[];
         /**
          * @private
@@ -1636,17 +2756,34 @@ declare namespace egret {
          * @private
          */
         $nextFrameNum: number;
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+        /**
+         * 创建新的 MovieClip 实例。创建 MovieClip 之后，调用舞台上的显示对象容器的addElement方法。
+         * @param movieClipData {movieClipData} 被引用的 movieClipData 对象
+         * @version Egret 2.4
+         * @platform Web,Native
+         */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+        constructor(movieClipData?: MovieClipData);
         /**
          * @private
          */
+        $smoothing: boolean;
+=======
         private displayedKeyFrameNum;
         /**
          * @private
          */
         private passedTime;
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         /**
-         * @private
+         * Whether or not is smoothed when scaled.
+         * @version Egret 3.0
+         * @platform Web
+         * @language en_US
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+=======
         private $frameRate;
         /**
          * 创建新的 MovieClip 实例。创建 MovieClip 之后，调用舞台上的显示对象容器的addElement方法。
@@ -1655,9 +2792,15 @@ declare namespace egret {
          * @platform Web,Native
          */
         constructor(movieClipData?: MovieClipData);
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         /**
-         * @private
+         * 控制在缩放时是否进行平滑处理。
+         * @version Egret 3.0
+         * @platform Web
+         * @language zh_CN
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+=======
         $smoothing: boolean;
         /**
          * Whether or not is smoothed when scaled.
@@ -1671,6 +2814,7 @@ declare namespace egret {
          * @platform Web
          * @language zh_CN
          */
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         smoothing: boolean;
         /**
          * @private
@@ -1720,6 +2864,7 @@ declare namespace egret {
          * 根据帧标签，设置开始和结束的帧数
          * @param labelName {string} 帧标签名
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
 <<<<<<< HEAD:libs/modules/game/game.d.ts
         _bounces: boolean;
     }
@@ -1732,6 +2877,8 @@ declare module egret {
      */
     interface NetContext extends HashObject {
 =======
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         private getFrameStartEnd(labelName);
         /**
          * @private
@@ -1798,6 +2945,9 @@ declare module egret {
          * @private
          */
         private lastTime;
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+=======
 >>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         /**
          * @private
@@ -1805,6 +2955,7 @@ declare module egret {
          * @param advancedTime
          * @returns
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
 <<<<<<< HEAD:libs/modules/game/game.d.ts
         proceed(loader: URLLoader): void;
     }
@@ -1854,6 +3005,9 @@ declare module egret {
 =======
         private advanceTime(timeStamp);
 >>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+=======
+        private advanceTime(timeStamp);
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
         /**
          * @private
          *
@@ -1882,6 +3036,7 @@ declare module egret {
         readonly totalFrames: number;
         /**
          * MovieClip 实例当前播放的帧的序号
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
          * @version Egret 2.4
          * @platform Web,Native
          */
@@ -1978,10 +3133,13 @@ declare namespace egret {
         /**
          * 创建一个 egret.URLRequest 对象
          * @param url {string} 进行网络请求的地址
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          * @version Egret 2.4
          * @platform Web,Native
          * @language zh_CN
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
         constructor(url?: string);
         /**
          * An object contains data to be transmitted with the URL request.
@@ -1993,11 +3151,18 @@ declare namespace egret {
          * If the object is a URLVariables object and the method is POST, then the variables are encoded using x-www-form-urlencoded format and the resulting string is used as POST data.
          * If the object is a URLVariables object and the method is GET, the URLVariables object will define variables to be sent with the URLRequest object.
          * Otherwise, the object is converted into a string, and the string is used as the POST or GET data.
+=======
+        readonly currentFrame: number;
+        /**
+         * MovieClip 实例当前播放的帧的标签。如果当前帧没有标签，则 currentFrameLabel返回null。
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
          */
+        readonly currentFrameLabel: string;
         /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
          * 一个对象，它包含将随 URL 请求一起传输的数据。
          * 该属性与 method 属性配合使用。当 method 值为 GET 时，将使用 HTTP 查询字符串语法将 data 值追加到 URLRequest.url 值。
          * 当 method 值为 POST（或 GET 之外的任何值）时，将在 HTTP 请求体中传输 data 值。
@@ -2007,31 +3172,51 @@ declare namespace egret {
          * 如果该对象是 URLVariables 对象，并且该方法是 POST，则使用 x-www-form-urlencoded 格式对变量进行编码，并且生成的字符串会用作 POST 数据。
          * 如果该对象是 URLVariables 对象，并且该方法是 GET，则 URLVariables 对象将定义要随 URLRequest 对象一起发送的变量。
          * 否则，该对象会转换为字符串，并且该字符串会用作 POST 或 GET 数据。
+=======
+         * 当前播放的帧对应的标签，如果当前帧没有标签，则currentLabel返回包含标签的先前帧的标签。如果当前帧和先前帧都不包含标签，currentLabel返回null。
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          * @version Egret 2.4
          * @platform Web,Native
          * @language zh_CN
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
         data: any;
         /**
          * Request method, valid values are URLRequestMethod.GET or URLRequestMethod.POST.
+=======
+        readonly currentLabel: string;
+        /**
+         * MovieClip 实例的帧频
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
          */
+        frameRate: number;
         /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
          * 请求方式，有效值为URLRequestMethod.GET 或 URLRequestMethod.POST。
+=======
+         * MovieClip 实例当前是否正在播放
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          * @version Egret 2.4
          * @platform Web,Native
          * @language zh_CN
          */
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
         method: string;
         /**
          * The requested URL.
+=======
+        readonly isPlaying: boolean;
+        /**
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
          */
         /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
          * 所请求的 URL。
          * @version Egret 2.4
          * @platform Web,Native
@@ -2047,6 +3232,195 @@ declare namespace egret {
          * @language en_US
          */
         /**
+         * 要追加到 HTTP 请求的 HTTP 请求标头的数组。该数组由 URLRequestHeader 对象组成。
+         * 数组中的每一对象必须是包含一个名称字符串和一个值字符串的 URLRequestHeader 对象。
+         * 由于浏览器兼容性原因，该属性在 html5 中并未实现
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+        requestHeaders: Array<URLRequestHeader>;
+=======
+         * MovieClip数据源
+         */
+        movieClipData: MovieClipData;
+        /**
+         * @private
+         *
+         * @param value
+         */
+        private setMovieClipData(value);
+        /**
+         * @private
+         *
+         * @param value
+         */
+        private setPlayTimes(value);
+        /**
+         * @private
+         *
+         * @param value
+         */
+        private setIsStopped(value);
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+    }
+}
+declare namespace egret {
+    /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+<<<<<<< HEAD:libs/modules/game/game.d.ts
+     * @language en_US
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+     * The URLRequest class captures all of the information in a single HTTP request.
+     * @see http://edn.egret.com/cn/index.php/article/index/id/601 Build communication request
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @includeExample extension/game/net/URLRequest.ts
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+     */
+    /**
+     * @language zh_CN
+=======
+     * @language en_US
+     */
+    /**
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+     * URLRequest 类可捕获单个 HTTP 请求中的所有信息。
+     * @see http://edn.egret.com/cn/index.php/article/index/id/601 构建通信请求
+     * @version Egret 2.4
+     * @platform Web,Native
+     * @includeExample extension/game/net/URLRequest.ts
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+     */
+    class URLRequest extends HashObject {
+        /**
+         * @language en_US
+=======
+     * @language zh_CN
+     */
+    class URLRequest extends HashObject {
+        /**
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * Create an egret.URLRequest object
+         * @param url {string} Addresses for URL requests
+         * @version Egret 2.4
+         * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         */
+        /**
+         * @language zh_CN
+=======
+         * @language en_US
+         */
+        /**
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * 创建一个 egret.URLRequest 对象
+         * @param url {string} 进行网络请求的地址
+         * @version Egret 2.4
+         * @platform Web,Native
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         */
+        constructor(url?: string);
+        /**
+         * @language en_US
+=======
+         * @language zh_CN
+         */
+        constructor(url?: string);
+        /**
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * An object contains data to be transmitted with the URL request.
+         * This property is used in conjunction with the method property.  When the value of method is GET, the value of data is appended to the value of URLRequest.url, using HTTP query-string syntax.
+         * When the method value is POST (or any value other than GET), the value of data is transmitted in the body of the HTTP request.
+         * The URLRequest API offers binary POST support and support for URL-encoded variables, as well as support for strings. The data object can be a ArrayBuffer, URLVariables, or String object.
+         * The way in which the data is used depends on the type of object used:
+         * If the object is a ArrayBuffer object, the binary data of the ArrayBuffer object is used as POST data. For GET, data of ArrayBuffer type is not supported.
+         * If the object is a URLVariables object and the method is POST, then the variables are encoded using x-www-form-urlencoded format and the resulting string is used as POST data.
+         * If the object is a URLVariables object and the method is GET, the URLVariables object will define variables to be sent with the URLRequest object.
+         * Otherwise, the object is converted into a string, and the string is used as the POST or GET data.
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         * @language zh_CN
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * 一个对象，它包含将随 URL 请求一起传输的数据。
+         * 该属性与 method 属性配合使用。当 method 值为 GET 时，将使用 HTTP 查询字符串语法将 data 值追加到 URLRequest.url 值。
+         * 当 method 值为 POST（或 GET 之外的任何值）时，将在 HTTP 请求体中传输 data 值。
+         * URLRequest API 支持二进制 POST，并支持 URL 编码变量和字符串。该数据对象可以是 ArrayBuffer、URLVariables 或 String 对象。
+         * 该数据的使用方式取决于所用对象的类型：
+         * 如果该对象为 ArrayBuffer 对象，则 ArrayBuffer 对象的二进制数据用作 POST 数据。对于 GET，不支持 ArrayBuffer 类型的数据。
+         * 如果该对象是 URLVariables 对象，并且该方法是 POST，则使用 x-www-form-urlencoded 格式对变量进行编码，并且生成的字符串会用作 POST 数据。
+         * 如果该对象是 URLVariables 对象，并且该方法是 GET，则 URLVariables 对象将定义要随 URLRequest 对象一起发送的变量。
+         * 否则，该对象会转换为字符串，并且该字符串会用作 POST 或 GET 数据。
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+        data: any;
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         * @language en_US
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * Request method, valid values are URLRequestMethod.GET or URLRequestMethod.POST.
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         * @language zh_CN
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * 请求方式，有效值为URLRequestMethod.GET 或 URLRequestMethod.POST。
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+        method: string;
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         * @language en_US
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * The requested URL.
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         * @language zh_CN
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * 所请求的 URL。
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language zh_CN
+         */
+        url: string;
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         * @language en_US
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
+         * The array of HTTP request headers to be appended to the HTTP request. The array is composed of URLRequestHeader objects.
+         * Each object in the array must be a URLRequestHeader object that contains a name string and a value string.
+         * Because of browser compatibility, this property has not been achieved in html5
+         * @version Egret 2.4
+         * @platform Web,Native
+         * @language en_US
+         */
+        /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
+         * @language zh_CN
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
          * 要追加到 HTTP 请求的 HTTP 请求标头的数组。该数组由 URLRequestHeader 对象组成。
          * 数组中的每一对象必须是包含一个名称字符串和一个值字符串的 URLRequestHeader 对象。
          * 由于浏览器兼容性原因，该属性在 html5 中并未实现
@@ -2059,115 +3433,10 @@ declare namespace egret {
 }
 declare namespace egret {
     /**
-<<<<<<< HEAD:libs/modules/game/game.d.ts
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
      * @language en_US
-     * The URLRequest class captures all of the information in a single HTTP request.
-     * @see http://edn.egret.com/cn/index.php/article/index/id/601 Build communication request
-     * @version Egret 2.4
-     * @platform Web,Native
-     * @includeExample extension/game/net/URLRequest.ts
-     */
-    /**
-     * @language zh_CN
-     * URLRequest 类可捕获单个 HTTP 请求中的所有信息。
-     * @see http://edn.egret.com/cn/index.php/article/index/id/601 构建通信请求
-     * @version Egret 2.4
-     * @platform Web,Native
-     * @includeExample extension/game/net/URLRequest.ts
-     */
-    class URLRequest extends HashObject {
-        /**
-         * @language en_US
-         * Create an egret.URLRequest object
-         * @param url {string} Addresses for URL requests
-         * @version Egret 2.4
-         * @platform Web,Native
-         */
-        /**
-         * @language zh_CN
-         * 创建一个 egret.URLRequest 对象
-         * @param url {string} 进行网络请求的地址
-         * @version Egret 2.4
-         * @platform Web,Native
-         */
-        constructor(url?: string);
-        /**
-         * @language en_US
-         * An object contains data to be transmitted with the URL request.
-         * This property is used in conjunction with the method property.  When the value of method is GET, the value of data is appended to the value of URLRequest.url, using HTTP query-string syntax.
-         * When the method value is POST (or any value other than GET), the value of data is transmitted in the body of the HTTP request.
-         * The URLRequest API offers binary POST support and support for URL-encoded variables, as well as support for strings. The data object can be a ArrayBuffer, URLVariables, or String object.
-         * The way in which the data is used depends on the type of object used:
-         * If the object is a ArrayBuffer object, the binary data of the ArrayBuffer object is used as POST data. For GET, data of ArrayBuffer type is not supported.
-         * If the object is a URLVariables object and the method is POST, then the variables are encoded using x-www-form-urlencoded format and the resulting string is used as POST data.
-         * If the object is a URLVariables object and the method is GET, the URLVariables object will define variables to be sent with the URLRequest object.
-         * Otherwise, the object is converted into a string, and the string is used as the POST or GET data.
-         * @version Egret 2.4
-         * @platform Web,Native
-         */
-        /**
-         * @language zh_CN
-         * 一个对象，它包含将随 URL 请求一起传输的数据。
-         * 该属性与 method 属性配合使用。当 method 值为 GET 时，将使用 HTTP 查询字符串语法将 data 值追加到 URLRequest.url 值。
-         * 当 method 值为 POST（或 GET 之外的任何值）时，将在 HTTP 请求体中传输 data 值。
-         * URLRequest API 支持二进制 POST，并支持 URL 编码变量和字符串。该数据对象可以是 ArrayBuffer、URLVariables 或 String 对象。
-         * 该数据的使用方式取决于所用对象的类型：
-         * 如果该对象为 ArrayBuffer 对象，则 ArrayBuffer 对象的二进制数据用作 POST 数据。对于 GET，不支持 ArrayBuffer 类型的数据。
-         * 如果该对象是 URLVariables 对象，并且该方法是 POST，则使用 x-www-form-urlencoded 格式对变量进行编码，并且生成的字符串会用作 POST 数据。
-         * 如果该对象是 URLVariables 对象，并且该方法是 GET，则 URLVariables 对象将定义要随 URLRequest 对象一起发送的变量。
-         * 否则，该对象会转换为字符串，并且该字符串会用作 POST 或 GET 数据。
-         * @version Egret 2.4
-         * @platform Web,Native
-         */
-        data: any;
-        /**
-         * @language en_US
-         * Request method, valid values are URLRequestMethod.GET or URLRequestMethod.POST.
-         * @version Egret 2.4
-         * @platform Web,Native
-         */
-        /**
-         * @language zh_CN
-         * 请求方式，有效值为URLRequestMethod.GET 或 URLRequestMethod.POST。
-         * @version Egret 2.4
-         * @platform Web,Native
-         */
-        method: string;
-        /**
-         * @language en_US
-         * The requested URL.
-         * @version Egret 2.4
-         * @platform Web,Native
-         */
-        /**
-         * @language zh_CN
-         * 所请求的 URL。
-         * @version Egret 2.4
-         * @platform Web,Native
-         */
-        url: string;
-        /**
-         * @language en_US
-         * The array of HTTP request headers to be appended to the HTTP request. The array is composed of URLRequestHeader objects.
-         * Each object in the array must be a URLRequestHeader object that contains a name string and a value string.
-         * Because of browser compatibility, this property has not been achieved in html5
-         * @version Egret 2.4
-         * @platform Web,Native
-         */
-        /**
-         * @language zh_CN
-         * 要追加到 HTTP 请求的 HTTP 请求标头的数组。该数组由 URLRequestHeader 对象组成。
-         * 数组中的每一对象必须是包含一个名称字符串和一个值字符串的 URLRequestHeader 对象。
-         * 由于浏览器兼容性原因，该属性在 html5 中并未实现
-         * @version Egret 2.4
-         * @platform Web,Native
-         */
-        requestHeaders: Array<URLRequestHeader>;
-    }
-}
-declare module egret {
-    /**
-     * @language en_US
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
 =======
 >>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
      * A URLRequestHeader object encapsulates a single HTTP request header and consists of a name/value pair.  URLRequestHeader objects are used in the requestHeaders property of the URLRequest class.
@@ -2677,8 +3946,11 @@ declare namespace egret {
 }
 declare namespace egret {
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
 <<<<<<< HEAD:libs/modules/game/game.d.ts
      * @language en_US
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
 =======
 >>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
      * To specify a delay (in milliseconds) calls the function specified interval loop.
@@ -2693,8 +3965,11 @@ declare namespace egret {
      * @language en_US
      */
     /**
+<<<<<<< HEAD:EgerPro/libs/modules/game/game.d.ts
 <<<<<<< HEAD:libs/modules/game/game.d.ts
      * @language zh_CN
+=======
+>>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
 =======
 >>>>>>> dev:EgerPro/libs/modules/game/game.d.ts
      * 以指定的延迟（以毫秒为单位）间隔循环调用指定的函数。

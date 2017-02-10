@@ -25,9 +25,13 @@ var BitmapBlink = (function (_super) {
         }
         return _this;
     }
+<<<<<<< HEAD:EgerPro/bin-debug/utils/UtilsClass/BitmapBlink.js
 <<<<<<< HEAD:bin-debug/utils/UtilsClass/BitmapBlink.js
     var d = __define,c=BitmapBlink,p=c.prototype;
     p.start = function () {
+=======
+    BitmapBlink.prototype.start = function () {
+>>>>>>> dev:EgerPro/bin-debug/utils/UtilsClass/BitmapBlink.js
 =======
     BitmapBlink.prototype.start = function () {
 >>>>>>> dev:EgerPro/bin-debug/utils/UtilsClass/BitmapBlink.js
@@ -71,8 +75,12 @@ var BitmapBlink = (function (_super) {
     };
     return BitmapBlink;
 }(egret.EventDispatcher));
+<<<<<<< HEAD:EgerPro/bin-debug/utils/UtilsClass/BitmapBlink.js
 <<<<<<< HEAD:bin-debug/utils/UtilsClass/BitmapBlink.js
 egret.registerClass(BitmapBlink,'BitmapBlink');
+=======
+__reflect(BitmapBlink.prototype, "BitmapBlink");
+>>>>>>> dev:EgerPro/bin-debug/utils/UtilsClass/BitmapBlink.js
 =======
 __reflect(BitmapBlink.prototype, "BitmapBlink");
 >>>>>>> dev:EgerPro/bin-debug/utils/UtilsClass/BitmapBlink.js

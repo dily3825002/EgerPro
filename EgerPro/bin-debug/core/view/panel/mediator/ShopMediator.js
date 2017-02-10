@@ -32,9 +32,13 @@ var game;
             _this.isPlay10 = false;
             return _this;
         }
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/panel/mediator/ShopMediator.js
 <<<<<<< HEAD:bin-debug/core/view/panel/mediator/ShopMediator.js
         var d = __define,c=ShopMediator,p=c.prototype;
         p.listNotificationInterests = function () {
+=======
+        ShopMediator.prototype.listNotificationInterests = function () {
+>>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/ShopMediator.js
 =======
         ShopMediator.prototype.listNotificationInterests = function () {
 >>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/ShopMediator.js
@@ -157,9 +161,15 @@ var game;
         };
         return ShopMediator;
     }(BaseMediator));
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/panel/mediator/ShopMediator.js
 <<<<<<< HEAD:bin-debug/core/view/panel/mediator/ShopMediator.js
     game.ShopMediator = ShopMediator;
     egret.registerClass(ShopMediator,'game.ShopMediator');
+=======
+    ShopMediator.NAME = "ShopMediator";
+    game.ShopMediator = ShopMediator;
+    __reflect(ShopMediator.prototype, "game.ShopMediator");
+>>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/ShopMediator.js
 =======
     ShopMediator.NAME = "ShopMediator";
     game.ShopMediator = ShopMediator;

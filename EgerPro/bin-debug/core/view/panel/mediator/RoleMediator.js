@@ -22,12 +22,7 @@ var game;
             _this.rolePanel = new game.RolePanel();
             return _this;
         }
-<<<<<<< HEAD:bin-debug/core/view/panel/mediator/RoleMediator.js
-        var d = __define,c=RoleMediator,p=c.prototype;
-        p.listNotificationInterests = function () {
-=======
         RoleMediator.prototype.listNotificationInterests = function () {
->>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/RoleMediator.js
             return [
                 PanelNotify.OPEN_ROLE,
                 PanelNotify.CLOSE_ROLE
@@ -70,13 +65,8 @@ var game;
         };
         return RoleMediator;
     }(BaseMediator));
-<<<<<<< HEAD:bin-debug/core/view/panel/mediator/RoleMediator.js
-    game.RoleMediator = RoleMediator;
-    egret.registerClass(RoleMediator,'game.RoleMediator');
-=======
     RoleMediator.NAME = "RoleMediator";
     game.RoleMediator = RoleMediator;
     __reflect(RoleMediator.prototype, "game.RoleMediator");
->>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/RoleMediator.js
 })(game || (game = {}));
 //# sourceMappingURL=RoleMediator.js.map

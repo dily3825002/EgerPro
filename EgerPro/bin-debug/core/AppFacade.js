@@ -13,10 +13,6 @@ var game;
         function AppFacade() {
             return _super.call(this) || this;
         }
-<<<<<<< HEAD:bin-debug/core/AppFacade.js
-        var d = __define,c=AppFacade,p=c.prototype;
-=======
->>>>>>> dev:EgerPro/bin-debug/core/AppFacade.js
         AppFacade.getInstance = function () {
             if (this.instance == null)
                 this.instance = new AppFacade();
@@ -36,13 +32,8 @@ var game;
         };
         return AppFacade;
     }(puremvc.Facade));
-<<<<<<< HEAD:bin-debug/core/AppFacade.js
-    game.AppFacade = AppFacade;
-    egret.registerClass(AppFacade,'game.AppFacade',["puremvc.IFacade","puremvc.INotifier"]);
-=======
     AppFacade.STARTUP = "startup";
     game.AppFacade = AppFacade;
     __reflect(AppFacade.prototype, "game.AppFacade", ["puremvc.IFacade", "puremvc.INotifier"]);
->>>>>>> dev:EgerPro/bin-debug/core/AppFacade.js
 })(game || (game = {}));
 //# sourceMappingURL=AppFacade.js.map

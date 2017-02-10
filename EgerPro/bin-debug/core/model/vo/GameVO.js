@@ -14,14 +14,7 @@ var GameVO = (function () {
         */
         this.gameName = "Eger pro";
     }
-<<<<<<< HEAD:bin-debug/core/model/vo/GameVO.js
-    var d = __define,c=GameVO,p=c.prototype;
-    return GameVO;
-}());
-egret.registerClass(GameVO,'GameVO');
-=======
     return GameVO;
 }());
 __reflect(GameVO.prototype, "GameVO");
->>>>>>> dev:EgerPro/bin-debug/core/model/vo/GameVO.js
 //# sourceMappingURL=GameVO.js.map

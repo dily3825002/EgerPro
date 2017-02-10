@@ -22,9 +22,13 @@ var game;
             _this.qinghuaPanel = new game.QianghuaPanel();
             return _this;
         }
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/panel/mediator/QianghuaMediator.js
 <<<<<<< HEAD:bin-debug/core/view/panel/mediator/QianghuaMediator.js
         var d = __define,c=QianghuaMediator,p=c.prototype;
         p.listNotificationInterests = function () {
+=======
+        QianghuaMediator.prototype.listNotificationInterests = function () {
+>>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/QianghuaMediator.js
 =======
         QianghuaMediator.prototype.listNotificationInterests = function () {
 >>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/QianghuaMediator.js
@@ -81,9 +85,15 @@ var game;
         };
         return QianghuaMediator;
     }(BaseMediator));
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/panel/mediator/QianghuaMediator.js
 <<<<<<< HEAD:bin-debug/core/view/panel/mediator/QianghuaMediator.js
     game.QianghuaMediator = QianghuaMediator;
     egret.registerClass(QianghuaMediator,'game.QianghuaMediator');
+=======
+    QianghuaMediator.NAME = "QianghuaMediator";
+    game.QianghuaMediator = QianghuaMediator;
+    __reflect(QianghuaMediator.prototype, "game.QianghuaMediator");
+>>>>>>> dev:EgerPro/bin-debug/core/view/panel/mediator/QianghuaMediator.js
 =======
     QianghuaMediator.NAME = "QianghuaMediator";
     game.QianghuaMediator = QianghuaMediator;

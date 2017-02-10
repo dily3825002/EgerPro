@@ -41,8 +41,11 @@ var LoadingUI = (function (_super) {
         _this.createGameScene();
         return _this;
     }
+<<<<<<< HEAD:EgerPro/bin-debug/LoadingUI.js
 <<<<<<< HEAD:bin-debug/LoadingUI.js
     var d = __define,c=LoadingUI,p=c.prototype;
+=======
+>>>>>>> dev:EgerPro/bin-debug/LoadingUI.js
 =======
 >>>>>>> dev:EgerPro/bin-debug/LoadingUI.js
     /**
@@ -94,8 +97,12 @@ var LoadingUI = (function (_super) {
     };
     return LoadingUI;
 }(eui.UILayer));
+<<<<<<< HEAD:EgerPro/bin-debug/LoadingUI.js
 <<<<<<< HEAD:bin-debug/LoadingUI.js
 egret.registerClass(LoadingUI,'LoadingUI');
+=======
+__reflect(LoadingUI.prototype, "LoadingUI");
+>>>>>>> dev:EgerPro/bin-debug/LoadingUI.js
 =======
 __reflect(LoadingUI.prototype, "LoadingUI");
 >>>>>>> dev:EgerPro/bin-debug/LoadingUI.js

@@ -30,9 +30,13 @@ var __reflect = (this && this.__reflect) || function (p, c, t) {
 var AssetAdapter = (function () {
     function AssetAdapter() {
     }
+<<<<<<< HEAD:EgerPro/bin-debug/AssetAdapter.js
 <<<<<<< HEAD:bin-debug/AssetAdapter.js
     var d = __define,c=AssetAdapter,p=c.prototype;
     p.getAsset = function (source, callBack, thisObject) {
+=======
+    AssetAdapter.prototype.getAsset = function (source, callBack, thisObject) {
+>>>>>>> dev:EgerPro/bin-debug/AssetAdapter.js
 =======
     AssetAdapter.prototype.getAsset = function (source, callBack, thisObject) {
 >>>>>>> dev:EgerPro/bin-debug/AssetAdapter.js
@@ -56,8 +60,12 @@ var AssetAdapter = (function () {
     };
     return AssetAdapter;
 }());
+<<<<<<< HEAD:EgerPro/bin-debug/AssetAdapter.js
 <<<<<<< HEAD:bin-debug/AssetAdapter.js
 egret.registerClass(AssetAdapter,'AssetAdapter',["eui.IAssetAdapter"]);
+=======
+__reflect(AssetAdapter.prototype, "AssetAdapter", ["eui.IAssetAdapter"]);
+>>>>>>> dev:EgerPro/bin-debug/AssetAdapter.js
 =======
 __reflect(AssetAdapter.prototype, "AssetAdapter", ["eui.IAssetAdapter"]);
 >>>>>>> dev:EgerPro/bin-debug/AssetAdapter.js

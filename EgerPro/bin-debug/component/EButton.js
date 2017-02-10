@@ -39,9 +39,13 @@ var EButton = (function (_super) {
         _this.init(imgName, backFun, descStr, fontSize, cartoonType, assetsName);
         return _this;
     }
+<<<<<<< HEAD:EgerPro/bin-debug/component/EButton.js
 <<<<<<< HEAD:bin-debug/component/EButton.js
     var d = __define,c=EButton,p=c.prototype;
     p.init = function (imgName, backFun, descStr, fontSize, cartoonType, assetsName) {
+=======
+    EButton.prototype.init = function (imgName, backFun, descStr, fontSize, cartoonType, assetsName) {
+>>>>>>> dev:EgerPro/bin-debug/component/EButton.js
 =======
     EButton.prototype.init = function (imgName, backFun, descStr, fontSize, cartoonType, assetsName) {
 >>>>>>> dev:EgerPro/bin-debug/component/EButton.js
@@ -117,8 +121,12 @@ var EButton = (function (_super) {
     };
     return EButton;
 }(egret.DisplayObjectContainer));
+<<<<<<< HEAD:EgerPro/bin-debug/component/EButton.js
 <<<<<<< HEAD:bin-debug/component/EButton.js
 egret.registerClass(EButton,'EButton');
+=======
+__reflect(EButton.prototype, "EButton");
+>>>>>>> dev:EgerPro/bin-debug/component/EButton.js
 =======
 __reflect(EButton.prototype, "EButton");
 >>>>>>> dev:EgerPro/bin-debug/component/EButton.js

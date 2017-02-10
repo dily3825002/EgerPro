@@ -18,10 +18,6 @@ var ETextField = (function (_super) {
     function ETextField() {
         return _super.call(this) || this;
     }
-<<<<<<< HEAD:bin-debug/component/ETextField.js
-    var d = __define,c=ETextField,p=c.prototype;
-=======
->>>>>>> dev:EgerPro/bin-debug/component/ETextField.js
     //demo
     //"haa<font size='60' color='0x2bff00' i='true' b='false'>aaaa</font>aaaaaa<i>aaaa</i>aaaaaaaa"
     ETextField.prototype.setText = function (str) {
@@ -31,9 +27,5 @@ var ETextField = (function (_super) {
     };
     return ETextField;
 }(egret.TextField));
-<<<<<<< HEAD:bin-debug/component/ETextField.js
-egret.registerClass(ETextField,'ETextField');
-=======
 __reflect(ETextField.prototype, "ETextField");
->>>>>>> dev:EgerPro/bin-debug/component/ETextField.js
 //# sourceMappingURL=ETextField.js.map

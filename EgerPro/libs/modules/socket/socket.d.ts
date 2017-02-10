@@ -175,8 +175,11 @@ declare namespace egret {
          */
         private _connecting;
         /**
+<<<<<<< HEAD:EgerPro/libs/modules/socket/socket.d.ts
 <<<<<<< HEAD:libs/modules/socket/socket.d.ts
          * @language en_US
+=======
+>>>>>>> dev:EgerPro/libs/modules/socket/socket.d.ts
 =======
 >>>>>>> dev:EgerPro/libs/modules/socket/socket.d.ts
          * Create an egret.WebSocket object

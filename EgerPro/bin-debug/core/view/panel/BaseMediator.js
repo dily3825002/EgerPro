@@ -28,8 +28,11 @@ var BaseMediator = (function (_super) {
         _this.h = GameConfig.curHeight();
         return _this;
     }
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/panel/BaseMediator.js
 <<<<<<< HEAD:bin-debug/core/view/panel/BaseMediator.js
     var d = __define,c=BaseMediator,p=c.prototype;
+=======
+>>>>>>> dev:EgerPro/bin-debug/core/view/panel/BaseMediator.js
 =======
 >>>>>>> dev:EgerPro/bin-debug/core/view/panel/BaseMediator.js
     /**
@@ -104,8 +107,12 @@ var BaseMediator = (function (_super) {
     };
     return BaseMediator;
 }(puremvc.Mediator));
+<<<<<<< HEAD:EgerPro/bin-debug/core/view/panel/BaseMediator.js
 <<<<<<< HEAD:bin-debug/core/view/panel/BaseMediator.js
 egret.registerClass(BaseMediator,'BaseMediator',["puremvc.IMediator","puremvc.INotifier"]);
+=======
+__reflect(BaseMediator.prototype, "BaseMediator", ["puremvc.IMediator", "puremvc.INotifier"]);
+>>>>>>> dev:EgerPro/bin-debug/core/view/panel/BaseMediator.js
 =======
 __reflect(BaseMediator.prototype, "BaseMediator", ["puremvc.IMediator", "puremvc.INotifier"]);
 >>>>>>> dev:EgerPro/bin-debug/core/view/panel/BaseMediator.js
