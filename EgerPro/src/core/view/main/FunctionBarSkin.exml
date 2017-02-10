@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FunctionBarSkin" width="900" height="120" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="hengImg_png" x="32" y="21"/>
+	<e:Button id="roleBtn" label="Excel" x="34" y="6" skinName="main.RoleBtnSkin" enabled="true"/>
+	<e:Button id="backpackBtn" label="prox数据存取" x="153" y="6" skinName="main.BackpackBtnSkin"/>
+	<e:Button id="qianghuaBtn" label="protobuf演示" x="273" y="6" skinName="main.QianghuaBtnSkin"/>
+	<e:Button id="zhaoXianBtn" label="按钮特效" x="392" y="6" skinName="main.ZhaoXianBtnSkin"/>
+	<e:Button id="chuangDangBtn" x="511" y="6" skinName="main.ChuangDangBtnSkin" label="面板特效"/>
+	<e:Button id="shopBtn" label="图片特效" x="631" y="6" skinName="main.ShopBtnSkin"/>
+	<e:Button id="mapBtn" label="提示特效" x="750" y="6" skinName="main.MapBtnSkin"/>
+</e:Skin>

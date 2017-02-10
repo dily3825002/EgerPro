@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="main.ChuangDangBtnSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui" width.up="112" width.down="112" height.down="112" width.disabled="112" height.disabled="112" height.up="112">
+	<e:Image height="100%"
+	        
+	         width.down="90%" height.down="90%" width.disabled="90%" height.disabled="90%" width.up="100%" x.disabled="6" y.disabled="6" width="100%" x.down="6" y.down="6" source="chuangDangBtn_png" source.down="chuangDangBtn_png"/>
+	<e:Label italic="true" y="40" textColor="0x2EFF00" text="标签" textAlign="center" id="labelDisplay" horizontalCenter="0" width="100" verticalCenter="0" bold="true" x="40"/>
+</e:Skin>

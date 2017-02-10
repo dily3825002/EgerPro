@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="main.RoleBtnSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width.up="112" width.down="112" height.down="112" width.disabled="112" height.disabled="112" height.up="112">
+	<e:Image height="100%"
+	        
+	         width.down="90%" height.down="90%" width.disabled="90%" height.disabled="90%" width.up="100%" x.disabled="6" y.disabled="6" width="100%" x.down="6" y.down="6" source="roleBtn_png" source.down="roleBtn_png" source.disabled="roleBtn_png"/>
+	<e:Label id="labelDisplay" text="标签" horizontalCenter="0" verticalCenter="0" width="100" textAlign="center" textColor="0x2EFF00" bold="true" italic="true"/>
+</e:Skin>
