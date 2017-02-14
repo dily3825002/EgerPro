@@ -1,38 +1,40 @@
 {
-    "native": {
-        "path_ignore": []
+  "native": {
+    "path_ignore": []
+  },
+  "publish": {
+    "web": 0,
+    "native": 1,
+    "path": "bin-release"
+  },
+  "egret_version": "4.0.1",
+  "modules": [
+    {
+      "name": "egret"
     },
-    "publish": {
-        "web": 0,
-        "native": 1,
-        "path": "bin-release"
+    {
+      "name": "eui"
     },
-    "egret_version": "4.0.1",
-    "modules": [{
-            "name": "egret"
-        },
-        {
-            "name": "eui"
-        },
-        {
-            "name": "res"
-        },
-        {
-            "name": "game"
-        },
-        {
-            "name": "tween"
-        },
-        {
-            "name": "socket"
-        },
-        {
-            "name": "puremvc",
-            "path": "../modules/puremvc"
-        },
-        {
-            "name": "protobuf",
-            "path": "../modules/protobuf"
-        }
-    ]
+    {
+      "name": "resourcemanager",
+      "path": "resourcemanager"
+    },
+    {
+      "name": "game"
+    },
+    {
+      "name": "tween"
+    },
+    {
+      "name": "socket"
+    },
+    {
+      "name": "puremvc",
+      "path": "../modules/puremvc"
+    },
+    {
+      "name": "protobuf",
+      "path": "../modules/protobuf"
+    }
+  ]
 }
