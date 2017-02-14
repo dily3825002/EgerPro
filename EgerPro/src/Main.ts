@@ -1,3 +1,25 @@
+@RES.mapConfig("config.json",()=>"resource",path => {
+    var ext = path.substr(path.lastIndexOf(".") + 1);
+    var typeMap = {
+        "jpg": "image",
+        "png": "image",
+        "webp": "image",
+        "json": "json",
+        "fnt": "font",
+        "pvr": "pvr",
+        "mp3": "sound",
+        "proto": "proto"
+    }
+    var type = typeMap[ext];
+    if (type == "json") {
+        if (path.indexOf("sheet") >= 0) {
+            type = "sheet";
+        } else if (path.indexOf("movieclip") >= 0) {
+            type = "movieclip";
+        };
+    }
+    return type;
+})
 class Main extends eui.UILayer {
 
     /**
@@ -8,58 +30,43 @@ class Main extends eui.UILayer {
     protected createChildren(): void {
         super.createChildren();
 
-        //inject the custom material parser
         //注入自定义的素材解析器
         var assetAdapter = new AssetAdapter();
         
         this.stage.registerImplementation("eui.IAssetAdapter",assetAdapter);
 
-        //资源加载--todo
-        //loading条初始化显示移除
         var theme = new eui.Theme("resource/default.thm.json", this.stage);
+
+        RES.processor.map("proto", ProtoAnalyzer);
 
         //游戏自定义容器添加到舞台上
         this.addChild(GameLayerManager.gameLayer());
 
-
-        //初始化Resource资源加载库
-        RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
-        RES.loadConfig("resource/resource.json", "resource/");
+        this.loadRes();
     }
 
-    /**
-     * 配置文件加载完成,开始预加载preload资源组。
-     */
-    private onConfigComplete(event:RES.ResourceEvent):void{
-        RES.removeEventListener(RES.ResourceEvent.CONFIG_COMPLETE,this.onConfigComplete,this);
-        RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE,this.onResourceLoadComplete,this);
-        RES.addEventListener(RES.ResourceEvent.GROUP_PROGRESS,this.onResourceProgress,this);
-        RES.loadGroup("loading",1);
-        RES.loadGroup("preload");
-    }
-    /**
-     * preload资源组加载完成
-     */
-    private onResourceLoadComplete(event:RES.ResourceEvent):void {
-        if(event.groupName=="loading"){
-            //设置加载进度界面
-            this.loadingView  = new LoadingUI();
-            GameLayerManager.gameLayer().addChild(this.loadingView);
-        }
-        else if(event.groupName=="preload"){
-            GameLayerManager.gameLayer().removeChild(this.loadingView);
-            RES.removeEventListener(RES.ResourceEvent.GROUP_COMPLETE,this.onResourceLoadComplete,this);
-            RES.removeEventListener(RES.ResourceEvent.GROUP_PROGRESS,this.onResourceProgress,this);
-            this.createGameScene();
-        }
-    }
-    /**
-     * preload资源组加载进度
-     */
-    private onResourceProgress(event:RES.ResourceEvent):void {
-        if(event.groupName=="preload"){
-            this.loadingView.setProgress(event.itemsLoaded,event.itemsTotal);
-        }
+    private async loadRes()
+    {
+        let self = this;
+
+        await RES.loadConfig();
+        
+        await RES.loadGroup("loading");
+       
+        //设置加载进度界面
+        self.loadingView  = new LoadingUI();
+        GameLayerManager.gameLayer().addChild(self.loadingView);
+
+        let loading:RES.PromiseTaskReporter = {
+            onProgress(current: number, total: number){
+                // console.log(current+"/"+total)
+                self.loadingView.setProgress(current,total);
+            }
+        };
+        await RES.loadGroup("preload",0,loading);
+        GameLayerManager.gameLayer().removeChild(this.loadingView);
+
+        this.createGameScene();
     }
 
     /**
