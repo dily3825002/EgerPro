@@ -1,63 +1,108 @@
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+var __extends = (this && this.__extends) || function(d, b) {
+    for (var p in b)
+        if (b.hasOwnProperty(p)) d[p] = b[p];
+
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+var __awaiter = (this && this.__awaiter) || function(thisArg, _arguments, P, generator) {
+    return new(P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+            try {
+                step(generator.next(value));
+            } catch (e) {
+                console.log(e.stack)
+                reject(e);
+            }
+        }
+
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+
+        function step(result) { result.done ? resolve(result.value) : new P(function(resolve) { resolve(result.value); }).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t;
+var __generator = (this && this.__generator) || function(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] },
+        f, y, t;
     return { next: verb(0), "throw": verb(1), "return": verb(2) };
-    function verb(n) { return function (v) { return step([n, v]); }; }
+
+    function verb(n) { return function(v) { return step([n, v]); }; }
+
     function step(op) {
         if (f) throw new TypeError("Generator is already executing.");
         while (_) try {
             if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
             if (y = 0, t) op = [0, t.value];
             switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                case 0:
+                case 1:
+                    t = op;
+                    break;
+                case 4:
+                    _.label++;
+                    return { value: op[1], done: false };
+                case 5:
+                    _.label++;
+                    y = op[1];
+                    op = [0];
+                    continue;
+                case 7:
+                    op = _.ops.pop();
+                    _.trys.pop();
+                    continue;
                 default:
                     if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
                     if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (op[0] === 6 && _.label < t[1]) {
+                        _.label = t[1];
+                        t = op;
+                        break;
+                    }
+                    if (t && _.label < t[2]) {
+                        _.label = t[2];
+                        _.ops.push(op);
+                        break;
+                    }
                     if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
+                    _.trys.pop();
+                    continue;
             }
             op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+        } catch (e) {
+            op = [6, e];
+            y = 0;
+        } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1];
+        return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+var __decorate = (this && this.__decorate) || function(decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    else
+        for (var i = decorators.length - 1; i >= 0; i--)
+            if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var RES;
-(function (RES) {
+(function(RES) {
     var ResourceNodeType;
-    (function (ResourceNodeType) {
+    (function(ResourceNodeType) {
         ResourceNodeType[ResourceNodeType["FILE"] = 0] = "FILE";
         ResourceNodeType[ResourceNodeType["DICTIONARY"] = 1] = "DICTIONARY";
     })(ResourceNodeType || (ResourceNodeType = {}));
+
     function getResourceInfo(path) {
         return FileSystem.getFile(path);
     }
     RES.getResourceInfo = getResourceInfo;
     var FileSystem;
-    (function (FileSystem) {
+    (function(FileSystem) {
         FileSystem.data = {};
+
         function addFile(filename, type) {
             if (!type)
                 type = "";
@@ -71,6 +116,7 @@ var RES;
             d[basefilename] = { url: filename, type: type };
         }
         FileSystem.addFile = addFile;
+
         function getFile(filename) {
             var result = reslove(filename);
             if (result) {
@@ -79,15 +125,19 @@ var RES;
             return result;
         }
         FileSystem.getFile = getFile;
+
         function basename(filename) {
             return filename.substr(filename.lastIndexOf("/") + 1);
         }
+
         function normalize(filename) {
-            return filename.split("/").filter(function (d) { return !!d; }).join("/");
+            return filename.split("/").filter(function(d) { return !!d; }).join("/");
         }
+
         function dirname(path) {
             return path.substr(0, path.lastIndexOf("/"));
         }
+
         function reslove(dirpath) {
             if (dirpath == "") {
                 return FileSystem.data;
@@ -99,13 +149,13 @@ var RES;
                 var f = list_1[_i];
                 if (current) {
                     current = current[f];
-                }
-                else {
+                } else {
                     return current;
                 }
             }
             return current;
         }
+
         function mkdir(dirpath) {
             dirpath = normalize(dirpath);
             var list = dirpath.split("/");
@@ -119,6 +169,7 @@ var RES;
             }
         }
         FileSystem.mkdir = mkdir;
+
         function exists(dirpath) {
             if (dirpath == "")
                 return true;
@@ -138,17 +189,17 @@ var RES;
     })(FileSystem = RES.FileSystem || (RES.FileSystem = {}));
 })(RES || (RES = {}));
 var RES;
-(function (RES) {
+(function(RES) {
     var resourceTypeSelector;
     /**
-   * Definition profile.
-   * @param url Configuration file path (path resource.json).
-   * @param resourceRoot Resource path. All URL in the configuration is the relative value of the path. The ultimate URL is the value of the sum of the URL of the string and the resource in the configuration.
-   * @param type Configuration file format. Determine what parser to parse the configuration file. Default "json".
-   * @version Egret 3.1.5
-   * @platform Web,Native
-   * @language en_US
-   */
+     * Definition profile.
+     * @param url Configuration file path (path resource.json).
+     * @param resourceRoot Resource path. All URL in the configuration is the relative value of the path. The ultimate URL is the value of the sum of the URL of the string and the resource in the configuration.
+     * @param type Configuration file format. Determine what parser to parse the configuration file. Default "json".
+     * @version Egret 3.1.5
+     * @platform Web,Native
+     * @language en_US
+     */
     /**
      * 定义配置文件。
      * @param url 配置文件路径(resource.json的路径)。
@@ -159,12 +210,11 @@ var RES;
      * @language zh_CN
      */
     function mapConfig(url, rootSelector, typeSelector) {
-        return function (target) {
+        return function(target) {
             var type = typeSelector(url);
             if (typeof rootSelector == "string") {
                 RES.resourceRoot = rootSelector;
-            }
-            else {
+            } else {
                 RES.resourceRoot = rootSelector();
             }
             if (RES.resourceRoot.lastIndexOf("/") != 0) {
@@ -174,21 +224,20 @@ var RES;
             resourceTypeSelector = typeSelector;
         };
     }
-    RES.mapConfig = mapConfig;
-    ;
+    RES.mapConfig = mapConfig;;
     /**
      * @class RES.ResourceConfig
      * @classdesc
      * @private
      */
-    var ResourceConfig = (function () {
+    var ResourceConfig = (function() {
         function ResourceConfig() {
             RES["configInstance"] = this;
         }
         /**
          * @internal
          */
-        ResourceConfig.prototype.getGroupByName = function (name, shouldNotBeNull) {
+        ResourceConfig.prototype.getGroupByName = function(name, shouldNotBeNull) {
             var group = this.config.groups[name];
             var result = [];
             if (!group) {
@@ -199,13 +248,15 @@ var RES;
             }
             for (var _i = 0, group_1 = group; _i < group_1.length; _i++) {
                 var paramKey = group_1[_i];
-                var _a = RES.manager.config.parseResKey(paramKey), key = _a.key, subkey = _a.subkey;
+                var _a = RES.manager.config.parseResKey(paramKey),
+                    key = _a.key,
+                    subkey = _a.subkey;
                 var r = RES.manager.config.getResource(key, true);
                 result.push(r);
             }
             return result;
         };
-        ResourceConfig.prototype.__temp__get__type__via__url = function (url_or_alias) {
+        ResourceConfig.prototype.__temp__get__type__via__url = function(url_or_alias) {
             var url = this.config.alias[url_or_alias];
             if (!url) {
                 url = url_or_alias;
@@ -220,13 +271,12 @@ var RES;
                     throw new RES.ResourceManagerError(2004, url);
                 }
                 return type;
-            }
-            else {
+            } else {
                 console.warn("RES.mapConfig 并未设置 typeSelector");
                 return "unknown";
             }
         };
-        ResourceConfig.prototype.parseResKey = function (key) {
+        ResourceConfig.prototype.parseResKey = function(key) {
             key = this.getKeyByAlias(key);
             var index = key.indexOf("#");
             if (index >= 0) {
@@ -234,23 +284,21 @@ var RES;
                     key: key.substr(0, index),
                     subkey: key.substr(index + 1)
                 };
-            }
-            else {
+            } else {
                 return {
                     key: key,
                     subkey: ""
                 };
             }
         };
-        ResourceConfig.prototype.getKeyByAlias = function (aliasName) {
+        ResourceConfig.prototype.getKeyByAlias = function(aliasName) {
             if (this.config.alias[aliasName]) {
                 return this.config.alias[aliasName];
-            }
-            else {
+            } else {
                 return aliasName;
             }
         };
-        ResourceConfig.prototype.getResource = function (path_or_alias, shouldNotBeNull) {
+        ResourceConfig.prototype.getResource = function(path_or_alias, shouldNotBeNull) {
             var path = this.config.alias[path_or_alias];
             if (!path) {
                 path = path_or_alias;
@@ -271,7 +319,7 @@ var RES;
          * @returns {Array<any>}
          * @internal
          */
-        ResourceConfig.prototype.getGroup = function (name) {
+        ResourceConfig.prototype.getGroup = function(name) {
             return this.getGroupByName(name);
         };
         /**
@@ -283,7 +331,7 @@ var RES;
          * @param override {boolean} 是否覆盖已经存在的同名资源组,默认false。
          * @returns {boolean}
          */
-        ResourceConfig.prototype.createGroup = function (name, keys, override) {
+        ResourceConfig.prototype.createGroup = function(name, keys, override) {
             if (override === void 0) { override = false; }
             if ((!override && this.config.groups[name]) || !keys || keys.length == 0) {
                 return false;
@@ -294,11 +342,9 @@ var RES;
                 if (this.config.groups[key]) {
                     var groupInfo = this.config.groups[key];
                     group = group.concat(groupInfo);
-                }
-                else if (this.config.alias[key] || this.config.resources[key]) {
+                } else if (this.config.alias[key] || this.config.resources[key]) {
                     group = group.concat(key);
-                }
-                else {
+                } else {
                     group = group.concat(key);
                     console.warn("resource not exist : " + key);
                 }
@@ -341,11 +387,11 @@ var RES;
          * @param data {any} 配置文件数据
          * @param folder {string} 加载项的路径前缀。
          */
-        ResourceConfig.prototype.parseConfig = function (data) {
+        ResourceConfig.prototype.parseConfig = function(data) {
             var _this = this;
             this.config = data;
             var resource = data.resources;
-            var loop = function (r, prefix, walk) {
+            var loop = function(r, prefix, walk) {
                 for (var key in r) {
                     var p = prefix ? prefix + "/" + key : key;
                     var f = r[key];
@@ -353,21 +399,19 @@ var RES;
                         if (typeof f === 'string') {
                             f = { url: f, name: p };
                             r[key] = f;
-                        }
-                        else {
+                        } else {
                             f['name'] = p;
                         }
                         walk(f);
-                    }
-                    else {
+                    } else {
                         loop(f, p, walk);
                     }
                 }
             };
-            var isFile = function (r) {
+            var isFile = function(r) {
                 return typeof r === "string" || r.url != null;
             };
-            loop(resource, "", function (value) {
+            loop(resource, "", function(value) {
                 if (!value.type) {
                     value.type = _this.__temp__get__type__via__url(value.url);
                 }
@@ -411,10 +455,10 @@ var RES;
          * @param subkey {string} 要添加的二级键名
          * @param name {string} 二级键名所属的资源name属性
          */
-        ResourceConfig.prototype.addSubkey = function (subkey, name) {
+        ResourceConfig.prototype.addSubkey = function(subkey, name) {
             this.addAlias(subkey, name + "#" + subkey);
         };
-        ResourceConfig.prototype.addAlias = function (alias, key) {
+        ResourceConfig.prototype.addAlias = function(alias, key) {
             if (this.config.alias[key]) {
                 key = this.config.alias[key];
             }
@@ -426,10 +470,10 @@ var RES;
          * @param key {string} 对应配置文件里的name属性或sbuKeys属性的一项。
          * @returns {string}
          */
-        ResourceConfig.prototype.getType = function (key) {
+        ResourceConfig.prototype.getType = function(key) {
             return this.getResource(key, true).type;
         };
-        ResourceConfig.prototype.addResourceData = function (data) {
+        ResourceConfig.prototype.addResourceData = function(data) {
             if (!data.type) {
                 data.type = this.__temp__get__type__via__url(data.url);
             }
@@ -438,7 +482,7 @@ var RES;
                 this.config.alias[data.name] = data.url;
             }
         };
-        ResourceConfig.prototype.destory = function () {
+        ResourceConfig.prototype.destory = function() {
             this.config = { groups: {}, alias: {}, resources: {} };
             RES.FileSystem.data = {};
         };
@@ -475,7 +519,7 @@ var RES;
 //
 //////////////////////////////////////////////////////////////////////////////////////
 var RES;
-(function (RES) {
+(function(RES) {
     /**
      * @class RES.ResourceLoader
      * @classdesc
@@ -483,26 +527,26 @@ var RES;
      * @private
      * @internal
      */
-    var PromiseQueue = (function () {
-        function PromiseQueue() {
-        }
-        PromiseQueue.prototype.load = function (list, reporter) {
+    var PromiseQueue = (function() {
+        function PromiseQueue() {}
+        PromiseQueue.prototype.load = function(list, reporter) {
             var current = 0;
             var total = 1;
-            var mapper = function (r) { return RES.host.load(r)
-                .then(function (response) {
-                RES.host.save(r, response);
-                current++;
-                if (reporter && reporter.onProgress) {
-                    reporter.onProgress(current, total);
-                }
-                return response;
-            }); };
+            var mapper = function(r) {
+                return RES.host.load(r)
+                    .then(function(response) {
+                        RES.host.save(r, response);
+                        current++;
+                        if (reporter && reporter.onProgress) {
+                            reporter.onProgress(current, total);
+                        }
+                        return response;
+                    });
+            };
             if ((list instanceof Array)) {
                 total = list.length;
                 return Promise.all(list.map(mapper));
-            }
-            else {
+            } else {
                 return mapper(list);
             }
         };
@@ -511,31 +555,31 @@ var RES;
     RES.PromiseQueue = PromiseQueue;
 })(RES || (RES = {}));
 var RES;
-(function (RES) {
+(function(RES) {
     var __tempCache = {};
     /**
      * 整个资源加载系统的进程id，协助管理回调派发机制
      */
     var systemPid = 0;
-    RES.checkCancelation = function (target, propertyKey, descriptor) {
+    RES.checkCancelation = function(target, propertyKey, descriptor) {
         var method = descriptor.value;
-        descriptor.value = function () {
+        descriptor.value = function() {
             var arg = [];
             for (var _i = 0; _i < arguments.length; _i++) {
                 arg[_i] = arguments[_i];
             }
             var currentPid = systemPid;
             var result = method.apply(this, arg);
-            return result.then(function (value) {
+            return result.then(function(value) {
                 if (systemPid != currentPid) {
                     throw new ResourceManagerError(1005, arg[0]);
-                }
-                else {
+                } else {
                     return value;
                 }
             });
         };
     };
+
     function profile() {
         console.log(RES.FileSystem.data);
         console.log(__tempCache);
@@ -554,7 +598,7 @@ var RES;
         get resourceConfig() {
             return manager.config;
         },
-        load: function (r, processor) {
+        load: function(r, processor) {
             if (!processor) {
                 processor = RES.host.isSupport(r);
             }
@@ -563,7 +607,7 @@ var RES;
             }
             return processor.onLoadStart(RES.host, r);
         },
-        unload: function (r) {
+        unload: function(r) {
             var data = RES.host.get(r);
             if (!data) {
                 console.warn("尝试释放不存在的资源:", r.name);
@@ -572,36 +616,36 @@ var RES;
             var processor = RES.host.isSupport(r);
             if (processor) {
                 return processor.onRemoveStart(RES.host, r)
-                    .then(function (result) {
-                    RES.host.remove(r);
-                    return result;
-                });
-            }
-            else {
+                    .then(function(result) {
+                        RES.host.remove(r);
+                        return result;
+                    });
+            } else {
                 return Promise.resolve();
             }
         },
-        save: function (resource, data) {
+        save: function(resource, data) {
             __tempCache[resource.url] = data;
         },
-        get: function (resource) {
+        get: function(resource) {
             return __tempCache[resource.url];
         },
-        remove: function (resource) {
+        remove: function(resource) {
             delete __tempCache[resource.url];
         },
-        isSupport: function (resource) {
+        isSupport: function(resource) {
             return RES.processor.isSupport(resource);
         }
     };
     var manager;
-    (function (manager) {
+    (function(manager) {
         manager.config = new RES.ResourceConfig();
         var queue = new RES.PromiseQueue();
+
         function init() {
-            return RES.host.load(RES.configItem).then(function (data) {
+            return RES.host.load(RES.configItem).then(function(data) {
                 manager.config.parseConfig(data);
-            }).catch(function (e) {
+            }).catch(function(e) {
                 if (!e.__resource_manager_error__) {
                     console.error(e.stack);
                     e = new ResourceManagerError(1002);
@@ -610,10 +654,12 @@ var RES;
             });
         }
         manager.init = init;
+
         function load(resources, reporter) {
             return queue.load(resources, reporter);
         }
         manager.load = load;
+
         function destory() {
             manager.config.destory();
             systemPid++;
@@ -621,8 +667,9 @@ var RES;
         }
         manager.destory = destory;
     })(manager = RES.manager || (RES.manager = {}));
-    var ResourceManagerError = (function (_super) {
+    var ResourceManagerError = (function(_super) {
         __extends(ResourceManagerError, _super);
+
         function ResourceManagerError(code, replacer, replacer2) {
             var _this = _super.call(this) || this;
             /**
@@ -650,36 +697,39 @@ var RES;
     RES.ResourceManagerError = ResourceManagerError;
 })(RES || (RES = {}));
 var RES;
-(function (RES) {
+(function(RES) {
     var processor;
-    (function (processor_1) {
+    (function(processor_1) {
         function isSupport(resource) {
             return _map[resource.type];
         }
         processor_1.isSupport = isSupport;
+
         function map(type, processor) {
             _map[type] = processor;
         }
         processor_1.map = map;
+
         function promisify(loader, resource) {
-            return __awaiter(this, void 0, void 0, function () {
+            return __awaiter(this, void 0, void 0, function() {
                 var _this = this;
-                return __generator(this, function (_a) {
-                    return [2 /*return*/, new Promise(function (reslove, reject) {
-                            var onSuccess = function () {
-                                var texture = loader['data'] ? loader['data'] : loader['response'];
-                                reslove(texture);
-                            };
-                            var onError = function () {
-                                var e = new RES.ResourceManagerError(1001, resource.url);
-                                reject(e);
-                            };
-                            loader.addEventListener(egret.Event.COMPLETE, onSuccess, _this);
-                            loader.addEventListener(egret.IOErrorEvent.IO_ERROR, onError, _this);
-                        })];
+                return __generator(this, function(_a) {
+                    return [2 /*return*/ , new Promise(function(reslove, reject) {
+                        var onSuccess = function() {
+                            var texture = loader['data'] ? loader['data'] : loader['response'];
+                            reslove(texture);
+                        };
+                        var onError = function() {
+                            var e = new RES.ResourceManagerError(1001, resource.url);
+                            reject(e);
+                        };
+                        loader.addEventListener(egret.Event.COMPLETE, onSuccess, _this);
+                        loader.addEventListener(egret.IOErrorEvent.IO_ERROR, onError, _this);
+                    })];
                 });
             });
         }
+
         function getRelativePath(url, file) {
             url = url.split("\\").join("/");
             var params = url.match(/#.*|\?.*/);
@@ -690,8 +740,7 @@ var RES;
             var index = url.lastIndexOf("/");
             if (index != -1) {
                 url = url.substring(0, index + 1) + file;
-            }
-            else {
+            } else {
                 url = file;
             }
             return url + paramUrl;
@@ -699,16 +748,16 @@ var RES;
         processor_1.getRelativePath = getRelativePath;
         // var cache: {[index:string]:egret.Texture} = {};
         processor_1.ImageProcessor = {
-            onLoadStart: function (host, resource) {
-                return __awaiter(this, void 0, void 0, function () {
+            onLoadStart: function(host, resource) {
+                return __awaiter(this, void 0, void 0, function() {
                     var loader, prefix, bitmapData, texture;
-                    return __generator(this, function (_a) {
+                    return __generator(this, function(_a) {
                         switch (_a.label) {
                             case 0:
                                 loader = new egret.ImageLoader();
                                 prefix = resource.extra ? "" : RES.resourceRoot;
                                 loader.load(prefix + resource.url);
-                                return [4 /*yield*/, promisify(loader, resource)];
+                                return [4 /*yield*/ , promisify(loader, resource)];
                             case 1:
                                 bitmapData = _a.sent();
                                 texture = new egret.Texture();
@@ -719,22 +768,22 @@ var RES;
                                 //     var list: Array<string> = str.split(",");
                                 //     texture["scale9Grid"] = new egret.Rectangle(parseInt(list[0]), parseInt(list[1]), parseInt(list[2]), parseInt(list[3]));
                                 // }
-                                return [2 /*return*/, texture];
+                                return [2 /*return*/ , texture];
                         }
                     });
                 });
             },
-            onRemoveStart: function (host, resource) {
+            onRemoveStart: function(host, resource) {
                 var texture = host.get(resource);
                 texture.dispose();
                 return Promise.resolve();
             }
         };
         processor_1.BinaryProcessor = {
-            onLoadStart: function (host, resource) {
-                return __awaiter(this, void 0, void 0, function () {
+            onLoadStart: function(host, resource) {
+                return __awaiter(this, void 0, void 0, function() {
                     var request, prefix, arraybuffer;
-                    return __generator(this, function (_a) {
+                    return __generator(this, function(_a) {
                         switch (_a.label) {
                             case 0:
                                 request = new egret.HttpRequest();
@@ -742,23 +791,23 @@ var RES;
                                 prefix = resource.extra ? "" : RES.resourceRoot;
                                 request.open(prefix + resource.url, "get");
                                 request.send();
-                                return [4 /*yield*/, promisify(request, resource)];
+                                return [4 /*yield*/ , promisify(request, resource)];
                             case 1:
                                 arraybuffer = _a.sent();
-                                return [2 /*return*/, arraybuffer];
+                                return [2 /*return*/ , arraybuffer];
                         }
                     });
                 });
             },
-            onRemoveStart: function (host, resource) {
+            onRemoveStart: function(host, resource) {
                 return Promise.resolve();
             }
         };
         processor_1.TextProcessor = {
-            onLoadStart: function (host, resource) {
-                return __awaiter(this, void 0, void 0, function () {
+            onLoadStart: function(host, resource) {
+                return __awaiter(this, void 0, void 0, function() {
                     var request, prefix, text;
-                    return __generator(this, function (_a) {
+                    return __generator(this, function(_a) {
                         switch (_a.label) {
                             case 0:
                                 request = new egret.HttpRequest();
@@ -766,90 +815,93 @@ var RES;
                                 prefix = resource.extra ? "" : RES.resourceRoot;
                                 request.open(prefix + resource.url, "get");
                                 request.send();
-                                return [4 /*yield*/, promisify(request, resource)];
+                                return [4 /*yield*/ , promisify(request, resource)];
                             case 1:
                                 text = _a.sent();
-                                return [2 /*return*/, text];
+                                return [2 /*return*/ , text];
                         }
                     });
                 });
             },
-            onRemoveStart: function (host, resource) {
+            onRemoveStart: function(host, resource) {
                 return Promise.resolve();
             }
         };
         processor_1.JsonProcessor = {
-            onLoadStart: function (host, resource) {
-                return __awaiter(this, void 0, void 0, function () {
+            onLoadStart: function(host, resource) {
+                return __awaiter(this, void 0, void 0, function() {
                     var text, data;
-                    return __generator(this, function (_a) {
+                    return __generator(this, function(_a) {
                         switch (_a.label) {
-                            case 0: return [4 /*yield*/, host.load(resource, processor_1.TextProcessor)];
+                            case 0:
+                                return [4 /*yield*/ , host.load(resource, processor_1.TextProcessor)];
                             case 1:
                                 text = _a.sent();
                                 data = JSON.parse(text);
-                                return [2 /*return*/, data];
+                                return [2 /*return*/ , data];
                         }
                     });
                 });
             },
-            onRemoveStart: function (host, request) {
+            onRemoveStart: function(host, request) {
                 return Promise.resolve();
             }
         };
         processor_1.XMLProcessor = {
-            onLoadStart: function (host, resource) {
-                return __awaiter(this, void 0, void 0, function () {
+            onLoadStart: function(host, resource) {
+                return __awaiter(this, void 0, void 0, function() {
                     var text, data;
-                    return __generator(this, function (_a) {
+                    return __generator(this, function(_a) {
                         switch (_a.label) {
-                            case 0: return [4 /*yield*/, host.load(resource, processor_1.TextProcessor)];
+                            case 0:
+                                return [4 /*yield*/ , host.load(resource, processor_1.TextProcessor)];
                             case 1:
                                 text = _a.sent();
                                 data = egret.XML.parse(text);
-                                return [2 /*return*/, data];
+                                return [2 /*return*/ , data];
                         }
                     });
                 });
             },
-            onRemoveStart: function (host, resource) {
+            onRemoveStart: function(host, resource) {
                 return Promise.resolve();
             }
         };
         processor_1.CommonJSProcessor = {
-            onLoadStart: function (host, resource) {
-                return __awaiter(this, void 0, void 0, function () {
+            onLoadStart: function(host, resource) {
+                return __awaiter(this, void 0, void 0, function() {
                     var text, f, require, exports;
-                    return __generator(this, function (_a) {
+                    return __generator(this, function(_a) {
                         switch (_a.label) {
-                            case 0: return [4 /*yield*/, host.load(resource, processor_1.TextProcessor)];
+                            case 0:
+                                return [4 /*yield*/ , host.load(resource, processor_1.TextProcessor)];
                             case 1:
                                 text = _a.sent();
                                 f = new Function('require', 'exports', text);
-                                require = function () { };
+                                require = function() {};
                                 exports = {};
                                 try {
                                     f(require, exports);
-                                }
-                                catch (e) {
+                                } catch (e) {
                                     throw new RES.ResourceManagerError(2003, resource.name, e.message);
                                 }
-                                return [2 /*return*/, exports];
+                                return [2 /*return*/ , exports];
                         }
                     });
                 });
             },
-            onRemoveStart: function (host, resource) {
+            onRemoveStart: function(host, resource) {
                 return Promise.resolve();
             }
         };
         processor_1.SheetProcessor = {
-            onLoadStart: function (host, resource) {
-                return __awaiter(this, void 0, void 0, function () {
+            onLoadStart: function(host, resource) {
+                return __awaiter(this, void 0, void 0, function() {
                     var data, imagePath, r, texture, frames, spriteSheet, subkey, config, texture;
-                    return __generator(this, function (_a) {
+                    return __generator(this, function(_a) {
                         switch (_a.label) {
-                            case 0: return [4 /*yield*/, host.load(resource, processor_1.JsonProcessor)];
+                            case 0:
+                                return [4 /*yield*/ , host.load(resource, processor_1.JsonProcessor)];
                             case 1:
                                 data = _a.sent();
                                 imagePath = getRelativePath(resource.name, data.file);
@@ -857,7 +909,7 @@ var RES;
                                 if (!r) {
                                     throw new RES.ResourceManagerError(1001, imagePath);
                                 }
-                                return [4 /*yield*/, host.load(r)];
+                                return [4 /*yield*/ , host.load(r)];
                             case 2:
                                 texture = _a.sent();
                                 frames = data.frames;
@@ -866,33 +918,32 @@ var RES;
                                     config = frames[subkey];
                                     texture = spriteSheet.createTexture(subkey, config.x, config.y, config.w, config.h, config.offX, config.offY, config.sourceW, config.sourceH);
                                 }
-                                return [2 /*return*/, spriteSheet];
+                                return [2 /*return*/ , spriteSheet];
                         }
                     });
                 });
             },
-            getData: function (host, resource, key, subkey) {
+            getData: function(host, resource, key, subkey) {
                 var data = host.get(resource);
                 if (data) {
                     return data.getTexture(subkey);
-                }
-                else {
+                } else {
                     console.error("missing resource :" + resource.name);
                     return null;
                 }
             },
-            onRemoveStart: function (host, resource) {
+            onRemoveStart: function(host, resource) {
                 return Promise.resolve();
             }
         };
         processor_1.FontProcessor = {
-            onLoadStart: function (host, resource) {
-                return __awaiter(this, void 0, void 0, function () {
+            onLoadStart: function(host, resource) {
+                return __awaiter(this, void 0, void 0, function() {
                     var getTexturePath, data, imageUrl, config, r, texture, font;
-                    return __generator(this, function (_a) {
+                    return __generator(this, function(_a) {
                         switch (_a.label) {
                             case 0:
-                                getTexturePath = function (url, fntText) {
+                                getTexturePath = function(url, fntText) {
                                     var file = "";
                                     var lines = fntText.split("\n");
                                     var pngLine = lines[2];
@@ -906,70 +957,70 @@ var RES;
                                     var index = url.lastIndexOf("/");
                                     if (index != -1) {
                                         url = url.substring(0, index + 1) + file;
-                                    }
-                                    else {
+                                    } else {
                                         url = file;
                                     }
                                     return url;
                                 };
-                                return [4 /*yield*/, host.load(resource, processor_1.TextProcessor)];
+                                return [4 /*yield*/ , host.load(resource, processor_1.TextProcessor)];
                             case 1:
                                 data = _a.sent();
                                 imageUrl = "";
                                 try {
                                     config = JSON.parse(data);
                                     imageUrl = getRelativePath(resource.name, config.file);
-                                }
-                                catch (e) {
+                                } catch (e) {
                                     config = data;
                                     imageUrl = getTexturePath(resource.name, data);
                                 }
                                 r = host.resourceConfig.getResource(imageUrl);
                                 if (!r)
-                                    return [3 /*break*/, 3];
-                                return [4 /*yield*/, host.load(r)];
+                                    return [3 /*break*/ , 3];
+                                return [4 /*yield*/ , host.load(r)];
                             case 2:
                                 texture = _a.sent();
                                 font = new egret.BitmapFont(texture, config);
-                                return [2 /*return*/, font];
-                            case 3: return [2 /*return*/, null];
+                                return [2 /*return*/ , font];
+                            case 3:
+                                return [2 /*return*/ , null];
                         }
                     });
                 });
             },
-            onRemoveStart: function (host, resource) {
+            onRemoveStart: function(host, resource) {
                 return Promise.resolve();
             }
         };
         processor_1.SoundProcessor = {
-            onLoadStart: function (host, resource) {
-                return __awaiter(this, void 0, void 0, function () {
+            onLoadStart: function(host, resource) {
+                return __awaiter(this, void 0, void 0, function() {
                     var prefix, sound;
-                    return __generator(this, function (_a) {
+                    return __generator(this, function(_a) {
                         switch (_a.label) {
                             case 0:
                                 prefix = resource.extra ? "" : RES.resourceRoot;
                                 sound = new egret.Sound();
                                 sound.load(prefix + resource.url);
-                                return [4 /*yield*/, promisify(sound, resource)];
+                                return [4 /*yield*/ , promisify(sound, resource)];
                             case 1:
                                 _a.sent();
-                                return [2 /*return*/, sound];
+                                return [2 /*return*/ , sound];
                         }
                     });
                 });
             },
-            onRemoveStart: function (host, resource) {
+            onRemoveStart: function(host, resource) {
                 return Promise.resolve();
             }
         };
         processor_1.MovieClipProcessor = {
-            onLoadStart: function (host, resource) {
-                return __awaiter(this, void 0, void 0, function () {
+            onLoadStart: function(host, resource) {
+                return __awaiter(this, void 0, void 0, function() {
                     var mcData, jsonPath, imagePath, r, mcTexture, mcDataFactory;
-                    return __generator(this, function (_a) {
+                    return __generator(this, function(_a) {
                         switch (_a.label) {
-                            case 0: return [4 /*yield*/, host.load(resource, processor_1.JsonProcessor)];
+                            case 0:
+                                return [4 /*yield*/ , host.load(resource, processor_1.JsonProcessor)];
                             case 1:
                                 mcData = _a.sent();
                                 jsonPath = resource.name;
@@ -978,23 +1029,22 @@ var RES;
                                 if (!r) {
                                     throw new RES.ResourceManagerError(1001, imagePath);
                                 }
-                                return [4 /*yield*/, host.load(r)];
+                                return [4 /*yield*/ , host.load(r)];
                             case 2:
                                 mcTexture = _a.sent();
                                 mcDataFactory = new egret.MovieClipDataFactory(mcData, mcTexture);
-                                return [2 /*return*/, mcDataFactory];
+                                return [2 /*return*/ , mcDataFactory];
                         }
                     });
                 });
             },
-            onRemoveStart: function (host, resource) {
+            onRemoveStart: function(host, resource) {
                 return Promise.resolve();
             }
         };
-        var PVRParser = (function () {
-            function PVRParser() {
-            }
-            PVRParser.parse = function (arrayBuffer, callback, errorCallback) {
+        var PVRParser = (function() {
+            function PVRParser() {}
+            PVRParser.parse = function(arrayBuffer, callback, errorCallback) {
                 // the header length of int32
                 var headerIntLength = 13;
                 // get header part of arrayBuffer
@@ -1007,31 +1057,40 @@ var RES;
                 // PVR v3
                 if (header[0] === 0x03525650) {
                     PVRParser._parseV3(pvrDatas, callback, errorCallback);
-                }
-                else if (header[11] === 0x21525650) {
+                } else if (header[11] === 0x21525650) {
                     PVRParser._parseV2(pvrDatas, callback, errorCallback);
-                }
-                else {
+                } else {
                     errorCallback(pvrDatas, "pvr parse error!");
                 }
             };
-            PVRParser._parseV2 = function (pvrDatas, callback, errorCallback) {
+            PVRParser._parseV2 = function(pvrDatas, callback, errorCallback) {
                 var header = pvrDatas.header;
-                var headerLength = header[0], height = header[1], width = header[2], numMipmaps = header[3], flags = header[4], dataLength = header[5], bpp = header[6], bitmaskRed = header[7], bitmaskGreen = header[8], bitmaskBlue = header[9], bitmaskAlpha = header[10], pvrTag = header[11], numSurfs = header[12];
+                var headerLength = header[0],
+                    height = header[1],
+                    width = header[2],
+                    numMipmaps = header[3],
+                    flags = header[4],
+                    dataLength = header[5],
+                    bpp = header[6],
+                    bitmaskRed = header[7],
+                    bitmaskGreen = header[8],
+                    bitmaskBlue = header[9],
+                    bitmaskAlpha = header[10],
+                    pvrTag = header[11],
+                    numSurfs = header[12];
                 var TYPE_MASK = 0xff;
-                var PVRTC_2 = 24, PVRTC_4 = 25;
+                var PVRTC_2 = 24,
+                    PVRTC_4 = 25;
                 var formatFlags = flags & TYPE_MASK;
                 var bpp, format;
                 var _hasAlpha = bitmaskAlpha > 0;
                 if (formatFlags === PVRTC_4) {
                     format = _hasAlpha ? PVRParser.COMPRESSED_RGBA_PVRTC_4BPPV1_IMG : PVRParser.COMPRESSED_RGB_PVRTC_4BPPV1_IMG;
                     bpp = 4;
-                }
-                else if (formatFlags === PVRTC_2) {
+                } else if (formatFlags === PVRTC_2) {
                     format = _hasAlpha ? PVRParser.COMPRESSED_RGBA_PVRTC_2BPPV1_IMG : PVRParser.COMPRESSED_RGB_PVRTC_2BPPV1_IMG;
                     bpp = 2;
-                }
-                else {
+                } else {
                     errorCallback(pvrDatas, "pvr v2 parse error");
                     console.log("unknow format flags::" + formatFlags);
                 }
@@ -1048,7 +1107,7 @@ var RES;
                 pvrDatas.isCubemap = (pvrDatas.surfacesCount === 6);
                 callback(pvrDatas);
             };
-            PVRParser._parseV3 = function (pvrDatas, callback, errorCallback) {
+            PVRParser._parseV3 = function(pvrDatas, callback, errorCallback) {
                 var header = pvrDatas.header;
                 var bpp, format;
                 var pixelFormat = header[2];
@@ -1104,7 +1163,7 @@ var RES;
                         return 0;
                 }
             }
-            egret["web"].WebGLRenderContext.prototype.createTextureFromCompressedData = function (data, width, height, levels, internalFormat) {
+            egret["web"].WebGLRenderContext.prototype.createTextureFromCompressedData = function(data, width, height, levels, internalFormat) {
                 var gl = this.context;
                 if (!this.pvrtcExt) {
                     this.pvrtcExt = gl.getExtension("WEBKIT_WEBGL_compressed_texture_pvrtc");
@@ -1136,12 +1195,13 @@ var RES;
             };
         }
         processor_1.PVRProcessor = {
-            onLoadStart: function (host, resource) {
-                return __awaiter(this, void 0, void 0, function () {
+            onLoadStart: function(host, resource) {
+                return __awaiter(this, void 0, void 0, function() {
                     var arraybuffer, width, height, borderWidth, borderHeight, byteArray, list, pvrDataBuffer, i, buffer, dataLength, self, texture;
-                    return __generator(this, function (_a) {
+                    return __generator(this, function(_a) {
                         switch (_a.label) {
-                            case 0: return [4 /*yield*/, host.load(resource, processor_1.BinaryProcessor)];
+                            case 0:
+                                return [4 /*yield*/ , host.load(resource, processor_1.BinaryProcessor)];
                             case 1:
                                 arraybuffer = _a.sent();
                                 width = 512;
@@ -1170,21 +1230,21 @@ var RES;
                                     }
                                 }
                                 self = this;
-                                PVRParser.parse(pvrDataBuffer, function (pvrData) {
+                                PVRParser.parse(pvrDataBuffer, function(pvrData) {
                                     var bitmapData = new egret.BitmapData(pvrData);
                                     bitmapData.format = "pvr";
                                     texture = new egret.Texture();
                                     texture._setBitmapData(bitmapData);
                                     texture.$initData(borderWidth, borderHeight, width, height, 0, 0, width, height, bitmapData.width, bitmapData.height);
-                                }, function () {
+                                }, function() {
                                     console.log("pvr error");
                                 });
-                                return [2 /*return*/, texture];
+                                return [2 /*return*/ , texture];
                         }
                     });
                 });
             },
-            onRemoveStart: function (host, resource) {
+            onRemoveStart: function(host, resource) {
                 return Promise.resolve();
             }
         };
@@ -1232,7 +1292,7 @@ var RES;
 //
 //////////////////////////////////////////////////////////////////////////////////////
 var RES;
-(function (RES) {
+(function(RES) {
     /**
      * The events of resource loading.
      * @version Egret 2.4
@@ -1245,7 +1305,7 @@ var RES;
      * @platform Web,Native
      * @language zh_CN
      */
-    var ResourceEvent = (function (_super) {
+    var ResourceEvent = (function(_super) {
         __extends(ResourceEvent, _super);
         /**
          * Creates an Event object to pass as a parameter to event listeners.
@@ -1324,7 +1384,7 @@ var RES;
          * @internal
          * @private
          */
-        ResourceEvent.dispatchResourceEvent = function (target, type, groupName, resItem, itemsLoaded, itemsTotal) {
+        ResourceEvent.dispatchResourceEvent = function(target, type, groupName, resItem, itemsLoaded, itemsTotal) {
             if (groupName === void 0) { groupName = ""; }
             if (resItem === void 0) { resItem = undefined; }
             if (itemsLoaded === void 0) { itemsLoaded = 0; }
@@ -1451,7 +1511,7 @@ var RES;
 //
 //////////////////////////////////////////////////////////////////////////////////////
 var RES;
-(function (RES) {
+(function(RES) {
     /**
      * Resource term. One of the resources arrays in resource.json.
      * @version Egret 2.4
@@ -1465,7 +1525,7 @@ var RES;
      * @language zh_CN
      */
     var ResourceItem;
-    (function (ResourceItem) {
+    (function(ResourceItem) {
         /**
          * XML file.
          * @version Egret 2.4
@@ -1570,13 +1630,13 @@ var RES;
          * @language zh_CN
          */
         ResourceItem.TYPE_SOUND = "sound";
+
         function convertToResItem(r) {
             var name = "";
             var config = RES["configInstance"];
             if (!config.config) {
                 name = r.url;
-            }
-            else {
+            } else {
                 for (var aliasName in config.config.alias) {
                     if (config.config.alias[aliasName] == r.url) {
                         name = aliasName;
@@ -1595,10 +1655,10 @@ var RES;
     })(ResourceItem = RES.ResourceItem || (RES.ResourceItem = {}));
 })(RES || (RES = {}));
 var RES;
-(function (RES) {
-    RES.checkNull = function (target, propertyKey, descriptor) {
+(function(RES) {
+    RES.checkNull = function(target, propertyKey, descriptor) {
         var method = descriptor.value;
-        descriptor.value = function () {
+        descriptor.value = function() {
             var arg = [];
             for (var _i = 0; _i < arguments.length; _i++) {
                 arg[_i] = arguments[_i];
@@ -1606,22 +1666,22 @@ var RES;
             if (!arg[0]) {
                 console.warn("\u65B9\u6CD5" + propertyKey + "\u7684\u53C2\u6570\u4E0D\u80FD\u4E3Anull");
                 return null;
-            }
-            else {
+            } else {
                 return method.apply(this, arg);
             }
         };
     };
     var upgrade;
-    (function (upgrade) {
+    (function(upgrade) {
         var _level = "warning";
+
         function setUpgradeGuideLevel(level) {
             _level = level;
         }
         upgrade.setUpgradeGuideLevel = setUpgradeGuideLevel;
-        upgrade.checkDecorator = function (target, propertyKey, descriptor) {
+        upgrade.checkDecorator = function(target, propertyKey, descriptor) {
             var method = descriptor.value;
-            descriptor.value = function () {
+            descriptor.value = function() {
                 if (!RES['configItem']) {
                     var url = "config.json";
                     RES.resourceRoot = "resource/";
@@ -1664,7 +1724,7 @@ var RES;
 //
 //////////////////////////////////////////////////////////////////////////////////////
 var RES;
-(function (RES) {
+(function(RES) {
     /**
      * Conduct mapping injection with class definition as the value.
      * @param type Injection type.
@@ -1773,7 +1833,7 @@ var RES;
      * @language zh_CN
      */
     function getGroupByName(name) {
-        return instance.getGroupByName(name).map(function (r) { return RES.ResourceItem.convertToResItem(r); });
+        return instance.getGroupByName(name).map(function(r) { return RES.ResourceItem.convertToResItem(r); });
     }
     RES.getGroupByName = getGroupByName;
     /**
@@ -1868,6 +1928,7 @@ var RES;
         return instance.getRes(key);
     }
     RES.getRes = getRes;
+
     function getResAsync(key, compFunc, thisObject) {
         return instance.getResAsync.apply(instance, arguments);
     }
@@ -2051,7 +2112,7 @@ var RES;
     /**
      * @private
      */
-    var Resource = (function (_super) {
+    var Resource = (function(_super) {
         __extends(Resource, _super);
         /**
          * 构造函数
@@ -2070,11 +2131,11 @@ var RES;
          * @param resourceRoot {string}
          * @param type {string}
          */
-        Resource.prototype.loadConfig = function () {
+        Resource.prototype.loadConfig = function() {
             var _this = this;
-            return RES.manager.init().then(function (data) {
+            return RES.manager.init().then(function(data) {
                 RES.ResourceEvent.dispatchResourceEvent(_this, RES.ResourceEvent.CONFIG_COMPLETE);
-            }, function (error) {
+            }, function(error) {
                 RES.ResourceEvent.dispatchResourceEvent(_this, RES.ResourceEvent.CONFIG_LOAD_ERROR);
                 return Promise.reject(error);
             });
@@ -2085,7 +2146,7 @@ var RES;
          * @param name {string}
          * @returns {boolean}
          */
-        Resource.prototype.isGroupLoaded = function (name) {
+        Resource.prototype.isGroupLoaded = function(name) {
             return this.loadedGroups.indexOf(name) != -1;
         };
         /**
@@ -2094,7 +2155,7 @@ var RES;
          * @param name {string}
          * @returns {Array<egret.ResourceItem>}
          */
-        Resource.prototype.getGroupByName = function (name) {
+        Resource.prototype.getGroupByName = function(name) {
             return RES.manager.config.getGroupByName(name, true); //这里不应该传入 true，但是为了老版本的 TypeScriptCompiler 兼容性，暂时这样做
         };
         /**
@@ -2103,25 +2164,25 @@ var RES;
          * @param name {string}
          * @param priority {number}
          */
-        Resource.prototype.loadGroup = function (name, priority, reporter) {
+        Resource.prototype.loadGroup = function(name, priority, reporter) {
             var _this = this;
             if (priority === void 0) { priority = 0; }
             var reporterDelegate = {
-                onProgress: function (current, total) {
+                onProgress: function(current, total) {
                     if (reporter && reporter.onProgress) {
                         reporter.onProgress(current, total);
                     }
                     RES.ResourceEvent.dispatchResourceEvent(_this, RES.ResourceEvent.GROUP_PROGRESS, name, undefined, current, total);
                 }
             };
-            return this._loadGroup(name, priority, reporterDelegate).then(function (data) {
+            return this._loadGroup(name, priority, reporterDelegate).then(function(data) {
                 RES.ResourceEvent.dispatchResourceEvent(_this, RES.ResourceEvent.GROUP_COMPLETE, name);
-            }, function (error) {
+            }, function(error) {
                 RES.ResourceEvent.dispatchResourceEvent(_this, RES.ResourceEvent.GROUP_LOAD_ERROR, name);
                 return Promise.reject(error);
             });
         };
-        Resource.prototype._loadGroup = function (name, priority, reporter) {
+        Resource.prototype._loadGroup = function(name, priority, reporter) {
             if (priority === void 0) { priority = 0; }
             var resources = RES.manager.config.getGroupByName(name, true);
             return RES.manager.load(resources, reporter);
@@ -2135,7 +2196,7 @@ var RES;
          * @param override {boolean} 是否覆盖已经存在的同名资源组,默认false。
          * @returns {boolean}
          */
-        Resource.prototype.createGroup = function (name, keys, override) {
+        Resource.prototype.createGroup = function(name, keys, override) {
             if (override === void 0) { override = false; }
             return RES.manager.config.createGroup(name, keys, override);
         };
@@ -2145,7 +2206,7 @@ var RES;
          * @param key {string} 对应配置文件里的name属性或sbuKeys属性的一项。
          * @returns {boolean}
          */
-        Resource.prototype.hasRes = function (key) {
+        Resource.prototype.hasRes = function(key) {
             var name = RES.manager.config.parseResKey(key).key;
             return RES.manager.config.getResource(name) != null;
         };
@@ -2155,24 +2216,27 @@ var RES;
          * @param key {string}
          * @returns {any}
          */
-        Resource.prototype.getRes = function (resKey) {
-            var _a = RES.manager.config.parseResKey(resKey), key = _a.key, subkey = _a.subkey;
+        Resource.prototype.getRes = function(resKey) {
+            var _a = RES.manager.config.parseResKey(resKey),
+                key = _a.key,
+                subkey = _a.subkey;
             var r = RES.manager.config.getResource(key);
             if (r) {
                 var processor_2 = RES.host.isSupport(r);
                 if (processor_2 && processor_2.getData && subkey) {
                     return processor_2.getData(RES.host, r, key, subkey);
-                }
-                else {
+                } else {
                     return RES.host.get(r);
                 }
             }
         };
-        Resource.prototype.getResAsync = function (key, compFunc, thisObject) {
+        Resource.prototype.getResAsync = function(key, compFunc, thisObject) {
             var paramKey = key;
-            var _a = RES.manager.config.parseResKey(key), key = _a.key, subkey = _a.subkey;
+            var _a = RES.manager.config.parseResKey(key),
+                key = _a.key,
+                subkey = _a.subkey;
             var r = RES.manager.config.getResource(key, true);
-            return RES.manager.load(r).then(function (value) {
+            return RES.manager.load(r).then(function(value) {
                 var processor = RES.host.isSupport(r);
                 if (processor && processor.getData && subkey) {
                     value = processor.getData(RES.host, r, key, subkey);
@@ -2191,7 +2255,7 @@ var RES;
          * @param thisObject {any}
          * @param type {string}
          */
-        Resource.prototype.getResByUrl = function (url, compFunc, thisObject, type) {
+        Resource.prototype.getResByUrl = function(url, compFunc, thisObject, type) {
             if (type === void 0) { type = ""; }
             var r = RES.manager.config.getResource(url);
             if (!r) {
@@ -2201,7 +2265,7 @@ var RES;
                 // manager.config.addResourceData({ name: url, url: url });
                 r = { name: url, url: url, type: type, extra: true };
             }
-            return RES.manager.load(r).then(function (value) {
+            return RES.manager.load(r).then(function(value) {
                 if (compFunc && r) {
                     compFunc.call(thisObject, value, r.url);
                 }
@@ -2215,10 +2279,10 @@ var RES;
          * @param force {boolean} 销毁一个资源组时其他资源组有同样资源情况资源是否会被删除，默认值true
          * @returns {boolean}
          */
-        Resource.prototype.destroyRes = function (name, force) {
+        Resource.prototype.destroyRes = function(name, force) {
             if (force === void 0) { force = true; }
             var group = RES.manager.config.getGroup(name);
-            var remove = function (r) {
+            var remove = function(r) {
                 RES.host.unload(r);
                 // host.remove(r)
             };
@@ -2228,14 +2292,12 @@ var RES;
                     remove(item);
                 }
                 return true;
-            }
-            else {
+            } else {
                 var item = RES.manager.config.getResource(name);
                 if (item) {
                     remove(item);
                     return true;
-                }
-                else {
+                } else {
                     console.warn("\u65E0\u6CD5\u5220\u9664\u6307\u5B9A\u7EC4:" + name);
                     return false;
                 }
@@ -2246,7 +2308,7 @@ var RES;
          * @method RES.setMaxLoadingThread
          * @param thread {number} 要设置的并发加载数。
          */
-        Resource.prototype.setMaxLoadingThread = function (thread) {
+        Resource.prototype.setMaxLoadingThread = function(thread) {
             if (thread < 1) {
                 thread = 1;
             }
@@ -2256,11 +2318,11 @@ var RES;
          * 设置资源加载失败时的重试次数。
          * @param retry 要设置的重试次数。
          */
-        Resource.prototype.setMaxRetryTimes = function (retry) {
+        Resource.prototype.setMaxRetryTimes = function(retry) {
             retry = Math.max(retry, 0);
             //todo
         };
-        Resource.prototype.addResourceData = function (data) {
+        Resource.prototype.addResourceData = function(data) {
             RES.manager.config.addResourceData(data);
         };
         return Resource;

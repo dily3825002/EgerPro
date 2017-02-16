@@ -16,35 +16,38 @@ var game;
         function MainUI() {
             var _this = _super.call(this) || this;
             _this.isHide = false;
-            _this.skinName = "src/core/view/main/MainUISkin.exml";
+            _this.skinName = "MainUISkin";
+            return _this;
+        }
+        MainUI.prototype.childrenCreated = function () {
+            _super.prototype.childrenCreated.call(this);
             //画一个红色的正方形
             var square1 = new egret.Shape();
             square1.graphics.beginFill(0xff0000);
-            square1.x = _this.functionBar.x;
-            square1.y = _this.functionBar.y;
-            square1.graphics.drawRect(0, 0, _this.functionBar.width, _this.functionBar.height);
+            square1.x = this.functionBar.x;
+            square1.y = this.functionBar.y;
+            square1.graphics.drawRect(0, 0, this.functionBar.width, this.functionBar.height);
             square1.graphics.endFill();
-            _this.addChild(square1);
+            this.addChild(square1);
             //画一个红色的正方形
             var square2 = new egret.Shape();
             square2.graphics.beginFill(0xff0000);
-            square2.x = _this.activityBar.x;
-            square2.y = _this.activityBar.y;
-            square2.graphics.drawRect(0, 0, _this.activityBar.width, _this.activityBar.height);
+            square2.x = this.activityBar.x;
+            square2.y = this.activityBar.y;
+            square2.graphics.drawRect(0, 0, this.activityBar.width, this.activityBar.height);
             square2.graphics.endFill();
-            _this.addChild(square2);
-            _this.mainBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, _this.onMainBtnClick, _this);
-            _this.functionBar.mask = square1;
-            _this.activityBar.mask = square2;
-            _this.functionBar.roleBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, _this.onRoleBtnClick, _this);
-            _this.functionBar.backpackBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, _this.onBackpackBtnClick, _this);
-            _this.functionBar.qianghuaBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, _this.onQianghuaBtnClick, _this);
-            _this.functionBar.zhaoXianBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, _this.onZhaoXianBtnClick, _this);
-            _this.functionBar.chuangDangBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, _this.onChuangDangBtnClick, _this);
-            _this.functionBar.shopBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, _this.onShopBtnClick, _this);
-            _this.functionBar.mapBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, _this.onMapBtnClick, _this);
-            return _this;
-        }
+            this.addChild(square2);
+            this.mainBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onMainBtnClick, this);
+            this.functionBar.mask = square1;
+            this.activityBar.mask = square2;
+            this.functionBar.roleBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onRoleBtnClick, this);
+            this.functionBar.backpackBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBackpackBtnClick, this);
+            this.functionBar.qianghuaBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onQianghuaBtnClick, this);
+            this.functionBar.zhaoXianBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onZhaoXianBtnClick, this);
+            this.functionBar.chuangDangBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onChuangDangBtnClick, this);
+            this.functionBar.shopBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onShopBtnClick, this);
+            this.functionBar.mapBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onMapBtnClick, this);
+        };
         MainUI.prototype.onMainBtnClick = function (e) {
             if (this.isHide) {
                 this.isHide = !this.isHide;

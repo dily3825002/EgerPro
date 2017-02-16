@@ -14,9 +14,7 @@ var game;
     var RoleInfo = (function (_super) {
         __extends(RoleInfo, _super);
         function RoleInfo() {
-            var _this = _super.call(this) || this;
-            _this.skinName = "src/core/view/main/RoleInfoSkin.exml";
-            return _this;
+            return _super.call(this) || this;
         }
         return RoleInfo;
     }(eui.Component));

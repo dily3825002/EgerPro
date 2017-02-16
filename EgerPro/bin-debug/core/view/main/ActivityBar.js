@@ -14,9 +14,7 @@ var game;
     var ActivityBar = (function (_super) {
         __extends(ActivityBar, _super);
         function ActivityBar() {
-            var _this = _super.call(this) || this;
-            _this.skinName = "src/core/view/main/ActivityBarSkin.exml";
-            return _this;
+            return _super.call(this) || this;
         }
         return ActivityBar;
     }(eui.Component));

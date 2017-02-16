@@ -62,6 +62,11 @@ var Main = (function (_super) {
         //游戏自定义容器添加到舞台上
         this.addChild(GameLayerManager.gameLayer());
         this.loadRes();
+        // .catch(e => {
+        //     // console.error(e)
+        //     console.log (e.stack)
+        //     // throw e;
+        // })
     };
     Main.prototype.loadRes = function () {
         return __awaiter(this, void 0, void 0, function () {

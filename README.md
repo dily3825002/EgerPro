@@ -6,15 +6,10 @@
   
 加群点击右侧按钮： <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=e3bba025902c371f851e6f104bc8100a870b9da0963f98f883c17e0a45f3abbd"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Egret极速开发框架EGER" title="Egret极速开发框架EGER"></a>
 
-演示地址：
-http://eger.sinaapp.com/code/egerpro/
+1、[演示地址](http://eger.sinaapp.com/code/egerpro/)<br/>
+2、[教程地址](http://bbs.egret.com/forum.php?mod=viewthread&tid=13947&highlight=eger)
 
-教程地址：
-http://bbs.egret.com/forum.php?mod=viewthread&tid=13947&highlight=eger
-
-###近期版本更新内容，请查看发布文档
-
-基于 Egret 3.0 搭建的 HTML5 重度游戏开发解决方案。 
+基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。 
 
 ### 一、引入PureMVC，界面逻辑分离 
 
@@ -59,7 +54,12 @@ http://bbs.egret.com/forum.php?mod=viewthread&tid=13947&highlight=eger
     1、修改Excel导出工具EgerTool安装包
     2、修改GameProxy GameVO在GameProxy初始化的时候初始化
 
-#### 0.0.3 待续
+#### 0.1.0 更新到 Egret Engine 4.x 
+
+    1、精简不需要的类
+    2、更新 Eger Pro 到 Egret Engine 4.x 
+    3、支持最新版 ResourceManager 
+    4、将Exml文件迁移到 Resource 中管理
   
 ### 链接
 
@@ -70,9 +70,8 @@ EGER极速开发交流群：70843223
 
 `您的star就是对我的支持！！！`
 
-### 或者加我好友，互相学习
+### 或者关注我的博客或者公众号
 
-<img src="http://eger.sinaapp.com/code/public/dily.png" alt="qq" title="Egret极速开发框架EGER"/>
-
-[Egret官方网站](egret-labs.org)<br />
-[我的微博](http://weibo.com/1856526021/profile?topnav=1&wvr=6)<br />
+1. [Dily的博客](http://www.dilyblog.com/)<br />
+2. [Egret官方网站](http://www.egret.com)<br />
+3. [我的微博](http://weibo.com/1856526021/profile?topnav=1&wvr=6)<br />

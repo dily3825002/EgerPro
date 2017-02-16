@@ -89,6 +89,7 @@
 		"config.json": "config.json",
 		"default.res.json": "default.res.json",
 		"default.thm.json": "default.thm.json",
+		"resource.json": "resource.json",
 		"data": {
 			"template.json": "data/template.json"
 		},

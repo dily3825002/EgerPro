@@ -14,9 +14,7 @@ var game;
     var FunctionBar = (function (_super) {
         __extends(FunctionBar, _super);
         function FunctionBar() {
-            var _this = _super.call(this) || this;
-            _this.skinName = "src/core/view/main/FunctionBarSkin.exml";
-            return _this;
+            return _super.call(this) || this;
         }
         return FunctionBar;
     }(eui.Component));

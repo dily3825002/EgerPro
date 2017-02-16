@@ -5,7 +5,7 @@
 			"name": "loading"
 		},
 		{
-			"keys": "yellowBtn_png,tipsBg_png,loadingCircle_png,template_proto,template,homeBg1_jpg,homeBg2_jpg,homeBg3_jpg,homeBg4_jpg,homeBg5_jpg,activityBtn_png,backpackBtn_png,bgBarBg_png,chuangDangBtn_png,closeBtn_png,friendBtn_png,headBg_png,hengImg_png,infoBtn_png,jinjieBtn_png,kaiFuBtn_png,lianqiBtn_png,lunjianBtn_png,mainBtn_png,mapBtn_png,missionBtn_png,pgBar1_png,pgBar2_png,qianghuaBtn_png,roleBtn_png,roleInfoImg_png,shopBtn_png,shuImg_png,warBtn_png,zhaoXianBtn_png,button_down_png,button_up_png,checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,thumb_png,track_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,track2_png,thumb2_png,track3_png,tracklight_png,handle_png,off_png,on_png,config_json,template_json,PreLoadingBar2_png,PreLoadingBarBg2_png,PreLoadingBg2_png,activityBtn2_png,backpackBtn2_png,bgBarBg2_png,chuangDangBtn2_png,closeBtn2_png,friendBtn2_png,headBg2_png,hengImg2_png,infoBtn2_png,jinjieBtn2_png,kaiFuBtn2_png,lianqiBtn2_png,lunjianBtn2_png,mainBtn2_png,mapBtn2_png,missionBtn2_png,pgBar12_png,pgBar22_png,qianghuaBtn2_png,roleBtn2_png,roleInfoImg2_png,shopBtn2_png,shuImg2_png,warBtn2_png,zhaoXianBtn2_png,loadingCircle2_png,tipsBg2_png,homeBg12_jpg,homeBg22_jpg,homeBg32_jpg,homeBg42_jpg,homeBg52_jpg,yellowBtn2_png,resource_json",
+			"keys": "yellowBtn_png,tipsBg_png,loadingCircle_png,template_proto,template,homeBg1_jpg,homeBg2_jpg,homeBg3_jpg,homeBg4_jpg,homeBg5_jpg,activityBtn_png,backpackBtn_png,bgBarBg_png,chuangDangBtn_png,closeBtn_png,friendBtn_png,headBg_png,hengImg_png,infoBtn_png,jinjieBtn_png,kaiFuBtn_png,lianqiBtn_png,lunjianBtn_png,mainBtn_png,mapBtn_png,missionBtn_png,pgBar1_png,pgBar2_png,qianghuaBtn_png,roleBtn_png,roleInfoImg_png,shopBtn_png,shuImg_png,warBtn_png,zhaoXianBtn_png,button_down_png,button_up_png,checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,thumb_png,track_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,track2_png,thumb2_png,track3_png,tracklight_png,handle_png,off_png,on_png,config_json,template_json,PreLoadingBar2_png,PreLoadingBarBg2_png,PreLoadingBg2_png,activityBtn2_png,backpackBtn2_png,bgBarBg2_png,chuangDangBtn2_png,closeBtn2_png,friendBtn2_png,headBg2_png,hengImg2_png,infoBtn2_png,jinjieBtn2_png,kaiFuBtn2_png,lianqiBtn2_png,lunjianBtn2_png,mainBtn2_png,mapBtn2_png,missionBtn2_png,pgBar12_png,pgBar22_png,qianghuaBtn2_png,roleBtn2_png,roleInfoImg2_png,shopBtn2_png,shuImg2_png,warBtn2_png,zhaoXianBtn2_png,loadingCircle2_png,tipsBg2_png,homeBg12_jpg,homeBg22_jpg,homeBg32_jpg,homeBg42_jpg,homeBg52_jpg,yellowBtn2_png,resource_json,button_down2_png,button_up2_png,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,selected2_png,border2_png,header2_png,thumb3_png,track4_png,radiobutton_select_disabled2_png,radiobutton_select_down2_png,radiobutton_select_up2_png,radiobutton_unselect2_png,roundthumb2_png,track5_png,thumb4_png,track6_png,tracklight2_png,handle2_png,off2_png,on2_png,config2_json,template2_json,PreLoadingBar3_png,PreLoadingBarBg3_png,PreLoadingBg3_png,activityBtn3_png,backpackBtn3_png,bgBarBg3_png,chuangDangBtn3_png,closeBtn3_png,friendBtn3_png,headBg3_png,hengImg3_png,infoBtn3_png,jinjieBtn3_png,kaiFuBtn3_png,lianqiBtn3_png,lunjianBtn3_png,mainBtn3_png,mapBtn3_png,missionBtn3_png,pgBar13_png,pgBar23_png,qianghuaBtn3_png,roleBtn3_png,roleInfoImg3_png,shopBtn3_png,shuImg3_png,warBtn3_png,zhaoXianBtn3_png,loadingCircle3_png,tipsBg3_png,homeBg13_jpg,homeBg23_jpg,homeBg33_jpg,homeBg43_jpg,homeBg53_jpg,yellowBtn3_png,resource2_json",
 			"name": "preload"
 		}
 	],
@@ -507,6 +507,316 @@
 		},
 		{
 			"name": "resource_json",
+			"type": "json",
+			"url": "resource.json"
+		},
+		{
+			"name": "button_down2_png",
+			"type": "image",
+			"url": "assets/Button/button_down.png"
+		},
+		{
+			"name": "button_up2_png",
+			"type": "image",
+			"url": "assets/Button/button_up.png"
+		},
+		{
+			"name": "checkbox_select_disabled2_png",
+			"type": "image",
+			"url": "assets/CheckBox/checkbox_select_disabled.png"
+		},
+		{
+			"name": "checkbox_select_down2_png",
+			"type": "image",
+			"url": "assets/CheckBox/checkbox_select_down.png"
+		},
+		{
+			"name": "checkbox_select_up2_png",
+			"type": "image",
+			"url": "assets/CheckBox/checkbox_select_up.png"
+		},
+		{
+			"name": "checkbox_unselect2_png",
+			"type": "image",
+			"url": "assets/CheckBox/checkbox_unselect.png"
+		},
+		{
+			"name": "selected2_png",
+			"type": "image",
+			"url": "assets/ItemRenderer/selected.png"
+		},
+		{
+			"name": "border2_png",
+			"type": "image",
+			"url": "assets/Panel/border.png"
+		},
+		{
+			"name": "header2_png",
+			"type": "image",
+			"url": "assets/Panel/header.png"
+		},
+		{
+			"name": "thumb3_png",
+			"type": "image",
+			"url": "assets/ProgressBar/thumb.png"
+		},
+		{
+			"name": "track4_png",
+			"type": "image",
+			"url": "assets/ProgressBar/track.png"
+		},
+		{
+			"name": "radiobutton_select_disabled2_png",
+			"type": "image",
+			"url": "assets/RadioButton/radiobutton_select_disabled.png"
+		},
+		{
+			"name": "radiobutton_select_down2_png",
+			"type": "image",
+			"url": "assets/RadioButton/radiobutton_select_down.png"
+		},
+		{
+			"name": "radiobutton_select_up2_png",
+			"type": "image",
+			"url": "assets/RadioButton/radiobutton_select_up.png"
+		},
+		{
+			"name": "radiobutton_unselect2_png",
+			"type": "image",
+			"url": "assets/RadioButton/radiobutton_unselect.png"
+		},
+		{
+			"name": "roundthumb2_png",
+			"type": "image",
+			"url": "assets/ScrollBar/roundthumb.png"
+		},
+		{
+			"name": "track5_png",
+			"type": "image",
+			"url": "assets/ScrollBar/track.png"
+		},
+		{
+			"name": "thumb4_png",
+			"type": "image",
+			"url": "assets/Slider/thumb.png"
+		},
+		{
+			"name": "track6_png",
+			"type": "image",
+			"url": "assets/Slider/track.png"
+		},
+		{
+			"name": "tracklight2_png",
+			"type": "image",
+			"url": "assets/Slider/tracklight.png"
+		},
+		{
+			"name": "handle2_png",
+			"type": "image",
+			"url": "assets/ToggleSwitch/handle.png"
+		},
+		{
+			"name": "off2_png",
+			"type": "image",
+			"url": "assets/ToggleSwitch/off.png"
+		},
+		{
+			"name": "on2_png",
+			"type": "image",
+			"url": "assets/ToggleSwitch/on.png"
+		},
+		{
+			"name": "config2_json",
+			"type": "json",
+			"url": "config.json"
+		},
+		{
+			"name": "template2_json",
+			"type": "json",
+			"url": "data/template.json"
+		},
+		{
+			"name": "PreLoadingBar3_png",
+			"type": "image",
+			"url": "images/loading/PreLoadingBar.png"
+		},
+		{
+			"name": "PreLoadingBarBg3_png",
+			"type": "image",
+			"url": "images/loading/PreLoadingBarBg.png"
+		},
+		{
+			"name": "PreLoadingBg3_png",
+			"type": "image",
+			"url": "images/loading/PreLoadingBg.png"
+		},
+		{
+			"name": "activityBtn3_png",
+			"type": "image",
+			"url": "images/main/activityBtn.png"
+		},
+		{
+			"name": "backpackBtn3_png",
+			"type": "image",
+			"url": "images/main/backpackBtn.png"
+		},
+		{
+			"name": "bgBarBg3_png",
+			"type": "image",
+			"url": "images/main/bgBarBg.png"
+		},
+		{
+			"name": "chuangDangBtn3_png",
+			"type": "image",
+			"url": "images/main/chuangDangBtn.png"
+		},
+		{
+			"name": "closeBtn3_png",
+			"type": "image",
+			"url": "images/main/closeBtn.png"
+		},
+		{
+			"name": "friendBtn3_png",
+			"type": "image",
+			"url": "images/main/friendBtn.png"
+		},
+		{
+			"name": "headBg3_png",
+			"type": "image",
+			"url": "images/main/headBg.png"
+		},
+		{
+			"name": "hengImg3_png",
+			"type": "image",
+			"url": "images/main/hengImg.png"
+		},
+		{
+			"name": "infoBtn3_png",
+			"type": "image",
+			"url": "images/main/infoBtn.png"
+		},
+		{
+			"name": "jinjieBtn3_png",
+			"type": "image",
+			"url": "images/main/jinjieBtn.png"
+		},
+		{
+			"name": "kaiFuBtn3_png",
+			"type": "image",
+			"url": "images/main/kaiFuBtn.png"
+		},
+		{
+			"name": "lianqiBtn3_png",
+			"type": "image",
+			"url": "images/main/lianqiBtn.png"
+		},
+		{
+			"name": "lunjianBtn3_png",
+			"type": "image",
+			"url": "images/main/lunjianBtn.png"
+		},
+		{
+			"name": "mainBtn3_png",
+			"type": "image",
+			"url": "images/main/mainBtn.png"
+		},
+		{
+			"name": "mapBtn3_png",
+			"type": "image",
+			"url": "images/main/mapBtn.png"
+		},
+		{
+			"name": "missionBtn3_png",
+			"type": "image",
+			"url": "images/main/missionBtn.png"
+		},
+		{
+			"name": "pgBar13_png",
+			"type": "image",
+			"url": "images/main/pgBar1.png"
+		},
+		{
+			"name": "pgBar23_png",
+			"type": "image",
+			"url": "images/main/pgBar2.png"
+		},
+		{
+			"name": "qianghuaBtn3_png",
+			"type": "image",
+			"url": "images/main/qianghuaBtn.png"
+		},
+		{
+			"name": "roleBtn3_png",
+			"type": "image",
+			"url": "images/main/roleBtn.png"
+		},
+		{
+			"name": "roleInfoImg3_png",
+			"type": "image",
+			"url": "images/main/roleInfoImg.png"
+		},
+		{
+			"name": "shopBtn3_png",
+			"type": "image",
+			"url": "images/main/shopBtn.png"
+		},
+		{
+			"name": "shuImg3_png",
+			"type": "image",
+			"url": "images/main/shuImg.png"
+		},
+		{
+			"name": "warBtn3_png",
+			"type": "image",
+			"url": "images/main/warBtn.png"
+		},
+		{
+			"name": "zhaoXianBtn3_png",
+			"type": "image",
+			"url": "images/main/zhaoXianBtn.png"
+		},
+		{
+			"name": "loadingCircle3_png",
+			"type": "image",
+			"url": "images/mask/loadingCircle.png"
+		},
+		{
+			"name": "tipsBg3_png",
+			"type": "image",
+			"url": "images/mask/tipsBg.png"
+		},
+		{
+			"name": "homeBg13_jpg",
+			"type": "image",
+			"url": "images/scene/homeBg1.jpg"
+		},
+		{
+			"name": "homeBg23_jpg",
+			"type": "image",
+			"url": "images/scene/homeBg2.jpg"
+		},
+		{
+			"name": "homeBg33_jpg",
+			"type": "image",
+			"url": "images/scene/homeBg3.jpg"
+		},
+		{
+			"name": "homeBg43_jpg",
+			"type": "image",
+			"url": "images/scene/homeBg4.jpg"
+		},
+		{
+			"name": "homeBg53_jpg",
+			"type": "image",
+			"url": "images/scene/homeBg5.jpg"
+		},
+		{
+			"name": "yellowBtn3_png",
+			"type": "image",
+			"url": "images/yellowBtn.png"
+		},
+		{
+			"name": "resource2_json",
 			"type": "json",
 			"url": "resource.json"
 		}
