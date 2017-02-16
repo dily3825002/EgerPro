@@ -41,7 +41,7 @@ var game_file_list = [
 	"bin-debug/core/view/MainManager.js",
 	"bin-debug/component/ETextField.js",
 	"bin-debug/core/view/panel/mediator/BackpackMediator.js",
-	"bin-debug/WaitPanel.js",
+	"bin-debug/component/EButton.js",
 	"bin-debug/core/view/panel/mediator/MapMediator.js",
 	"bin-debug/core/view/panel/mediator/QianghuaMediator.js",
 	"bin-debug/core/view/panel/mediator/RoleMediator.js",
@@ -70,7 +70,7 @@ var game_file_list = [
 	"bin-debug/utils/TipsPanel.js",
 	"bin-debug/utils/UtilsClass/BitmapBlink.js",
 	"bin-debug/utils/UtilsClass/TipsUtils.js",
-	"bin-debug/component/EButton.js",
+	"bin-debug/WaitPanel.js",
 	//----auto game_file_list end----
 ];
 

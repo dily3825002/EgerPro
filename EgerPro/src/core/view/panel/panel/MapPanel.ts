@@ -8,7 +8,7 @@ module game {
 
         public constructor() {
             super();
-            this.skinName = "src/core/view/panel/ui/MapSkin.exml";
+            this.skinName = "resource/ui/panel/MapSkin.exml";
             this.addEventListener(eui.UIEvent.COMPLETE , this.createCompleteEvent, this);
         }
 

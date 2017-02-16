@@ -15,7 +15,7 @@ var game;
         __extends(MapPanel, _super);
         function MapPanel() {
             var _this = _super.call(this) || this;
-            _this.skinName = "src/core/view/panel/ui/MapSkin.exml";
+            _this.skinName = "resource/ui/panel/MapSkin.exml";
             _this.addEventListener(eui.UIEvent.COMPLETE, _this.createCompleteEvent, _this);
             return _this;
         }

@@ -42,6 +42,30 @@ declare module skins{
 	class VSliderSkin extends eui.Skin{
 	}
 }
+declare class ActivityBarSkin extends eui.Skin{
+}
+declare class FunctionBarSkin extends eui.Skin{
+}
+declare class MainUISkin extends eui.Skin{
+}
+declare class RoleInfoSkin extends eui.Skin{
+}
+declare class BackpackSkin extends eui.Skin{
+}
+declare class ChuangDangSkin extends eui.Skin{
+}
+declare class MapSkin extends eui.Skin{
+}
+declare class QianghuaSkin extends eui.Skin{
+}
+declare class RoleSkin extends eui.Skin{
+}
+declare class ShopSkin extends eui.Skin{
+}
+declare class ZhaoXianSkin extends eui.Skin{
+}
+declare class HomeCitySkin extends eui.Skin{
+}
 declare module main{
 	class ActivityBtnSkin extends eui.Skin{
 	}
@@ -89,28 +113,4 @@ declare module main{
 declare module main{
 	class ZhaoXianBtnSkin extends eui.Skin{
 	}
-}
-declare class ActivityBarSkin extends eui.Skin{
-}
-declare class FunctionBarSkin extends eui.Skin{
-}
-declare class MainUISkin extends eui.Skin{
-}
-declare class RoleInfoSkin extends eui.Skin{
-}
-declare class BackpackSkin extends eui.Skin{
-}
-declare class ChuangDangSkin extends eui.Skin{
-}
-declare class MapSkin extends eui.Skin{
-}
-declare class QianghuaSkin extends eui.Skin{
-}
-declare class RoleSkin extends eui.Skin{
-}
-declare class ShopSkin extends eui.Skin{
-}
-declare class ZhaoXianSkin extends eui.Skin{
-}
-declare class HomeCitySkin extends eui.Skin{
 }

@@ -15,7 +15,7 @@ var game;
         __extends(ZhaoXianPanel, _super);
         function ZhaoXianPanel() {
             var _this = _super.call(this) || this;
-            _this.skinName = "src/core/view/panel/ui/ZhaoXianSkin.exml";
+            _this.skinName = "resource/ui/panel/ZhaoXianSkin.exml";
             _this.addEventListener(eui.UIEvent.COMPLETE, _this.createCompleteEvent, _this);
             return _this;
         }

@@ -15,7 +15,7 @@ var game;
         __extends(RolePanel, _super);
         function RolePanel() {
             var _this = _super.call(this) || this;
-            _this.skinName = "src/core/view/panel/ui/RoleSkin.exml";
+            _this.skinName = "resource/ui/panel/RoleSkin.exml";
             _this.addEventListener(eui.UIEvent.COMPLETE, _this.createCompleteEvent, _this);
             return _this;
         }

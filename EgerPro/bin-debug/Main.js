@@ -58,10 +58,15 @@ var Main = (function (_super) {
         var assetAdapter = new AssetAdapter();
         this.stage.registerImplementation("eui.IAssetAdapter", assetAdapter);
         var theme = new eui.Theme("resource/default.thm.json", this.stage);
-        // RES.processor.map("proto", ProtoAnalyzer);
+        RES.processor.map("proto", ProtoAnalyzer);
         //游戏自定义容器添加到舞台上
         this.addChild(GameLayerManager.gameLayer());
         this.loadRes();
+        // .catch(e => {
+        //     // console.error(e)
+        //     console.log (e.stack)
+        //     // throw e;
+        // })
     };
     Main.prototype.loadRes = function () {
         return __awaiter(this, void 0, void 0, function () {

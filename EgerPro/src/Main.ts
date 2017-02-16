@@ -42,7 +42,13 @@ class Main extends eui.UILayer {
         //游戏自定义容器添加到舞台上
         this.addChild(GameLayerManager.gameLayer());
 
-        this.loadRes();
+            this.loadRes()
+            // .catch(e => {
+            //     // console.error(e)
+            //     console.log (e.stack)
+            //     // throw e;
+            // })
+        
     }
 
     private async loadRes()

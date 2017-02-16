@@ -5,9 +5,20 @@ module game {
 
     export class MainUI extends eui.Component {
         private isHide: Boolean = false;
+
+        public activityBar: game.ActivityBar;
+        public functionBar: game.FunctionBar;
+        public roleInfo: game.RoleInfo;
+        public mainBtn: eui.Button;
+
         public constructor() {
             super();
-            this.skinName = "src/core/view/main/MainUISkin.exml";
+
+            this.skinName = "MainUISkin";
+        }
+
+        protected childrenCreated():void{
+            super.childrenCreated();
 
             //画一个红色的正方形
             var square1: egret.Shape = new egret.Shape();
@@ -37,9 +48,9 @@ module game {
             this.functionBar.zhaoXianBtn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onZhaoXianBtnClick,this);
             this.functionBar.chuangDangBtn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onChuangDangBtnClick,this);
             this.functionBar.shopBtn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onShopBtnClick,this);
-            this.functionBar.mapBtn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onMapBtnClick,this);
+            this.functionBar.mapBtn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onMapBtnClick,this);            
         }
-
+        
         private onMainBtnClick(e: egret.TouchEvent) {
             if(this.isHide){
                 this.isHide = !this.isHide;
@@ -80,10 +91,6 @@ module game {
         private onMapBtnClick(e: egret.TouchEvent) {
             game.AppFacade.getInstance().sendNotification(PanelNotify.OPEN_MAP);
         }        
-        public activityBar: game.ActivityBar;
-        public functionBar: game.FunctionBar;
-        public roleInfo: game.RoleInfo;
-        public mainBtn: eui.Button;
 
         public partAdded(partName: string,instance: any): void {
             super.partAdded(partName,instance);

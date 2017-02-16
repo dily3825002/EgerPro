@@ -7,7 +7,6 @@ module game {
 
         public constructor() {
             super();
-            this.skinName = "src/core/view/main/RoleInfoSkin.exml";
         }
     }
 }

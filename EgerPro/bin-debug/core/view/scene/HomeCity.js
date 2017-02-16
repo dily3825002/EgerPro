@@ -1,9 +1,6 @@
 /**
  * 主城
  */
-/**
- *
- */
 var __reflect = (this && this.__reflect) || function (p, c, t) {
     p.__class__ = c, t ? t.push(c) : t = [c], p.__types__ = p.__types__ ? t.concat(p.__types__) : t;
 };
@@ -18,7 +15,7 @@ var game;
         __extends(HomeCity, _super);
         function HomeCity() {
             var _this = _super.call(this) || this;
-            _this.skinName = "src/core/view/scene/HomeCitySkin.exml";
+            _this.skinName = "resource/ui/scene/HomeCitySkin.exml";
             _this.addEventListener(eui.UIEvent.COMPLETE, _this.createCompleteEvent, _this);
             return _this;
         }

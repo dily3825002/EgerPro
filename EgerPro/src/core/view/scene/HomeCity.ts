@@ -1,9 +1,6 @@
 /**
  * 主城
  */
-/**
- * 
- */
 
 module game {
 
@@ -11,7 +8,7 @@ module game {
 
         public constructor() {
             super();
-            this.skinName = "src/core/view/scene/HomeCitySkin.exml";
+            this.skinName = "resource/ui/scene/HomeCitySkin.exml";
             this.addEventListener(eui.UIEvent.COMPLETE,this.createCompleteEvent,this);
         }
 

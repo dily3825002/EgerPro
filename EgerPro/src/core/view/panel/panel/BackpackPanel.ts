@@ -8,7 +8,7 @@ module game {
 
         public constructor() {
             super();
-            this.skinName = "src/core/view/panel/ui/BackpackSkin.exml";
+            this.skinName = "resource/ui/panel/BackpackSkin.exml";
             this.addEventListener(eui.UIEvent.COMPLETE , this.createCompleteEvent, this);
         }
 
