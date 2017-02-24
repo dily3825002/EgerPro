@@ -1,6 +1,5 @@
 {
 	"alias": {
-		"template": "data/template.json",
 		"yellowBtn_png": "images/yellowBtn.png",
 		"template_proto": "net/template.proto",
 		"tipsBg_png": "images/mask/tipsBg.png",
@@ -38,7 +37,9 @@
 		"shuImg_png": "images/main/shuImg.png",
 		"warBtn_png": "images/main/warBtn.png",
 		"zhaoXianBtn_png": "images/main/zhaoXianBtn.png",
-		"config_json": "config.json"
+		"config_json": "config.json",
+		"template_json": "data/template.json",
+		"enJson_txt": "data/enJson.txt"
 	},
 	"groups": {
 		"loading": [
@@ -47,10 +48,11 @@
 			"PreLoadingBg_png"
 		],
 		"preload": [
+			"enJson_txt",
 			"yellowBtn_png",
 			"tipsBg_png",
 			"loadingCircle_png",
-			"template",
+			"template_json",
 			"template_proto",
 			"homeBg1_jpg",
 			"homeBg2_jpg",
@@ -89,8 +91,8 @@
 		"config.json": "config.json",
 		"default.res.json": "default.res.json",
 		"default.thm.json": "default.thm.json",
-		"resource.json": "resource.json",
 		"data": {
+			"enJson.txt": "data/enJson.txt",
 			"template.json": "data/template.json"
 		},
 		"images": {

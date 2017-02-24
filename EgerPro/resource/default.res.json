@@ -5,20 +5,25 @@
 			"name": "loading"
 		},
 		{
-			"keys": "yellowBtn_png,tipsBg_png,loadingCircle_png,template,template_proto,homeBg1_jpg,homeBg2_jpg,homeBg3_jpg,homeBg4_jpg,homeBg5_jpg,activityBtn_png,backpackBtn_png,bgBarBg_png,chuangDangBtn_png,closeBtn_png,friendBtn_png,headBg_png,hengImg_png,infoBtn_png,jinjieBtn_png,kaiFuBtn_png,lianqiBtn_png,lunjianBtn_png,mainBtn_png,mapBtn_png,missionBtn_png,pgBar1_png,pgBar2_png,qianghuaBtn_png,roleBtn_png,roleInfoImg_png,shopBtn_png,shuImg_png,warBtn_png,zhaoXianBtn_png,config_json",
+			"keys": "enJson_txt,yellowBtn_png,tipsBg_png,loadingCircle_png,template_json,template_proto,homeBg1_jpg,homeBg2_jpg,homeBg3_jpg,homeBg4_jpg,homeBg5_jpg,activityBtn_png,backpackBtn_png,bgBarBg_png,chuangDangBtn_png,closeBtn_png,friendBtn_png,headBg_png,hengImg_png,infoBtn_png,jinjieBtn_png,kaiFuBtn_png,lianqiBtn_png,lunjianBtn_png,mainBtn_png,mapBtn_png,missionBtn_png,pgBar1_png,pgBar2_png,qianghuaBtn_png,roleBtn_png,roleInfoImg_png,shopBtn_png,shuImg_png,warBtn_png,zhaoXianBtn_png,config_json",
 			"name": "preload"
 		}
 	],
 	"resources": [
 		{
-			"name": "template",
-			"type": "json",
-			"url": "data/template.json"
-		},
+			"name":"enJson_txt",
+			"type":"text",
+			"url":"data/enJson.txt"
+		},		
 		{
 			"name":"template_proto",
 			"type":"text",
 			"url":"net/template.proto"
+		},		
+		{
+			"name":"template_json",
+			"type":"json",
+			"url":"data/template.json"
 		},		
 		{
 			"name": "yellowBtn_png",

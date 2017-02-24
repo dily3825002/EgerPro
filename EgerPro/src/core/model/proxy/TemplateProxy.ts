@@ -5,7 +5,7 @@
     * All Rights Reserved. 
     */
 class TemplateProxy extends ResourceProxyBase{
-    public static NAME:string = "template";//必须和excel导出文件一致
+    public static NAME:string = "template_json";//必须和excel导出文件一致
     
     public constructor(){
         super(TemplateProxy.NAME);
