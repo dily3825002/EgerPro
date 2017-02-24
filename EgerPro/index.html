@@ -31,6 +31,7 @@
 	<script egret="lib" src="libs/modules/socket/socket.js" src-release="libs/modules/socket/socket.min.js"></script>
 	<script egret="lib" src="libs/modules/puremvc/puremvc.js" src-release="libs/modules/puremvc/puremvc.min.js"></script>
 	<script egret="lib" src="libs/modules/protobuf/protobuf.js" src-release="libs/modules/protobuf/protobuf.min.js"></script>
+	<script egret="lib" src="libs/modules/newaes/newaes.js" src-release="libs/modules/newaes/newaes.min.js"></script>
 	<!--modules_files_end-->
 
     <!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
@@ -39,9 +40,11 @@
 
     <!--这个标签会被替换为项目中所有的 javascript 文件-->
     <!--game_files_start-->
-	<script egret="game" src="bin-debug/core/model/ResourceProxyBase.js"></script>
 	<script egret="game" src="bin-debug/core/view/panel/BaseMediator.js"></script>
-	<script egret="game" src="bin-debug/core/view/panel/mediator/ChuangDangMediator.js"></script>
+	<script egret="game" src="bin-debug/core/model/ResourceProxyBase.js"></script>
+	<script egret="game" src="bin-debug/AssetAdapter.js"></script>
+	<script egret="game" src="bin-debug/component/EButton.js"></script>
+	<script egret="game" src="bin-debug/component/ETextField.js"></script>
 	<script egret="game" src="bin-debug/config/GameConfig.js"></script>
 	<script egret="game" src="bin-debug/config/GlobalData.js"></script>
 	<script egret="game" src="bin-debug/constants/MainNotify.js"></script>
@@ -59,7 +62,7 @@
 	<script egret="game" src="bin-debug/core/model/P.js"></script>
 	<script egret="game" src="bin-debug/core/model/proxy/GameProxy.js"></script>
 	<script egret="game" src="bin-debug/core/model/proxy/TemplateProxy.js"></script>
-	<script egret="game" src="bin-debug/AssetAdapter.js"></script>
+	<script egret="game" src="bin-debug/analyzer/EnJsonAnalyzer.js"></script>
 	<script egret="game" src="bin-debug/core/model/vo/GameVO.js"></script>
 	<script egret="game" src="bin-debug/core/view/GameLayerManager.js"></script>
 	<script egret="game" src="bin-debug/core/view/main/ActivityBar.js"></script>
@@ -67,9 +70,9 @@
 	<script egret="game" src="bin-debug/core/view/main/MainUI.js"></script>
 	<script egret="game" src="bin-debug/core/view/main/RoleInfo.js"></script>
 	<script egret="game" src="bin-debug/core/view/MainManager.js"></script>
-	<script egret="game" src="bin-debug/component/ETextField.js"></script>
+	<script egret="game" src="bin-debug/WaitPanel.js"></script>
 	<script egret="game" src="bin-debug/core/view/panel/mediator/BackpackMediator.js"></script>
-	<script egret="game" src="bin-debug/component/EButton.js"></script>
+	<script egret="game" src="bin-debug/core/view/panel/mediator/ChuangDangMediator.js"></script>
 	<script egret="game" src="bin-debug/core/view/panel/mediator/MapMediator.js"></script>
 	<script egret="game" src="bin-debug/core/view/panel/mediator/QianghuaMediator.js"></script>
 	<script egret="game" src="bin-debug/core/view/panel/mediator/RoleMediator.js"></script>
@@ -89,7 +92,6 @@
 	<script egret="game" src="bin-debug/Main.js"></script>
 	<script egret="game" src="bin-debug/net/SocketManager.js"></script>
 	<script egret="game" src="bin-debug/NewFile.js"></script>
-	<script egret="game" src="bin-debug/ProtoAnalyzer.js"></script>
 	<script egret="game" src="bin-debug/utils/EffectUtils.js"></script>
 	<script egret="game" src="bin-debug/utils/Global.js"></script>
 	<script egret="game" src="bin-debug/utils/NativeApi.js"></script>
@@ -98,7 +100,7 @@
 	<script egret="game" src="bin-debug/utils/TipsPanel.js"></script>
 	<script egret="game" src="bin-debug/utils/UtilsClass/BitmapBlink.js"></script>
 	<script egret="game" src="bin-debug/utils/UtilsClass/TipsUtils.js"></script>
-	<script egret="game" src="bin-debug/WaitPanel.js"></script>
+	<script egret="game" src="bin-debug/analyzer/ProtoAnalyzer.js"></script>
 	<!--game_files_end-->
 </head>
 <body>

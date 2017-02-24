@@ -25,6 +25,6 @@ var TemplateProxy = (function (_super) {
     };
     return TemplateProxy;
 }(ResourceProxyBase));
-TemplateProxy.NAME = "template"; //必须和excel导出文件一致
+TemplateProxy.NAME = "template_json"; //必须和excel导出文件一致
 __reflect(TemplateProxy.prototype, "TemplateProxy");
 //# sourceMappingURL=TemplateProxy.js.map

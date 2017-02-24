@@ -59,14 +59,10 @@ var Main = (function (_super) {
         this.stage.registerImplementation("eui.IAssetAdapter", assetAdapter);
         var theme = new eui.Theme("resource/default.thm.json", this.stage);
         RES.processor.map("proto", ProtoAnalyzer);
+        RES.processor.map("txt", EnJsonAnalyzer);
         //游戏自定义容器添加到舞台上
         this.addChild(GameLayerManager.gameLayer());
         this.loadRes();
-        // .catch(e => {
-        //     // console.error(e)
-        //     console.log (e.stack)
-        //     // throw e;
-        // })
     };
     Main.prototype.loadRes = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -86,7 +82,6 @@ var Main = (function (_super) {
                         GameLayerManager.gameLayer().addChild(self.loadingView);
                         loading = {
                             onProgress: function (current, total) {
-                                // console.log(current+"/"+total)
                                 self.loadingView.setProgress(current, total);
                             }
                         };
@@ -104,9 +99,26 @@ var Main = (function (_super) {
      * 创建游戏场景
      */
     Main.prototype.createGameScene = function () {
+        this.testEnJson();
         game.AppFacade.getInstance().startUp(GameLayerManager.gameLayer());
         game.AppFacade.getInstance().sendNotification(SceneNotify.OPEN_HOME);
         game.AppFacade.getInstance().sendNotification(MainNotify.OPEN_MAIN);
+    };
+    //测试Json加密解密
+    Main.prototype.testEnJson = function () {
+        // var my = new newaes();
+        // var key = "dily6666";//长度是8的倍数，是你的加密密码
+        // var iv = "PKcs7";//PKcs7是一种编码标准不要修改
+        // var times = new Date();
+        // console.log(times.toLocaleDateString());
+        // console.log(times.getMilliseconds().toString());
+        // var str = { "name": "dily", "qq": "595850892" };
+        // var newStr = JSON.stringify(str);
+        // var myTest = my.ex(newStr, key, iv);
+        // console.log(myTest.toString());
+        // var yTest = my.dx(myTest.toString(), key, iv);
+        // var yStr = JSON.parse(yTest);
+        var test = RES.getRes("enJson_txt");
     };
     return Main;
 }(eui.UILayer));
@@ -121,7 +133,8 @@ Main = __decorate([
             "fnt": "font",
             "pvr": "pvr",
             "mp3": "sound",
-            "proto": "proto"
+            "proto": "proto",
+            "txt": "txt"
         };
         var type = typeMap[ext];
         if (type == "json") {

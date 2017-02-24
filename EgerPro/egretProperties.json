@@ -35,6 +35,10 @@
     {
       "name": "protobuf",
       "path": "../modules/protobuf"
+    },
+    {
+      "name": "newaes",
+      "path": "../modules/newaes"
     }
   ]
 }
