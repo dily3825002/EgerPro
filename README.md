@@ -82,17 +82,18 @@ Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。
 * [什么是PureMVC？](http://bbs.egret.com/thread-13967-1-1.html)
 * [core中的controller使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=13984&page=1&extra=#pid84300)
 * [core中的model使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=13986&page=1&extra=#pid84309)
-* [core中的view使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=13987&page=1&extra=#pid84310)
+* [core中的view使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=13987&page=1&extra=#pid84310)
 * [net使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=14001&page=1&extra=#pid84446)
 * [utils使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=14002&page=1&extra=#pid84447)
-* [EgerTool Excel导出工具使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=14004&page=1&extra=#pid84450)
+* [EgerTool Excel导出工具使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=14004&page=1&extra=#pid84450)
 
 ## 综合教程
 
-* [EGER PRO是怎么启动起来的](http://bbs.egret.com/forum.php?mod=viewthread&tid=14005&page=1&extra=#pid84452)
+* [Eger Pro是怎么启动起来的](http://bbs.egret.com/forum.php?mod=viewthread&tid=14005&page=1&extra=#pid84452)
 
 # 工具
 
+* [EgerTool Excel导出工具](http://bbs.egret.com/forum.php?mod=viewthread&tid=14004&page=1&extra=#pid84450)
 * [Eger Pro特效协作工具](http://bbs.egret.com/thread-2267-1-1.html)：Eger特效辅助工具
 * [Egret Wing](http://www.egret.com/products/wing.html)：Egret IDE
 * [Dragonbones Pro](http://dragonbones.com/cn/index.html)：Egret 骨骼动画工具
