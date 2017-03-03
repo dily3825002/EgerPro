@@ -63,6 +63,8 @@ var Main = (function (_super) {
         //游戏自定义容器添加到舞台上
         this.addChild(GameLayerManager.gameLayer());
         this.loadRes();
+        var sss = new Map();
+        var sym2 = Symbol("key"); // 可选的字符串key
     };
     Main.prototype.loadRes = function () {
         return __awaiter(this, void 0, void 0, function () {

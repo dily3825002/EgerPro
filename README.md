@@ -1,6 +1,15 @@
-#EGER PRO
+<p align="center">
 
-===================================
+![](./egerLogo.png)
+</p>
+<p align="center">
+
+[![GitHub issues](https://img.shields.io/github/issues/dily3825002/EgerPro.svg)](https://github.com/dily3825002/EgerPro/issues)
+[![GitHub forks](https://img.shields.io/github/forks/dily3825002/EgerPro.svg)](https://github.com/dily3825002/EgerPro/network)
+[![GitHub stars](https://img.shields.io/github/stars/dily3825002/EgerPro.svg)](https://github.com/dily3825002/EgerPro/stargazers)
+</p>
+
+# EGER PRO
 
   HTML5重度游戏开发解决方案
   
