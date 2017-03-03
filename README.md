@@ -17,7 +17,7 @@
     </a>
 </p>
 
-# EGER PRO
+# Eger Pro - HTML5 中重度游戏开发解决方案
 
   HTML5重度游戏开发解决方案
   
