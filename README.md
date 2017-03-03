@@ -27,7 +27,9 @@
 
 # Egret Engine
 
-白鹭引擎包含了白鹭时代研发的遵循HTML5标准的游戏引擎。他包括 2D / 3D 渲染核心、GUI体系、音频管理、资源管理等游戏引擎的常用模块。
+Egret Engine（白鹭引擎）是白鹭时代推出的一款使用 TypeScript 语言构建的开源免费的移动游戏引擎。
+
+通过白鹭引擎，开发者可以快速地创建可以运行在手机 App 的 WebView 或者浏览器中的 HTML5 移动游戏，也可以编译输出成基于 Android、iOS、Windows Phone 的跨平台原生移动游戏。
 
 通过使用白鹭引擎，开发者可以尽可能的不用关注浏览器的底层实现，解决HTML5游戏性能问题及碎片化问题，灵活地满足开发者开发2D或3D游戏的需求。
 
@@ -67,7 +69,7 @@
          height="200">
     <img src="./img/case/case8.jpg"
          height="200">
-    <br/>
+    <!--<br/>
     <img src="./img/case/case9.jpg"
          height="200">
     <img src="./img/case/case10.jpg"
@@ -76,30 +78,68 @@
          height="200">
     <img src="./img/case/case12.jpg"
          height="200">
-    <br/>
+    <br/>-->
 </p>
 
-更多案例请访问[案例中心](https://egret.com/case)<br/>
+更多案例请访问 [案例中心](https://egret.com/case)<br/>
 
 # 安装
 
-首先获得 Egret Engine：
+## 首先获得 Egret Engine
 
-[下载地址](https://egret.com/products/engine.html)<br/>
+* 首先 [下载](https://egret.com/products/engine.html) Egret Engine 管理器
 
-如果需要的话可以参考：<br/>
-
-[HelloWorld](http://developer.egret.com/cn/github/egret-docs/Engine2D/getStarted/helloWorld/index.html) |
-[安装与部署](http://developer.egret.com/cn/github/egret-docs/Engine2D/projectConfig/installation/index.html) |
-[引擎和工具的管理](http://developer.egret.com/cn/github/egret-docs/Engine2D/projectConfig/launcherManager/index.html)<br/>
+* 下载成功后进行 [安装与部署](http://developer.egret.com/cn/github/egret-docs/Engine2D/projectConfig/installation/index.html) 
 
 安装好后以后我们可以方便的管理 Egret 引擎和工具了。
 
-为了方便开发可以下载Egret Wing： 
+## Hello World
 
-[下载地址](https://egret.com/products/wing.html)<br/>
+### TypeScript
 
-将Eger Pro直接导入到Wing或者拖进Wing中即可。
+Egret 项目使用 TypeScirpt 语言来开发。TypeScript 是 JavaScript 的超集，具体内容可以参考 [TyptScript语言手册](http://bbs.egret.com/thread-1441-1-1.html)。Egret 的 API 和 AS3 有很多相似之处，如果您熟悉的话肯定容易上手。
+
+### 使用命令行创建项目
+
+你可以使用如下命令创建游戏的默认项目
+
+    egret create HelloWorld
+
+如果有特殊需要可以加入参数--type empty|game|gui|eui 来指定不同的项目。创建游戏后可以看到一个名为'HelloWorld'的文件夹。
+
+### 编写第一行代码
+
+游戏项目的入口类默认在src/Main.ts里面。下面编写我们的项目的第一行代码,在默认的代码中找到createGameScene()函数，添加console.log("Hello World");。
+
+变成了下面的样子：
+
+    private createGameScene():void {
+            //插入 log
+            console.log("Hello World");
+            var sky:egret.Bitmap = this.createBitmapByName("bgImage");
+            this.addChild(sky);
+            var stageW:number = this.stage.stageWidth;
+            var stageH:number = this.stage.stageHeight;
+            sky.width = stageW;
+            sky.height = stageH;
+            //以下省略
+        }
+
+这里我们调用了一条常用的调试命令，console.log("需要显示的log内容")将在浏览器的开发者工具下显示出来我们的log。
+
+    我们推荐使用 Chrome 来调试 Egret 项目。
+
+我们使用如下命令构建项目：
+
+    egret build
+
+然后使用如下命令行来运行项目：
+
+    egret startserver
+
+![](./img/console.png)
+
+完成。
 
 # 演示 Demo
 
