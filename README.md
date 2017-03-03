@@ -57,7 +57,7 @@ Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。
 
 安装好后以后我们可以方便的管理 Egret 引擎和工具了。
 
-为了方便开发可以下载Egret Wing：
+为了方便开发可以下载Egret Wing： 
 
 [下载地址](https://egret.com/products/wing.html)<br/>
 
