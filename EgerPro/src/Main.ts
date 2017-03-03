@@ -45,6 +45,10 @@ class Main extends eui.UILayer {
         this.addChild(GameLayerManager.gameLayer());
 
         this.loadRes()
+
+        let sss = new Map();
+        let sym2 = Symbol("key"); // 可选的字符串key
+        
     }
 
     private async loadRes()

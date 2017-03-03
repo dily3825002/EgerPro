@@ -34,7 +34,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 //加载通过AES加密过得JSON
-//在线加密地址：http://encode.chahuo.com/
+//通过通种方法在外部加密
 var EnJsonAnalyzer = {
     onLoadStart: function (host, resource) {
         return __awaiter(this, void 0, void 0, function () {
