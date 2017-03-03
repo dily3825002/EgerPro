@@ -141,6 +141,8 @@ Egret 项目使用 TypeScirpt 语言来开发。TypeScript 是 JavaScript 的超
 
 完成。
 
+更多内容请参考学习模块查看文档学习。
+
 # 演示 Demo
 
 <!--## 2D Demo
