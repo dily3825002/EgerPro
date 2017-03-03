@@ -47,6 +47,24 @@
 ![](https://img.shields.io/badge/Edge--red.svg)
 ![](https://img.shields.io/badge/IE-9+-blue.svg)
 
+# 游戏案例
+
+![](./img/case/case1.jpg)
+![](./img/case/case2.jpg)
+![](./img/case/case3.jpg)
+![](./img/case/case4.jpg)<br/>
+![](./img/case/case5.jpg)
+![](./img/case/case6.jpg)
+![](./img/case/case7.jpg)
+![](./img/case/case8.jpg)<br/>
+![](./img/case/case9.jpg)
+![](./img/case/case10.jpg)
+![](./img/case/case11.jpg)
+![](./img/case/case12.jpg)
+
+
+更多案例请访问[案例中心](https://egret.com/case)<br/>
+
 # 安装
 
 首先获得 Egret Engine：
@@ -90,13 +108,6 @@
 * 访问 [API](http://developer.egret.com/cn/apidoc/) 获取 API 使用文档
 * 访问 [Video](http://developer.egret.com/cn/list/video/) 获取教程视频和直播视频
 * 访问 [Community](http://bbs.egret.com/portal.php) 和其他开发者线上交流
-* 加入QQ群和其他开发者线上交流
-    * 1群：141578440 (2000 人 / 已满 )
-    * 2群：397297607 (1000 人 / 已满 )
-    * 3群：399919028 (1000 人 / 已满 )
-    * 4群：125237513 (1000 人 / 已满 )
-    * 5群：481169576 (500 人 / 已满 )
-    * 6群：203192997 (500 人 / 未满 )
 
 # 工具
 
@@ -126,7 +137,10 @@
 
 # 贡献者
 
+For more information about contributing PRs and issues, see our Contribution Guidelines.
 
+Good First Task is a great starting point for PRs.
+We encourage the community to ask and answer questions on Stack Overflow with the react-native tag. It's a great way to help out and be involved!
 
 # License
 
