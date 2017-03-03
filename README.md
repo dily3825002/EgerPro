@@ -1,19 +1,23 @@
 <p align="center">
-    <img src="./egerLogo.png"
+    <img src="./img/egret_logo.jpg"
          height="130">
 </p>
 <p align="center">
-    <a href="https://github.com/dily3825002/EgerPro/issues">
-        <img src="https://img.shields.io/github/issues/dily3825002/EgerPro.svg"
+    <a href="https://github.com/egret-labs/egret-core/issues">
+        <img src="https://img.shields.io/github/issues/egret-labs/egret-core.svg"
              alt="issues">
     </a>
-    <a href="https://github.com/dily3825002/EgerPro/network">
-        <img src="https://img.shields.io/github/forks/dily3825002/EgerPro.svg"
+    <a href="https://github.com/egret-labs/egret-core/network">
+        <img src="https://img.shields.io/github/forks/egret-labs/egret-core.svg"
              alt="forks">
     </a>
-    <a href="https://github.com/dily3825002/EgerPro/stargazers">
-        <img src="https://img.shields.io/github/stars/dily3825002/EgerPro.svg"
+    <a href="https://github.com/egret-labs/egret-core/stargazers">
+        <img src="https://img.shields.io/github/stars/egret-labs/egret-core.svg"
              alt="stars">
+    </a>
+    <a href="https://github.com/egret-labs/egret-core">
+        <img src="https://img.shields.io/badge/version-4.0.2-green.svg"
+             alt="version">
     </a>
     <a href="./LICENSE.md">
         <img src="https://img.shields.io/badge/license-New%20BSD-blue.svg"
@@ -21,27 +25,27 @@
     </a>
 </p>
 
-# Eger Pro - HTML5 中重度游戏开发解决方案
+# Egret Engine
 
-Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。
-她具有如下优点：
+白鹭引擎包含了白鹭时代研发的遵循HTML5标准的游戏引擎。他包括 2D / 3D 渲染核心、GUI体系、音频管理、资源管理等游戏引擎的常用模块。
 
-* 引入PureMVC，界面逻辑分离 
-    * Pure MVC是在基于模型、视图和控制器MVC模式建立的一个轻量级的应用框架
-    * 将Pure MVC移植到Egret中适合团队合作开发
-    * 能够承载大型游戏开发任务
-* 使用EUI可视化搭建界面 
-    * 使用最新版wing可视化搭建界面，所见即所得
-    * 封装了wing和Eger的衔接
-* 丰富的特效，商业级特效 
-    * 特效按钮
-    * 各种动画面板
-    * 各种特效任你使用
-    * 各种提示效果
-* Excel数据导出以及框架内读取 
-    * 专门开发了Excel导出json工具，EgerTool
-    * EGER PRO可以直接读取EgerTool导出的json文件
-* 引入protobuf与服务端通信
+通过使用白鹭引擎，开发者可以尽可能的不用关注浏览器的底层实现，解决HTML5游戏性能问题及碎片化问题，灵活地满足开发者开发2D或3D游戏的需求。
+
+## 引擎覆盖平台
+
+### 移动端
+
+![](https://img.shields.io/badge/iOS-8.0%2B-lightgrey.svg)
+![](https://img.shields.io/badge/Android-4.0%2B-brightgreen.svg)
+![](https://img.shields.io/badge/Windows%20Phone-8-orange.svg)
+
+### PC端
+
+![](https://img.shields.io/badge/Chrome--brightgreen.svg)
+![](https://img.shields.io/badge/Safari--yellow.svg)
+![](https://img.shields.io/badge/FireFox--orange.svg)
+![](https://img.shields.io/badge/Edge--red.svg)
+![](https://img.shields.io/badge/IE-9+-blue.svg)
 
 # 安装
 
@@ -63,58 +67,70 @@ Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。
 
 将Eger Pro直接导入到Wing或者拖进Wing中即可。
 
-# 演示示例
-![](./demoImg.jpg)
-在线体验地址请点击：[演示地址](http://eger.sinaapp.com/code/egerpro/)<br/>
+# 演示 Demo
 
-# 教程文档
+## 2D Demo
 
-## 基本教程
+守卫我的塔Demo
+![](img/2d_demo_1.jpg)
+在线体验地址请点击：[演示地址](http://developer.egret.com/cn/article/index/id/968)<br/>
+查看更多示例请点击：[示例地址](http://developer.egret.com/cn/list/example/id/13)<br/>
 
-* [由来](http://bbs.egret.com/thread-13953-1-1.html)
-* [结构解释](http://bbs.egret.com/forum.php?mod=viewthread&tid=13956&page=1&extra=#pid84088)
-* [component使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=13959&page=1&extra=#pid84115)
-* [config使用](http://bbs.egret.com/thread-13961-1-1.html)
-* [constants使用](http://bbs.egret.com/thread-13963-1-1.html)
+## 3D Demo
 
-## 高级教程
+守卫我的塔Demo
+![](img/3d_demo_1.png)
+在线体验地址请点击：[演示地址](http://developer.egret.com/cn/article/index/id/1074)<br/>
+查看更多示例请点击：[示例地址](http://developer.egret.com/cn/list/example/id/190)<br/>
 
-* [什么是PureMVC？](http://bbs.egret.com/thread-13967-1-1.html)
-* [core中的controller使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=13984&page=1&extra=#pid84300)
-* [core中的model使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=13986&page=1&extra=#pid84309)
-* [core中的view使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=13987&page=1&extra=#pid84310)
-* [net使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=14001&page=1&extra=#pid84446)
-* [utils使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=14002&page=1&extra=#pid84447)
-* [EgerTool Excel导出工具使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=14004&page=1&extra=#pid84450)
+# 学习
 
-## 综合教程
-
-* [Eger Pro是怎么启动起来的](http://bbs.egret.com/forum.php?mod=viewthread&tid=14005&page=1&extra=#pid84452)
+* 访问 [使用文档](http://developer.egret.com/cn/github/egret-docs/Engine2D/index.html?home=1) 获取 引擎 使用文档
+* 访问 [Example](http://developer.egret.com/cn/example/egret2d/index.html#010-disp-basic) 学习示例源码
+* 访问 [API](http://developer.egret.com/cn/apidoc/) 获取 API 使用文档
+* 访问 [Video](http://developer.egret.com/cn/list/video/) 获取教程视频和直播视频
+* 访问 [Community](http://bbs.egret.com/portal.php) 和其他开发者线上交流
+* 加入QQ群和其他开发者线上交流
+    * 1群：141578440 (2000 人 / 已满 )
+    * 2群：397297607 (1000 人 / 已满 )
+    * 3群：399919028 (1000 人 / 已满 )
+    * 4群：125237513 (1000 人 / 已满 )
+    * 5群：481169576 (500 人 / 已满 )
+    * 6群：203192997 (500 人 / 未满 )
 
 # 工具
 
-* [EgerTool Excel导出工具](http://bbs.egret.com/forum.php?mod=viewthread&tid=14004&page=1&extra=#pid84450)
-* [Eger Pro特效协作工具](http://bbs.egret.com/thread-2267-1-1.html)：Eger特效辅助工具
-* [Egret Wing](http://www.egret.com/products/wing.html)：Egret IDE
-* [Dragonbones Pro](http://dragonbones.com/cn/index.html)：Egret 骨骼动画工具
-* [更多工具](http://www.egret.com/products)
+* 访问 [Egret Engine](http://www.egret.com/products/engine.html) 获取 Egret 引擎的启动器
+* 访问 [Egret Wing](http://www.egret.com/products/wing.html) 获取 Egret IDE
+* 访问 [Dragonbones Pro](http://dragonbones.com/cn/index.html) 获取 Egret 骨骼动画工具
+* 访问 [更多工具](http://www.egret.com/products)
 
-# 社区交流
+# 第三方库
 
-* Eger QQ群：70843223
-* [Egret开发者社区](http://bbs.egret.com)
+* 使用 [base64texture](https://github.com/egret-labs/egret-game-library/tree/master/base64texture) 把 base64 字符串转换为 egert Texture
+* 使用 [dcagent](https://github.com/egret-labs/egret-game-library/tree/master/dcagent) DataEye SDK for Egret
+* 使用 [ecs](https://github.com/egret-labs/egret-game-library/tree/master/ecs) 实体组件系统支持库
+* 使用 [euiextension](https://github.com/egret-labs/egret-game-library/tree/master/euiextension) EUI 扩展库
+* 使用 [gesture](https://github.com/egret-labs/egret-game-library/tree/master/gesture) 手势库
+* 使用 [keyboard](https://github.com/egret-labs/egret-game-library/tree/master/greensock) 键盘事件监听库
+* 使用 [Greensock]() Greensock 动画库
+* 使用 [jszip](https://github.com/egret-labs/egret-game-library/tree/master/jszip) jszip 压缩库
+* 使用 [md5](https://github.com/egret-labs/egret-game-library/tree/master/keyboard) 一个简单的md5库
+* 使用 [mouse](https://github.com/egret-labs/egret-game-library/tree/master/mouse) pc鼠标支持库 
+* 使用 [particle](https://github.com/egret-labs/egret-game-library/tree/master/particle) 粒子系统
+* 使用 [physics](https://github.com/egret-labs/egret-game-library/tree/master/physics) p2物理引擎，当前使用的版本为0.7.0
+* 使用 [socket](https://github.com/egret-labs/egret-game-library/tree/master/socket.io) socket.io
+* 使用 [tiled](https://github.com/egret-labs/egret-game-library/tree/master/tiled) tiledmap 支持库
+* 使用 [weixinapi](https://github.com/egret-labs/egret-game-library/tree/master/weixinapi) 微信API
+* 更多第三方库请访问 [第三方库](https://github.com/egret-labs/egret-game-library) 
 
-# Author
+# 贡献者
 
-* [Dily的博客](http://www.dilyblog.com/)<br />
-* [我的微博](http://weibo.com/1856526021/profile?topnav=1&wvr=6)<br />
-<p align="center">
-我出品的公众号《这里文章不正经》<br/><br/>
-    <img src="./wechat.jpg"
-         height="130">
-</p>
+
 
 # License
+
 This content is released under the (https://opensource.org/licenses/BSD-2-Clause) BSD License.
 
 ![](https://img.shields.io/badge/license-New%20BSD-blue.svg)
+
