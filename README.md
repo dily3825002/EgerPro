@@ -15,6 +15,10 @@
         <img src="https://img.shields.io/github/stars/dily3825002/EgerPro.svg"
              alt="stars">
     </a>
+    <a href="./LICENSE.md">
+        <img src="https://img.shields.io/badge/license-New%20BSD-blue.svg"
+             alt="license">
+    </a>
 </p>
 
 # Eger Pro - HTML5 中重度游戏开发解决方案
@@ -41,7 +45,7 @@ Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。
 
 # 安装
 
-首先当然是获得 Egret Engine 了：
+首先获得 Egret Engine：
 
 [下载地址](https://egret.com/products/engine.html)<br/>
 
@@ -65,16 +69,16 @@ Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。
 
 # 教程文档
 
-[教程地址](http://bbs.egret.com/forum.php?mod=viewthread&tid=13947&highlight=eger)
-* 访问 [使用文档](http://developer.egret.com/cn/github/egret-docs/Engine2D/index.html?home=1) 获取 API 使用文档
-
 ## 基本教程
+
 * [由来](http://bbs.egret.com/thread-13953-1-1.html)
 * [结构解释](http://bbs.egret.com/forum.php?mod=viewthread&tid=13956&page=1&extra=#pid84088)
 * [component使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=13959&page=1&extra=#pid84115)
 * [config使用](http://bbs.egret.com/thread-13961-1-1.html)
 * [constants使用](http://bbs.egret.com/thread-13963-1-1.html)
+
 ## 高级教程
+
 * [什么是PureMVC？](http://bbs.egret.com/thread-13967-1-1.html)
 * [core中的controller使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=13984&page=1&extra=#pid84300)
 * [core中的model使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=13986&page=1&extra=#pid84309)
@@ -82,7 +86,9 @@ Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。
 * [net使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=14001&page=1&extra=#pid84446)
 * [utils使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=14002&page=1&extra=#pid84447)
 * [EgerTool Excel导出工具使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=14004&page=1&extra=#pid84450)
+
 ## 综合教程
+
 * [EGER PRO是怎么启动起来的](http://bbs.egret.com/forum.php?mod=viewthread&tid=14005&page=1&extra=#pid84452)
 
 # 工具
@@ -107,4 +113,4 @@ Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。
 # License
 This content is released under the (https://opensource.org/licenses/BSD-2-Clause) BSD License.
 
-[![GitHub license](https://img.shields.io/badge/license-New%20BSD-blue.svg)](https://raw.githubusercontent.com/egret-labs/egret-core/master/LICENSE.md)
+![](https://img.shields.io/badge/license-New%20BSD-blue.svg)
