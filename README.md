@@ -93,7 +93,7 @@ Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。
 
 # 工具
 
-* [Eger Pro特效协作工具](http://bbs.egret.com/thread-2267-1-1.html)：Egret IDE
+* [Eger Pro特效协作工具](http://bbs.egret.com/thread-2267-1-1.html)：Eger特效辅助工具
 * [Egret Wing](http://www.egret.com/products/wing.html)：Egret IDE
 * [Dragonbones Pro](http://dragonbones.com/cn/index.html)：Egret 骨骼动画工具
 * [更多工具](http://www.egret.com/products)
@@ -105,10 +105,13 @@ Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。
 
 # Author
 
-关注我的博客或者公众号
-
 * [Dily的博客](http://www.dilyblog.com/)<br />
 * [我的微博](http://weibo.com/1856526021/profile?topnav=1&wvr=6)<br />
+<p align="center">
+我出品的公众号《这里文章不正经》<br/><br/>
+    <img src="./wechat.jpg"
+         height="130">
+</p>
 
 # License
 This content is released under the (https://opensource.org/licenses/BSD-2-Clause) BSD License.
