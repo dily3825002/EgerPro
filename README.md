@@ -95,11 +95,11 @@ Egret Engine（白鹭引擎）是白鹭时代推出的一款使用 TypeScript �
 
 ## Hello World
 
-### TypeScript
+#### TypeScript
 
 Egret 项目使用 TypeScirpt 语言来开发。TypeScript 是 JavaScript 的超集，具体内容可以参考 [TyptScript语言手册](http://bbs.egret.com/thread-1441-1-1.html)。Egret 的 API 和 AS3 有很多相似之处，如果您熟悉的话肯定容易上手。
 
-### 使用命令行创建项目
+#### 使用命令行创建项目
 
 你可以使用如下命令创建游戏的默认项目
 
@@ -107,7 +107,7 @@ Egret 项目使用 TypeScirpt 语言来开发。TypeScript 是 JavaScript 的超
 
 如果有特殊需要可以加入参数--type empty|game|gui|eui 来指定不同的项目。创建游戏后可以看到一个名为'HelloWorld'的文件夹。
 
-### 编写第一行代码
+#### 编写第一行代码
 
 游戏项目的入口类默认在src/Main.ts里面。下面编写我们的项目的第一行代码,在默认的代码中找到createGameScene()函数，添加console.log("Hello World");。
 
