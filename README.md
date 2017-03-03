@@ -1,12 +1,20 @@
 <p align="center">
-
-![](./egerLogo.png)
+    <img src="./egerLogo.png"
+         height="130">
 </p>
 <p align="center">
-
-[![GitHub issues](https://img.shields.io/github/issues/dily3825002/EgerPro.svg)](https://github.com/dily3825002/EgerPro/issues)
-[![GitHub forks](https://img.shields.io/github/forks/dily3825002/EgerPro.svg)](https://github.com/dily3825002/EgerPro/network)
-[![GitHub stars](https://img.shields.io/github/stars/dily3825002/EgerPro.svg)](https://github.com/dily3825002/EgerPro/stargazers)
+    <a href="https://github.com/dily3825002/EgerPro/issues">
+        <img src="https://img.shields.io/github/issues/dily3825002/EgerPro.svg"
+             alt="issues">
+    </a>
+    <a href="https://github.com/dily3825002/EgerPro/network">
+        <img src="https://img.shields.io/github/forks/dily3825002/EgerPro.svg"
+             alt="forks">
+    </a>
+    <a href="https://github.com/dily3825002/EgerPro/stargazers">
+        <img src="https://img.shields.io/github/stars/dily3825002/EgerPro.svg"
+             alt="stars">
+    </a>
 </p>
 
 # EGER PRO
