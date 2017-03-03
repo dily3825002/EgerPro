@@ -49,19 +49,35 @@
 
 # 游戏案例
 
-![](./img/case/case1.jpg)
-![](./img/case/case2.jpg)
-![](./img/case/case3.jpg)
-![](./img/case/case4.jpg)<br/>
-![](./img/case/case5.jpg)
-![](./img/case/case6.jpg)
-![](./img/case/case7.jpg)
-![](./img/case/case8.jpg)<br/>
-![](./img/case/case9.jpg)
-![](./img/case/case10.jpg)
-![](./img/case/case11.jpg)
-![](./img/case/case12.jpg)
-
+<p align="center">
+    <img src="./img/case/case1.jpg"
+         height="200">
+    <img src="./img/case/case2.jpg"
+         height="200">
+    <img src="./img/case/case3.jpg"
+         height="200">
+    <img src="./img/case/case4.jpg"
+         height="200">
+    <br/>
+    <img src="./img/case/case5.jpg"
+         height="200">
+    <img src="./img/case/case6.jpg"
+         height="200">
+    <img src="./img/case/case7.jpg"
+         height="200">
+    <img src="./img/case/case8.jpg"
+         height="200">
+    <br/>
+    <img src="./img/case/case9.jpg"
+         height="200">
+    <img src="./img/case/case10.jpg"
+         height="200">
+    <img src="./img/case/case11.jpg"
+         height="200">
+    <img src="./img/case/case12.jpg"
+         height="200">
+    <br/>
+</p>
 
 更多案例请访问[案例中心](https://egret.com/case)<br/>
 
@@ -87,19 +103,20 @@
 
 # 演示 Demo
 
-## 2D Demo
+<!--## 2D Demo
 
 守卫我的塔Demo
 ![](img/2d_demo_1.jpg)
 在线体验地址请点击：[演示地址](http://developer.egret.com/cn/article/index/id/968)<br/>
-查看更多示例请点击：[示例地址](http://developer.egret.com/cn/list/example/id/13)<br/>
+查看更多示例请点击：[示例地址](http://developer.egret.com/cn/list/example/id/13)<br/>-->
 
-## 3D Demo
+<!--## 3D Demo-->
 
 守卫我的塔Demo
 ![](img/3d_demo_1.png)
 在线体验地址请点击：[演示地址](http://developer.egret.com/cn/article/index/id/1074)<br/>
-查看更多示例请点击：[示例地址](http://developer.egret.com/cn/list/example/id/190)<br/>
+
+查看更多 2D/3D 示例，请点击：[示例中心](http://developer.egret.com/cn/list/example/id/190)<br/>
 
 # 学习
 
@@ -135,12 +152,11 @@
 * 使用 [weixinapi](https://github.com/egret-labs/egret-game-library/tree/master/weixinapi) 微信API
 * 更多第三方库请访问 [第三方库](https://github.com/egret-labs/egret-game-library) 
 
-# 贡献者
+# 贡献
 
-For more information about contributing PRs and issues, see our Contribution Guidelines.
+一个好的问题是参与开源社区的第一步，你可以先提[Issues](https://github.com/egret-labs/egret-core/issues)。
 
-Good First Task is a great starting point for PRs.
-We encourage the community to ask and answer questions on Stack Overflow with the react-native tag. It's a great way to help out and be involved!
+我们鼓励你到[官方社区](http://bbs.egret.com/portal.php)进行提问和回答问题，也能够帮助后来者更高效的解决问题。
 
 # License
 
