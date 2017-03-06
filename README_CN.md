@@ -21,6 +21,8 @@
     </a>
 </p>
 
+[EN](README.md) / [CN](README_CN.md)
+
 # Egret Engine
 
 Egret Engine包含了白鹭时代研发的遵循HTML5标准的游戏引擎，他包括 2D / 3D 渲染核心、EUI体系、音频管理、资源管理等游戏引擎的常用模块。
