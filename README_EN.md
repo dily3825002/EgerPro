@@ -3,10 +3,6 @@
          height="130">
 </p>
 <p align="center">
-    <!--<a href="https://github.com/dily3825002/EgerPro/issues">
-        <img src="https://img.shields.io/github/issues/dily3825002/EgerPro.svg"
-             alt="issues">
-    </a>-->
     <a href="https://github.com/dily3825002/EgerPro/network">
         <img src="https://img.shields.io/github/forks/dily3825002/EgerPro.svg"
              alt="forks">
@@ -25,14 +21,14 @@
     </a>
 </p>
 
-[EN](README_EN.md) / [CN](README.md)
+[EN](README.md) / [CN](README_CN.md)
 
-# Eger Pro - HTML5 中重度游戏开发解决方案
+# Eger Pro - HTML5 HTML5 Medium and Severe Game Development Solutions
 ![](http://badges.github.io/stability-badges/dist/stable.svg)
 
-Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。Eger Pro参考了多个页游手游项目框架，剔除不需要的功能，保留最精华的解耦机制，新增了针对HTML5游戏的若干特性。
+Eger Pro is based on the development of Egret HTML5 4.x game development solutions. Eger Pro reference to a number of webgame project framework, eliminating the need for the function, to retain the essence of the decoupling mechanism, added a number of features for the HTML5 game. 
 
-### 框架特性
+### Feature
 
 ![](https://img.shields.io/badge/PureMVC--brightgreen.svg)
 ![](https://img.shields.io/badge/EUI--yellow.svg)
@@ -40,33 +36,33 @@ Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。Eg
 ![](https://img.shields.io/badge/Excel数据导出--red.svg)
 ![](https://img.shields.io/badge/引入protobuf--blue.svg)
 
-# 安装
+# Install
 
-首先获得 Egret Engine：
+First get Egret Engine：
 
-[下载地址](https://egret.com/products/engine.html)<br/>
+[Download link](https://egret.com/products/engine.html)<br/>
 
-如果需要的话可以参考：<br/>
+If necessary, you can refer to：<br/>
 
 [HelloWorld](http://developer.egret.com/cn/github/egret-docs/Engine2D/getStarted/helloWorld/index.html) |
-[安装与部署](http://developer.egret.com/cn/github/egret-docs/Engine2D/projectConfig/installation/index.html) |
-[引擎和工具的管理](http://developer.egret.com/cn/github/egret-docs/Engine2D/projectConfig/launcherManager/index.html)<br/>
+[Installation and deployment](http://developer.egret.com/cn/github/egret-docs/Engine2D/projectConfig/installation/index.html) |
+[Engine and tool management](http://developer.egret.com/cn/github/egret-docs/Engine2D/projectConfig/launcherManager/index.html)<br/>
 
-安装好后以后我们可以方便的管理 Egret 引擎和工具了。
+After installation, we can easily manage the Egret engine and tools。
 
-为了方便开发可以下载Egret Wing： 
+In order to facilitate the development can download Egret Wing： 
 
-[下载地址](https://egret.com/products/wing.html)<br/>
+[Download link](https://egret.com/products/wing.html)<br/>
 
-将Eger Pro直接导入到Wing或者拖进Wing中即可。
+Eger Pro directly into the Wing or drag into the Wing can be。
 
-# 演示示例
+# Demos
 ![](./demoImg.jpg)
 在线体验地址请点击：[演示地址](http://eger.sinaapp.com/code/egerpro/)<br/>
 
-# 教程文档
+# Document
 
-## 基本教程
+## Basic tutorial
 
 * [由来](http://bbs.egret.com/thread-13953-1-1.html)
 * [结构解释](http://bbs.egret.com/forum.php?mod=viewthread&tid=13956&page=1&extra=#pid84088)
