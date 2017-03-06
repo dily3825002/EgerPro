@@ -53,7 +53,7 @@ Egret Engine包含了白鹭时代研发的遵循HTML5标准的游戏引擎，他
 
 安装好后以后我们可以方便的管理 Egret 引擎和工具了。
 
-# Getting Started
+# 开始
 
 #### TypeScript
 
