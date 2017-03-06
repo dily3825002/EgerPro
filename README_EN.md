@@ -58,51 +58,51 @@ Eger Pro directly into the Wing or drag into the Wing can be。
 
 # Demos
 ![](./demoImg.jpg)
-在线体验地址请点击：[演示地址](http://eger.sinaapp.com/code/egerpro/)<br/>
+Click online experience address：[Demo address](http://eger.sinaapp.com/code/egerpro/)<br/>
 
 # Document
 
 ## Basic tutorial
 
-* [由来](http://bbs.egret.com/thread-13953-1-1.html)
-* [结构解释](http://bbs.egret.com/forum.php?mod=viewthread&tid=13956&page=1&extra=#pid84088)
-* [component使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=13959&page=1&extra=#pid84115)
-* [config使用](http://bbs.egret.com/thread-13961-1-1.html)
-* [constants使用](http://bbs.egret.com/thread-13963-1-1.html)
+* [Origin](http://bbs.egret.com/thread-13953-1-1.html)
+* [Structural interpretation](http://bbs.egret.com/forum.php?mod=viewthread&tid=13956&page=1&extra=#pid84088)
+* [Use component](http://bbs.egret.com/forum.php?mod=viewthread&tid=13959&page=1&extra=#pid84115)
+* [Use config](http://bbs.egret.com/thread-13961-1-1.html)
+* [Use constants](http://bbs.egret.com/thread-13963-1-1.html)
 
-## 高级教程
+## Advanced course
 
-* [什么是PureMVC？](http://bbs.egret.com/thread-13967-1-1.html)
-* [core中的controller使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=13984&page=1&extra=#pid84300)
-* [core中的model使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=13986&page=1&extra=#pid84309)
-* [core中的view使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=13987&page=1&extra=#pid84310)
-* [net使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=14001&page=1&extra=#pid84446)
-* [utils使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=14002&page=1&extra=#pid84447)
-* [EgerTool Excel导出工具使用](http://bbs.egret.com/forum.php?mod=viewthread&tid=14004&page=1&extra=#pid84450)
+* [What is PureMVC？](http://bbs.egret.com/thread-13967-1-1.html)
+* [The use of controller in core](http://bbs.egret.com/forum.php?mod=viewthread&tid=13984&page=1&extra=#pid84300)
+* [The use of model in core](http://bbs.egret.com/forum.php?mod=viewthread&tid=13986&page=1&extra=#pid84309)
+* [The use of view in core](http://bbs.egret.com/forum.php?mod=viewthread&tid=13987&page=1&extra=#pid84310)
+* [Use net](http://bbs.egret.com/forum.php?mod=viewthread&tid=14001&page=1&extra=#pid84446)
+* [Use utils](http://bbs.egret.com/forum.php?mod=viewthread&tid=14002&page=1&extra=#pid84447)
+* [Use EgerTool Excel export tool](http://bbs.egret.com/forum.php?mod=viewthread&tid=14004&page=1&extra=#pid84450)
 
-## 综合教程
+## Comprehensive course
 
-* [Eger Pro是怎么启动起来的](http://bbs.egret.com/forum.php?mod=viewthread&tid=14005&page=1&extra=#pid84452)
+* [Eger Pro is how to start up](http://bbs.egret.com/forum.php?mod=viewthread&tid=14005&page=1&extra=#pid84452)
 
-# 工具
+# Tools
 
-* [EgerTool Excel导出工具](http://bbs.egret.com/forum.php?mod=viewthread&tid=14004&page=1&extra=#pid84450)：导出Eger Pro可以使用的数据格式
-* [Eger Pro特效协作工具](http://bbs.egret.com/thread-2267-1-1.html)：Eger特效协作辅助工具
-* [Egret Wing](http://www.egret.com/products/wing.html)：Egret IDE 快速开发HTML5游戏
-* [Dragonbones Pro](http://dragonbones.com/cn/index.html)：Egret 骨骼动画工具
-* [更多工具](http://www.egret.com/products)
+* [EgerTool Excel export tool](http://bbs.egret.com/forum.php?mod=viewthread&tid=14004&page=1&extra=#pid84450)：Export Eger Pro can use the data format
+* [Eger Pro effects collaboration tool](http://bbs.egret.com/thread-2267-1-1.html)：Eger Pro effects collaboration tool
+* [Egret Wing](http://www.egret.com/products/wing.html)：Egret IDE Rapid development of HTML5 games
+* [Dragonbones Pro](http://dragonbones.com/cn/index.html)：Egret Skeletal animation tool
+* [More tools](http://www.egret.com/products)
 
-# 社区交流
+# Community
 
-* Eger QQ群：70843223
-* [Egret开发者社区](http://bbs.egret.com)
+* Eger QQ group：70843223
+* [Egret developer community](http://bbs.egret.com)
 
 # Author
 
-* [Dily的博客](http://www.dilyblog.com/)<br />
-* [我的微博](http://weibo.com/1856526021/profile?topnav=1&wvr=6)<br />
+* [Dily blog](http://www.dilyblog.com/)<br />
+* [My Weibo](http://weibo.com/1856526021/profile?topnav=1&wvr=6)<br />
 <p align="center">
-我出品的公众号《这里文章不正经》<br/><br/>
+My subscription number《This article is not serious》<br/><br/>
     <img src="./wechat.jpg"
          height="130">
 </p>
