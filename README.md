@@ -24,24 +24,16 @@
 # Eger Pro - HTML5 中重度游戏开发解决方案
 
 Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。
-她具有如下优点：
 
-* 引入PureMVC，界面逻辑分离 
-    * Pure MVC是在基于模型、视图和控制器MVC模式建立的一个轻量级的应用框架
-    * 将Pure MVC移植到Egret中适合团队合作开发
-    * 能够承载大型游戏开发任务
-* 使用EUI可视化搭建界面 
-    * 使用最新版wing可视化搭建界面，所见即所得
-    * 封装了wing和Eger的衔接
-* 丰富的特效，商业级特效 
-    * 特效按钮
-    * 各种动画面板
-    * 各种特效任你使用
-    * 各种提示效果
-* Excel数据导出以及框架内读取 
-    * 专门开发了Excel导出json工具，EgerTool
-    * EGER PRO可以直接读取EgerTool导出的json文件
-* 引入protobuf与服务端通信
+Eger Pro参考了多个页游手游项目框架，剔除不需要的功能，保留最精华的解耦机制，新增了针对HTML5游戏的若干特性。针对于中重度游戏的团队协作HTML5开发框架。
+
+### 框架特性
+
+![](https://img.shields.io/badge/PureMVC--brightgreen.svg)
+![](https://img.shields.io/badge/EUI--yellow.svg)
+![](https://img.shields.io/badge/商业级特效--orange.svg)
+![](https://img.shields.io/badge/Excel数据导出--red.svg)
+![](https://img.shields.io/badge/引入protobuf--blue.svg)
 
 # 安装
 
@@ -93,9 +85,9 @@ Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。
 
 # 工具
 
-* [EgerTool Excel导出工具](http://bbs.egret.com/forum.php?mod=viewthread&tid=14004&page=1&extra=#pid84450)
-* [Eger Pro特效协作工具](http://bbs.egret.com/thread-2267-1-1.html)：Eger特效辅助工具
-* [Egret Wing](http://www.egret.com/products/wing.html)：Egret IDE
+* [EgerTool Excel导出工具](http://bbs.egret.com/forum.php?mod=viewthread&tid=14004&page=1&extra=#pid84450)：导出Eger Pro可以使用的数据格式
+* [Eger Pro特效协作工具](http://bbs.egret.com/thread-2267-1-1.html)：Eger特效协作辅助工具
+* [Egret Wing](http://www.egret.com/products/wing.html)：Egret IDE 快速开发HTML5游戏
 * [Dragonbones Pro](http://dragonbones.com/cn/index.html)：Egret 骨骼动画工具
 * [更多工具](http://www.egret.com/products)
 
