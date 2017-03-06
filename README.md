@@ -25,19 +25,19 @@
 
 # Egret Engine
 
-Egret Engine包含了白鹭时代研发的遵循HTML5标准的游戏引擎，他包括 2D / 3D 渲染核心、EUI体系、音频管理、资源管理等游戏引擎的常用模块。
+The Egret Engine includes a game engine that follows the HTML5 standard developed by the Egret. It includes a common module for game engines such as 2D / 3D rendering cores, EUI systems, audio management, and resource management.
+Through the use of Egrets engine, developers can do as much as possible not concerned about the bottom of the browser to achieve, to solve the HTML5 game performance problems and fragmentation issues, flexibility to meet the developer to develop 2D or 3D game needs.
 
-通过使用白鹭引擎，开发者可以尽可能的不用关注浏览器的底层实现，解决HTML5游戏性能问题及碎片化问题，灵活地满足开发者开发2D或3D游戏的需求。
 
-## 引擎覆盖平台
+## Platform Coverage 
 
-### 移动端
+### Mobile
 
 ![](https://img.shields.io/badge/iOS-8.0%2B-lightgrey.svg)
 ![](https://img.shields.io/badge/Android-4.0%2B-brightgreen.svg)
 ![](https://img.shields.io/badge/Windows%20Phone-8-orange.svg)
 
-### PC端
+### PC
 
 ![](https://img.shields.io/badge/Chrome--brightgreen.svg)
 ![](https://img.shields.io/badge/Safari--yellow.svg)
@@ -45,38 +45,38 @@ Egret Engine包含了白鹭时代研发的遵循HTML5标准的游戏引擎，他
 ![](https://img.shields.io/badge/Edge--red.svg)
 ![](https://img.shields.io/badge/IE-9+-blue.svg)
 
-# 安装
+# Installation
 
-首先获得 Egret Engine
+Install Egret Engine
 
-* 首先 [下载](https://egret.com/products/engine.html) Egret Engine 管理器
+* [Download](https://egret.com/products/engine.html)the Egret Engine Manager first.
 
-* 下载成功后进行 [安装与部署](http://developer.egret.com/cn/github/egret-docs/Engine2D/projectConfig/installation/index.html) 
+* •	After download successful, follow the [installation and deployment](http://developer.egret.com/cn/github/egret-docs/Engine2D/projectConfig/installation/index.html) 
 
-安装好后以后我们可以方便的管理 Egret 引擎和工具了。
+After installation, we can easily manage the Egret engine and tools.
 
 # Getting Started
 
 #### TypeScript
 
-Egret 项目使用 TypeScirpt 语言来开发。TypeScript 是 JavaScript 的超集，具体内容可以参考 [TyptScript语言手册](http://bbs.egret.com/thread-1441-1-1.html)。Egret 的 API 和 AS3 有很多相似之处，如果您熟悉的话肯定容易上手。
+An Egret project should be developed by TypeScirpt language. TypeScript is a superset of JavaScript, the specific content can refer to the TyptScript language manual. Egret API and AS3 have a lot of similarities. It will be certainly easy to get started if you are familiar with it.
 
-#### 使用命令行创建项目
+#### Create a project by command line
 
-你可以使用如下命令创建游戏的默认项目
+You can use following command to create a default item for the game
 
     egret create HelloWorld
 
-如果有特殊需要可以加入参数--type empty|game|gui|eui 来指定不同的项目。创建游戏后可以看到一个名为'HelloWorld'的文件夹。
+If you have special needs you can add parameters - type empty | game | gui | eui to specify different projects. After creating a game you can see a folder named 'HelloWorld'.
 
-#### 编写第一行代码
+#### Write the first line of code
 
-游戏项目的入口类默认在src/Main.ts里面。下面编写我们的项目的第一行代码,在默认的代码中找到createGameScene()函数，添加console.log("Hello World");。
+The entry for the game project is src / Main.ts by default. Write the first line of code for our project below, find the createGameScene () function in the default code, add console.log ("Hello World");
 
-变成了下面的样子：
+Become following:
 
     private createGameScene():void {
-            //插入 log
+            // log
             console.log("Hello World");
             var sky:egret.Bitmap = this.createBitmapByName("bgImage");
             this.addChild(sky);
@@ -84,78 +84,77 @@ Egret 项目使用 TypeScirpt 语言来开发。TypeScript 是 JavaScript 的超
             var stageH:number = this.stage.stageHeight;
             sky.width = stageW;
             sky.height = stageH;
-            //以下省略
+            //...
         }
 
-这里我们调用了一条常用的调试命令，console.log("需要显示的log内容")将在浏览器的开发者工具下显示出来我们的log。
+Here we call a commonly used debugging command, console.log ("need to display the log content"). It will display our log in the browser's developer tool.
 
-    我们推荐使用 Chrome 来调试 Egret 项目。
+    We recommend using Chrome to debug the Egret project.
 
-我们使用如下命令构建项目：
+We use the following command to build the project:
 
     egret build
 
-然后使用如下命令行来运行项目：
+Then use the following command line to run the project:
 
     egret startserver
 
 ![](./docs/img/console.png)
 
-完成。
+Done.
 
-更多内容请参考学习模块查看文档学习。
+For more information, please refer to the Learning Module to view the documentation.
 
-# 演示 Demo
+# Demo
 
-守卫我的塔Demo
+Tower Defence Demo
 ![](./docs/img/3d_demo_1.png)
-在线体验地址请点击：[演示地址](http://developer.egret.com/cn/article/index/id/1074)<br/>
+Click [here](http://developer.egret.com/cn/article/index/id/1074) for online experience.<br/>
 
-查看更多 2D/3D 示例，请点击：[示例中心](http://developer.egret.com/cn/list/example/id/190)<br/>
+Click [here](http://developer.egret.com/cn/list/example/id/190) for more 2d/3d demos.<br/>
 
-# 游戏案例
+# Show Case
 
-更多案例请访问 [案例中心](https://egret.com/case)<br/>
+Click here to see [Show Case](https://egret.com/case)<br/>
 
-# 学习
+# Learn
 
-* 访问 [使用文档](http://developer.egret.com/cn/github/egret-docs/Engine2D/index.html?home=1) 获取 引擎 使用文档
-* 访问 [Example](http://developer.egret.com/cn/example/egret2d/index.html#010-disp-basic) 学习示例源码
-* 访问 [API](http://developer.egret.com/cn/apidoc/) 获取 API 使用文档
-* 访问 [Video](http://developer.egret.com/cn/list/video/) 获取教程视频和直播视频
-* 访问 [Community](http://bbs.egret.com/portal.php) 和其他开发者线上交流
+* Access [Doc](http://developer.egret.com/cn/github/egret-docs/Engine2D/index.html?home=1) to get Engine document
+* Access [Example](http://developer.egret.com/cn/example/egret2d/index.html#010-disp-basic) to learn demo source code
+* Access [API](http://developer.egret.com/cn/apidoc/) to get API document
+* Access [Video](http://developer.egret.com/cn/list/video/) to get videos
+* Access [Community](http://bbs.egret.com/portal.php) to communicate with other developers
 
-# 工具
+# Tools
 
-* 访问 [Egret Engine](http://www.egret.com/products/engine.html) 获取 Egret 引擎的启动器
-* 访问 [Egret Wing](http://www.egret.com/products/wing.html) 获取 Egret IDE
-* 访问 [Dragonbones Pro](http://dragonbones.com/cn/index.html) 获取 Egret 骨骼动画工具
-* 访问 [更多工具](http://www.egret.com/products)
+* Access [Egret Engine](http://www.egret.com/products/engine.html) to get Egret Engine launcher
+* Access [Egret Wing](http://www.egret.com/products/wing.html) to get Egret IDE
+* Access [Dragonbones Pro](http://dragonbones.com/cn/index.html) to get DragonBones
+* Access [Moew Tools](http://www.egret.com/products)
 
 # 第三方库
 
-* 使用 [base64texture](https://github.com/egret-labs/egret-game-library/tree/master/base64texture) 把 base64 字符串转换为 egert Texture
-* 使用 [dcagent](https://github.com/egret-labs/egret-game-library/tree/master/dcagent) DataEye SDK for Egret
-* 使用 [ecs](https://github.com/egret-labs/egret-game-library/tree/master/ecs) 实体组件系统支持库
-* 使用 [euiextension](https://github.com/egret-labs/egret-game-library/tree/master/euiextension) EUI 扩展库
-* 使用 [gesture](https://github.com/egret-labs/egret-game-library/tree/master/gesture) 手势库
-* 使用 [keyboard](https://github.com/egret-labs/egret-game-library/tree/master/greensock) 键盘事件监听库
-* 使用 [Greensock]() Greensock 动画库
-* 使用 [jszip](https://github.com/egret-labs/egret-game-library/tree/master/jszip) jszip 压缩库
-* 使用 [md5](https://github.com/egret-labs/egret-game-library/tree/master/keyboard) 一个简单的md5库
-* 使用 [mouse](https://github.com/egret-labs/egret-game-library/tree/master/mouse) pc鼠标支持库 
-* 使用 [particle](https://github.com/egret-labs/egret-game-library/tree/master/particle) 粒子系统
-* 使用 [physics](https://github.com/egret-labs/egret-game-library/tree/master/physics) p2物理引擎，当前使用的版本为0.7.0
-* 使用 [socket](https://github.com/egret-labs/egret-game-library/tree/master/socket.io) socket.io
-* 使用 [tiled](https://github.com/egret-labs/egret-game-library/tree/master/tiled) tiledmap 支持库
-* 使用 [weixinapi](https://github.com/egret-labs/egret-game-library/tree/master/weixinapi) 微信API
-* 更多第三方库请访问 [第三方库](https://github.com/egret-labs/egret-game-library) 
+* Use [base64texture](https://github.com/egret-labs/egret-game-library/tree/master/base64texture) to convert base64 String to egert Texture
+* Use [dcagent](https://github.com/egret-labs/egret-game-library/tree/master/dcagent) DataEye SDK for Egret
+* Use [ecs](https://github.com/egret-labs/egret-game-library/tree/master/ecs) component system
+* Use [euiextension](https://github.com/egret-labs/egret-game-library/tree/master/euiextension) EUI extension
+* Use [gesture](https://github.com/egret-labs/egret-game-library/tree/master/gesture) Gesture library
+* Use [keyboard](https://github.com/egret-labs/egret-game-library/tree/master/greensock) Keyboard event listener
+* Use [Greensock]() Greensock animation library
+* Use [jszip](https://github.com/egret-labs/egret-game-library/tree/master/jszip) jszip Compression library
+* Use [md5](https://github.com/egret-labs/egret-game-library/tree/master/keyboard) A simple MD5 Library
+* Use [mouse](https://github.com/egret-labs/egret-game-library/tree/master/mouse) PC mouse support library
+* Use [particle](https://github.com/egret-labs/egret-game-library/tree/master/particle) particle system
+* Use [physics](https://github.com/egret-labs/egret-game-library/tree/master/physics) p2Physics engine，current version 0.7.0
+* Use [socket](https://github.com/egret-labs/egret-game-library/tree/master/socket.io) socket.io
+* Use [tiled](https://github.com/egret-labs/egret-game-library/tree/master/tiled) tiledmap support library
+* Use [weixinapi](https://github.com/egret-labs/egret-game-library/tree/master/weixinapi) WeChat API
+* More third party libraries please visit [here](https://github.com/egret-labs/egret-game-library) 
 
-# 贡献
+# Contributing
 
-一个好的问题是参与开源社区的第一步，你可以先提[Issues](https://github.com/egret-labs/egret-core/issues)。
-
-我们鼓励你到[官方社区](http://bbs.egret.com/portal.php)进行提问和回答问题，也能够帮助后来者更高效的解决问题。
+Raising a good question is the first step to participate a open source community. You can report issues [here](https://github.com/egret-labs/egret-core/issues).
+Issue discussion in [official community](http://bbs.egret.com/portal.php) is recommended. It can help the latters solve problems more efficiently.
 
 # License
 
