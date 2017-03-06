@@ -3,10 +3,6 @@
          height="130">
 </p>
 <p align="center">
-    <a href="https://github.com/egret-labs/egret-core/issues">
-        <img src="https://img.shields.io/github/issues/egret-labs/egret-core.svg"
-             alt="issues">
-    </a>
     <a href="https://github.com/egret-labs/egret-core/network">
         <img src="https://img.shields.io/github/forks/egret-labs/egret-core.svg"
              alt="forks">
@@ -108,15 +104,6 @@ Egret 项目使用 TypeScirpt 语言来开发。TypeScript 是 JavaScript 的超
 更多内容请参考学习模块查看文档学习。
 
 # 演示 Demo
-
-<!--## 2D Demo
-
-守卫我的塔Demo
-![](img/2d_demo_1.jpg)
-在线体验地址请点击：[演示地址](http://developer.egret.com/cn/article/index/id/968)<br/>
-查看更多示例请点击：[示例地址](http://developer.egret.com/cn/list/example/id/13)<br/>-->
-
-<!--## 3D Demo-->
 
 守卫我的塔Demo
 ![](img/3d_demo_1.png)
