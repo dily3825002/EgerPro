@@ -27,9 +27,7 @@
 
 # Egret Engine
 
-Egret Engine（白鹭引擎）是白鹭时代推出的一款使用 TypeScript 语言构建的开源免费的移动游戏引擎。
-
-通过白鹭引擎，开发者可以快速地创建可以运行在手机 App 的 WebView 或者浏览器中的 HTML5 移动游戏，也可以编译输出成基于 Android、iOS、Windows Phone 的跨平台原生移动游戏。
+Egret Engine包含了白鹭时代研发的遵循HTML5标准的游戏引擎，他包括 2D / 3D 渲染核心、EUI体系、音频管理、资源管理等游戏引擎的常用模块。
 
 通过使用白鹭引擎，开发者可以尽可能的不用关注浏览器的底层实现，解决HTML5游戏性能问题及碎片化问题，灵活地满足开发者开发2D或3D游戏的需求。
 
@@ -49,43 +47,9 @@ Egret Engine（白鹭引擎）是白鹭时代推出的一款使用 TypeScript �
 ![](https://img.shields.io/badge/Edge--red.svg)
 ![](https://img.shields.io/badge/IE-9+-blue.svg)
 
-# 游戏案例
-
-<p align="center">
-    <img src="./img/case/case1.jpg"
-         height="200">
-    <img src="./img/case/case2.jpg"
-         height="200">
-    <img src="./img/case/case3.jpg"
-         height="200">
-    <img src="./img/case/case4.jpg"
-         height="200">
-    <br/>
-    <img src="./img/case/case5.jpg"
-         height="200">
-    <img src="./img/case/case6.jpg"
-         height="200">
-    <img src="./img/case/case7.jpg"
-         height="200">
-    <img src="./img/case/case8.jpg"
-         height="200">
-    <!--<br/>
-    <img src="./img/case/case9.jpg"
-         height="200">
-    <img src="./img/case/case10.jpg"
-         height="200">
-    <img src="./img/case/case11.jpg"
-         height="200">
-    <img src="./img/case/case12.jpg"
-         height="200">
-    <br/>-->
-</p>
-
-更多案例请访问 [案例中心](https://egret.com/case)<br/>
-
 # 安装
 
-## 首先获得 Egret Engine
+首先获得 Egret Engine
 
 * 首先 [下载](https://egret.com/products/engine.html) Egret Engine 管理器
 
@@ -93,7 +57,7 @@ Egret Engine（白鹭引擎）是白鹭时代推出的一款使用 TypeScript �
 
 安装好后以后我们可以方便的管理 Egret 引擎和工具了。
 
-## Hello World
+# Hello World
 
 #### TypeScript
 
@@ -159,6 +123,10 @@ Egret 项目使用 TypeScirpt 语言来开发。TypeScript 是 JavaScript 的超
 在线体验地址请点击：[演示地址](http://developer.egret.com/cn/article/index/id/1074)<br/>
 
 查看更多 2D/3D 示例，请点击：[示例中心](http://developer.egret.com/cn/list/example/id/190)<br/>
+
+# 游戏案例
+
+更多案例请访问 [案例中心](https://egret.com/case)<br/>
 
 # 学习
 
