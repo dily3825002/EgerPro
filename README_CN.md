@@ -32,9 +32,9 @@ Eger Pro is based on the development of Egret HTML5 4.x game development solutio
 
 ![](https://img.shields.io/badge/PureMVC--brightgreen.svg)
 ![](https://img.shields.io/badge/EUI--yellow.svg)
-![](https://img.shields.io/badge/商业级特效--orange.svg)
-![](https://img.shields.io/badge/Excel数据导出--red.svg)
-![](https://img.shields.io/badge/引入protobuf--blue.svg)
+![](https://img.shields.io/badge/Professional_Effects--orange.svg)
+![](https://img.shields.io/badge/Excel_Export_Tool--red.svg)
+![](https://img.shields.io/badge/Protobuf--blue.svg)
 
 # Install
 

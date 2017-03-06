@@ -25,7 +25,7 @@
     </a>
 </p>
 
-[EN](README_EN.md) / [CN](README.md)
+[EN](README.md) / [CN](README_CN.md)
 
 # Eger Pro - HTML5 中重度游戏开发解决方案
 ![](http://badges.github.io/stability-badges/dist/stable.svg)
