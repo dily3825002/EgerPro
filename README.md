@@ -3,10 +3,10 @@
          height="130">
 </p>
 <p align="center">
-    <a href="https://github.com/dily3825002/EgerPro/issues">
+    <!--<a href="https://github.com/dily3825002/EgerPro/issues">
         <img src="https://img.shields.io/github/issues/dily3825002/EgerPro.svg"
              alt="issues">
-    </a>
+    </a>-->
     <a href="https://github.com/dily3825002/EgerPro/network">
         <img src="https://img.shields.io/github/forks/dily3825002/EgerPro.svg"
              alt="forks">
@@ -19,13 +19,16 @@
         <img src="https://img.shields.io/badge/license-New%20BSD-blue.svg"
              alt="license">
     </a>
+    <a href="https://gitter.im/EgerPro/Lobby#">
+        <img src="https://badges.gitter.im/Join Chat.svg"
+             alt="license">
+    </a>
 </p>
 
 # Eger Pro - HTML5 中重度游戏开发解决方案
+![](http://badges.github.io/stability-badges/dist/stable.svg)
 
-Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。
-
-Eger Pro参考了多个页游手游项目框架，剔除不需要的功能，保留最精华的解耦机制，新增了针对HTML5游戏的若干特性。针对于中重度游戏的团队协作HTML5开发框架。
+Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。Eger Pro参考了多个页游手游项目框架，剔除不需要的功能，保留最精华的解耦机制，新增了针对HTML5游戏的若干特性。针对于中重度游戏的团队协作HTML5开发框架。
 
 ### 框架特性
 
