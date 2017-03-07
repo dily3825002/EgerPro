@@ -15,9 +15,9 @@
         <img src="https://img.shields.io/badge/license-New%20BSD-blue.svg"
              alt="license">
     </a>
-    <a href="https://gitter.im/EgerPro/Lobby#">
-        <img src="https://badges.gitter.im/Join Chat.svg"
-             alt="license">
+    <a href="https://github.com/dily3825002/EgerPro">
+        <img src="https://img.shields.io/badge/</>-TypeScript-brightgreen.svg"
+             alt="TS">
     </a>
 </p>
 
@@ -29,6 +29,8 @@
 Eger Pro is based on the development of Egret HTML5 4.x game development solutions. Eger Pro reference to a number of webgame project framework, eliminating the need for the function, to retain the essence of the decoupling mechanism, added a number of features for the HTML5 game. 
 
 ### Feature
+
+[![GitHub stars](https://img.shields.io/github/stars/dily3825002/EgerPro.svg)](https://github.com/dily3825002/EgerPro/stargazers)
 
 ![](https://img.shields.io/badge/PureMVC--brightgreen.svg)
 ![](https://img.shields.io/badge/EUI--yellow.svg)

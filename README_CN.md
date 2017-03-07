@@ -19,9 +19,9 @@
         <img src="https://img.shields.io/badge/license-New%20BSD-blue.svg"
              alt="license">
     </a>
-    <a href="https://gitter.im/EgerPro/Lobby#">
-        <img src="https://badges.gitter.im/Join Chat.svg"
-             alt="license">
+    <a href="https://github.com/dily3825002/EgerPro">
+        <img src="https://img.shields.io/badge/</>-TypeScript-brightgreen.svg"
+             alt="TS">
     </a>
 </p>
 
