@@ -21,12 +21,8 @@ var game;
         }
         HomeCity.prototype.createCompleteEvent = function (event) {
             this.removeEventListener(eui.UIEvent.COMPLETE, this.createCompleteEvent, this);
-            // game.AppFacade.getInstance().registerMediator( new RoleMediator(this) );
             GameLayerManager.gameLayer().sceneLayer.addChild(this);
         };
-        //        public closeBtn: eui.Button;
-        // public settingButton:egret.gui.Button;
-        // public levelButton:IconButton;
         HomeCity.prototype.partAdded = function (partName, instance) {
             _super.prototype.partAdded.call(this, partName, instance);
         };

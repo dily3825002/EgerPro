@@ -31,21 +31,22 @@ var game;
         SceneManager.prototype.execute = function (notification) {
             var data = notification.getBody(); //携带数据
             var panelCon = GameLayerManager.gameLayer().sceneLayer;
+            var homeCity = game.SceneManager.homeCity;
             switch (notification.getName()) {
-                case SceneNotify.OPEN_HOME: {
-                    if (this.homeCity == null) {
-                        this.homeCity = new game.HomeCity();
-                        panelCon.addChild(this.homeCity);
+                case SceneNotify.OPEN_HOME:
+                    if (homeCity == null) {
+                        homeCity = new game.HomeCity();
+                        panelCon.addChild(homeCity);
+                        game.SceneManager.homeCity = homeCity;
                     }
                     break;
-                }
-                case SceneNotify.CLOSE_HOME: {
-                    if (this.homeCity != null) {
-                        panelCon.removeChild(this.homeCity);
-                        this.homeCity = null;
+                case SceneNotify.CLOSE_HOME:
+                    if (homeCity != null) {
+                        panelCon.removeChild(homeCity);
+                        homeCity = null;
+                        game.SceneManager.homeCity = null;
                     }
                     break;
-                }
             }
         };
         return SceneManager;

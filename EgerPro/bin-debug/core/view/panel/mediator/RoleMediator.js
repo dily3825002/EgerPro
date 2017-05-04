@@ -31,15 +31,13 @@ var game;
         RoleMediator.prototype.handleNotification = function (notification) {
             var data = notification.getBody();
             switch (notification.getName()) {
-                case PanelNotify.OPEN_ROLE: {
+                case PanelNotify.OPEN_ROLE:
                     //显示角色面板
                     this.showUI(this.rolePanel, false, 0, 0, 4);
                     break;
-                }
-                case PanelNotify.CLOSE_ROLE: {
+                case PanelNotify.CLOSE_ROLE:
                     this.closePanel(1);
                     break;
-                }
             }
         };
         /**

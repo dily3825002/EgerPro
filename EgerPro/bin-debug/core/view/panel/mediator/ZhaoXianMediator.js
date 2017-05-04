@@ -31,15 +31,13 @@ var game;
         ZhaoXianMediator.prototype.handleNotification = function (notification) {
             var data = notification.getBody();
             switch (notification.getName()) {
-                case PanelNotify.OPEN_ZHAOXIAN: {
+                case PanelNotify.OPEN_ZHAOXIAN:
                     //显示角色面板
                     this.showUI(this.zhaoXianPanel, false, 0, 0, 5);
                     break;
-                }
-                case PanelNotify.CLOSE_ZHAOXIAN: {
+                case PanelNotify.CLOSE_ZHAOXIAN:
                     this.closePanel(1);
                     break;
-                }
             }
         };
         /**

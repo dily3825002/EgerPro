@@ -2,7 +2,9 @@
     * 注册controller
     * by dily
     * (c) copyright 2014 - 2035
-    * All Rights Reserved. 
+    * All Rights Reserved.
+    * 注意：
+    * 1、主界面和场景管理使用消息通信机制，但是
     */
 module game {
 

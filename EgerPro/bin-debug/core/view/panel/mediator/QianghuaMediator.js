@@ -33,23 +33,19 @@ var game;
         QianghuaMediator.prototype.handleNotification = function (notification) {
             var data = notification.getBody();
             switch (notification.getName()) {
-                case PanelNotify.OPEN_QIANGHUA: {
+                case PanelNotify.OPEN_QIANGHUA:
                     //显示角色面板
                     this.showUI(this.qinghuaPanel, false, 0, 0, 3);
                     break;
-                }
-                case PanelNotify.CLOSE_QIANGHUA: {
+                case PanelNotify.CLOSE_QIANGHUA:
                     this.closePanel(1);
                     break;
-                }
-                case SysNotify.CONNECT_SERVER_SUCCESS: {
+                case SysNotify.CONNECT_SERVER_SUCCESS:
                     this.qinghuaPanel.showText.text += "服务器连接成功...\n";
                     break;
-                }
-                case UserInfoNotify.UPDATE_DATA: {
+                case UserInfoNotify.UPDATE_DATA:
                     this.qinghuaPanel.showText.text += "userId:" + data.getUserId() + "\nuserName:" + data.getUserName();
                     break;
-                }
             }
         };
         /**

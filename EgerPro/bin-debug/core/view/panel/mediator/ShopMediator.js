@@ -41,15 +41,13 @@ var game;
         ShopMediator.prototype.handleNotification = function (notification) {
             var data = notification.getBody();
             switch (notification.getName()) {
-                case PanelNotify.OPEN_SHOP: {
+                case PanelNotify.OPEN_SHOP:
                     //显示角色面板
                     this.showUI(this.shopPanel, false, 0, 0, 6);
                     break;
-                }
-                case PanelNotify.CLOSE_SHOP: {
+                case PanelNotify.CLOSE_SHOP:
                     this.closePanel(1);
                     break;
-                }
             }
         };
         /**

@@ -31,15 +31,13 @@ var game;
         BackpackMediator.prototype.handleNotification = function (notification) {
             var data = notification.getBody();
             switch (notification.getName()) {
-                case PanelNotify.OPEN_BACKPACK: {
+                case PanelNotify.OPEN_BACKPACK:
                     //显示角色面板
                     this.showUI(this.backpackPanel, false, 0, 0, 1);
                     break;
-                }
-                case PanelNotify.CLOSE_BACKPACK: {
+                case PanelNotify.CLOSE_BACKPACK:
                     this.closePanel(1);
                     break;
-                }
             }
         };
         /**

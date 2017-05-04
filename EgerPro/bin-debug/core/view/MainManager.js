@@ -31,21 +31,22 @@ var game;
         MainManager.prototype.execute = function (notification) {
             var data = notification.getBody(); //携带数据
             var panelCon = GameLayerManager.gameLayer().mainLayer;
+            var mainUI = game.MainManager.mainUI;
             switch (notification.getName()) {
-                case MainNotify.OPEN_MAIN: {
-                    if (this.mainUI == null) {
-                        this.mainUI = new game.MainUI();
-                        panelCon.addChild(this.mainUI);
+                case MainNotify.OPEN_MAIN:
+                    if (mainUI == null) {
+                        mainUI = new game.MainUI();
+                        panelCon.addChild(mainUI);
+                        game.MainManager.mainUI = mainUI;
                     }
                     break;
-                }
-                case MainNotify.CLOSE_MAIN: {
-                    if (this.mainUI != null) {
-                        panelCon.removeChild(this.mainUI);
-                        this.mainUI = null;
+                case MainNotify.CLOSE_MAIN:
+                    if (mainUI != null) {
+                        panelCon.removeChild(mainUI);
+                        mainUI = null;
+                        game.MainManager.mainUI = null;
                     }
                     break;
-                }
             }
         };
         return MainManager;

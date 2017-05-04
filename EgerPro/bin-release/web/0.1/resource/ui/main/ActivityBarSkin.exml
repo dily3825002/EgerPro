@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ActivityBarSkin" width="120" height="550" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="shuImg_png" x="18" bottom="0"/>
+	<e:Button id="activityBtn" label="待续" x="4" y="128" skinName="main.ActivityBtnSkin"/>
+	<e:Button id="kaiFuBtn" label="待续" x="4" y="266" skinName="main.KaiFuBtnSkin"/>
+	<e:Button id="infoBtn" label="待续" x="4" y="403" skinName="main.InfoBtnSkin"/>
+</e:Skin>

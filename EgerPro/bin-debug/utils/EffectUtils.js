@@ -123,28 +123,22 @@ var EffectUtils;
         if (effectType === void 0) { effectType = 1; }
         if (isWarning === void 0) { isWarning = false; }
         switch (effectType) {
-            case 1: {
+            case 1:
                 TipsUtils.showTipsDownToUp(str, isWarning);
                 break;
-            }
-            case 2: {
+            case 2:
                 TipsUtils.showTipsLeftOrRight(str, isWarning, true);
                 break;
-            }
-            case 3: {
+            case 3:
                 TipsUtils.showTipsLeftOrRight(str, isWarning, false);
                 break;
-            }
-            case 4: {
+            case 4:
                 TipsUtils.showTipsFromCenter(str, isWarning);
                 break;
-            }
-            case 5: {
+            case 5:
                 TipsUtils.showTipsBigToSmall(str, isWarning);
                 break;
-            }
-            default: {
-            }
+            default:
         }
     }
     EffectUtils.showTips = showTips;

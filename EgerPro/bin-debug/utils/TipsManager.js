@@ -69,32 +69,27 @@ var TipsManager;
             this._tips.x = point.x;
             this._tips.y = point.y;
             switch (effectType) {
-                case 0: {
+                case 0:
                     // TODO: Implement case content
                     this._tips.alpha = 0;
                     egret.Tween.get(this._tips).to({ alpha: 1 }, 300);
                     break;
-                }
-                case 1: {
+                case 1:
                     this._tips.alpha = 0;
                     this._tips.y += this._tips.getHeight();
                     egret.Tween.get(this._tips).to({ alpha: 1, y: this._tips.y - this._tips.getHeight() }, 500, egret.Ease.backOut);
                     break;
-                }
-                case 2: {
+                case 2:
                     this._tips.alpha = 0;
                     this._tips.x -= this._tips.getWidth();
                     egret.Tween.get(this._tips).to({ alpha: 1, x: this._tips.x + this._tips.getWidth() }, 500, egret.Ease.backOut);
                     break;
-                }
-                case 3: {
+                case 3:
                     this._tips.alpha = 0;
                     this._tips.x += this._tips.getWidth();
                     egret.Tween.get(this._tips).to({ alpha: 1, x: this._tips.x - this._tips.getWidth() }, 500, egret.Ease.backOut);
                     break;
-                }
-                default: {
-                }
+                default:
             }
         }
     }

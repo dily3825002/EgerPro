@@ -14,15 +14,9 @@ module game {
 
         public createCompleteEvent(event: eui.UIEvent): void {
             this.removeEventListener(eui.UIEvent.COMPLETE,this.createCompleteEvent,this);
-            // game.AppFacade.getInstance().registerMediator( new RoleMediator(this) );
             
             GameLayerManager.gameLayer().sceneLayer.addChild(this);            
         }
-
-//        public closeBtn: eui.Button;
-        // public settingButton:egret.gui.Button;
-        // public levelButton:IconButton;
-
 
         public partAdded(partName: string,instance: any): void {
             super.partAdded(partName,instance);

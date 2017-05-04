@@ -38,50 +38,29 @@ var Global;
     //获取大写数字
     function getNumber(num) {
         switch (num) {
-            case 0: {
+            case 0:
                 return "零";
-                break;
-            }
-            case 1: {
+            case 1:
                 return "一";
-                break;
-            }
-            case 2: {
+            case 2:
                 return "二";
-                break;
-            }
-            case 3: {
+            case 3:
                 return "三";
-                break;
-            }
-            case 4: {
+            case 4:
                 return "四";
-                break;
-            }
-            case 5: {
+            case 5:
                 return "五";
-                break;
-            }
-            case 6: {
+            case 6:
                 return "六";
-                break;
-            }
-            case 7: {
+            case 7:
                 return "七";
-                break;
-            }
-            case 8: {
+            case 8:
                 return "八";
-                break;
-            }
-            case 9: {
+            case 9:
                 return "九";
-                break;
-            }
-            default: {
+            default:
                 // TODO: Implemente default case
                 console.log("default case");
-            }
         }
     }
     Global.getNumber = getNumber;

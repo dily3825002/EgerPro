@@ -31,15 +31,13 @@ var game;
         ChuangDangMediator.prototype.handleNotification = function (notification) {
             var data = notification.getBody();
             switch (notification.getName()) {
-                case PanelNotify.OPEN_CHUANGDANG: {
+                case PanelNotify.OPEN_CHUANGDANG:
                     //显示角色面板
                     this.showUI(this.chuangDangPanel, false, 0, 0, Number(this.chuangDangPanel.input1.text));
                     break;
-                }
-                case PanelNotify.CLOSE_CHUANGDANG: {
+                case PanelNotify.CLOSE_CHUANGDANG:
                     this.closePanel(1);
                     break;
-                }
             }
         };
         /**

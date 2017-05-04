@@ -31,15 +31,13 @@ var game;
         MapMediator.prototype.handleNotification = function (notification) {
             var data = notification.getBody();
             switch (notification.getName()) {
-                case PanelNotify.OPEN_MAP: {
+                case PanelNotify.OPEN_MAP:
                     //显示角色面板
                     this.showUI(this.mapPanel, false, 0, 0, 5);
                     break;
-                }
-                case PanelNotify.CLOSE_MAP: {
+                case PanelNotify.CLOSE_MAP:
                     this.closePanel(1);
                     break;
-                }
             }
         };
         /**
