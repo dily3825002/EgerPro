@@ -59,4 +59,3 @@ var SocketManager;
     }
     SocketManager.sendMessage = sendMessage;
 })(SocketManager || (SocketManager = {}));
-//# sourceMappingURL=SocketManager.js.map

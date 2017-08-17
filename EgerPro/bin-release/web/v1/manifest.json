@@ -1,0 +1,18 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.min.js",
+		"libs/modules/egret/egret.web.min.js",
+		"libs/modules/eui/eui.min.js",
+		"resourcemanager/resourcemanager.min.js",
+		"libs/modules/game/game.min.js",
+		"libs/modules/tween/tween.min.js",
+		"libs/modules/socket/socket.min.js",
+		"libs/modules/puremvc/puremvc.min.js",
+		"libs/modules/protobuf/protobuf.min.js",
+		"libs/modules/newaes/newaes.min.js",
+		"promise/promise.min.js"
+	],
+	"game": [
+		"main.min.js"
+	]
+}

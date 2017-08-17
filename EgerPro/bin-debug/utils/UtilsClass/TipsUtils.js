@@ -181,4 +181,3 @@ var TipsUtils;
     }
     TipsUtils.showTipsBigToSmall = showTipsBigToSmall;
 })(TipsUtils || (TipsUtils = {}));
-//# sourceMappingURL=TipsUtils.js.map

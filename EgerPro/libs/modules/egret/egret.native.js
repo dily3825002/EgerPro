@@ -1,11 +1,16 @@
 var __reflect = (this && this.__reflect) || function (p, c, t) {
     p.__class__ = c, t ? t.push(c) : t = [c], p.__types__ = p.__types__ ? t.concat(p.__types__) : t;
 };
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 //////////////////////////////////////////////////////////////////////////////////////
 //
 //  Copyright (c) 2014-present, Egret Technology.
@@ -273,7 +278,7 @@ var egret;
         var OldNativeCanvasRenderContext = (function (_super) {
             __extends(OldNativeCanvasRenderContext, _super);
             function OldNativeCanvasRenderContext() {
-                var _this = _super.apply(this, arguments) || this;
+                var _this = _super !== null && _super.apply(this, arguments) || this;
                 _this.$matrix = new egret.Matrix();
                 _this.$nativeContext = null;
                 _this.$globalCompositeOperation = "source-over";
@@ -447,6 +452,7 @@ var egret;
                     var sizeTxt = arr[2];
                     if (sizeTxt.indexOf("px") != -1) {
                         this.$fontSize = parseInt(sizeTxt.replace("px", ""));
+                        //console.log("set font" + this.$lineWidth);
                     }
                     if (egret.useFontMapping) {
                         var fontFamilyText = void 0;
@@ -1155,6 +1161,9 @@ var egret;
             };
             NativeCanvas.prototype.saveToFile = function (type, filePath) {
                 if (this.$nativeCanvas && this.$nativeCanvas.saveToFile) {
+                    if (native.$supportCmdBatch) {
+                        native.$cmdManager.flush();
+                    }
                     this.$nativeCanvas.saveToFile(type, filePath);
                 }
             };
@@ -1488,9 +1497,10 @@ var egret;
         /**
          * @private
          */
-        function toDataURL(type, rect) {
+        function toDataURL(type, rect, encoderOptions) {
             try {
                 var buffer = convertImageToRenderTexture(this, rect);
+                //todo encoderOptions
                 var base64 = buffer.toDataURL(type);
                 return base64;
             }
@@ -1592,7 +1602,8 @@ var egret;
                 canvas.$isRoot = true;
                 var touch = new native.NativeTouchHandler(stage);
                 var player = new egret.sys.Player(buffer, stage, option.entryClassName);
-                new native.NativeHideHandler(stage);
+                egret.lifecycle.stage = stage;
+                egret.lifecycle.addLifecycleListener(native.NativeLifeCycleHandler);
                 player.showPaintRect(option.showPaintRect);
                 if (option.showFPS || option.showLog) {
                     var styleStr = option.fpsStyles || "";
@@ -2149,7 +2160,7 @@ var egret;
             }
             catch (e) {
             }
-            var ticker = egret.sys.$ticker;
+            var ticker = egret.ticker;
             var mainLoop = native.$supportCmdBatch ? function () {
                 ticker.update();
                 native.$cmdManager.flush();
@@ -2202,7 +2213,19 @@ var egret;
             console.error.apply(console, toArray(arguments));
         };
         egret.assert = function () {
-            console.assert.apply(console, toArray(arguments));
+            if (console.assert) {
+                console.assert.apply(console, toArray(arguments));
+            }
+            else {
+                var args = toArray(arguments);
+                if (!args[0]) {
+                    var args2 = [];
+                    for (var i = 1; i < args.length; i++) {
+                        args2.push(args[i]);
+                    }
+                    console.error.apply(console, args2);
+                }
+            }
         };
         if (true) {
             egret.log = function () {
@@ -2579,6 +2602,9 @@ var egret;
                 }
                 function onAudioLoaded() {
                     audio.load();
+                    if (NativeSound.clearAudios[this.url]) {
+                        delete NativeSound.clearAudios[this.url];
+                    }
                     NativeSound.$recycle(url, audio);
                 }
                 function onCanPlay() {
@@ -2609,6 +2635,7 @@ var egret;
                     audio = new Audio(this.url);
                 }
                 else {
+                    //audio.load();
                 }
                 audio.autoplay = true;
                 var channel = new native.NativeSoundChannel(audio);
@@ -2630,6 +2657,7 @@ var egret;
                 NativeSound.$clear(this.url);
             };
             NativeSound.$clear = function (url) {
+                NativeSound.clearAudios[url] = true;
                 var array = NativeSound.audios[url];
                 if (array) {
                     array.length = 0;
@@ -2643,44 +2671,48 @@ var egret;
                 return null;
             };
             NativeSound.$recycle = function (url, audio) {
+                if (NativeSound.clearAudios[url]) {
+                    return;
+                }
                 var array = NativeSound.audios[url];
                 if (NativeSound.audios[url] == null) {
                     array = NativeSound.audios[url] = [];
                 }
                 array.push(audio);
             };
+            /**
+             * Background music
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @language en_US
+             */
+            /**
+             * 背景音乐
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @language zh_CN
+             */
+            NativeSound.MUSIC = "music";
+            /**
+             * EFFECT
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @language en_US
+             */
+            /**
+             * 音效
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @language zh_CN
+             */
+            NativeSound.EFFECT = "effect";
+            /**
+             * @private
+             */
+            NativeSound.audios = {};
+            NativeSound.clearAudios = {};
             return NativeSound;
         }(egret.EventDispatcher));
-        /**
-         * Background music
-         * @version Egret 2.4
-         * @platform Web,Native
-         * @language en_US
-         */
-        /**
-         * 背景音乐
-         * @version Egret 2.4
-         * @platform Web,Native
-         * @language zh_CN
-         */
-        NativeSound.MUSIC = "music";
-        /**
-         * EFFECT
-         * @version Egret 2.4
-         * @platform Web,Native
-         * @language en_US
-         */
-        /**
-         * 音效
-         * @version Egret 2.4
-         * @platform Web,Native
-         * @language zh_CN
-         */
-        NativeSound.EFFECT = "effect";
-        /**
-         * @private
-         */
-        NativeSound.audios = {};
         native.NativeSound = NativeSound;
         __reflect(NativeSound.prototype, "egret.native.NativeSound", ["egret.Sound"]);
         if (__global.Audio) {
@@ -2734,7 +2766,7 @@ var egret;
         var NativeCanvasRenderContext = (function (_super) {
             __extends(NativeCanvasRenderContext, _super);
             function NativeCanvasRenderContext() {
-                var _this = _super.apply(this, arguments) || this;
+                var _this = _super !== null && _super.apply(this, arguments) || this;
                 _this.$matrix = new egret.Matrix();
                 _this.$nativeContext = null;
                 _this.$globalCompositeOperation = "source-over";
@@ -2917,6 +2949,7 @@ var egret;
                     var sizeTxt = arr[2];
                     if (sizeTxt.indexOf("px") != -1) {
                         this.$fontSize = parseInt(sizeTxt.replace("px", ""));
+                        //console.log("set font" + this.$lineWidth);
                     }
                     if (egret.useFontMapping) {
                         var fontFamilyText = void 0;
@@ -3747,34 +3780,34 @@ var egret;
              */
             NaSound.prototype.close = function () {
             };
+            /**
+             * Background music
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @language en_US
+             */
+            /**
+             * 背景音乐
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @language zh_CN
+             */
+            NaSound.MUSIC = "music";
+            /**
+             * EFFECT
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @language en_US
+             */
+            /**
+             * 音效
+             * @version Egret 2.4
+             * @platform Web,Native
+             * @language zh_CN
+             */
+            NaSound.EFFECT = "effect";
             return NaSound;
         }(egret.EventDispatcher));
-        /**
-         * Background music
-         * @version Egret 2.4
-         * @platform Web,Native
-         * @language en_US
-         */
-        /**
-         * 背景音乐
-         * @version Egret 2.4
-         * @platform Web,Native
-         * @language zh_CN
-         */
-        NaSound.MUSIC = "music";
-        /**
-         * EFFECT
-         * @version Egret 2.4
-         * @platform Web,Native
-         * @language en_US
-         */
-        /**
-         * 音效
-         * @version Egret 2.4
-         * @platform Web,Native
-         * @language zh_CN
-         */
-        NaSound.EFFECT = "effect";
         native.NaSound = NaSound;
         __reflect(NaSound.prototype, "egret.native.NaSound", ["egret.Sound"]);
         if (!__global.Audio) {
@@ -4572,31 +4605,41 @@ var egret;
 (function (egret) {
     var native;
     (function (native) {
+        // /**
+        //  * @private
+        //  */
+        // export class NativeHideHandler extends HashObject {
+        //     constructor(stage: Stage) {
+        //         super();
+        //         egret_native.pauseApp = function () {
+        //             //console.log("pauseApp");
+        //             stage.dispatchEvent(new Event(Event.DEACTIVATE));
+        //             egret_native.Audio.pauseBackgroundMusic();
+        //             egret_native.Audio.pauseAllEffects();
+        //         };
+        //         egret_native.resumeApp = function () {
+        //             //console.log("resumeApp");
+        //             stage.dispatchEvent(new Event(Event.ACTIVATE));
+        //             egret_native.Audio.resumeBackgroundMusic();
+        //             egret_native.Audio.resumeAllEffects();
+        //         };
+        //     }
+        // }
         /**
          * @private
          */
-        var NativeHideHandler = (function (_super) {
-            __extends(NativeHideHandler, _super);
-            function NativeHideHandler(stage) {
-                var _this = _super.call(this) || this;
-                egret_native.pauseApp = function () {
-                    //console.log("pauseApp");
-                    stage.dispatchEvent(new egret.Event(egret.Event.DEACTIVATE));
-                    egret_native.Audio.pauseBackgroundMusic();
-                    egret_native.Audio.pauseAllEffects();
-                };
-                egret_native.resumeApp = function () {
-                    //console.log("resumeApp");
-                    stage.dispatchEvent(new egret.Event(egret.Event.ACTIVATE));
-                    egret_native.Audio.resumeBackgroundMusic();
-                    egret_native.Audio.resumeAllEffects();
-                };
-                return _this;
-            }
-            return NativeHideHandler;
-        }(egret.HashObject));
-        native.NativeHideHandler = NativeHideHandler;
-        __reflect(NativeHideHandler.prototype, "egret.native.NativeHideHandler");
+        native.NativeLifeCycleHandler = function (context) {
+            egret_native.pauseApp = function () {
+                context.pause();
+                egret_native.Audio.pauseBackgroundMusic();
+                egret_native.Audio.pauseAllEffects();
+            };
+            egret_native.resumeApp = function () {
+                context.resume();
+                egret_native.Audio.resumeBackgroundMusic();
+                egret_native.Audio.resumeAllEffects();
+            };
+        };
     })(native = egret.native || (egret.native = {}));
 })(egret || (egret = {}));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -4637,7 +4680,7 @@ var egret;
     var NativeResourceLoader = (function (_super) {
         __extends(NativeResourceLoader, _super);
         function NativeResourceLoader() {
-            var _this = _super.apply(this, arguments) || this;
+            var _this = _super !== null && _super.apply(this, arguments) || this;
             /**
              * @private
              */
@@ -5078,7 +5121,7 @@ var egret;
         var NativeImageLoader = (function (_super) {
             __extends(NativeImageLoader, _super);
             function NativeImageLoader() {
-                var _this = _super.apply(this, arguments) || this;
+                var _this = _super !== null && _super.apply(this, arguments) || this;
                 /**
                  * @private
                  * 使用 load() 方法加载成功的 BitmapData 图像数据。
@@ -5154,13 +5197,13 @@ var egret;
             NativeImageLoader.prototype.isNetUrl = function (url) {
                 return url.indexOf("http://") != -1 || url.indexOf("HTTP://") != -1 || url.indexOf("https://") != -1 || url.indexOf("HTTPS://") != -1;
             };
+            /**
+             * @private
+             * 指定是否启用跨域资源共享,如果ImageLoader实例有设置过crossOrigin属性将使用设置的属性
+             */
+            NativeImageLoader.crossOrigin = null;
             return NativeImageLoader;
         }(egret.EventDispatcher));
-        /**
-         * @private
-         * 指定是否启用跨域资源共享,如果ImageLoader实例有设置过crossOrigin属性将使用设置的属性
-         */
-        NativeImageLoader.crossOrigin = null;
         native.NativeImageLoader = NativeImageLoader;
         __reflect(NativeImageLoader.prototype, "egret.native.NativeImageLoader", ["egret.ImageLoader"]);
         egret.ImageLoader = NativeImageLoader;

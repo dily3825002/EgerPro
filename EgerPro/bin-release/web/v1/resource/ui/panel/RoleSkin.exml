@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleSkin" width="1280" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="homeBg3_jpg"/>
+	<e:Button id="readExcel" y="333" label="读取Excel数据" width="272" height="108" horizontalCenter="-12"/>
+	<e:Button id="closeBtn" label="按钮" x="1154" y="14" skinName="main.CloseBtnSkin"/>
+	<e:Label id="showText" y="480" background="true" backgroundColor="0x000000" width="1130" height="454" alpha="0.8" horizontalCenter="0"/>
+	<e:Label id="input1" text="请输入" y="100" width="430" height="78" horizontalCenter="127" backgroundColor="0x000000" background="true" verticalAlign="middle" textAlign="left" type="input"/>
+	<e:Label text="请输入主键名（1001~1009）：" x="77" y="118" width="443" height="39" textColor="0xFFFFFF" background="true" backgroundColor="0x000000"/>
+	<e:Label id="input2" height="78" background="true" y="198" width="430" text="请输入" textAlign="left" horizontalCenter="126" verticalAlign="middle" backgroundColor="0x000000" x="10" type="input"/>
+	<e:Label height="39" background="true" y="216" textColor="0xFFFFFF" text="请输入属性名（name/sex/age）：" backgroundColor="0x000000" width="437" x="81"/>
+</e:Skin>
+
+

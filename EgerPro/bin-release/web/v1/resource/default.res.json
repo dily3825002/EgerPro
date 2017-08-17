@@ -1,0 +1,219 @@
+{
+	"groups": [
+		{
+			"keys": "PreLoadingBar_png,PreLoadingBarBg_png,PreLoadingBg_png",
+			"name": "loading"
+		},
+		{
+			"keys": "enJson_txt,yellowBtn_png,tipsBg_png,loadingCircle_png,template_json,template_proto,homeBg1_jpg,homeBg2_jpg,homeBg3_jpg,homeBg4_jpg,homeBg5_jpg,activityBtn_png,backpackBtn_png,bgBarBg_png,chuangDangBtn_png,closeBtn_png,friendBtn_png,headBg_png,hengImg_png,infoBtn_png,jinjieBtn_png,kaiFuBtn_png,lianqiBtn_png,lunjianBtn_png,mainBtn_png,mapBtn_png,missionBtn_png,pgBar1_png,pgBar2_png,qianghuaBtn_png,roleBtn_png,roleInfoImg_png,shopBtn_png,shuImg_png,warBtn_png,zhaoXianBtn_png,config_json",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "data/enJson.txt",
+			"type": "text",
+			"name": "enJson_txt"
+		},
+		{
+			"url": "net/template.proto",
+			"type": "text",
+			"name": "template_proto"
+		},
+		{
+			"url": "data/template.json",
+			"type": "json",
+			"name": "template_json"
+		},
+		{
+			"url": "images/yellowBtn.png",
+			"type": "image",
+			"name": "yellowBtn_png"
+		},
+		{
+			"url": "images/mask/tipsBg.png",
+			"type": "image",
+			"name": "tipsBg_png"
+		},
+		{
+			"url": "images/mask/loadingCircle.png",
+			"type": "image",
+			"name": "loadingCircle_png"
+		},
+		{
+			"url": "images/loading/PreLoadingBar.png",
+			"type": "image",
+			"name": "PreLoadingBar_png"
+		},
+		{
+			"url": "images/loading/PreLoadingBarBg.png",
+			"type": "image",
+			"name": "PreLoadingBarBg_png"
+		},
+		{
+			"url": "images/loading/PreLoadingBg.png",
+			"type": "image",
+			"name": "PreLoadingBg_png"
+		},
+		{
+			"url": "images/scene/homeBg1.jpg",
+			"type": "image",
+			"name": "homeBg1_jpg"
+		},
+		{
+			"url": "images/scene/homeBg2.jpg",
+			"type": "image",
+			"name": "homeBg2_jpg"
+		},
+		{
+			"url": "images/scene/homeBg3.jpg",
+			"type": "image",
+			"name": "homeBg3_jpg"
+		},
+		{
+			"url": "images/scene/homeBg4.jpg",
+			"type": "image",
+			"name": "homeBg4_jpg"
+		},
+		{
+			"url": "images/scene/homeBg5.jpg",
+			"type": "image",
+			"name": "homeBg5_jpg"
+		},
+		{
+			"url": "images/main/activityBtn.png",
+			"type": "image",
+			"name": "activityBtn_png"
+		},
+		{
+			"url": "images/main/backpackBtn.png",
+			"type": "image",
+			"name": "backpackBtn_png"
+		},
+		{
+			"url": "images/main/bgBarBg.png",
+			"type": "image",
+			"name": "bgBarBg_png"
+		},
+		{
+			"url": "images/main/chuangDangBtn.png",
+			"type": "image",
+			"name": "chuangDangBtn_png"
+		},
+		{
+			"url": "images/main/closeBtn.png",
+			"type": "image",
+			"name": "closeBtn_png"
+		},
+		{
+			"url": "images/main/friendBtn.png",
+			"type": "image",
+			"name": "friendBtn_png"
+		},
+		{
+			"url": "images/main/headBg.png",
+			"type": "image",
+			"name": "headBg_png"
+		},
+		{
+			"url": "images/main/hengImg.png",
+			"type": "image",
+			"name": "hengImg_png"
+		},
+		{
+			"url": "images/main/infoBtn.png",
+			"type": "image",
+			"name": "infoBtn_png"
+		},
+		{
+			"url": "images/main/jinjieBtn.png",
+			"type": "image",
+			"name": "jinjieBtn_png"
+		},
+		{
+			"url": "images/main/kaiFuBtn.png",
+			"type": "image",
+			"name": "kaiFuBtn_png"
+		},
+		{
+			"url": "images/main/lianqiBtn.png",
+			"type": "image",
+			"name": "lianqiBtn_png"
+		},
+		{
+			"url": "images/main/lunjianBtn.png",
+			"type": "image",
+			"name": "lunjianBtn_png"
+		},
+		{
+			"url": "images/main/mainBtn.png",
+			"type": "image",
+			"name": "mainBtn_png"
+		},
+		{
+			"url": "images/main/mapBtn.png",
+			"type": "image",
+			"name": "mapBtn_png"
+		},
+		{
+			"url": "images/main/missionBtn.png",
+			"type": "image",
+			"name": "missionBtn_png"
+		},
+		{
+			"url": "images/main/pgBar1.png",
+			"type": "image",
+			"name": "pgBar1_png"
+		},
+		{
+			"url": "images/main/pgBar2.png",
+			"type": "image",
+			"name": "pgBar2_png"
+		},
+		{
+			"url": "images/main/qianghuaBtn.png",
+			"type": "image",
+			"name": "qianghuaBtn_png"
+		},
+		{
+			"url": "images/main/roleBtn.png",
+			"type": "image",
+			"name": "roleBtn_png"
+		},
+		{
+			"url": "images/main/roleInfoImg.png",
+			"type": "image",
+			"name": "roleInfoImg_png"
+		},
+		{
+			"url": "images/main/shopBtn.png",
+			"type": "image",
+			"name": "shopBtn_png"
+		},
+		{
+			"url": "images/main/shuImg.png",
+			"type": "image",
+			"name": "shuImg_png"
+		},
+		{
+			"url": "images/main/warBtn.png",
+			"type": "image",
+			"name": "warBtn_png"
+		},
+		{
+			"url": "images/main/zhaoXianBtn.png",
+			"type": "image",
+			"name": "zhaoXianBtn_png"
+		},
+		{
+			"url": "config.json",
+			"type": "json",
+			"name": "config_json"
+		},
+		{
+			"url": "resource.json",
+			"type": "json",
+			"name": "resource_json"
+		}
+	]
+}

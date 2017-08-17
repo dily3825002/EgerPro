@@ -54,4 +54,3 @@ var NativeApi;
     //当前游戏角度
     NativeApi.curAngle = Number(window["orientation"]);
 })(NativeApi || (NativeApi = {}));
-//# sourceMappingURL=NativeApi.js.map

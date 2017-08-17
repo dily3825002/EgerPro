@@ -10,9 +10,8 @@ var __reflect = (this && this.__reflect) || function (p, c, t) {
 var UserInfoNotify = (function () {
     function UserInfoNotify() {
     }
+    //打开角色
+    UserInfoNotify.UPDATE_DATA = "UPDATE_DATA";
     return UserInfoNotify;
 }());
-//打开角色
-UserInfoNotify.UPDATE_DATA = "UPDATE_DATA";
 __reflect(UserInfoNotify.prototype, "UserInfoNotify");
-//# sourceMappingURL=UserInfoNotify.js.map

@@ -10,11 +10,10 @@ var __reflect = (this && this.__reflect) || function (p, c, t) {
 var SysNotify = (function () {
     function SysNotify() {
     }
+    //服务器连接成功
+    SysNotify.CONNECT_SERVER_SUCCESS = "CONNECT_SERVER_SUCCESS";
+    //服务器返回数据
+    SysNotify.SERVER_BACK_DATA = "SERVER_BACK_DATA";
     return SysNotify;
 }());
-//服务器连接成功
-SysNotify.CONNECT_SERVER_SUCCESS = "CONNECT_SERVER_SUCCESS";
-//服务器返回数据
-SysNotify.SERVER_BACK_DATA = "SERVER_BACK_DATA";
 __reflect(SysNotify.prototype, "SysNotify");
-//# sourceMappingURL=SysNotify.js.map

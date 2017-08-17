@@ -9,4 +9,3 @@ var GlobalData;
     //我的名字
     GlobalData.myName = "dily";
 })(GlobalData || (GlobalData = {}));
-//# sourceMappingURL=GlobalData.js.map

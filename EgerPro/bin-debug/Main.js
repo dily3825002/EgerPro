@@ -1,11 +1,16 @@
 var __reflect = (this && this.__reflect) || function (p, c, t) {
     p.__class__ = c, t ? t.push(c) : t = [c], p.__types__ = p.__types__ ? t.concat(p.__types__) : t;
 };
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -17,12 +22,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
         function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments)).next());
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
 var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t;
-    return { next: verb(0), "throw": verb(1), "return": verb(2) };
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
     function verb(n) { return function (v) { return step([n, v]); }; }
     function step(op) {
         if (f) throw new TypeError("Generator is already executing.");
@@ -50,7 +55,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var Main = (function (_super) {
     __extends(Main, _super);
     function Main() {
-        return _super.apply(this, arguments) || this;
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     Main.prototype.createChildren = function () {
         _super.prototype.createChildren.call(this);
@@ -122,34 +127,33 @@ var Main = (function (_super) {
         // var yStr = JSON.parse(yTest);
         var test = RES.getRes("enJson_txt");
     };
+    Main = __decorate([
+        RES.mapConfig("config.json", function () { return "resource"; }, function (path) {
+            var ext = path.substr(path.lastIndexOf(".") + 1);
+            var typeMap = {
+                "jpg": "image",
+                "png": "image",
+                "webp": "image",
+                "json": "json",
+                "fnt": "font",
+                "pvr": "pvr",
+                "mp3": "sound",
+                "proto": "proto",
+                "txt": "txt"
+            };
+            var type = typeMap[ext];
+            if (type == "json") {
+                if (path.indexOf("sheet") >= 0) {
+                    type = "sheet";
+                }
+                else if (path.indexOf("movieclip") >= 0) {
+                    type = "movieclip";
+                }
+                ;
+            }
+            return type;
+        })
+    ], Main);
     return Main;
 }(eui.UILayer));
-Main = __decorate([
-    RES.mapConfig("config.json", function () { return "resource"; }, function (path) {
-        var ext = path.substr(path.lastIndexOf(".") + 1);
-        var typeMap = {
-            "jpg": "image",
-            "png": "image",
-            "webp": "image",
-            "json": "json",
-            "fnt": "font",
-            "pvr": "pvr",
-            "mp3": "sound",
-            "proto": "proto",
-            "txt": "txt"
-        };
-        var type = typeMap[ext];
-        if (type == "json") {
-            if (path.indexOf("sheet") >= 0) {
-                type = "sheet";
-            }
-            else if (path.indexOf("movieclip") >= 0) {
-                type = "movieclip";
-            }
-            ;
-        }
-        return type;
-    })
-], Main);
 __reflect(Main.prototype, "Main");
-//# sourceMappingURL=Main.js.map

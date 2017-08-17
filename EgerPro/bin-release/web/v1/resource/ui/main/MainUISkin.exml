@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MainUISkin" width="1280" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing">
+	<game:ActivityBar id="activityBar" x="1151" y="319" skinName="ActivityBarSkin"/>
+	<game:FunctionBar id="functionBar" x="291" y="832" skinName="FunctionBarSkin"/>
+	<e:Button id="mainBtn" label="按钮" x="1157" y="836" skinName="main.MainBtnSkin"/>
+	<game:RoleInfo id="roleInfo" x="0" y="0" skinName="RoleInfoSkin"/>
+</e:Skin>

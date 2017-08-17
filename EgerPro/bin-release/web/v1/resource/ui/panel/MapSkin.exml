@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MapSkin" width="1280" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="homeBg3_jpg"/>
+	<e:Button id="closeBtn" label="按钮" x="1154" y="14" skinName="main.CloseBtnSkin"/>
+	<e:Image id="img1" source="activityBtn_png" x="168" y="88"/>
+	<e:Image id="img2" y="88" source="activityBtn_png" x="430"/>
+	<e:Image id="img3" y="88" source="activityBtn_png" x="692"/>
+	<e:Image id="img4" y="88" source="activityBtn_png" x="954"/>
+	<e:Button id="btn1" label="图片特效1" x="168" y="365"/>
+	<e:Button id="btn2" y="365" label="图片特效2" x="334"/>
+	<e:Button id="btn3" y="365" label="图片特效3" x="499"/>
+	<e:Button id="btn4" y="365" label="图片特效4" x="664"/>
+	<e:Button id="btn5" y="365" label="图片特效5" x="829"/>
+	<e:Button id="btn6" y="365" label="图片特效6" x="994"/>
+</e:Skin>
+
+
