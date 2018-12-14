@@ -106,7 +106,7 @@ Eger Pro 是基于 Egret 4.x 搭建的 HTML5 重度游戏开发解决方案。Eg
 * [Dily的博客](http://www.dilyblog.com/)<br />
 * [我的微博](http://weibo.com/1856526021/profile?topnav=1&wvr=6)<br />
 <p align="center">
-都看到这里了不关注公众号么<br/>《这里文章不正经》<br/><br/>
+都看到这里了不关注公众号么<br/>「这里文章不正经」<br/><br/>
     <img src="./wechat.jpg"
          height="130">
 </p>
