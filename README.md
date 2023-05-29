@@ -99,16 +99,6 @@ Click online experience address：[Demo address](http://eger.sinaapp.com/code/eg
 * Eger QQ group：70843223
 * [Egret developer community](http://bbs.egret.com)
 
-# Author
-
-* [Dily blog](http://www.dilyblog.com/)<br />
-* [My Weibo](http://weibo.com/1856526021/profile?topnav=1&wvr=6)<br />
-<p align="center">
-My subscription number《This article is not serious》<br/><br/>
-    <img src="./wechat.jpg"
-         height="130">
-</p>
-
 # License
 This content is released under the (https://opensource.org/licenses/BSD-2-Clause) BSD License.
 
